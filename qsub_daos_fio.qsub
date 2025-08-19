@@ -124,7 +124,7 @@ for rw_cat in "${RW_CATEGORIES[@]}"; do
         
         # Create container
         echo "Creating container: $CONTAINER_NAME"
-        if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME"; then
+        if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --properties=rd_fac:1; then
             error "Failed to create container $CONTAINER_NAME"
             continue
         fi
