@@ -60,7 +60,10 @@ df["bs_num"] = df["bs"].map(bs_map)
 
 df.to_csv("fio_results_2025-08-18_11-13-20.csv")
 
+print(df["write_bandwidth_kb"]-df["write_bw_mean_kb"])
 
+
+################### BANDWIDTH PLOTS ###################
 
 ax = sns.lineplot(
     data=df,
@@ -82,6 +85,24 @@ plt.clf()
 ax = sns.lineplot(
     data=df,
     x="bs_num",
+    y="read_bandwidth_kb",
+    hue="rw_full", 
+    marker="o",
+    hue_order=hue_order,
+    palette=palette
+)
+ax.set_aspect('equal')
+ax.set_xlabel("Block Size (bytes)")
+ax.set_ylabel("Read Bandwidth (KiB/s)")
+ax.set_title("Read BW vs Block Size")
+ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
+plt.savefig("read_bandwidth_kb.png", bbox_inches="tight")
+plt.clf()
+
+
+ax = sns.lineplot(
+    data=df,
+    x="bs_num",
     y="write_bw_mean_kb",
     hue="rw_full", 
     marker="o",
@@ -94,4 +115,56 @@ ax.set_ylabel("Mean Write Bandwidth (KiB/s)")
 ax.set_title("Mean Write BW vs Block Size")
 ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
 plt.savefig("write_bw_mean_kb.png", bbox_inches="tight")
+plt.clf()
+
+ax = sns.lineplot(
+    data=df,
+    x="bs_num",
+    y="write_bandwidth_kb",
+    hue="rw_full", 
+    marker="o",
+    hue_order=hue_order,
+    palette=palette
+)
+ax.set_aspect('equal')
+ax.set_xlabel("Block Size (bytes)")
+ax.set_ylabel("Write Bandwidth (KiB/s)")
+ax.set_title("Read BW vs Block Size")
+ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
+plt.savefig("write_bandwidth_kb.png", bbox_inches="tight")
+plt.clf()
+
+
+ax = sns.lineplot(
+    data=df,
+    x="bs_num",
+    y="write_iops",
+    hue="rw_full", 
+    marker="o",
+    hue_order=hue_order,
+    palette=palette
+)
+# ax.set_aspect('equal')
+ax.set_xlabel("Block Size (bytes)")
+ax.set_ylabel("Write IOPS")
+ax.set_title("Write IOPS vs Block Size")
+ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
+plt.savefig("write_iops.png", bbox_inches="tight")
+plt.clf()
+
+ax = sns.lineplot(
+    data=df,
+    x="bs_num",
+    y="read_iops",
+    hue="rw_full", 
+    marker="o",
+    hue_order=hue_order,
+    palette=palette
+)
+# ax.set_aspect('equal')
+ax.set_xlabel("Block Size (bytes)")
+ax.set_ylabel("Read IOPS")
+ax.set_title("Read IOPS vs Block Size")
+ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
+plt.savefig("read_iops.png", bbox_inches="tight")
 plt.clf()
