@@ -6,7 +6,6 @@
 #PBS -q debug
 #PBS -l filesystems=home:flare:daos_user_fs
 #PBS -j oe
-#PBS -o ${PWD}/fio-${PBS_JOBID}.log
 
 set -e  # Exit on any error
 
