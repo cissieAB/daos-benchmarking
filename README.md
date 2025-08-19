@@ -7,3 +7,5 @@ So far I've only done fio command for each combination of block size and read/wr
 ![Mean Write BW vs BS](write_bw_mean_kb.png)
 ![Read IOPS vs BS](read_iops.png)
 ![Write IOPS vs BS](write_iops.png)
+![Mean Read Latency](read_lat_mean_us.png)
+![Mean Write Latency](write_lat_mean_us.png)

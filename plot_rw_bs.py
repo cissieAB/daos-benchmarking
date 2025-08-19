@@ -60,9 +60,6 @@ df["bs_num"] = df["bs"].map(bs_map)
 
 df.to_csv("fio_results_2025-08-18_11-13-20.csv")
 
-print(df["write_bandwidth_kb"]-df["write_bw_mean_kb"])
-
-
 ################### BANDWIDTH PLOTS ###################
 
 ax = sns.lineplot(
@@ -167,4 +164,39 @@ ax.set_ylabel("Read IOPS")
 ax.set_title("Read IOPS vs Block Size")
 ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
 plt.savefig("read_iops.png", bbox_inches="tight")
+plt.clf()
+
+
+ax = sns.lineplot(
+    data=df,
+    x="bs_num",
+    y="write_lat_mean_us",
+    hue="rw_full", 
+    marker="o",
+    hue_order=hue_order,
+    palette=palette
+)
+# ax.set_aspect('equal')
+ax.set_xlabel("Block Size (bytes)")
+ax.set_ylabel("Mean Write Latency (us)")
+ax.set_title("Mean Write Latency vs Block Size")
+ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
+plt.savefig("write_lat_mean_us.png", bbox_inches="tight")
+plt.clf()
+
+ax = sns.lineplot(
+    data=df,
+    x="bs_num",
+    y="read_lat_mean_us",
+    hue="rw_full", 
+    marker="o",
+    hue_order=hue_order,
+    palette=palette
+)
+# ax.set_aspect('equal')
+ax.set_xlabel("Block Size (bytes)")
+ax.set_ylabel("Mean Read Latency (us)")
+ax.set_title("Mean Read Latency vs Block Size")
+ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
+plt.savefig("read_lat_mean_us.png", bbox_inches="tight")
 plt.clf()
