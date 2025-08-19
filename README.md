@@ -5,3 +5,5 @@ So far I've only done fio command for each combination of block size and read/wr
 # Graphs
 ![Mean Read BW vs BS](read_bw_mean_kb.png)
 ![Mean Write BW vs BS](write_bw_mean_kb.png)
+![Read IOPS vs BS](read_iops.png)
+![Write IOPS vs BS](write_iops.png)
