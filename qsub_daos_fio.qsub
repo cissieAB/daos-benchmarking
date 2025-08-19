@@ -5,15 +5,10 @@
 #PBS -l walltime=00:59:00
 #PBS -q debug
 #PBS -l filesystems=home:flare:daos_user_fs
+#PBS -j oe
+#PBS -o ${PWD}/fio-${PBS_JOBID}.log
 
 set -e  # Exit on any error
-
-# Colors for output
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-NC='\033[0m' # No Color
 
 # Variables
 POOL_NAME=e2sar
@@ -29,9 +24,8 @@ NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
 # BLOCK_SIZES=("4K") # mini for testing
 BLOCK_SIZES=("4K" "16K" "1M" "2M" "4M")
 # Keys for setting --rw and --rwmixread
-# RW_CATEGORIES=("SeqR") # mini for testing
 #RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal" "RandWH" "RandW")
-RW_CATEGORIES=("RandW")
+RW_CATEGORIES=("RandW")   # mini for testing
 
 
 get_fio_rw_params() {
@@ -52,26 +46,40 @@ get_fio_rw_params() {
 }
 
 error() {
-    echo -e "${RED}[ERROR]${NC} $1" >&2
+    echo -e "[ERROR]${NC} $1" >&2
 }
 
 success() {
-    echo -e "${GREEN}[SUCCESS]${NC} $1"
+    echo -e "[SUCCESS]${NC} $1"
 }
 
 warning() {
-    echo -e "${YELLOW}[WARNING]${NC} $1"
+    echo -e "[WARNING]${NC} $1"
 }
 
 # Cleanup function
 cleanup() {
     local pool_name="$1"
     local container_name="$2"
+    mount_point=/tmp/"$pool_name"/"$container_name"
     
     echo "Cleaning up container: $pool_name:$container_name"
     
     # Remove mounting point on a compute node
-    clean-dfuse.sh $pool_name:$container_name
+    #Aurora script sometimes fails to unmount
+    # clean-dfuse.sh $pool_name:$container_name
+
+    # Unmount if mounted
+    if mount | grep -q "$mount_point"; then
+        echo "Unmounting $mount_point"
+        fusermount3 -u "$mount_point" || warning "Failed to unmount $mount_point"
+        sleep 2
+    fi
+
+    # Remove mount point
+    if [ -d "$mount_point" ]; then
+        rmdir "$mount_point" || warning "Failed to remove directory $mount_point"
+    fi
 
     # Destroy container
     echo "Destroying container $container_name"
@@ -85,7 +93,8 @@ if [ -z "$POOL_NAME" ]; then
     exit 1
 fi
 
-# Create results directory
+# Create results directory.
+# On compute node, this will be in /$HOME
 mkdir -p $RESULTS_DIR
 
 # Load DAOS module
