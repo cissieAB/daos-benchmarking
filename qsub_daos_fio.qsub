@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 #PBS -A e2sar-daos
 #PBS -l select=1
