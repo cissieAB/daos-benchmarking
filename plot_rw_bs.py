@@ -57,6 +57,7 @@ df["rw-cat"] = df["description"].str.extract(r'(.*)-')
 df["rw_full"] = df["rw-cat"].map(rw_map)
 df["bs"] = df["description"].str.extract(r'-(.*)')
 df["bs_num"] = df["bs"].map(bs_map)
+# df["nj"] = df["description"].str.extract(r'-.*-(.*)')
 
 df.to_csv("fio_results_2025-08-18_11-13-20.csv")
 
@@ -71,12 +72,29 @@ ax = sns.lineplot(
     hue_order=hue_order,
     palette=palette
 )
-ax.set_aspect('equal')
+# ax.set_aspect('equal')
 ax.set_xlabel("Block Size (bytes)")
 ax.set_ylabel("Mean Read Bandwidth (KiB/s)")
-ax.set_title("Mean Read BW vs Block Size")
+ax.set_title("Mean Read Bandwidth vs Block Size")
 ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
-plt.savefig((png_dir + "/read_bw_mean_kb.svg"), bbox_inches="tight")
+plt.savefig((png_dir + "/read_bw_mean_kb-bs.svg"), bbox_inches="tight")
+plt.clf()
+
+ax = sns.lineplot(
+    data=df,
+    x="nj",
+    y="read_bw_mean_kb",
+    hue="rw_full", 
+    marker="o",
+    hue_order=hue_order,
+    palette=palette
+)
+# ax.set_aspect('equal')
+ax.set_xlabel("Number of Jobs")
+ax.set_ylabel("Mean Read Bandwidth (KiB/s)")
+ax.set_title("Mean Read Bandwidth vs Number of Jobs")
+ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
+plt.savefig((png_dir + "/read_bw_mean_kb-nj.svg"), bbox_inches="tight")
 plt.clf()
 
 ax = sns.lineplot(
@@ -91,7 +109,7 @@ ax = sns.lineplot(
 ax.set_aspect('equal')
 ax.set_xlabel("Block Size (bytes)")
 ax.set_ylabel("Read Bandwidth (KiB/s)")
-ax.set_title("Read BW vs Block Size")
+ax.set_title("Read Bandwidth vs Block Size")
 ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
 plt.savefig((png_dir + "/read_bandwidth_kb.svg"), bbox_inches="tight")
 plt.clf()
@@ -108,9 +126,26 @@ ax = sns.lineplot(
 ax.set_aspect('equal')
 ax.set_xlabel("Block Size (bytes)")
 ax.set_ylabel("Mean Write Bandwidth (KiB/s)")
-ax.set_title("Mean Write BW vs Block Size")
+ax.set_title("Mean Write Bandwidth vs Block Size")
 ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
-plt.savefig((png_dir + "/write_bw_mean_kb.svg"), bbox_inches="tight")
+plt.savefig((png_dir + "/write_bw_mean_kb-bs.svg"), bbox_inches="tight")
+plt.clf()
+
+ax = sns.lineplot(
+    data=df,
+    x="nj",
+    y="write_bw_mean_kb",
+    hue="rw_full", 
+    marker="o",
+    hue_order=hue_order,
+    palette=palette
+)
+ax.set_aspect('equal')
+ax.set_xlabel("Number of Jobs")
+ax.set_ylabel("Mean Write Bandwidth (KiB/s)")
+ax.set_title("Mean Write Bandwidth vs Number of Jobs")
+ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
+plt.savefig((png_dir + "/write_bw_mean_kb-nj.svg"), bbox_inches="tight")
 plt.clf()
 
 ax = sns.lineplot(
@@ -125,7 +160,7 @@ ax = sns.lineplot(
 ax.set_aspect('equal')
 ax.set_xlabel("Block Size (bytes)")
 ax.set_ylabel("Write Bandwidth (KiB/s)")
-ax.set_title("Read BW vs Block Size")
+ax.set_title("Read Bandwidth vs Block Size")
 ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
 plt.savefig((png_dir + "/write_bandwidth_kb.svg"), bbox_inches="tight")
 plt.clf()
@@ -195,6 +230,15 @@ ax = sns.lineplot(
     palette=palette
 )
 # ax.set_aspect('equal')
+
+'''
+# potentially useful, needs overlap fix:
+# ref: https://stackoverflow.com/questions/73069802/how-to-label-end-of-lines-of-plot-area-seaborn-or-matplotlib
+last_values = df[["rw_full", "read_lat_mean_us"]][df["bs_num"] == df["bs_num"].max()]
+for cat, value in last_values.itertuples(index=False):
+    ax.text(x=df["bs_num"].max() + 0.2, y=value, s=cat, va="center")
+'''
+
 ax.set_xlabel("Block Size (bytes)")
 ax.set_ylabel("Mean Read Latency (us)")
 ax.set_title("Mean Read Latency vs Block Size")
