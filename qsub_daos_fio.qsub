@@ -19,8 +19,6 @@ DIRECT=1
 BUFFERED=0
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
 
-cat $PBS_NODEFILE > "${RESULTS_DIR}/job_${PBS_JOBID}_env.txt"
-
 # Values for --bs
 # BLOCK_SIZES=("4K" "16K" "1M" "2M" "4M")
 BLOCK_SIZES=("4K") # mini for testing
@@ -152,6 +150,7 @@ for nj in "${NUM_JOBS_SIZES[@]}"; do
             
             cat "${RESULTS_DIR}/fio_result_${rw_cat}_${bs}_${nj}.csv" >> "${RESULTS_DIR}/fio_result_combined.csv"
             rm "${RESULTS_DIR}/fio_result_${rw_cat}_${bs}_${nj}.csv"
+            cat $PBS_NODEFILE > "${RESULTS_DIR}/job_${PBS_JOBID}_env.txt"
 
             # Cleanup
             cleanup "$POOL_NAME" "$CONTAINER_NAME" "$MOUNT_POINT"
