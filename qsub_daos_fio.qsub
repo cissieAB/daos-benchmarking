@@ -20,12 +20,12 @@ BUFFERED=0
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
 
 # Values for --bs
-# BLOCK_SIZES=("4K" "16K" "1M" "2M" "4M")
-BLOCK_SIZES=("4K") # mini for testing
+BLOCK_SIZES=("4K" "16K" "1M" "2M" "4M")
+# BLOCK_SIZES=("4K") # mini for testing
 
 # Keys for setting --rw and --rwmixread
-# RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal" "RandWH" "RandW")
-RW_CATEGORIES=("RandW")   # mini for testing
+RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal" "RandWH" "RandW")
+# RW_CATEGORIES=("RandW")   # mini for testing
 
 # Values for --numjobs
 NUM_JOBS_SIZES=("8" "16" "32" "64" "128")
@@ -88,13 +88,6 @@ cleanup() {
     daos container destroy "$pool_name" "$container_name" || warning "Failed to destroy container $container_name"
 }
 
-# Check if pool name is provided
-if [ -z "$POOL_NAME" ]; then
-    error "Usage: $0 <pool_name> [container_base_name]"
-    error "Example: $0 my_pool fio_test"
-    exit 1
-fi
-
 # Create results directory.
 # On compute node, this will be in /$HOME
 mkdir -p $RESULTS_DIR
@@ -119,7 +112,7 @@ for js in "${NUM_JOBS_SIZES[@]}"; do
         # block size loop
         for bs in "${BLOCK_SIZES[@]}"; do
 
-            CONTAINER_NAME="${CONTAINER_BASE_NAME}_${rw_cat}_${bs}"
+            CONTAINER_NAME="${CONTAINER_BASE_NAME}_${rw_cat}_${bs}_${js}"
             MOUNT_POINT="/tmp/$POOL_NAME/$CONTAINER_NAME"
             echo "----------------------------------------"
             echo "Read-write category: $rw_cat"
@@ -137,7 +130,7 @@ for js in "${NUM_JOBS_SIZES[@]}"; do
 
             # Build FIO command
             fio_cmd="taskset -c $NUMA_CPU_CORES  fio"
-            fio_cmd+=" --name=${rw_cat}-${bs}"
+            fio_cmd+=" --name=${rw_cat}-${bs}-${js}"
             fio_cmd+=" --ioengine=pvsync"
             fio_cmd+=" ${RW_PARAMS} --bs=${bs}"
             fio_cmd+=" --size=128M"
@@ -147,7 +140,7 @@ for js in "${NUM_JOBS_SIZES[@]}"; do
             fio_cmd+=" --direct=${DIRECT} --buffered=${BUFFERED}"
             fio_cmd+=" --randrepeat=0 --norandommap --refill_buffers --group_reporting"
             fio_cmd+=" --output-format=terse"
-            fio_cmd+=" --output=${RESULTS_DIR}/fio_result_${rw_cat}_${bs}.csv"
+            fio_cmd+=" --output=${RESULTS_DIR}/fio_result_${rw_cat}_${bs}_${js}.csv"
             fio_cmd+=" --description=${rw_cat}-${bs}-${js}"
 
             echo "Doing $fio_cmd"
