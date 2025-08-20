@@ -20,7 +20,7 @@ BUFFERED=0
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
 
 # In your PBS job script
-ENV_INFO_FILE="${PBS_O_WORKDIR}/job_${PBS_JOBID}_env.txt"
+ENV_INFO_FILE="${RESULTS_DIR}/job_${PBS_JOBID}_env.txt"
 
 {
   echo "===== Job Environment Info ====="
