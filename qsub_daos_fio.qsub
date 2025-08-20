@@ -147,7 +147,7 @@ for nj in "${NUM_JOBS_SIZES[@]}"; do
             ${fio_cmd} 
             success "FIO benchmark completed for block size $bs and read-write setting $rw_cat"
             
-            cat "${RESULTS_DIR}/fio_result_${rw_cat}_${bs}_${nj}.csv" > "${RESULTS_DIR}/fio_result_combined.csv"
+            cat "${RESULTS_DIR}/fio_result_${rw_cat}_${bs}_${nj}.csv" >> "${RESULTS_DIR}/fio_result_combined.csv"
             rm "${RESULTS_DIR}/fio_result_${rw_cat}_${bs}_${nj}.csv"
 
             # Cleanup
