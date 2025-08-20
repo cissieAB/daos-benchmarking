@@ -28,7 +28,8 @@ BLOCK_SIZES=("4K") # mini for testing
 RW_CATEGORIES=("RandW")   # mini for testing
 
 # Values for --numjobs
-NUM_JOBS_SIZES=("8" "16" "32" "64" "128")
+# NUM_JOBS_SIZES=("8" "16" "32" "64" "128")
+NUM_JOBS_SIZES=("16" "32" "64") # slightly smaller for test
 
 get_fio_rw_params() {
     local category="$1"
@@ -144,7 +145,7 @@ for nj in "${NUM_JOBS_SIZES[@]}"; do
             fio_cmd+=" --description=${rw_cat}-${bs}-${nj}"
 
             echo "Doing $fio_cmd"
-            ${fio_cmd} 2>> "${RESULTS_DIR}/fio_errors.log"
+            (${fio_cmd}) 2>> "${RESULTS_DIR}/fio_errors.log"
             success "FIO benchmark completed for block size $bs and read-write setting $rw_cat"
             
             cat "${RESULTS_DIR}/fio_result_${rw_cat}_${bs}_${nj}.csv" >> "${RESULTS_DIR}/fio_result_combined.csv"
