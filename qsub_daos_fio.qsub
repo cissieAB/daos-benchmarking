@@ -20,13 +20,10 @@ BUFFERED=0
 # NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
 # trying slightly different cpu set since I get clock setaffinity failed: Invalid argument
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,77
-#NUMA:
-#   NUMA node(s):         2
-#   NUMA node0 CPU(s):    0-25,52-77
-#   NUMA node1 CPU(s):    26-51,78-103
 
-ALLOWED_CORES=$(cat /sys/fs/cgroup/cpuset.cpus)
-cat "Allowed cores: $ALLOWED_CORES" > "${RESULTS_DIR}/cpu-info.txt"
+
+
+lscpu > "${RESULTS_DIR}/cpu-info.txt"
 
 
 # Values for --bs
