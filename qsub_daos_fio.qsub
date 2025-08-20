@@ -19,9 +19,6 @@ DIRECT=1
 BUFFERED=0
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
 
-# In your PBS job script
-ENV_INFO_FILE="${RESULTS_DIR}/job_${PBS_JOBID}_env.txt"
-
 {
   echo "===== Job Environment Info ====="
   echo "Job ID:      $PBS_JOBID"
@@ -33,7 +30,7 @@ ENV_INFO_FILE="${RESULTS_DIR}/job_${PBS_JOBID}_env.txt"
   echo "CPUs:        $(wc -l < $PBS_NODEFILE)"
   echo
 
-} > "$ENV_INFO_FILE"
+} > "${RESULTS_DIR}/job_${PBS_JOBID}_env.txt"
 
 
 # lscpu > "${RESULTS_DIR}/cpu-info.txt" # maybe this causees job to fail
