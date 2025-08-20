@@ -20,12 +20,12 @@ BUFFERED=0
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
 
 # Values for --bs
-BLOCK_SIZES=("4K" "16K" "1M" "2M" "4M")
-# BLOCK_SIZES=("4K") # mini for testing
+# BLOCK_SIZES=("4K" "16K" "1M" "2M" "4M")
+BLOCK_SIZES=("4K") # mini for testing
 
 # Keys for setting --rw and --rwmixread
-RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal" "RandWH" "RandW")
-# RW_CATEGORIES=("RandW")   # mini for testing
+# RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal" "RandWH" "RandW")
+RW_CATEGORIES=("RandW")   # mini for testing
 
 # Values for --numjobs
 NUM_JOBS_SIZES=("8" "16" "32" "64" "128")
@@ -147,6 +147,9 @@ for nj in "${NUM_JOBS_SIZES[@]}"; do
             ${fio_cmd} 
             success "FIO benchmark completed for block size $bs and read-write setting $rw_cat"
             
+            cat "${RESULTS_DIR}/fio_result_${rw_cat}_${bs}_${nj}.csv" > "${RESULTS_DIR}/fio_result_combined.csv"
+            rm "${RESULTS_DIR}/fio_result_${rw_cat}_${bs}_${nj}.csv"
+
             # Cleanup
             cleanup "$POOL_NAME" "$CONTAINER_NAME" "$MOUNT_POINT"
             
