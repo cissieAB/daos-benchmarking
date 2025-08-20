@@ -21,7 +21,7 @@ NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
 
 
 
-lscpu > "${RESULTS_DIR}/cpu-info.txt"
+# lscpu > "${RESULTS_DIR}/cpu-info.txt" # maybe this causees job to fail
 
 
 # Values for --bs
