@@ -17,9 +17,7 @@ RESULTS_DIR="./fio_results_$(date +%Y-%m-%d_%H-%M-%S)"
 IO_DEPTH=32
 DIRECT=1
 BUFFERED=0
-# NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
-# trying slightly different cpu set since I get clock setaffinity failed: Invalid argument
-NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,77
+NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
 
 
 
