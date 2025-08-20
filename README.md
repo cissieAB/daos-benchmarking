@@ -4,9 +4,9 @@ Notes doc: https://docs.google.com/document/d/1mf2JfuIG7SXV3KOU3kDi35w4nssFurwod
 So far I've only done fio command for each combination of block size and read/write setting so I could get some initial data. 
 # Graphs
 All pictures are inside /graphs
-![Mean Read BW vs BS](read_bw_mean_kb-bs.svg)
-![Mean Write BW vs BS](write_bw_mean_kb-bs.svg)
-![Read IOPS vs BS](read_iops.svg)
-![Write IOPS vs BS](write_iops.svg)
-![Mean Read Latency](read_lat_mean_us.svg)
-![Mean Write Latency](write_lat_mean_us.svg)
+![Mean Read BW vs BS](graphs/read_bw_mean_kb.svg)
+![Mean Write BW vs BS](graphs/write_bw_mean_kb.svg)
+![Read IOPS vs BS](graphs/read_iops.svg)
+![Write IOPS vs BS](graphs/write_iops.svg)
+![Mean Read Latency](graphs/read_lat_mean_us.svg)
+![Mean Write Latency](graphs/write_lat_mean_us.svg)
