@@ -19,22 +19,7 @@ DIRECT=1
 BUFFERED=0
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
 
-{
-  echo "===== Job Environment Info ====="
-  echo "Job ID:      $PBS_JOBID"
-  echo "Job Name:    $PBS_JOBNAME"
-  echo "User:        $USER"
-  echo "Queue:       $PBS_QUEUE"
-  echo "Nodefile:    $PBS_NODEFILE"
-  echo "Nodes:       $(uniq $PBS_NODEFILE | wc -l)"
-  echo "CPUs:        $(wc -l < $PBS_NODEFILE)"
-  echo
-
-} > "${RESULTS_DIR}/job_${PBS_JOBID}_env.txt"
-
-
-# lscpu > "${RESULTS_DIR}/cpu-info.txt" # maybe this causees job to fail
-
+cat $PBS_NODEFILE > "${RESULTS_DIR}/job_${PBS_JOBID}_env.txt"
 
 # Values for --bs
 # BLOCK_SIZES=("4K" "16K" "1M" "2M" "4M")
