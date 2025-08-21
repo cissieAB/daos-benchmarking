@@ -2,8 +2,8 @@
 
 #PBS -A e2sar-daos
 #PBS -l select=1
-#PBS -l walltime=00:59:00
-#PBS -q debug
+#PBS -l walltime=02:00:00
+#PBS -q prod
 #PBS -l filesystems=home:flare:daos_user_fs
 #PBS -j oe
 
@@ -27,7 +27,7 @@ RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal"
 # RW_CATEGORIES=("RandW")   # mini for testing
 
 # Values for --numjobs
-NUM_JOBS_SIZES=("8" "16" "32" "64" "128")
+NUM_JOBS_SIZES=("16" "32" "64" "128")
 # NUM_JOBS_SIZES=("8" "16") # slightly smaller for test
 
 get_fio_rw_params() {
