@@ -40,27 +40,51 @@ sns.set_style("whitegrid")
 palette = sns.color_palette("flare", 5) + sns.color_palette("crest", 5)
 
 
-csv_dir = "fio_results_2025-08-18_11-13-20"
-first = True
-for file_name in os.listdir(csv_dir):
-    full_path = os.path.join(csv_dir, file_name)
-    if os.path.isfile(full_path):
-        # print(f"File: {file_name}")
-        if first:
-            df = pd.read_csv(full_path, sep=';', header=None, names=cols)
-            first = False
-        else:
-            tmp = pd.read_csv(full_path, sep=';', header=None, names=cols)
-            df = pd.concat([df, tmp])
+# csv_dir = "fio_results_2025-08-18_11-13-20"
+# first = True
+# for file_name in os.listdir(csv_dir):
+#     full_path = os.path.join(csv_dir, file_name)
+#     if os.path.isfile(full_path):
+#         # print(f"File: {file_name}")
+#         if first:
+#             df = pd.read_csv(full_path, sep=';', header=None, names=cols)
+#             first = False
+#         else:
+#             tmp = pd.read_csv(full_path, sep=';', header=None, names=cols)
+#             df = pd.concat([df, tmp])
 
-df["rw-cat"] = df["description"].str.extract(r'(.*)-')
+df = pd.read_csv("fio_results_2025-08-21_01-00-51.csv", sep=';', header=None, names=cols)
+df = df[df["terse_version_3"] != "clock setaffinity failed: Invalid argument"]
+
+df["rw-cat"] = df["description"].str.extract(r'(.*)-.*-')
 df["rw_full"] = df["rw-cat"].map(rw_map)
-df["bs"] = df["description"].str.extract(r'-(.*)')
+df["bs"] = df["description"].str.extract(r'-(.*)-')
 df["bs_num"] = df["bs"].map(bs_map)
-# df["nj"] = df["description"].str.extract(r'-.*-(.*)')
+df["nj"] = df["description"].str.extract(r'-.*-(.*)')
+print(df["nj"])
 
-df.to_csv("fio_results_2025-08-18_11-13-20.csv")
 
+ax = sns.lineplot(
+    data=df,
+    x="nj",
+    y="read_bw_mean_kb",
+    hue="rw_full", 
+    marker="o",
+    hue_order=hue_order,
+    palette=palette
+)
+# ax.set_aspect('equal')
+ax.set_xticks(df['nj'])
+ax.set_xticklabels(df['bs'])
+ax.set_xlabel("Number of Jobs")
+ax.set_ylabel("Mean Read Bandwidth (KiB/s)")
+ax.set_title("Mean Read Bandwidth vs Number of Jobs")
+ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
+plt.savefig((png_dir + "/read_bw_mean_kb-nj.svg"), bbox_inches="tight")
+plt.clf()
+
+# df.to_csv("fio_results_2025-08-18_11-13-20.csv")
+'''
 ################### BANDWIDTH PLOTS ###################
 
 ax = sns.lineplot(
@@ -231,13 +255,7 @@ ax = sns.lineplot(
 )
 # ax.set_aspect('equal')
 
-'''
-# potentially useful, needs overlap fix:
-# ref: https://stackoverflow.com/questions/73069802/how-to-label-end-of-lines-of-plot-area-seaborn-or-matplotlib
-last_values = df[["rw_full", "read_lat_mean_us"]][df["bs_num"] == df["bs_num"].max()]
-for cat, value in last_values.itertuples(index=False):
-    ax.text(x=df["bs_num"].max() + 0.2, y=value, s=cat, va="center")
-'''
+
 
 ax.set_xlabel("Block Size (bytes)")
 ax.set_ylabel("Mean Read Latency (us)")
@@ -245,3 +263,4 @@ ax.set_title("Mean Read Latency vs Block Size")
 ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
 plt.savefig((png_dir + "/read_lat_mean_us.svg"), bbox_inches="tight")
 plt.clf()
+'''
