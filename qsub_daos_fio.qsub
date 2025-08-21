@@ -13,23 +13,22 @@ set -e  # Exit on any error
 POOL_NAME=e2sar
 CONTAINER_BASE_NAME="${USER}-fio_test"
 RESULTS_DIR="./fio_results_$(date +%Y-%m-%d_%H-%M-%S)"
-# NUM_JOBS=32
 IO_DEPTH=32
 DIRECT=1
 BUFFERED=0
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
 
 # Values for --bs
-# BLOCK_SIZES=("4K" "16K" "1M" "2M" "4M")
-BLOCK_SIZES=("4K") # mini for testing
+BLOCK_SIZES=("4K" "16K" "1M" "2M" "4M")
+# BLOCK_SIZES=("4K") # mini for testing
 
 # Keys for setting --rw and --rwmixread
-# RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal" "RandWH" "RandW")
-RW_CATEGORIES=("RandW")   # mini for testing
+RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal" "RandWH" "RandW")
+# RW_CATEGORIES=("RandW")   # mini for testing
 
 # Values for --numjobs
-# NUM_JOBS_SIZES=("8" "16" "32" "64" "128")
-NUM_JOBS_SIZES=("8") # slightly smaller for test
+NUM_JOBS_SIZES=("8" "16" "32" "64" "128")
+# NUM_JOBS_SIZES=("8" "16") # slightly smaller for test
 
 get_fio_rw_params() {
     local category="$1"
@@ -130,8 +129,11 @@ for nj in "${NUM_JOBS_SIZES[@]}"; do
             launch-dfuse.sh $POOL_NAME:$CONTAINER_NAME
 
             # Build FIO command
-            fio_cmd="taskset -c $NUMA_CPU_CORES  fio"
-            fio_cmd+=" --name=${rw_cat}-${bs}-${nj}"
+
+           
+
+	    fio_cmd=" taskset -c $NUMA_CPU_CORES fio "
+	    fio_cmd+=" --name=${rw_cat}-${bs}-${nj}-no-cpu-args"
             fio_cmd+=" --ioengine=pvsync"
             fio_cmd+=" ${RW_PARAMS} --bs=${bs}"
             fio_cmd+=" --size=128M"
