@@ -131,7 +131,7 @@ for nj in "${NUM_JOBS_SIZES[@]}"; do
             # Build FIO command
 
             fio_cmd=" taskset -c $NUMA_CPU_CORES fio "
-            fio_cmd+=" --name=${rw_cat}-${bs}-${nj}-no-cpu-args"
+            fio_cmd+=" --name=${rw_cat}-${bs}-${nj}-taskset-cpu-args"
             fio_cmd+=" --ioengine=pvsync"
             fio_cmd+=" ${RW_PARAMS} --bs=${bs}"
             fio_cmd+=" --size=128M"
