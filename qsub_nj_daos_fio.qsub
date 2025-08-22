@@ -66,7 +66,7 @@ wait_for_mount() {
 }
 
 error() {
-    cat  "[ERROR] $1" >> $ERR_FILE
+    echo  "[ERROR] $1" >> $ERR_FILE
 }
 
 success() {
@@ -109,6 +109,8 @@ cleanup() {
 # Create results directory.
 # On compute node, this will be in /$HOME
 mkdir -p $RESULTS_DIR
+
+echo "This is the error file" > $ERR_FILE
 
 # Load DAOS module
 echo "Loading DAOS module"
