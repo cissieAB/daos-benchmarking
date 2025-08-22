@@ -4,9 +4,7 @@ Notes doc: https://docs.google.com/document/d/1mf2JfuIG7SXV3KOU3kDi35w4nssFurwod
 # Graphs
 All pictures are inside /graphs
 
-When --runtime is not set, so there is not a limit, and --time_based is not set, so it does not force it to loop over the workload for the given time, these graphs look much more erratic. Unsetting this runtime did not fix the issue of some read-write/block-size/num-jobs combinations not running..
-
-Graphs shown are from when these parameters are set.
+Missing cases are due to failed container creation here.
 
 ![Mean Read BW vs BS](graphs/read_bw_mean_gb-bs.svg)
 ![Mean Write BW vs BS](graphs/write_bw_mean_gb-bs.svg)
