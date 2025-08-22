@@ -47,6 +47,22 @@ get_fio_rw_params() {
     esac
 }
 
+wait_for_mount() {
+    local mount_point="$1"
+    local max_wait=30
+    local count=0
+    
+    while [ $count -lt $max_wait ]; do
+        if [ -d "$mount_point" ] && [ -w "$mount_point" ]; then
+            return 0
+        fi
+        info "Waiting for mount point $mount_point to be ready... ($count/$max_wait)"
+        sleep 2
+        ((count++))
+    done
+    return 1
+}
+
 error() {
     echo -e "[ERROR]${NC} $1" >&2
 }
@@ -126,7 +142,17 @@ for nj in "${NUM_JOBS_SIZES[@]}"; do
             fi
             
             # Mount container to /tmp/$POOL_NAME/$CONTAINER_NAME (system default)
-            launch-dfuse.sh $POOL_NAME:$CONTAINER_NAME
+            if ! launch-dfuse.sh "$POOL_NAME:$CONTAINER_NAME"; then
+                error "Failed to mount $POOL_NAME:$CONTAINER_NAME"
+                cleanup "$POOL_NAME" "$CONTAINER_NAME"
+                continue
+            fi
+
+            if ! wait_for_mount "$MOUNT_POINT"; then
+                error "Mount point $MOUNT_POINT not ready after waiting"
+                cleanup "$POOL_NAME" "$CONTAINER_NAME"
+                continue
+            fi
 
             # Build FIO command
 
