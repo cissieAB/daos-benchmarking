@@ -5,9 +5,9 @@ So far I've only done fio command for each combination of block size and read/wr
 # Graphs
 All pictures are inside /graphs
 
-![Mean Read BW vs BS](graphs/read_bw_mean_kb.svg)
-![Mean Write BW vs BS](graphs/write_bw_mean_kb.svg)
-![Read IOPS vs BS](graphs/read_iops.svg)
-![Write IOPS vs BS](graphs/write_iops.svg)
-![Mean Read Latency](graphs/read_lat_mean_us.svg)
-![Mean Write Latency](graphs/write_lat_mean_us.svg)
+![Mean Read BW vs BS](graphs/read_bw_mean_gb-bs.svg)
+![Mean Write BW vs BS](graphs/write_bw_mean_gb-bs.svg)
+![Read IOPS vs BS](graphs/read_iops-bs.svg)
+![Write IOPS vs BS](graphs/write_iops-bs.svg)
+![Mean Read Latency](graphs/read_lat_mean_us-bs.svg)
+![Mean Write Latency](graphs/write_lat_mean_us-bs.svg)
