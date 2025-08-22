@@ -137,7 +137,6 @@ for nj in "${NUM_JOBS_SIZES[@]}"; do
             fio_cmd+=" --size=128M"
             fio_cmd+=" --directory=${MOUNT_POINT}"
             fio_cmd+=" --numjobs=${nj} --iodepth=${IO_DEPTH}"
-            fio_cmd+=" --runtime=60 --time_based"
             fio_cmd+=" --direct=${DIRECT} --buffered=${BUFFERED}"
             fio_cmd+=" --randrepeat=0 --norandommap --refill_buffers --group_reporting"
             fio_cmd+=" --output-format=terse"
