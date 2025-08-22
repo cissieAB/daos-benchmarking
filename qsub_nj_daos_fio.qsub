@@ -30,6 +30,8 @@ RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal"
 NUM_JOBS_SIZES=("16" "32" "64" "128")
 # NUM_JOBS_SIZES=("8" "16") # slightly smaller for test
 
+ERR_FILE="$RESULTS_DIR/errors.txt"
+
 get_fio_rw_params() {
     local category="$1"
     case "$category" in
@@ -64,7 +66,7 @@ wait_for_mount() {
 }
 
 error() {
-    echo -e "[ERROR]${NC} $1" >&2
+    cat  "[ERROR] $1" >> $ERR_FILE
 }
 
 success() {
