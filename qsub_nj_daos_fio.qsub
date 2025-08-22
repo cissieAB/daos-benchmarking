@@ -150,6 +150,7 @@ for nj in "${NUM_JOBS_SIZES[@]}"; do
             
             cat "${RESULTS_DIR}/fio_result_${rw_cat}_${bs}_${nj}.csv" >> "${RESULTS_DIR}/fio_result_combined.csv"
             rm "${RESULTS_DIR}/fio_result_${rw_cat}_${bs}_${nj}.csv"
+            
             # show the CPUs visible to this process
             {
             echo "===== Job CPU Affinity Info ====="

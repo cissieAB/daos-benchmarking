@@ -1,12 +1,11 @@
 import matplotlib.pyplot as plt 
 import seaborn as sns
 import pandas as pd
-import numpy as np
 import io
 import os 
 
 png_dir = "graphs"
-file_name = "fio_result_rw_bs_2025-08-22_00-03-02.csv"
+file_name = "fio_result_nj_2025-08-22_00-00-50.csv"
 
 '''
 Terse output headers:
@@ -65,14 +64,14 @@ df["rw_full"] = df["rw-cat"].map(rw_map)
 df["bs"] = df["description"].str.extract(r'-(.*)-')
 df["bs_num"] = df["bs"].map(bs_map)
 df["nj"] = df["description"].str.extract(r'-.*-(.*)')
-print(df["nj"])
+print(df)
 
 
 ################### BANDWIDTH PLOTS ###################
 df["read_bw_mean_gb"] = df["read_bw_mean_kb"]/(1024*1024)
 ax = sns.lineplot(
     data=df,
-    x="bs_num",
+    x="nj",
     y="read_bw_mean_gb",
     hue="rw_full", 
     marker="o",
@@ -80,37 +79,37 @@ ax = sns.lineplot(
     palette=palette
 )
 # ax.set_aspect('equal')
-ax.set_xticks(np.sort(df['bs_num'].unique()))
-ax.set_xticklabels(["4k   ", "       16k", "1M", "2M", "4M"])
+ax.set_xticks(df["nj"].unique())
+ax.set_xticklabels(df['nj'].unique())
 # ax.set_yticks(df['read_bw_mean_gb'])
 # ax.set_yticklabels(df['read_bw_mean_gb'])
-ax.set_xlabel("Block Size (bytes)")
+ax.set_xlabel("Number of Jobs")
 ax.set_ylabel("Mean Read Bandwidth (GiB/s)")
-ax.set_title("Mean Read Bandwidth vs Block Size")
+ax.set_title("Mean Read Bandwidth vs Number of Jobs")
 ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
-plt.savefig((png_dir + "/read_bw_mean_gb-bs.svg"), bbox_inches="tight")
+plt.savefig((png_dir + "/read_bw_mean_gb-nj.svg"), bbox_inches="tight")
 plt.clf()
 
 df["write_bw_mean_gb"] = df["write_bw_mean_kb"]/(1024*1024)
 
 ax = sns.lineplot(
     data=df,
-    x="bs_num",
+    x="nj",
     y="write_bw_mean_gb",
     hue="rw_full", 
     marker="o",
     hue_order=hue_order,
     palette=palette
 )
-ax.set_xticks(np.sort(df['bs_num'].unique()))
-ax.set_xticklabels(["4k   ", "       16k", "1M", "2M", "4M"])
+ax.set_xticks(df['nj'].unique())
+ax.set_xticklabels(df['nj'].unique())
 # ax.set_yticks(df['write_bw_mean_gb'])
 # ax.set_yticklabels(df['write_bw_mean_gb'])
-ax.set_xlabel("Block Size (bytes)")
+ax.set_xlabel("Number of Jobs")
 ax.set_ylabel("Mean Write Bandwidth (GiB/s)")
-ax.set_title("Mean Write Bandwidth vs Block Size")
+ax.set_title("Mean Write Bandwidth vs BNumber of Jobs")
 ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
-plt.savefig((png_dir + "/write_bw_mean_gb-bs.svg"), bbox_inches="tight")
+plt.savefig((png_dir + "/write_bw_mean_gb-nj.svg"), bbox_inches="tight")
 plt.clf()
 
 
@@ -118,7 +117,7 @@ plt.clf()
 
 ax = sns.lineplot(
     data=df,
-    x="bs_num",
+    x="nj",
     y="write_iops",
     hue="rw_full", 
     marker="o",
@@ -126,20 +125,20 @@ ax = sns.lineplot(
     palette=palette
 )
 # ax.set_aspect('equal')
-ax.set_xticks(np.sort(df['bs_num'].unique()))
-ax.set_xticklabels(["4k   ", "       16k", "1M", "2M", "4M"])
+ax.set_xticks(df['nj'].unique())
+ax.set_xticklabels(df['nj'].unique())
 # ax.set_yticks(df['write_iops'])
 # ax.set_yticklabels(df['write_iops'])
-ax.set_xlabel("Block Size (bytes)")
+ax.set_xlabel("Number of Jobs")
 ax.set_ylabel("Write IOPS")
-ax.set_title("Write IOPS vs Block Size")
+ax.set_title("Write IOPS vs Number of Jobs")
 ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
-plt.savefig((png_dir + "/write_iops-bs.svg"), bbox_inches="tight")
+plt.savefig((png_dir + "/write_iops-nj.svg"), bbox_inches="tight")
 plt.clf()
 
 ax = sns.lineplot(
     data=df,
-    x="bs_num",
+    x="nj",
     y="read_iops",
     hue="rw_full", 
     marker="o",
@@ -147,22 +146,22 @@ ax = sns.lineplot(
     palette=palette
 )
 # ax.set_aspect('equal')
-ax.set_xticks(np.sort(df['bs_num'].unique()))
-ax.set_xticklabels(["4k   ", "       16k", "1M", "2M", "4M"])
+ax.set_xticks(df['nj'].unique())
+ax.set_xticklabels(df['nj'].unique())
 # ax.set_yticks(df['read_iops'])
 # ax.set_yticklabels(df['read_iops'])
-ax.set_xlabel("Block Size (bytes)")
+ax.set_xlabel("Number of Jobs")
 ax.set_ylabel("Read IOPS")
-ax.set_title("Read IOPS vs Block Size")
+ax.set_title("Read IOPS vs Number of Jobs")
 ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
-plt.savefig((png_dir + "/read_iops-bs.svg"), bbox_inches="tight")
+plt.savefig((png_dir + "/read_iops-nj.svg"), bbox_inches="tight")
 plt.clf()
 
 ################### LATENCY PLOTS ###################
 
 ax = sns.lineplot(
     data=df,
-    x="bs_num",
+    x="nj",
     y="write_lat_mean_us",
     hue="rw_full", 
     marker="o",
@@ -170,20 +169,20 @@ ax = sns.lineplot(
     palette=palette
 )
 # ax.set_aspect('equal')
-ax.set_xticks(np.sort(df['bs_num'].unique()))
-ax.set_xticklabels(["4k   ", "       16k", "1M", "2M", "4M"])
+ax.set_xticks(df['nj'].unique())
+ax.set_xticklabels(df['nj'].unique())
 # ax.set_yticks(df['write_lat_mean_us'])
 # ax.set_yticklabels(df['write_lat_mean_us'])
-ax.set_xlabel("Block Size (bytes)")
+ax.set_xlabel("Number of Jobs")
 ax.set_ylabel("Mean Write Latency (us)")
-ax.set_title("Mean Write Latency vs Block Size")
+ax.set_title("Mean Write Latency vs Number of Jobs")
 ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
-plt.savefig((png_dir + "/write_lat_mean_us-bs.svg"), bbox_inches="tight")
+plt.savefig((png_dir + "/write_lat_mean_us-nj.svg"), bbox_inches="tight")
 plt.clf()
 
 ax = sns.lineplot(
     data=df,
-    x="bs_num",
+    x="nj",
     y="read_lat_mean_us",
     hue="rw_full", 
     marker="o",
@@ -191,13 +190,13 @@ ax = sns.lineplot(
     palette=palette
 )
 # ax.set_aspect('equal')
-ax.set_xticks(np.sort(df['bs_num'].unique()))
-ax.set_xticklabels(["4k   ", "       16k", "1M", "2M", "4M"])
+ax.set_xticks(df['nj'].unique())
+ax.set_xticklabels(df['nj'].unique())
 # ax.set_yticks(df['read_lat_mean_us'])
 # ax.set_yticklabels(df['read_lat_mean_us'])
-ax.set_xlabel("Block Size (bytes)")
+ax.set_xlabel("Number of Jobs")
 ax.set_ylabel("Mean Read Latency (us)")
-ax.set_title("Mean Read Latency vs Block Size")
+ax.set_title("Mean Read Latency vs Number of Jobs")
 ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
-plt.savefig((png_dir + "/read_lat_mean_us-bs.svg"), bbox_inches="tight")
+plt.savefig((png_dir + "/read_lat_mean_us-nj.svg"), bbox_inches="tight")
 plt.clf()
