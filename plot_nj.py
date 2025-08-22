@@ -64,7 +64,6 @@ df["rw_full"] = df["rw-cat"].map(rw_map)
 df["bs"] = df["description"].str.extract(r'-(.*)-')
 df["bs_num"] = df["bs"].map(bs_map)
 df["nj"] = df["description"].str.extract(r'-.*-(.*)')
-print(df)
 
 
 ################### BANDWIDTH PLOTS ###################
