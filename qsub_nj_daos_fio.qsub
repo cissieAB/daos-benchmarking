@@ -30,7 +30,7 @@ RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal"
 NUM_JOBS_SIZES=("16" "32" "64" "128")
 # NUM_JOBS_SIZES=("8" "16") # slightly smaller for test
 
-ERR_FILE="$RESULTS_DIR/errors.txt"
+LOG_FILE="$RESULTS_DIR/logs.txt"
 
 get_fio_rw_params() {
     local category="$1"
@@ -66,15 +66,15 @@ wait_for_mount() {
 }
 
 error() {
-    echo  "[ERROR] $1" >> $ERR_FILE
+    echo  "[ERROR] $1" >> $LOG_FILE
 }
 
 success() {
-    echo -e "[SUCCESS]${NC} $1"
+    echo "[SUCCESS]${NC} $1" >> $LOG_FILE
 }
 
 warning() {
-    echo -e "[WARNING]${NC} $1"
+    echo "[WARNING]${NC} $1" >> $LOG_FILE
 }
 
 # Cleanup function
@@ -83,15 +83,12 @@ cleanup() {
     local container_name="$2"
     mount_point=/tmp/"$pool_name"/"$container_name"
     
-    echo "Cleaning up container: $pool_name:$container_name"
-    
     # Remove mounting point on a compute node
     #Aurora script sometimes fails to unmount
     # clean-dfuse.sh $pool_name:$container_name
 
     # Unmount if mounted
     if mount | grep -q "$mount_point"; then
-        echo "Unmounting $mount_point"
         fusermount3 -u "$mount_point" || warning "Failed to unmount $mount_point"
         sleep 2
     fi
@@ -102,23 +99,19 @@ cleanup() {
     fi
 
     # Destroy container
-    echo "Destroying container $container_name"
     daos container destroy "$pool_name" "$container_name" || warning "Failed to destroy container $container_name"
+    echo daos container list "$pool_name" >> $LOG_FILE
 }
 
 # Create results directory.
 # On compute node, this will be in /$HOME
 mkdir -p $RESULTS_DIR
 
-echo "This is the error file" > $ERR_FILE
-
 # Load DAOS module
-echo "Loading DAOS module"
 module use /soft/modulefiles/ || { error "Failed to use modulefiles"; exit 1; }
 module load daos || { error "Failed to load DAOS module"; exit 1; }
 
 # Verify pool exists
-echo "Verifying pool '$POOL_NAME' is Ready"
 if ! daos pool query "$POOL_NAME" | grep -q "Ready" ; then
     error "Pool '$POOL_NAME' not Ready"
     exit 1
@@ -134,12 +127,8 @@ for nj in "${NUM_JOBS_SIZES[@]}"; do
 
             CONTAINER_NAME="${CONTAINER_BASE_NAME}_${rw_cat}_${bs}_${nj}"
             MOUNT_POINT="/tmp/$POOL_NAME/$CONTAINER_NAME"
-            echo "----------------------------------------"
-            echo "Read-write category: $rw_cat"
-            echo "Block Size: $bs"
             
             # Create container
-            echo "Creating container: $CONTAINER_NAME"
             if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --properties=rd_fac:1; then
                 error "Failed to create container $CONTAINER_NAME"
                 continue
@@ -173,7 +162,6 @@ for nj in "${NUM_JOBS_SIZES[@]}"; do
             fio_cmd+=" --output=${RESULTS_DIR}/fio_result_${rw_cat}_${bs}_${nj}.csv"
             fio_cmd+=" --description=${rw_cat}-${bs}-${nj}"
 
-            echo "Doing $fio_cmd"
             ${fio_cmd}
             success "FIO benchmark completed for block size $bs and read-write setting $rw_cat"
             
@@ -193,7 +181,6 @@ for nj in "${NUM_JOBS_SIZES[@]}"; do
             cleanup "$POOL_NAME" "$CONTAINER_NAME" "$MOUNT_POINT"
             
             sleep 3
-            echo "----------------------------------------"
         done
     done
 done
