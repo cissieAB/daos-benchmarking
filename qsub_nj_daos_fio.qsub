@@ -100,7 +100,10 @@ cleanup() {
 
     # Destroy container
     daos container destroy "$pool_name" "$container_name" || warning "Failed to destroy container $container_name"
-    echo daos container list "$pool_name" >> $LOG_FILE
+    
+    { 
+        daos container list "$pool_name" 
+    } >> $LOG_FILE
 }
 
 # Create results directory.
