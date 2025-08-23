@@ -12,7 +12,7 @@ set -e  # Exit on any error
 # Variables
 POOL_NAME=e2sar
 CONTAINER_BASE_NAME="${USER}-fio_test-nj-iops"
-RESULTS_DIR="./fio_results_$(date +%Y-%m-%d_%H-%M-%S)"
+RESULTS_DIR="./fio_results_nj_iops_$(date +%Y-%m-%d_%H-%M-%S)"
 DIRECT=1
 BUFFERED=0
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
@@ -117,7 +117,7 @@ for iod in "${IO_DEPTHS[@]}"; do
             RW_PARAMS=$(get_fio_rw_params "$rw_cat")
             # block size loop
             for bs in "${BLOCK_SIZES[@]}"; do
-            
+
                 CASE_ID="${rw_cat}-${bs}-${nj}-${iod}"
                 CONTAINER_NAME="${CONTAINER_BASE_NAME}_${CASE_ID}"
                 MOUNT_POINT="/tmp/$POOL_NAME/$CONTAINER_NAME"
