@@ -19,16 +19,19 @@ BUFFERED=0
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
 
 # Values for --bs
-BLOCK_SIZES=("4K" "16K" "1M" "2M" "4M")
-# BLOCK_SIZES=("4K") # mini for testing
+# BLOCK_SIZES=("4K" "16K" "1M" "2M" "4M")
+BLOCK_SIZES=("2M") 
 
 # Keys for setting --rw and --rwmixread
 RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal" "RandWH" "RandW")
 # RW_CATEGORIES=("RandW")   # mini for testing
 
-# Values for --numjobs (just one because it keeps stopping execution)
-# NUM_JOBS_SIZES=("8" "16" "32" "64" "128")
-NUM_JOBS_SIZES=("16")
+# Values for --numjobs
+NUM_JOBS_SIZES=("16" "32" "64" "128")
+# NUM_JOBS_SIZES=("8" "16") # slightly smaller for test
+
+# Values for --iodepth
+IO_DEPTHS=("32")
 
 LOG_FILE="$RESULTS_DIR/logs.txt"
 
@@ -67,21 +70,19 @@ cleanup() {
     local container_name="$2"
     mount_point=/tmp/"$pool_name"/"$container_name"
     
-    echo "Cleaning up container: $pool_name:$container_name"
-    
     # Remove mounting point on a compute node
     #Aurora script sometimes fails to unmount
     # clean-dfuse.sh $pool_name:$container_name
 
     # Unmount if mounted
     if mount | grep -q "$mount_point"; then
-        fusermount3 -u "$mount_point" || error "Failed to unmount $mount_point"
+        fusermount3 -u "$mount_point" || warning "Failed to unmount $mount_point"
         sleep 2
     fi
 
     # Remove mount point
     if [ -d "$mount_point" ]; then
-        rmdir "$mount_point" || error "Failed to remove directory $mount_point"
+        rmdir "$mount_point" || warning "Failed to remove directory $mount_point"
     fi
 
     # Destroy container
