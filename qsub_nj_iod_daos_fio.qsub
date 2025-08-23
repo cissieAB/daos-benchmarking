@@ -11,7 +11,7 @@ set -e  # Exit on any error
 
 # Variables
 POOL_NAME=e2sar
-CONTAINER_BASE_NAME="${USER}-fio_test"
+CONTAINER_BASE_NAME="${USER}-fio_test-nj"
 RESULTS_DIR="./fio_results_$(date +%Y-%m-%d_%H-%M-%S)"
 IO_DEPTH=32
 DIRECT=1
@@ -114,8 +114,8 @@ for nj in "${NUM_JOBS_SIZES[@]}"; do
         RW_PARAMS=$(get_fio_rw_params "$rw_cat")
         # block size loop
         for bs in "${BLOCK_SIZES[@]}"; do
-
-            CONTAINER_NAME="${CONTAINER_BASE_NAME}_${rw_cat}_${bs}_${nj}"
+            CASE_ID="${rw_cat}-${bs}-${nj}"
+            CONTAINER_NAME="${CONTAINER_BASE_NAME}_${CASE_ID}"
             MOUNT_POINT="/tmp/$POOL_NAME/$CONTAINER_NAME"
             
             # Create container
@@ -130,7 +130,7 @@ for nj in "${NUM_JOBS_SIZES[@]}"; do
             # Build FIO command
 
             fio_cmd=" taskset -c $NUMA_CPU_CORES fio "
-            fio_cmd+=" --name=${rw_cat}-${bs}-${nj}-taskset-cpu-args"
+            fio_cmd+=" --name=${CASE_ID}-taskset-cpu-args"
             fio_cmd+=" --ioengine=pvsync"
             fio_cmd+=" ${RW_PARAMS} --bs=${bs}"
             fio_cmd+=" --size=128M"
@@ -140,14 +140,14 @@ for nj in "${NUM_JOBS_SIZES[@]}"; do
             fio_cmd+=" --runtime=60 --time_based"
             fio_cmd+=" --randrepeat=0 --norandommap --refill_buffers --group_reporting"
             fio_cmd+=" --output-format=terse"
-            fio_cmd+=" --output=${RESULTS_DIR}/fio_result_${rw_cat}_${bs}_${nj}.csv"
-            fio_cmd+=" --description=${rw_cat}-${bs}-${nj}"
+            fio_cmd+=" --output=${RESULTS_DIR}/fio_result_${CASE_ID}.csv"
+            fio_cmd+=" --description=${CASE_ID}"
 
             ${fio_cmd}
-            success "FIO benchmark completed for block size $bs and read-write setting $rw_cat"
+            success "FIO benchmark completed for ${CASE_ID}"
             
-            cat "${RESULTS_DIR}/fio_result_${rw_cat}_${bs}_${nj}.csv" >> "${RESULTS_DIR}/fio_result_combined.csv"
-            rm "${RESULTS_DIR}/fio_result_${rw_cat}_${bs}_${nj}.csv"
+            cat "${RESULTS_DIR}/fio_result_${CASE_ID}.csv" >> "${RESULTS_DIR}/fio_result_combined.csv"
+            rm "${RESULTS_DIR}/fio_result_${CASE_ID}.csv"
             
             # Cleanup
             cleanup "$POOL_NAME" "$CONTAINER_NAME" "$MOUNT_POINT"
