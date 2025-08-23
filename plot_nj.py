@@ -5,7 +5,7 @@ import io
 import os 
 
 png_dir = "graphs"
-file_name = "fio_result_nj_2025-08-22_00-00-50.csv"
+file_name = "fio_results_2025-08-22_18-48-14/fio_result_combined.csv"
 
 '''
 Terse output headers:
@@ -56,16 +56,16 @@ palette = sns.color_palette("flare", 5) + sns.color_palette("crest", 5)
 #             df = pd.concat([df, tmp])
 # df.to_csv(file_name)
 
-# df = pd.read_csv(file_name, sep=';', header=None, names=cols)
-# df = df[df["terse_version_3"] != "clock setaffinity failed: Invalid argument"]
+df = pd.read_csv(file_name, sep=';', header=None, names=cols)
+df = df[df["terse_version_3"] != "clock setaffinity failed: Invalid argument"]
 
-# df["rw-cat"] = df["description"].str.extract(r'(.*)-.*-')
-# df["rw_full"] = df["rw-cat"].map(rw_map)
-# df["bs"] = df["description"].str.extract(r'-(.*)-')
-# df["bs_num"] = df["bs"].map(bs_map)
-# df["nj"] = df["description"].str.extract(r'-.*-(.*)')
+df["rw-cat"] = df["description"].str.extract(r'(.*)-.*-')
+df["rw_full"] = df["rw-cat"].map(rw_map)
+df["bs"] = df["description"].str.extract(r'-(.*)-')
+df["bs_num"] = df["bs"].map(bs_map)
+df["nj"] = df["description"].str.extract(r'-.*-(.*)')
 
-df = pd.read_csv(file_name)
+# df = pd.read_csv(file_name)
 
 
 ################### BANDWIDTH PLOTS ###################
@@ -201,3 +201,5 @@ ax.set_title("Mean Read Latency vs Number of Jobs (Block Size = 2M)")
 ax.legend(bbox_to_anchor=(1, 1), title='Read-Write Type')
 plt.savefig((png_dir + "/read_lat_mean_us-nj.svg"), bbox_inches="tight")
 plt.clf()
+
+df.to_csv("fio_results_nj_2025-08-22_18-48-14.csv")
