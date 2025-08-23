@@ -11,9 +11,8 @@ set -e  # Exit on any error
 
 # Variables
 POOL_NAME=e2sar
-CONTAINER_BASE_NAME="${USER}-fio_test-nj"
+CONTAINER_BASE_NAME="${USER}-fio_test-nj-iops"
 RESULTS_DIR="./fio_results_$(date +%Y-%m-%d_%H-%M-%S)"
-IO_DEPTH=32
 DIRECT=1
 BUFFERED=0
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
@@ -23,15 +22,16 @@ NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
 BLOCK_SIZES=("2M") 
 
 # Keys for setting --rw and --rwmixread
-RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal" "RandWH" "RandW")
-# RW_CATEGORIES=("RandW")   # mini for testing
+# RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal" "RandWH" "RandW")
+RW_CATEGORIES=("RandR")   # mini for testing
 
 # Values for --numjobs
 NUM_JOBS_SIZES=("16" "32" "64" "128")
-# NUM_JOBS_SIZES=("8" "16") # slightly smaller for test
+# NUM_JOBS_SIZES=("8" "16") # mini for testing
 
 # Values for --iodepth
-IO_DEPTHS=("32")
+IO_DEPTHS=("1" "4" "8" "16" "32" "64" "128")
+# IO_DEPTHS=("32") # mini for testing
 
 LOG_FILE="$RESULTS_DIR/logs.txt"
 
@@ -108,51 +108,56 @@ if ! daos pool query "$POOL_NAME" | grep -q "Ready" ; then
 fi
 success "Pool '$POOL_NAME' found and accessible"
 
-for nj in "${NUM_JOBS_SIZES[@]}"; do
-    # read-write category loop
-    for rw_cat in "${RW_CATEGORIES[@]}"; do
-        RW_PARAMS=$(get_fio_rw_params "$rw_cat")
-        # block size loop
-        for bs in "${BLOCK_SIZES[@]}"; do
-            CASE_ID="${rw_cat}-${bs}-${nj}"
-            CONTAINER_NAME="${CONTAINER_BASE_NAME}_${CASE_ID}"
-            MOUNT_POINT="/tmp/$POOL_NAME/$CONTAINER_NAME"
+# io depth loop
+for iod in "${IO_DEPTHS[@]}"; do
+    # num jobs loop
+    for nj in "${NUM_JOBS_SIZES[@]}"; do
+        # read-write category loop
+        for rw_cat in "${RW_CATEGORIES[@]}"; do
+            RW_PARAMS=$(get_fio_rw_params "$rw_cat")
+            # block size loop
+            for bs in "${BLOCK_SIZES[@]}"; do
             
-            # Create container
-            if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --properties=rd_fac:1; then
-                error "Failed to create container $CONTAINER_NAME"
-                continue
-            fi
-            
-            # Mount container to /tmp/$POOL_NAME/$CONTAINER_NAME (system default)
-            launch-dfuse.sh $POOL_NAME:$CONTAINER_NAME
+                CASE_ID="${rw_cat}-${bs}-${nj}-${iod}"
+                CONTAINER_NAME="${CONTAINER_BASE_NAME}_${CASE_ID}"
+                MOUNT_POINT="/tmp/$POOL_NAME/$CONTAINER_NAME"
+                
+                # Create container
+                if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --properties=rd_fac:1; then
+                    error "Failed to create container $CONTAINER_NAME"
+                    continue
+                fi
+                
+                # Mount container to /tmp/$POOL_NAME/$CONTAINER_NAME (system default)
+                launch-dfuse.sh $POOL_NAME:$CONTAINER_NAME
 
-            # Build FIO command
+                # Build FIO command
 
-            fio_cmd=" taskset -c $NUMA_CPU_CORES fio "
-            fio_cmd+=" --name=${CASE_ID}-taskset-cpu-args"
-            fio_cmd+=" --ioengine=pvsync"
-            fio_cmd+=" ${RW_PARAMS} --bs=${bs}"
-            fio_cmd+=" --size=128M"
-            fio_cmd+=" --directory=${MOUNT_POINT}"
-            fio_cmd+=" --numjobs=${nj} --iodepth=${IO_DEPTH}"
-            fio_cmd+=" --direct=${DIRECT} --buffered=${BUFFERED}"
-            fio_cmd+=" --runtime=60 --time_based"
-            fio_cmd+=" --randrepeat=0 --norandommap --refill_buffers --group_reporting"
-            fio_cmd+=" --output-format=terse"
-            fio_cmd+=" --output=${RESULTS_DIR}/fio_result_${CASE_ID}.csv"
-            fio_cmd+=" --description=${CASE_ID}"
+                fio_cmd=" taskset -c $NUMA_CPU_CORES fio "
+                fio_cmd+=" --name=${CASE_ID}-taskset-cpu-args"
+                fio_cmd+=" --ioengine=pvsync"
+                fio_cmd+=" ${RW_PARAMS} --bs=${bs}"
+                fio_cmd+=" --size=128M"
+                fio_cmd+=" --directory=${MOUNT_POINT}"
+                fio_cmd+=" --numjobs=${nj} --iodepth=${iod}"
+                fio_cmd+=" --direct=${DIRECT} --buffered=${BUFFERED}"
+                fio_cmd+=" --runtime=60 --time_based"
+                fio_cmd+=" --randrepeat=0 --norandommap --refill_buffers --group_reporting"
+                fio_cmd+=" --output-format=terse"
+                fio_cmd+=" --output=${RESULTS_DIR}/fio_result_${CASE_ID}.csv"
+                fio_cmd+=" --description=${CASE_ID}"
 
-            ${fio_cmd}
-            success "FIO benchmark completed for ${CASE_ID}"
-            
-            cat "${RESULTS_DIR}/fio_result_${CASE_ID}.csv" >> "${RESULTS_DIR}/fio_result_combined.csv"
-            rm "${RESULTS_DIR}/fio_result_${CASE_ID}.csv"
-            
-            # Cleanup
-            cleanup "$POOL_NAME" "$CONTAINER_NAME" "$MOUNT_POINT"
-            
-            sleep 3
+                ${fio_cmd}
+                success "FIO benchmark completed for ${CASE_ID}"
+                
+                cat "${RESULTS_DIR}/fio_result_${CASE_ID}.csv" >> "${RESULTS_DIR}/fio_result_combined.csv"
+                rm "${RESULTS_DIR}/fio_result_${CASE_ID}.csv"
+                
+                # Cleanup
+                cleanup "$POOL_NAME" "$CONTAINER_NAME" "$MOUNT_POINT"
+                
+                sleep 3
+            done
         done
     done
 done
