@@ -10,7 +10,7 @@
 set -e  # Exit on any error
 
 # Variables
-POOL_NAME=e2sar
+POOL_NAME=e2sar2
 CONTAINER_BASE_NAME="${USER}-fio_test-nj-iops"
 RESULTS_DIR="./fio_results_nj_iops_$(date +%Y-%m-%d_%H-%M-%S)"
 DIRECT=1
