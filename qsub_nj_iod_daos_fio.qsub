@@ -2,8 +2,8 @@
 
 #PBS -A e2sar-daos
 #PBS -l select=1
-#PBS -l walltime=00:59:00
-#PBS -q debug
+#PBS -l walltime=02:00:00
+#PBS -q prod
 #PBS -l filesystems=home:flare:daos_user_fs
 #PBS -j oe
 
@@ -26,12 +26,12 @@ BLOCK_SIZES=("2M")
 RW_CATEGORIES=("RandR")   # mini for testing
 
 # Values for --numjobs
-# NUM_JOBS_SIZES=("16" "32" "64" "128")
-NUM_JOBS_SIZES=("8" "16") # mini for testing
+NUM_JOBS_SIZES=("16" "32" "64" "128")
+# NUM_JOBS_SIZES=("8") # mini for testing
 
 # Values for --iodepth
-# IO_DEPTHS=("1" "4" "8" "16" "32" "64" "128")
-IO_DEPTHS=("32") # mini for testing
+IO_DEPTHS=("1" "4" "8" "16" "32" "64" "128")
+# IO_DEPTHS=("32") # mini for testing
 
 LOG_FILE="$RESULTS_DIR/logs.txt"
 
@@ -81,14 +81,17 @@ cleanup() {
     fi
 
     # Remove mount point
+# Remove mount point
     if [ -d "$mount_point" ]; then
-        rmdir "$mount_point" || warning "Failed to remove directory $mount_point"
+	rmdir "$mount_point" || warning "Failed to remove directory $mount_point"
     fi
 
     # Destroy container
     daos container destroy "$pool_name" "$container_name" || warning "Failed to destroy container $container_name"
     
-    { daos container list "$pool_name" } >> $LOG_FILE
+    { 
+	    daos container list "$pool_name" 
+    } >> $LOG_FILE
 }
 
 # Create results directory.
@@ -128,7 +131,7 @@ for iod in "${IO_DEPTHS[@]}"; do
                 fi
                 
                 # Mount container to /tmp/$POOL_NAME/$CONTAINER_NAME (system default)
-                launch-dfuse.sh $POOL_NAME:$CONTAINER_NAME
+                launch-dfuse.sh "$POOL_NAME:$CONTAINER_NAME"
 
                 # Build FIO command
 
@@ -160,3 +163,5 @@ for iod in "${IO_DEPTHS[@]}"; do
         done
     done
 done
+
+
