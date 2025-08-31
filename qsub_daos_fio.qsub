@@ -94,8 +94,8 @@ module load daos || { error "Failed to load DAOS module"; exit 1; }
 # Verify pool exists
 daos pool list | grep -q -- "$POOL_NAME" || { error "No pool: $POOL_NAME"; exit 1; }
 
-combined_json="${RESULTS_DIR}/fio_result_combined.json"
-echo "[]" > "$combined_json"
+combined_json="${RESULTS_DIR}/combined.json"
+echo '{"jobs":[]}' > "$combined_json"
 
 for iod in "${IO_DEPTHS[@]}"; do
     for nj in "${NUM_JOBS_SIZES[@]}"; do
@@ -118,7 +118,7 @@ for iod in "${IO_DEPTHS[@]}"; do
 
                 # Build FIO command
                 fio_cmd=" taskset -c $NUMA_CPU_CORES fio "
-                fio_cmd+=" --output=${RESULTS_DIR}/fio_results_${CASE_ID}.json"
+                fio_cmd+=" --output=${RESULTS_DIR}/fio_${CASE_ID}.json"
                 fio_cmd+=" --output-format=json"
                 fio_cmd+=" --warnings-fatal"
                 fio_cmd+=" --name=${CASE_ID}"
@@ -140,10 +140,10 @@ for iod in "${IO_DEPTHS[@]}"; do
                 ${fio_cmd} || { error "$fio_cmd failed"; exit 1; }
                 success "FIO benchmark completed for ${CASE_ID}"
 
-                jq -s "$combined_json" "${RESULTS_DIR}/fio_results_${CASE_ID}.json" > "${combined_json}.tmp" 
+		jq -s '{ jobs: (.[0].jobs + .[1].jobs) }' "$combined_json" <(grep -v 'clock setaffinity' "${RESULTS_DIR}/fio_results_${CASE_ID}.json") > "${combined_json}.tmp" 
                 mv "${combined_json}.tmp" "$combined_json"
-                rm "${combined_json}.tmp"
-                
+                rm "${RESULTS_DIR}/fio_results_${CASE_ID}.json"
+
                 # cat "${RESULTS_DIR}/fio_result_${CASE_ID}.csv" >> "${RESULTS_DIR}/fio_result_combined.csv"
                 # rm "${RESULTS_DIR}/fio_result_${CASE_ID}.csv"
                 
