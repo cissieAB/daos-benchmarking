@@ -71,14 +71,14 @@ cleanup() {
     mount_point=/tmp/"$pool_name"/"$container_name"
     
     # Remove mounting point on a compute node
-    #Aurora script sometimes fails to unmount
-    # clean-dfuse.sh $pool_name:$container_name
+    # Aurora script sometimes fails to unmount
+    clean-dfuse.sh $pool_name:$container_name || warning "clean-dfuse.sh failed"
 
     # Unmount if mounted
-    if mount | grep -q "$mount_point"; then
-        fusermount3 -u "$mount_point" || warning "Failed to unmount $mount_point"
-        sleep 2
-    fi
+    # if mount | grep -q "$mount_point"; then
+    #     fusermount3 -u "$mount_point" || warning "Failed to unmount $mount_point"
+    #     sleep 2
+    # fi
 
     # Remove mount point
 # Remove mount point
