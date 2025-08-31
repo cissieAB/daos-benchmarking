@@ -140,8 +140,9 @@ for iod in "${IO_DEPTHS[@]}"; do
                 ${fio_cmd} || { error "$fio_cmd failed"; exit 1; }
                 success "FIO benchmark completed for ${CASE_ID}"
 
-		        jq -s '{ jobs: (.[0].jobs + .[1].jobs) }' "$combined_json" <(grep -v 'clock setaffinity' "${RESULTS_DIR}/fio_results_${CASE_ID}.json") > "${combined_json}.tmp" 
+		        jq -s '{ jobs: (.[0].jobs + .[1].jobs) }' "$combined_json" <(grep -v 'clock setaffinity' "${RESULTS_DIR}/fio_${CASE_ID}.json") > "${combined_json}.tmp" 
                 mv "${combined_json}.tmp" "$combined_json"
+                rm "${RESULTS_DIR}/fio_${CASE_ID}.json"
 
                 # cat "${RESULTS_DIR}/fio_result_${CASE_ID}.csv" >> "${RESULTS_DIR}/fio_result_combined.csv"
                 # rm "${RESULTS_DIR}/fio_result_${CASE_ID}.csv"
