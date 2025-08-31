@@ -142,7 +142,6 @@ for iod in "${IO_DEPTHS[@]}"; do
 
 		        jq -s '{ jobs: (.[0].jobs + .[1].jobs) }' "$combined_json" <(grep -v 'clock setaffinity' "${RESULTS_DIR}/fio_results_${CASE_ID}.json") > "${combined_json}.tmp" 
                 mv "${combined_json}.tmp" "$combined_json"
-                rm "${RESULTS_DIR}/fio_results_${CASE_ID}.json"
 
                 # cat "${RESULTS_DIR}/fio_result_${CASE_ID}.csv" >> "${RESULTS_DIR}/fio_result_combined.csv"
                 # rm "${RESULTS_DIR}/fio_result_${CASE_ID}.csv"
