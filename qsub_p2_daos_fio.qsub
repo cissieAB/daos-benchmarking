@@ -2,7 +2,7 @@
 
 #PBS -A e2sar-daos
 #PBS -l select=1
-#PBS -l walltime=12:30:00
+#PBS -l walltime=5:58:00
 #PBS -q prod
 #PBS -l filesystems=home:flare:daos_user_fs
 #PBS -j oe
@@ -12,7 +12,7 @@ set -e  # Exit on any error
 # Variables
 POOL_NAME=e2sar
 CONTAINER_BASE_NAME="${USER}-fio_test-p2"
-RESULTS_DIR="./fio_results_all_$(date +%Y-%m-%d_%H-%M-%S)"
+RESULTS_DIR="./fio_results_p2_$(date +%Y-%m-%d_%H-%M-%S)"
 LOG_FILE="$RESULTS_DIR/logs.txt"
 
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
@@ -26,13 +26,11 @@ RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal"
 # RW_CATEGORIES=("SeqR" "SeqRH")  # mini for testing
 
 # Values for --numjobs
-NUM_JOBS_SIZES=("16" "32" "64" "128")
-# NUM_JOBS_SIZES=("8")            # mini for testing
+# NUM_JOBS_SIZES=("16" "32" "64" "128")
+NUM_JOBS_SIZES=("32")            # p2
 
 # Values for --iodepth
-# IO_DEPTHS=("1" "8" "16" "32" "64" "128") # full
-# IO_DEPTHS=("1" "8" "16") # part 1
-IO_DEPTHS=("32" "64" "128") # part 2
+IO_DEPTHS=("1" "8" "16" "32" "64" "128") # full
 # IO_DEPTHS=("32")                # mini for testing
 
 get_fio_rw_params() {
@@ -142,7 +140,7 @@ for iod in "${IO_DEPTHS[@]}"; do
                 ${fio_cmd} || { error "$fio_cmd failed"; exit 1; }
                 success "FIO benchmark completed for ${CASE_ID}"
 
-		jq -s '{ jobs: (.[0].jobs + .[1].jobs) }' "$combined_json" <(grep -v 'clock setaffinity' "${RESULTS_DIR}/fio_results_${CASE_ID}.json") > "${combined_json}.tmp" 
+		        jq -s '{ jobs: (.[0].jobs + .[1].jobs) }' "$combined_json" <(grep -v 'clock setaffinity' "${RESULTS_DIR}/fio_results_${CASE_ID}.json") > "${combined_json}.tmp" 
                 mv "${combined_json}.tmp" "$combined_json"
                 rm "${RESULTS_DIR}/fio_results_${CASE_ID}.json"
 

@@ -11,8 +11,8 @@ set -e  # Exit on any error
 
 # Variables
 POOL_NAME=e2sar
-CONTAINER_BASE_NAME="${USER}-fio_test-p1"
-RESULTS_DIR="./fio_results_p1_$(date +%Y-%m-%d_%H-%M-%S)"
+CONTAINER_BASE_NAME="${USER}-fio_test-p4"
+RESULTS_DIR="./fio_results_p4_$(date +%Y-%m-%d_%H-%M-%S)"
 LOG_FILE="$RESULTS_DIR/logs.txt"
 
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
@@ -27,7 +27,7 @@ RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal"
 
 # Values for --numjobs
 # NUM_JOBS_SIZES=("16" "32" "64" "128")
-NUM_JOBS_SIZES=("16")            # p1
+NUM_JOBS_SIZES=("128")            # p4
 
 # Values for --iodepth
 IO_DEPTHS=("1" "8" "16" "32" "64" "128") # full
