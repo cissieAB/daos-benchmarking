@@ -140,9 +140,8 @@ for iod in "${IO_DEPTHS[@]}"; do
                 ${fio_cmd} || { error "$fio_cmd failed"; exit 1; }
                 success "FIO benchmark completed for ${CASE_ID}"
 
-                jq -s '.[0] + .[1]' "$combined_json" "${RESULTS_DIR}/fio_results_${CASE_ID}.json" > "${combined_json}.tmp" \
-                    && mv "${combined_json}.tmp" "$combined_json"
-                rm "${RESULTS_DIR}/fio_results_${CASE_ID}.json"
+                jq -s "$combined_json" "${RESULTS_DIR}/fio_results_${CASE_ID}.json" > "${combined_json}.tmp" 
+                mv "${combined_json}.tmp" "$combined_json"
                 rm "${combined_json}.tmp"
                 
                 # cat "${RESULTS_DIR}/fio_result_${CASE_ID}.csv" >> "${RESULTS_DIR}/fio_result_combined.csv"
