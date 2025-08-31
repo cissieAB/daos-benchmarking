@@ -12,7 +12,7 @@ set -e  # Exit on any error
 # Variables
 POOL_NAME=e2sar
 CONTAINER_BASE_NAME="${USER}-fio_test-nj-iops"
-RESULTS_DIR="./fio_results_nj_iops_$(date +%Y-%m-%d_%H-%M-%S)"
+RESULTS_DIR="./fio_results_all_$(date +%Y-%m-%d_%H-%M-%S)"
 LOG_FILE="$RESULTS_DIR/logs.txt"
 
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
