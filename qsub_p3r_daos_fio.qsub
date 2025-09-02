@@ -2,7 +2,7 @@
 
 #PBS -A e2sar-daos
 #PBS -l select=1
-#PBS -l walltime=5:58:00
+#PBS -l walltime=5:59:00
 #PBS -q prod
 #PBS -l filesystems=home:flare:daos_user_fs
 #PBS -j oe
@@ -11,8 +11,8 @@ set -e  # Exit on any error
 
 # Variables
 POOL_NAME=e2sar
-CONTAINER_BASE_NAME="${USER}-fio_test-p2"
-RESULTS_DIR="./fio_results_p2_$(date +%Y-%m-%d_%H-%M-%S)"
+CONTAINER_BASE_NAME="${USER}-fio_test-p3r"
+RESULTS_DIR="./fio_results_p3r_$(date +%Y-%m-%d_%H-%M-%S)"
 LOG_FILE="$RESULTS_DIR/logs.txt"
 
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
@@ -22,12 +22,13 @@ BLOCK_SIZES=("4K" "16K" "1M" "2M" "4M")
 # BLOCK_SIZES=("2M")              # mini for testing
 
 # Keys for setting --rw and --rwmixread
-RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal" "RandWH" "RandW")
+# RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal" "RandWH" "RandW")
+RW_CATEGORIES=("RandR" "RandRH" "RandBal" "RandWH" "RandW") # random only
 # RW_CATEGORIES=("SeqR" "SeqRH")  # mini for testing
 
 # Values for --numjobs
 # NUM_JOBS_SIZES=("16" "32" "64" "128")
-NUM_JOBS_SIZES=("32")            # p2
+NUM_JOBS_SIZES=("64")            # p3
 
 # Values for --iodepth
 IO_DEPTHS=("1" "8" "16" "32" "64" "128") # full
@@ -149,7 +150,6 @@ for iod in "${IO_DEPTHS[@]}"; do
                 
                 # Cleanup
                 cleanup "$POOL_NAME" "$CONTAINER_NAME" "$MOUNT_POINT"
-                sleep 3
             done
         done
     done
