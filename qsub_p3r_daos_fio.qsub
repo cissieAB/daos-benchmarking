@@ -76,13 +76,12 @@ cleanup() {
     # Remove mounting point on a compute node
     # clean-dfuse.sh $pool_name:$container_name || warning "clean-dfuse.sh failed"
     fusermount3 -u "$mount_point" || warning "Failed to unmount $mount_point"
-    sleep 1
+    sleep 2
 
     # Remove mount point
     if [ -d "$mount_point" ]; then
 	rmdir "$mount_point" || warning "Failed to remove directory $mount_point"
     fi
-    sleep 1
 
     # Destroy container
     daos container destroy "$pool_name" "$container_name" || warning "Failed to destroy container $container_name"
