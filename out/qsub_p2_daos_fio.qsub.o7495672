@@ -1,0 +1,48 @@
+Successfully created container b24a6e69-72bf-4a87-908e-a8850692904c
+  Container UUID : b24a6e69-72bf-4a87-908e-a8850692904c
+  Container Label: rgeorge-fio_test-p2_SeqR-4K-32-1    
+  Container Type : POSIX                               
+
+---------------
+x4514c5s4b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.157.217' to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4514c5s4b0n0: kill: cannot find process "dfuse"
+pdsh@x4514c5s4b0n0: x4514c5s4b0n0: ssh exited with exit code 1
+x4514c5s4b0n0: Warning: Permanently added the ECDSA host key for IP address '10.112.151.136' to the list of known hosts.
+x4514c5s4b0n0: kill: cannot find process "dfuse"
+pdsh@x4514c5s4b0n0: x4514c5s4b0n0: ssh exited with exit code 1
+x4514c5s4b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p2_SeqR-4K-32-1 not found in /etc/mtab
+pdsh@x4514c5s4b0n0: x4514c5s4b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p2_SeqR-4K-32-1
+Successfully created container a79b0f66-caa2-4ef8-ad04-9546a4b4dcf1
+  Container UUID : a79b0f66-caa2-4ef8-ad04-9546a4b4dcf1
+  Container Label: rgeorge-fio_test-p2_SeqRH-4K-32-1   
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4514c5s4b0n0: kill: cannot find process "dfuse"
+pdsh@x4514c5s4b0n0: x4514c5s4b0n0: ssh exited with exit code 1
+x4514c5s4b0n0: kill: cannot find process "dfuse"
+pdsh@x4514c5s4b0n0: x4514c5s4b0n0: ssh exited with exit code 1
+x4514c5s4b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p2_SeqRH-4K-32-1 not found in /etc/mtab
+pdsh@x4514c5s4b0n0: x4514c5s4b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p2_SeqRH-4K-32-1
+Successfully created container 6e55a243-6117-4217-897a-ad21154b2a60
+  Container UUID : 6e55a243-6117-4217-897a-ad21154b2a60
+  Container Label: rgeorge-fio_test-p2_SeqBal-4K-32-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4514c5s4b0n0: kill: cannot find process "dfuse"
+pdsh@x4514c5s4b0n0: x4514c5s4b0n0: ssh exited with exit code 1

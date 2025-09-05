@@ -1,0 +1,14 @@
+Successfully created container a86fecfb-6229-4db7-a6cd-66b2ed95b6e6
+  Container UUID : a86fecfb-6229-4db7-a6cd-66b2ed95b6e6
+  Container Label: rgeorge-fio_test-p3s_SeqR-4K-64-128 
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1---------------
+x4302c2s1b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added 'x4302c2s1b0n0.hsn.cm.aurora.alcf.anl.gov,10.112.30.60' (ECDSA) to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-4K-64-128

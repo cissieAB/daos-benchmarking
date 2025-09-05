@@ -1,0 +1,901 @@
+Successfully created container 1edecdb1-0998-4e6a-bfb2-b04183d950c2
+  Container UUID : 1edecdb1-0998-4e6a-bfb2-b04183d950c2
+  Container Label: rgeorge-fio_test-p4r_RandR-4K-128-1 
+  Container Type : POSIX                               
+
+---------------
+x4519c0s5b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added 'x4519c0s5b0n0.hsn.cm.aurora.alcf.anl.gov,10.112.113.62' (ECDSA) to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: Warning: Permanently added the ECDSA host key for IP address '10.112.113.29' to the list of known hosts.
+x4519c0s5b0n0: Warning: Permanently added the ECDSA host key for IP address '10.112.113.24' to the list of known hosts.
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: Warning: Permanently added the ECDSA host key for IP address '10.112.113.42' to the list of known hosts.
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandR-4K-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandR-4K-128-1
+Successfully created container 031c4172-90bd-4e0b-8802-d3ef11b7209c
+  Container UUID : 031c4172-90bd-4e0b-8802-d3ef11b7209c
+  Container Label: rgeorge-fio_test-p4r_RandRH-4K-128-1
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: Warning: Permanently added the ECDSA host key for IP address '10.112.113.65' to the list of known hosts.
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: Warning: Permanently added the ECDSA host key for IP address '10.112.113.50' to the list of known hosts.
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandRH-4K-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandRH-4K-128-1
+Successfully created container 4b85f889-1bb5-411b-b47e-d39cce6bdaca
+  Container UUID : 4b85f889-1bb5-411b-b47e-d39cce6bdaca 
+  Container Label: rgeorge-fio_test-p4r_RandBal-4K-128-1
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: Warning: Permanently added the ECDSA host key for IP address '10.112.113.74' to the list of known hosts.
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: Warning: Permanently added the ECDSA host key for IP address '10.112.113.9' to the list of known hosts.
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandBal-4K-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandBal-4K-128-1
+Successfully created container 646b6850-cf15-4811-a249-06f56ef3a731
+  Container UUID : 646b6850-cf15-4811-a249-06f56ef3a731
+  Container Label: rgeorge-fio_test-p4r_RandWH-4K-128-1
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandWH-4K-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandWH-4K-128-1
+Successfully created container e06bcfae-0fd4-49c0-8c1b-fe9d833353c8
+  Container UUID : e06bcfae-0fd4-49c0-8c1b-fe9d833353c8
+  Container Label: rgeorge-fio_test-p4r_RandW-4K-128-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandW-4K-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandW-4K-128-1
+Successfully created container 0d63fc1b-5bef-416b-bafa-d9f4849844d3
+  Container UUID : 0d63fc1b-5bef-416b-bafa-d9f4849844d3
+  Container Label: rgeorge-fio_test-p4r_RandR-16K-128-1
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandR-16K-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandR-16K-128-1
+Successfully created container 38cb8ab3-3a6f-4f8c-8e0e-cf6068a47893
+  Container UUID : 38cb8ab3-3a6f-4f8c-8e0e-cf6068a47893 
+  Container Label: rgeorge-fio_test-p4r_RandRH-16K-128-1
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandRH-16K-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandRH-16K-128-1
+Successfully created container 001a9fd5-9f7e-4e77-8a86-bbfe42153d52
+  Container UUID : 001a9fd5-9f7e-4e77-8a86-bbfe42153d52  
+  Container Label: rgeorge-fio_test-p4r_RandBal-16K-128-1
+  Container Type : POSIX                                 
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandBal-16K-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandBal-16K-128-1
+Successfully created container 9f11aca8-2375-4bb9-b445-08611e1a7426
+  Container UUID : 9f11aca8-2375-4bb9-b445-08611e1a7426 
+  Container Label: rgeorge-fio_test-p4r_RandWH-16K-128-1
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandWH-16K-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandWH-16K-128-1
+Successfully created container 2bc43f3d-e3e6-4651-b886-3c00a9d51b95
+  Container UUID : 2bc43f3d-e3e6-4651-b886-3c00a9d51b95
+  Container Label: rgeorge-fio_test-p4r_RandW-16K-128-1
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandW-16K-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandW-16K-128-1
+Successfully created container 0339ecfb-d227-4d1e-bdf7-acf9578b3a9f
+  Container UUID : 0339ecfb-d227-4d1e-bdf7-acf9578b3a9f
+  Container Label: rgeorge-fio_test-p4r_RandR-1M-128-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandR-1M-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandR-1M-128-1
+Successfully created container e3a699a5-dcdc-4d66-8ea6-2495ba18479f
+  Container UUID : e3a699a5-dcdc-4d66-8ea6-2495ba18479f
+  Container Label: rgeorge-fio_test-p4r_RandRH-1M-128-1
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandRH-1M-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandRH-1M-128-1
+Successfully created container be473372-073c-40c7-8752-2d971e9bcffc
+  Container UUID : be473372-073c-40c7-8752-2d971e9bcffc 
+  Container Label: rgeorge-fio_test-p4r_RandBal-1M-128-1
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandBal-1M-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandBal-1M-128-1
+Successfully created container 19d57996-6dfe-4027-aae7-fdca0054a7d4
+  Container UUID : 19d57996-6dfe-4027-aae7-fdca0054a7d4
+  Container Label: rgeorge-fio_test-p4r_RandWH-1M-128-1
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandWH-1M-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandWH-1M-128-1
+Successfully created container e7868710-d4a5-4a29-abcd-12e9b819db95
+  Container UUID : e7868710-d4a5-4a29-abcd-12e9b819db95
+  Container Label: rgeorge-fio_test-p4r_RandW-1M-128-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandW-1M-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandW-1M-128-1
+Successfully created container 27bb446b-5f7b-4cd0-846c-ef552497f97f
+  Container UUID : 27bb446b-5f7b-4cd0-846c-ef552497f97f
+  Container Label: rgeorge-fio_test-p4r_RandR-2M-128-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandR-2M-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandR-2M-128-1
+Successfully created container a7e18939-2550-46fa-9f80-721f6964bee5
+  Container UUID : a7e18939-2550-46fa-9f80-721f6964bee5
+  Container Label: rgeorge-fio_test-p4r_RandRH-2M-128-1
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandRH-2M-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandRH-2M-128-1
+Successfully created container 5bec2084-e28e-45c4-9a3d-b26ca6841121
+  Container UUID : 5bec2084-e28e-45c4-9a3d-b26ca6841121 
+  Container Label: rgeorge-fio_test-p4r_RandBal-2M-128-1
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandBal-2M-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandBal-2M-128-1
+Successfully created container 28e67a80-37e7-4a99-8a3c-97ababaf5038
+  Container UUID : 28e67a80-37e7-4a99-8a3c-97ababaf5038
+  Container Label: rgeorge-fio_test-p4r_RandWH-2M-128-1
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandWH-2M-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandWH-2M-128-1
+Successfully created container a9172821-99f5-47f0-8b3d-ece80f047841
+  Container UUID : a9172821-99f5-47f0-8b3d-ece80f047841
+  Container Label: rgeorge-fio_test-p4r_RandW-2M-128-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandW-2M-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandW-2M-128-1
+Successfully created container 147f6cb8-a53c-491e-90f0-81ff1e37d732
+  Container UUID : 147f6cb8-a53c-491e-90f0-81ff1e37d732
+  Container Label: rgeorge-fio_test-p4r_RandR-4M-128-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandR-4M-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandR-4M-128-1
+Successfully created container fa35af90-4c1e-421c-85d8-ee2a8fdf434b
+  Container UUID : fa35af90-4c1e-421c-85d8-ee2a8fdf434b
+  Container Label: rgeorge-fio_test-p4r_RandRH-4M-128-1
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandRH-4M-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandRH-4M-128-1
+Successfully created container 5d2f4f4b-2674-4ba8-b9cd-0a2dd5a82753
+  Container UUID : 5d2f4f4b-2674-4ba8-b9cd-0a2dd5a82753 
+  Container Label: rgeorge-fio_test-p4r_RandBal-4M-128-1
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandBal-4M-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandBal-4M-128-1
+Successfully created container 4d072b74-26c4-41a7-82e6-31770f29040c
+  Container UUID : 4d072b74-26c4-41a7-82e6-31770f29040c
+  Container Label: rgeorge-fio_test-p4r_RandWH-4M-128-1
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandWH-4M-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandWH-4M-128-1
+Successfully created container 0f9ea4dd-88a1-4e99-b19f-1ed1bfb47566
+  Container UUID : 0f9ea4dd-88a1-4e99-b19f-1ed1bfb47566
+  Container Label: rgeorge-fio_test-p4r_RandW-4M-128-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandW-4M-128-1 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandW-4M-128-1
+Successfully created container 43f870aa-1410-4778-b637-8c50234710b9
+  Container UUID : 43f870aa-1410-4778-b637-8c50234710b9
+  Container Label: rgeorge-fio_test-p4r_RandR-4K-128-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandR-4K-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandR-4K-128-8
+Successfully created container 546390ad-7443-4636-9de9-53ba09b8b859
+  Container UUID : 546390ad-7443-4636-9de9-53ba09b8b859
+  Container Label: rgeorge-fio_test-p4r_RandRH-4K-128-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandRH-4K-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandRH-4K-128-8
+Successfully created container 3d894ce9-0866-44ee-8852-7e092976ec6f
+  Container UUID : 3d894ce9-0866-44ee-8852-7e092976ec6f 
+  Container Label: rgeorge-fio_test-p4r_RandBal-4K-128-8
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandBal-4K-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandBal-4K-128-8
+Successfully created container 46024e32-e578-4158-9842-4da09ee5c5cc
+  Container UUID : 46024e32-e578-4158-9842-4da09ee5c5cc
+  Container Label: rgeorge-fio_test-p4r_RandWH-4K-128-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandWH-4K-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandWH-4K-128-8
+Successfully created container 9d14e05b-3e2f-4d7e-9014-bd08cb7f4bf8
+  Container UUID : 9d14e05b-3e2f-4d7e-9014-bd08cb7f4bf8
+  Container Label: rgeorge-fio_test-p4r_RandW-4K-128-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandW-4K-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandW-4K-128-8
+Successfully created container f51b1d9b-a10f-4e58-8477-e977ab45405e
+  Container UUID : f51b1d9b-a10f-4e58-8477-e977ab45405e
+  Container Label: rgeorge-fio_test-p4r_RandR-16K-128-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandR-16K-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandR-16K-128-8
+Successfully created container c9d9f9cb-9da6-46a6-9c4b-b83a90e51341
+  Container UUID : c9d9f9cb-9da6-46a6-9c4b-b83a90e51341 
+  Container Label: rgeorge-fio_test-p4r_RandRH-16K-128-8
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandRH-16K-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandRH-16K-128-8
+Successfully created container 76aa84ed-6fe6-4e49-ae27-a562dd056eda
+  Container UUID : 76aa84ed-6fe6-4e49-ae27-a562dd056eda  
+  Container Label: rgeorge-fio_test-p4r_RandBal-16K-128-8
+  Container Type : POSIX                                 
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandBal-16K-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandBal-16K-128-8
+Successfully created container 79a299d6-82b4-4147-a3a3-23586ae01c68
+  Container UUID : 79a299d6-82b4-4147-a3a3-23586ae01c68 
+  Container Label: rgeorge-fio_test-p4r_RandWH-16K-128-8
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandWH-16K-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandWH-16K-128-8
+Successfully created container 97d7dcea-003f-4db1-a911-c1eba2835c52
+  Container UUID : 97d7dcea-003f-4db1-a911-c1eba2835c52
+  Container Label: rgeorge-fio_test-p4r_RandW-16K-128-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandW-16K-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandW-16K-128-8
+Successfully created container caeba51a-f67c-4f11-a178-95a6e987b000
+  Container UUID : caeba51a-f67c-4f11-a178-95a6e987b000
+  Container Label: rgeorge-fio_test-p4r_RandR-1M-128-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandR-1M-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandR-1M-128-8
+Successfully created container 1e436ece-b83f-4fc4-b6e9-61efeedd3e34
+  Container UUID : 1e436ece-b83f-4fc4-b6e9-61efeedd3e34
+  Container Label: rgeorge-fio_test-p4r_RandRH-1M-128-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandRH-1M-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandRH-1M-128-8
+Successfully created container 50fc6c6d-788c-47f3-9a54-8554669a8d61
+  Container UUID : 50fc6c6d-788c-47f3-9a54-8554669a8d61 
+  Container Label: rgeorge-fio_test-p4r_RandBal-1M-128-8
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandBal-1M-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandBal-1M-128-8
+Successfully created container f7c59b11-b2a7-4784-9a0f-a05e8a36a552
+  Container UUID : f7c59b11-b2a7-4784-9a0f-a05e8a36a552
+  Container Label: rgeorge-fio_test-p4r_RandWH-1M-128-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandWH-1M-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandWH-1M-128-8
+Successfully created container 7ee934a2-9086-43db-bcdb-c174bd19003b
+  Container UUID : 7ee934a2-9086-43db-bcdb-c174bd19003b
+  Container Label: rgeorge-fio_test-p4r_RandW-1M-128-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandW-1M-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandW-1M-128-8
+Successfully created container ba9d9c01-6d10-409e-ae45-8c43de06e919
+  Container UUID : ba9d9c01-6d10-409e-ae45-8c43de06e919
+  Container Label: rgeorge-fio_test-p4r_RandR-2M-128-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandR-2M-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandR-2M-128-8
+Successfully created container a9caa39d-e4e7-4b89-8cc8-834db5f9e583
+  Container UUID : a9caa39d-e4e7-4b89-8cc8-834db5f9e583
+  Container Label: rgeorge-fio_test-p4r_RandRH-2M-128-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandRH-2M-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandRH-2M-128-8
+Successfully created container 9c9d1597-a78e-4dda-bc03-57d042a01668
+  Container UUID : 9c9d1597-a78e-4dda-bc03-57d042a01668 
+  Container Label: rgeorge-fio_test-p4r_RandBal-2M-128-8
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandBal-2M-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandBal-2M-128-8
+Successfully created container 89e77353-a249-449a-a140-68426d6014e3
+  Container UUID : 89e77353-a249-449a-a140-68426d6014e3
+  Container Label: rgeorge-fio_test-p4r_RandWH-2M-128-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandWH-2M-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandWH-2M-128-8
+Successfully created container 3ac51ec4-b6ec-4f7c-bada-1e21e4808f30
+  Container UUID : 3ac51ec4-b6ec-4f7c-bada-1e21e4808f30
+  Container Label: rgeorge-fio_test-p4r_RandW-2M-128-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandW-2M-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandW-2M-128-8
+Successfully created container 2bfd9597-0a8e-469b-a838-8a43133d7f1e
+  Container UUID : 2bfd9597-0a8e-469b-a838-8a43133d7f1e
+  Container Label: rgeorge-fio_test-p4r_RandR-4M-128-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandR-4M-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandR-4M-128-8
+Successfully created container 6905b757-3a3f-4191-a50f-0475102c5401
+  Container UUID : 6905b757-3a3f-4191-a50f-0475102c5401
+  Container Label: rgeorge-fio_test-p4r_RandRH-4M-128-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandRH-4M-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandRH-4M-128-8
+Successfully created container 64684fa5-be91-476c-b2b7-e2c2ab1023eb
+  Container UUID : 64684fa5-be91-476c-b2b7-e2c2ab1023eb 
+  Container Label: rgeorge-fio_test-p4r_RandBal-4M-128-8
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandBal-4M-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandBal-4M-128-8
+Successfully created container b2c52277-ee1f-4c5b-9918-b0907a26bd86
+  Container UUID : b2c52277-ee1f-4c5b-9918-b0907a26bd86
+  Container Label: rgeorge-fio_test-p4r_RandWH-4M-128-8
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandWH-4M-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandWH-4M-128-8
+Successfully created container ff2f8616-388d-444b-aa93-fabc8f060aff
+  Container UUID : ff2f8616-388d-444b-aa93-fabc8f060aff
+  Container Label: rgeorge-fio_test-p4r_RandW-4M-128-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandW-4M-128-8 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandW-4M-128-8
+Successfully created container d0391366-7381-4de8-9c05-e3e67c6c9946
+  Container UUID : d0391366-7381-4de8-9c05-e3e67c6c9946
+  Container Label: rgeorge-fio_test-p4r_RandR-4K-128-16
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandR-4K-128-16 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandR-4K-128-16
+Successfully created container 5caaa2ea-70bd-44d4-b3f7-dacf59e09887
+  Container UUID : 5caaa2ea-70bd-44d4-b3f7-dacf59e09887 
+  Container Label: rgeorge-fio_test-p4r_RandRH-4K-128-16
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandRH-4K-128-16 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandRH-4K-128-16
+Successfully created container 8e1503e4-4fcb-494c-a469-c242779a032a
+  Container UUID : 8e1503e4-4fcb-494c-a469-c242779a032a  
+  Container Label: rgeorge-fio_test-p4r_RandBal-4K-128-16
+  Container Type : POSIX                                 
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandBal-4K-128-16 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandBal-4K-128-16
+Successfully created container a6c73e64-a026-4baa-bf52-563537cc64f5
+  Container UUID : a6c73e64-a026-4baa-bf52-563537cc64f5 
+  Container Label: rgeorge-fio_test-p4r_RandWH-4K-128-16
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandWH-4K-128-16 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandWH-4K-128-16
+Successfully created container f193ecb4-f9ad-4a7d-8ec9-94ac6ed8ddbd
+  Container UUID : f193ecb4-f9ad-4a7d-8ec9-94ac6ed8ddbd
+  Container Label: rgeorge-fio_test-p4r_RandW-4K-128-16
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandW-4K-128-16 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandW-4K-128-16
+Successfully created container 6a9996fc-5fea-4fbf-9d46-754ee5298d92
+  Container UUID : 6a9996fc-5fea-4fbf-9d46-754ee5298d92 
+  Container Label: rgeorge-fio_test-p4r_RandR-16K-128-16
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandR-16K-128-16 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandR-16K-128-16
+Successfully created container 7d5ae220-7b2c-4bfa-ae5a-bcfac8446545
+  Container UUID : 7d5ae220-7b2c-4bfa-ae5a-bcfac8446545  
+  Container Label: rgeorge-fio_test-p4r_RandRH-16K-128-16
+  Container Type : POSIX                                 
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+x4519c0s5b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p4r_RandRH-16K-128-16 not found in /etc/mtab
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p4r_RandRH-16K-128-16
+Successfully created container 6ca76f89-9f35-4e59-846c-bca822792ffd
+  Container UUID : 6ca76f89-9f35-4e59-846c-bca822792ffd   
+  Container Label: rgeorge-fio_test-p4r_RandBal-16K-128-16
+  Container Type : POSIX                                  
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+x4519c0s5b0n0: kill: cannot find process "dfuse"
+pdsh@x4519c0s5b0n0: x4519c0s5b0n0: ssh exited with exit code 1
+=>> PBS: job killed: walltime 21652 exceeded limit 21540

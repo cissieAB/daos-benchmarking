@@ -1,0 +1,51 @@
+Successfully created container c6c8d5b3-5b76-4022-b1e2-8a11f05dcbb3
+  Container UUID : c6c8d5b3-5b76-4022-b1e2-8a11f05dcbb3
+  Container Label: rgeorge-fio_test-p2_SeqR-4K-32-1    
+  Container Type : POSIX                               
+
+---------------
+x4514c5s4b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.151.123' to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+grep: ./fio_results_p2_2025-08-31_23-04-45/fio_results_SeqR-4K-32-1.json: No such file or directory
+x4514c5s4b0n0: Warning: Permanently added the ECDSA host key for IP address '10.112.151.134' to the list of known hosts.
+x4514c5s4b0n0: Warning: Permanently added the ECDSA host key for IP address '10.112.151.112' to the list of known hosts.
+x4514c5s4b0n0: kill: cannot find process "dfuse"
+pdsh@x4514c5s4b0n0: x4514c5s4b0n0: ssh exited with exit code 1
+x4514c5s4b0n0: kill: cannot find process "dfuse"
+pdsh@x4514c5s4b0n0: x4514c5s4b0n0: ssh exited with exit code 1
+x4514c5s4b0n0: Warning: Permanently added the ECDSA host key for IP address '10.112.151.117' to the list of known hosts.
+x4514c5s4b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p2_SeqR-4K-32-1 not found in /etc/mtab
+pdsh@x4514c5s4b0n0: x4514c5s4b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p2_SeqR-4K-32-1
+Successfully created container dc9432e5-5ecf-4e56-8394-92f1349c8a52
+  Container UUID : dc9432e5-5ecf-4e56-8394-92f1349c8a52
+  Container Label: rgeorge-fio_test-p2_SeqRH-4K-32-1   
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+grep: ./fio_results_p2_2025-08-31_23-04-45/fio_results_SeqRH-4K-32-1.json: No such file or directory
+x4514c5s4b0n0: Warning: Permanently added the ECDSA host key for IP address '10.112.162.249' to the list of known hosts.
+x4514c5s4b0n0: kill: cannot find process "dfuse"
+pdsh@x4514c5s4b0n0: x4514c5s4b0n0: ssh exited with exit code 1
+x4514c5s4b0n0: kill: cannot find process "dfuse"
+pdsh@x4514c5s4b0n0: x4514c5s4b0n0: ssh exited with exit code 1
+x4514c5s4b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p2_SeqRH-4K-32-1 not found in /etc/mtab
+pdsh@x4514c5s4b0n0: x4514c5s4b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p2_SeqRH-4K-32-1
+Successfully created container 643d60ae-c491-42e1-a661-3d2eaa882dc7
+  Container UUID : 643d60ae-c491-42e1-a661-3d2eaa882dc7
+  Container Label: rgeorge-fio_test-p2_SeqBal-4K-32-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument

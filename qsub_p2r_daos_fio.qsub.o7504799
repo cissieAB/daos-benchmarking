@@ -1,0 +1,1516 @@
+Successfully created container 1cc47ab7-dff1-4535-ac2a-a1a65cc1b552
+  Container UUID : 1cc47ab7-dff1-4535-ac2a-a1a65cc1b552
+  Container Label: rgeorge-fio_test-p2r_RandR-4K-32-1  
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1---------------
+x4717c4s0b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added 'x4717c4s0b0n0.hsn.cm.aurora.alcf.anl.gov,10.112.230.199' (ECDSA) to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-4K-32-1
+Successfully created container 180d966a-6185-4e49-8d17-8aac78a8f807
+  Container UUID : 180d966a-6185-4e49-8d17-8aac78a8f807
+  Container Label: rgeorge-fio_test-p2r_RandRH-4K-32-1 
+  Container Type : POSIX                               
+
+---------------
+x4717c4s0b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.230.176' to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-11:31:02.96 x4717c4s0b0n0 DAOS[14807/14807/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandRH-4K-32-1: DER_IO(-2001): I / O error
+Successfully created container 35d1f92f-ee4f-47aa-bfa5-52068804e314
+  Container UUID : 35d1f92f-ee4f-47aa-bfa5-52068804e314
+  Container Label: rgeorge-fio_test-p2r_RandBal-4K-32-1
+  Container Type : POSIX                               
+
+---------------
+x4717c4s0b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.230.216' to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-11:37:20.63 x4717c4s0b0n0 DAOS[16511/16511/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandBal-4K-32-1: DER_IO(-2001): I / O error
+Successfully created container a49b14da-afc9-449b-b6f1-592c886ef2bc
+  Container UUID : a49b14da-afc9-449b-b6f1-592c886ef2bc
+  Container Label: rgeorge-fio_test-p2r_RandWH-4K-32-1 
+  Container Type : POSIX                               
+
+---------------
+x4717c4s0b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.230.171' to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-11:43:17.40 x4717c4s0b0n0 DAOS[19127/19135/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandWH-4K-32-1: DER_IO(-2001): I / O error
+Successfully created container e350dfbf-f467-414a-8308-ded7c97cd0d1
+  Container UUID : e350dfbf-f467-414a-8308-ded7c97cd0d1
+  Container Label: rgeorge-fio_test-p2r_RandW-4K-32-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-4K-32-1
+Successfully created container 7cbfe913-15f9-43df-a37e-06dba1a0d49e
+  Container UUID : 7cbfe913-15f9-43df-a37e-06dba1a0d49e
+  Container Label: rgeorge-fio_test-p2r_RandR-16K-32-1 
+  Container Type : POSIX                               
+
+---------------
+x4717c4s0b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.230.228' to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-16K-32-1
+Successfully created container 895485c5-167a-4e72-ba2b-e07f20bdfea4
+  Container UUID : 895485c5-167a-4e72-ba2b-e07f20bdfea4
+  Container Label: rgeorge-fio_test-p2r_RandRH-16K-32-1
+  Container Type : POSIX                               
+
+---------------
+x4717c4s0b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.230.182' to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-11:50:47.46 x4717c4s0b0n0 DAOS[21806/21813/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandRH-16K-32-1: DER_IO(-2001): I / O error
+Successfully created container 72fbd286-a3a1-471a-bc09-c197535e9ce3
+  Container UUID : 72fbd286-a3a1-471a-bc09-c197535e9ce3 
+  Container Label: rgeorge-fio_test-p2r_RandBal-16K-32-1
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-11:55:00.15 x4717c4s0b0n0 DAOS[23011/23011/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandBal-16K-32-1: DER_IO(-2001): I / O error
+Successfully created container d4b21dcc-335a-49f0-9bc3-37863f3add55
+  Container UUID : d4b21dcc-335a-49f0-9bc3-37863f3add55
+  Container Label: rgeorge-fio_test-p2r_RandWH-16K-32-1
+  Container Type : POSIX                               
+
+---------------
+x4717c4s0b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.230.159' to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-16K-32-1
+Successfully created container ffbbc8bb-7e89-446d-8649-f2f5baa859ee
+  Container UUID : ffbbc8bb-7e89-446d-8649-f2f5baa859ee
+  Container Label: rgeorge-fio_test-p2r_RandW-16K-32-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-16K-32-1
+Successfully created container 337e9b92-6c05-484a-8872-ac344c7747a6
+  Container UUID : 337e9b92-6c05-484a-8872-ac344c7747a6
+  Container Label: rgeorge-fio_test-p2r_RandR-1M-32-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-1M-32-1
+Successfully created container 857db6b6-571a-4444-9a31-6aab7c00f814
+  Container UUID : 857db6b6-571a-4444-9a31-6aab7c00f814
+  Container Label: rgeorge-fio_test-p2r_RandRH-1M-32-1 
+  Container Type : POSIX                               
+
+---------------
+x4717c4s0b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.230.201' to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-1M-32-1
+Successfully created container 682e7eac-3678-4a51-9f21-91ae79fe1dbd
+  Container UUID : 682e7eac-3678-4a51-9f21-91ae79fe1dbd
+  Container Label: rgeorge-fio_test-p2r_RandBal-1M-32-1
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-1M-32-1
+Successfully created container 9d8d9faa-c066-4c3a-87ec-f0cd79c5e952
+  Container UUID : 9d8d9faa-c066-4c3a-87ec-f0cd79c5e952
+  Container Label: rgeorge-fio_test-p2r_RandWH-1M-32-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-1M-32-1
+Successfully created container 5e802f87-b72a-4388-913c-4e7b0aef4177
+  Container UUID : 5e802f87-b72a-4388-913c-4e7b0aef4177
+  Container Label: rgeorge-fio_test-p2r_RandW-1M-32-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-1M-32-1
+Successfully created container b09bba0a-525f-475a-9f45-1cb6f89bb961
+  Container UUID : b09bba0a-525f-475a-9f45-1cb6f89bb961
+  Container Label: rgeorge-fio_test-p2r_RandR-2M-32-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-2M-32-1
+Successfully created container 49f38ff0-9b1d-4f5c-b75c-87507fc894e5
+  Container UUID : 49f38ff0-9b1d-4f5c-b75c-87507fc894e5
+  Container Label: rgeorge-fio_test-p2r_RandRH-2M-32-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-2M-32-1
+Successfully created container 1b6a8fb0-8b50-47ca-9d34-c9bf5495fe73
+  Container UUID : 1b6a8fb0-8b50-47ca-9d34-c9bf5495fe73
+  Container Label: rgeorge-fio_test-p2r_RandBal-2M-32-1
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-2M-32-1
+Successfully created container 99d80b10-6435-4470-935a-1f4040ad7094
+  Container UUID : 99d80b10-6435-4470-935a-1f4040ad7094
+  Container Label: rgeorge-fio_test-p2r_RandWH-2M-32-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-2M-32-1
+Successfully created container 7fc0153b-c8b5-4aee-9537-f90ab6a6c3e3
+  Container UUID : 7fc0153b-c8b5-4aee-9537-f90ab6a6c3e3
+  Container Label: rgeorge-fio_test-p2r_RandW-2M-32-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-2M-32-1
+Successfully created container f0646603-b288-4f0c-aead-a5425d3ab517
+  Container UUID : f0646603-b288-4f0c-aead-a5425d3ab517
+  Container Label: rgeorge-fio_test-p2r_RandR-4M-32-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-4M-32-1
+Successfully created container 9814a767-a2cf-4f39-9004-75e7374242ee
+  Container UUID : 9814a767-a2cf-4f39-9004-75e7374242ee
+  Container Label: rgeorge-fio_test-p2r_RandRH-4M-32-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-4M-32-1
+Successfully created container baedbf72-e8d8-4437-b70a-f7e258440fff
+  Container UUID : baedbf72-e8d8-4437-b70a-f7e258440fff
+  Container Label: rgeorge-fio_test-p2r_RandBal-4M-32-1
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-4M-32-1
+Successfully created container c29f08ff-54e9-46c4-9a27-ac409f8a46b7
+  Container UUID : c29f08ff-54e9-46c4-9a27-ac409f8a46b7
+  Container Label: rgeorge-fio_test-p2r_RandWH-4M-32-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-4M-32-1
+Successfully created container 600d00bb-d065-427a-bdeb-f948c2b20318
+  Container UUID : 600d00bb-d065-427a-bdeb-f948c2b20318
+  Container Label: rgeorge-fio_test-p2r_RandW-4M-32-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-4M-32-1
+Successfully created container 49a2ad5f-0e4a-4f3c-802e-24138d4ef7f3
+  Container UUID : 49a2ad5f-0e4a-4f3c-802e-24138d4ef7f3
+  Container Label: rgeorge-fio_test-p2r_RandR-4K-32-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-4K-32-8
+Successfully created container f305a310-d1d1-4e18-8203-6db7c6f76b3d
+  Container UUID : f305a310-d1d1-4e18-8203-6db7c6f76b3d
+  Container Label: rgeorge-fio_test-p2r_RandRH-4K-32-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-4K-32-8
+Successfully created container 5a349569-89ee-4f18-b514-7251256791ce
+  Container UUID : 5a349569-89ee-4f18-b514-7251256791ce
+  Container Label: rgeorge-fio_test-p2r_RandBal-4K-32-8
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-12:31:09.58 x4717c4s0b0n0 DAOS[42680/42680/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandBal-4K-32-8: DER_IO(-2001): I / O error
+Successfully created container 722e429d-0588-43a9-921d-b10417cd3266
+  Container UUID : 722e429d-0588-43a9-921d-b10417cd3266
+  Container Label: rgeorge-fio_test-p2r_RandWH-4K-32-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-12:37:35.70 x4717c4s0b0n0 DAOS[44374/44374/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandWH-4K-32-8: DER_IO(-2001): I / O error
+Successfully created container a5079cd9-fc75-40b7-9354-8a3114f56bf0
+  Container UUID : a5079cd9-fc75-40b7-9354-8a3114f56bf0
+  Container Label: rgeorge-fio_test-p2r_RandW-4K-32-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-4K-32-8
+Successfully created container 73c3276c-e47c-45df-ac67-b0d56de0bc7e
+  Container UUID : 73c3276c-e47c-45df-ac67-b0d56de0bc7e
+  Container Label: rgeorge-fio_test-p2r_RandR-16K-32-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-16K-32-8
+Successfully created container 0e01aa0b-e1d6-47a0-9ee5-a1fe9ceb4038
+  Container UUID : 0e01aa0b-e1d6-47a0-9ee5-a1fe9ceb4038
+  Container Label: rgeorge-fio_test-p2r_RandRH-16K-32-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-16K-32-8
+Successfully created container d4d7611c-f247-496e-afeb-404cb2dcb781
+  Container UUID : d4d7611c-f247-496e-afeb-404cb2dcb781 
+  Container Label: rgeorge-fio_test-p2r_RandBal-16K-32-8
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-16K-32-8
+Successfully created container 249492cc-4071-4eb8-9a96-4ab391e9ffc5
+  Container UUID : 249492cc-4071-4eb8-9a96-4ab391e9ffc5
+  Container Label: rgeorge-fio_test-p2r_RandWH-16K-32-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-12:51:18.64 x4717c4s0b0n0 DAOS[49904/49904/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandWH-16K-32-8: DER_IO(-2001): I / O error
+Successfully created container 1c3fe2a4-55c5-4e3f-a7fc-238868f8f22a
+  Container UUID : 1c3fe2a4-55c5-4e3f-a7fc-238868f8f22a
+  Container Label: rgeorge-fio_test-p2r_RandW-16K-32-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-16K-32-8
+Successfully created container 784f98dc-6005-445d-9048-4c05d4eec244
+  Container UUID : 784f98dc-6005-445d-9048-4c05d4eec244
+  Container Label: rgeorge-fio_test-p2r_RandR-1M-32-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-1M-32-8
+Successfully created container 8590f621-b617-45c1-9c92-a7da5459517e
+  Container UUID : 8590f621-b617-45c1-9c92-a7da5459517e
+  Container Label: rgeorge-fio_test-p2r_RandRH-1M-32-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-1M-32-8
+Successfully created container f39da088-c679-4ff5-b5ea-18a63601f28b
+  Container UUID : f39da088-c679-4ff5-b5ea-18a63601f28b
+  Container Label: rgeorge-fio_test-p2r_RandBal-1M-32-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-1M-32-8
+Successfully created container 3aafb279-66b9-4437-bb52-88d2d32dea77
+  Container UUID : 3aafb279-66b9-4437-bb52-88d2d32dea77
+  Container Label: rgeorge-fio_test-p2r_RandWH-1M-32-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-1M-32-8
+Successfully created container 133d7c7a-20dd-4ca9-a896-1a8ebb3c3ba4
+  Container UUID : 133d7c7a-20dd-4ca9-a896-1a8ebb3c3ba4
+  Container Label: rgeorge-fio_test-p2r_RandW-1M-32-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-1M-32-8
+Successfully created container 3652376a-da4b-41f1-b0df-f826294dee80
+  Container UUID : 3652376a-da4b-41f1-b0df-f826294dee80
+  Container Label: rgeorge-fio_test-p2r_RandR-2M-32-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-2M-32-8
+Successfully created container f3de1753-9c4a-4c1c-8c4b-f5dbf0484f4e
+  Container UUID : f3de1753-9c4a-4c1c-8c4b-f5dbf0484f4e
+  Container Label: rgeorge-fio_test-p2r_RandRH-2M-32-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-2M-32-8
+Successfully created container c706d698-9fa4-46c1-be0c-ecf370287f28
+  Container UUID : c706d698-9fa4-46c1-be0c-ecf370287f28
+  Container Label: rgeorge-fio_test-p2r_RandBal-2M-32-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-2M-32-8
+Successfully created container 987e373d-2b90-4e04-969e-6394a45062d3
+  Container UUID : 987e373d-2b90-4e04-969e-6394a45062d3
+  Container Label: rgeorge-fio_test-p2r_RandWH-2M-32-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-2M-32-8
+Successfully created container ceb34dcb-84d3-411d-957e-4add7bb01063
+  Container UUID : ceb34dcb-84d3-411d-957e-4add7bb01063
+  Container Label: rgeorge-fio_test-p2r_RandW-2M-32-8  
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-2M-32-8
+Successfully created container 50ed62ea-8098-48a7-b5ac-e50169877549
+  Container UUID : 50ed62ea-8098-48a7-b5ac-e50169877549
+  Container Label: rgeorge-fio_test-p2r_RandR-4M-32-8  
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-4M-32-8
+Successfully created container c99f38d7-03d1-4fd6-a3cd-3c37efd93973
+  Container UUID : c99f38d7-03d1-4fd6-a3cd-3c37efd93973
+  Container Label: rgeorge-fio_test-p2r_RandRH-4M-32-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-4M-32-8
+Successfully created container 96c7b0aa-c5b1-408e-b292-52cded4d4f9c
+  Container UUID : 96c7b0aa-c5b1-408e-b292-52cded4d4f9c
+  Container Label: rgeorge-fio_test-p2r_RandBal-4M-32-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-4M-32-8
+Successfully created container 2856a032-99f6-41a0-9162-8d8f9a278001
+  Container UUID : 2856a032-99f6-41a0-9162-8d8f9a278001
+  Container Label: rgeorge-fio_test-p2r_RandWH-4M-32-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-4M-32-8
+Successfully created container edd10169-ab5d-403c-be6e-b78ac0fc9c99
+  Container UUID : edd10169-ab5d-403c-be6e-b78ac0fc9c99
+  Container Label: rgeorge-fio_test-p2r_RandW-4M-32-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-4M-32-8
+Successfully created container 058cef1b-549f-42a7-b6f4-7fdd2ebb37ca
+  Container UUID : 058cef1b-549f-42a7-b6f4-7fdd2ebb37ca
+  Container Label: rgeorge-fio_test-p2r_RandR-4K-32-16 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-4K-32-16
+Successfully created container e2f8a9c3-b08a-4a10-92a5-bd19fd6b61a2
+  Container UUID : e2f8a9c3-b08a-4a10-92a5-bd19fd6b61a2
+  Container Label: rgeorge-fio_test-p2r_RandRH-4K-32-16
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-13:21:38.03 x4717c4s0b0n0 DAOS[67155/67155/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandRH-4K-32-16: DER_IO(-2001): I / O error
+Successfully created container 91916185-be0b-4630-9a35-2b724c862427
+  Container UUID : 91916185-be0b-4630-9a35-2b724c862427 
+  Container Label: rgeorge-fio_test-p2r_RandBal-4K-32-16
+  Container Type : POSIX                                
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-13:28:04.59 x4717c4s0b0n0 DAOS[68836/68836/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandBal-4K-32-16: DER_IO(-2001): I / O error
+Successfully created container d7f6ec43-8441-44d8-ae31-add728ac7ce9
+  Container UUID : d7f6ec43-8441-44d8-ae31-add728ac7ce9
+  Container Label: rgeorge-fio_test-p2r_RandWH-4K-32-16
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-4K-32-16
+Successfully created container 88e2c7a9-ec1a-443d-9824-4c7a797de536
+  Container UUID : 88e2c7a9-ec1a-443d-9824-4c7a797de536
+  Container Label: rgeorge-fio_test-p2r_RandW-4K-32-16 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-4K-32-16
+Successfully created container ad95b47f-4bbb-4c9c-b1b4-d8af007182db
+  Container UUID : ad95b47f-4bbb-4c9c-b1b4-d8af007182db
+  Container Label: rgeorge-fio_test-p2r_RandR-16K-32-16
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-16K-32-16
+Successfully created container b0e8e6fa-729f-4944-a856-0c7837b78200
+  Container UUID : b0e8e6fa-729f-4944-a856-0c7837b78200 
+  Container Label: rgeorge-fio_test-p2r_RandRH-16K-32-16
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-16K-32-16
+Successfully created container c561edf3-7b73-4971-bb41-eda1aa66c2f3
+  Container UUID : c561edf3-7b73-4971-bb41-eda1aa66c2f3  
+  Container Label: rgeorge-fio_test-p2r_RandBal-16K-32-16
+  Container Type : POSIX                                 
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-13:42:13.59 x4717c4s0b0n0 DAOS[74366/74366/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandBal-16K-32-16: DER_IO(-2001): I / O error
+Successfully created container c53ba9a1-3e4e-456a-b005-6ed6d2e6826a
+  Container UUID : c53ba9a1-3e4e-456a-b005-6ed6d2e6826a 
+  Container Label: rgeorge-fio_test-p2r_RandWH-16K-32-16
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-16K-32-16
+Successfully created container 7e6c1b31-e3c3-4be9-a409-ce1f086e6fca
+  Container UUID : 7e6c1b31-e3c3-4be9-a409-ce1f086e6fca
+  Container Label: rgeorge-fio_test-p2r_RandW-16K-32-16
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-16K-32-16
+Successfully created container 32cf8298-4001-4858-90db-70e2bda97cd1
+  Container UUID : 32cf8298-4001-4858-90db-70e2bda97cd1
+  Container Label: rgeorge-fio_test-p2r_RandR-1M-32-16 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-1M-32-16
+Successfully created container 91af7326-c4ee-4999-89ed-ea15d9e8c599
+  Container UUID : 91af7326-c4ee-4999-89ed-ea15d9e8c599
+  Container Label: rgeorge-fio_test-p2r_RandRH-1M-32-16
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-1M-32-16
+Successfully created container 4ad36906-ee6c-476f-b7ac-30b221bf2919
+  Container UUID : 4ad36906-ee6c-476f-b7ac-30b221bf2919 
+  Container Label: rgeorge-fio_test-p2r_RandBal-1M-32-16
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-1M-32-16
+Successfully created container f2a40bee-8ad5-4a1d-af8a-7f6d3a0739cf
+  Container UUID : f2a40bee-8ad5-4a1d-af8a-7f6d3a0739cf
+  Container Label: rgeorge-fio_test-p2r_RandWH-1M-32-16
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-1M-32-16
+Successfully created container 3b0859dc-118f-4c91-98b7-1ebd6be89955
+  Container UUID : 3b0859dc-118f-4c91-98b7-1ebd6be89955
+  Container Label: rgeorge-fio_test-p2r_RandW-1M-32-16 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-1M-32-16
+Successfully created container 17afd6e8-9530-478e-ac00-d2dd7268b50e
+  Container UUID : 17afd6e8-9530-478e-ac00-d2dd7268b50e
+  Container Label: rgeorge-fio_test-p2r_RandR-2M-32-16 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-2M-32-16
+Successfully created container af21239b-2a51-4c1a-ba33-874b667f1c36
+  Container UUID : af21239b-2a51-4c1a-ba33-874b667f1c36
+  Container Label: rgeorge-fio_test-p2r_RandRH-2M-32-16
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-2M-32-16
+Successfully created container f3175cd7-075b-4233-8965-c3d509c3c391
+  Container UUID : f3175cd7-075b-4233-8965-c3d509c3c391 
+  Container Label: rgeorge-fio_test-p2r_RandBal-2M-32-16
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-2M-32-16
+Successfully created container 6e46bddc-29d5-4712-9db5-8a2abce88958
+  Container UUID : 6e46bddc-29d5-4712-9db5-8a2abce88958
+  Container Label: rgeorge-fio_test-p2r_RandWH-2M-32-16
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-2M-32-16
+Successfully created container 185d88ab-c2a6-4889-a9d2-a41af04252a6
+  Container UUID : 185d88ab-c2a6-4889-a9d2-a41af04252a6
+  Container Label: rgeorge-fio_test-p2r_RandW-2M-32-16 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-2M-32-16
+Successfully created container 75c8262a-006a-41e9-87c7-a3a9ff397049
+  Container UUID : 75c8262a-006a-41e9-87c7-a3a9ff397049
+  Container Label: rgeorge-fio_test-p2r_RandR-4M-32-16 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-4M-32-16
+Successfully created container 0f6ba991-47c0-49aa-8f6c-4aa8bb50b104
+  Container UUID : 0f6ba991-47c0-49aa-8f6c-4aa8bb50b104
+  Container Label: rgeorge-fio_test-p2r_RandRH-4M-32-16
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-4M-32-16
+Successfully created container 4883c7fd-120c-449a-9c37-13d296f92ef0
+  Container UUID : 4883c7fd-120c-449a-9c37-13d296f92ef0 
+  Container Label: rgeorge-fio_test-p2r_RandBal-4M-32-16
+  Container Type : POSIX                                
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-4M-32-16
+Successfully created container ae83d109-00c7-4336-9e37-1356e45e5b42
+  Container UUID : ae83d109-00c7-4336-9e37-1356e45e5b42
+  Container Label: rgeorge-fio_test-p2r_RandWH-4M-32-16
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-4M-32-16
+Successfully created container 9d1ad4eb-9d04-4193-939a-5a8598a19494
+  Container UUID : 9d1ad4eb-9d04-4193-939a-5a8598a19494
+  Container Label: rgeorge-fio_test-p2r_RandW-4M-32-16 
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-4M-32-16
+Successfully created container 560638c4-29f3-4cd8-b0cc-fba6afe51318
+  Container UUID : 560638c4-29f3-4cd8-b0cc-fba6afe51318
+  Container Label: rgeorge-fio_test-p2r_RandR-4K-32-32 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-4K-32-32
+Successfully created container 5ce21834-b410-49fc-9d6a-5e589481c3f3
+  Container UUID : 5ce21834-b410-49fc-9d6a-5e589481c3f3
+  Container Label: rgeorge-fio_test-p2r_RandRH-4K-32-32
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-14:18:55.53 x4717c4s0b0n0 DAOS[92383/92383/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandRH-4K-32-32: DER_IO(-2001): I / O error
+Successfully created container f3af7ff4-e71e-4136-aee3-b27415d8096a
+  Container UUID : f3af7ff4-e71e-4136-aee3-b27415d8096a 
+  Container Label: rgeorge-fio_test-p2r_RandBal-4K-32-32
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-14:25:10.35 x4717c4s0b0n0 DAOS[94528/94528/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandBal-4K-32-32: DER_IO(-2001): I / O error
+Successfully created container d26de7ba-4cc0-4c7e-9c9d-5228b766b386
+  Container UUID : d26de7ba-4cc0-4c7e-9c9d-5228b766b386
+  Container Label: rgeorge-fio_test-p2r_RandWH-4K-32-32
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-4K-32-32
+Successfully created container 96d6f26a-bfb9-471f-b37e-3e245b9e24f6
+  Container UUID : 96d6f26a-bfb9-471f-b37e-3e245b9e24f6
+  Container Label: rgeorge-fio_test-p2r_RandW-4K-32-32 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-4K-32-32
+Successfully created container cc94b6b5-b2bf-4ac4-b58c-4373915cb913
+  Container UUID : cc94b6b5-b2bf-4ac4-b58c-4373915cb913
+  Container Label: rgeorge-fio_test-p2r_RandR-16K-32-32
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-16K-32-32
+Successfully created container f0928cf7-b61b-468f-aae5-93fefb1448c1
+  Container UUID : f0928cf7-b61b-468f-aae5-93fefb1448c1 
+  Container Label: rgeorge-fio_test-p2r_RandRH-16K-32-32
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-16K-32-32
+Successfully created container 0e8a8249-fdc8-40a3-a0db-b9432099f061
+  Container UUID : 0e8a8249-fdc8-40a3-a0db-b9432099f061  
+  Container Label: rgeorge-fio_test-p2r_RandBal-16K-32-32
+  Container Type : POSIX                                 
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-14:38:48.83 x4717c4s0b0n0 DAOS[99580/99580/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandBal-16K-32-32: DER_IO(-2001): I / O error
+Successfully created container 0bbdc15a-2081-4fa1-85bf-c4f98958155a
+  Container UUID : 0bbdc15a-2081-4fa1-85bf-c4f98958155a 
+  Container Label: rgeorge-fio_test-p2r_RandWH-16K-32-32
+  Container Type : POSIX                                
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-14:42:59.46 x4717c4s0b0n0 DAOS[100789/100789/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandWH-16K-32-32: DER_IO(-2001): I / O error
+Successfully created container 39477aff-28ec-42c3-b28d-550cfe9ef576
+  Container UUID : 39477aff-28ec-42c3-b28d-550cfe9ef576
+  Container Label: rgeorge-fio_test-p2r_RandW-16K-32-32
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-14:46:06.98 x4717c4s0b0n0 DAOS[101522/101522/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandW-16K-32-32: DER_IO(-2001): I / O error
+Successfully created container 3568dff7-46ab-43a1-a73f-d8d884046675
+  Container UUID : 3568dff7-46ab-43a1-a73f-d8d884046675
+  Container Label: rgeorge-fio_test-p2r_RandR-1M-32-32 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-1M-32-32
+Successfully created container 2f1d96c8-d97c-45e7-a618-fddc3e296d29
+  Container UUID : 2f1d96c8-d97c-45e7-a618-fddc3e296d29
+  Container Label: rgeorge-fio_test-p2r_RandRH-1M-32-32
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-1M-32-32
+Successfully created container 30ef9ec0-af35-4ea2-bd4d-203d9230144f
+  Container UUID : 30ef9ec0-af35-4ea2-bd4d-203d9230144f 
+  Container Label: rgeorge-fio_test-p2r_RandBal-1M-32-32
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-1M-32-32
+Successfully created container fe36bf6e-ab6d-44cf-a791-4a27e0fdc6ce
+  Container UUID : fe36bf6e-ab6d-44cf-a791-4a27e0fdc6ce
+  Container Label: rgeorge-fio_test-p2r_RandWH-1M-32-32
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-1M-32-32
+Successfully created container a2ee80d9-8ed7-453d-a464-4f1a32d299f5
+  Container UUID : a2ee80d9-8ed7-453d-a464-4f1a32d299f5
+  Container Label: rgeorge-fio_test-p2r_RandW-1M-32-32 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-1M-32-32
+Successfully created container 52916fee-df82-4619-8275-eaf142f3099d
+  Container UUID : 52916fee-df82-4619-8275-eaf142f3099d
+  Container Label: rgeorge-fio_test-p2r_RandR-2M-32-32 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-2M-32-32
+Successfully created container 3fcec70c-5984-4378-9f19-ff883d19a304
+  Container UUID : 3fcec70c-5984-4378-9f19-ff883d19a304
+  Container Label: rgeorge-fio_test-p2r_RandRH-2M-32-32
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-2M-32-32
+Successfully created container 1493bb70-6f82-4c6a-9964-942bf911905e
+  Container UUID : 1493bb70-6f82-4c6a-9964-942bf911905e 
+  Container Label: rgeorge-fio_test-p2r_RandBal-2M-32-32
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-2M-32-32
+Successfully created container 90fb1ada-bdcb-4662-b74f-53abf14f6a98
+  Container UUID : 90fb1ada-bdcb-4662-b74f-53abf14f6a98
+  Container Label: rgeorge-fio_test-p2r_RandWH-2M-32-32
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-2M-32-32
+Successfully created container c98bdd1a-9541-42f5-bf97-dfcba0dffd62
+  Container UUID : c98bdd1a-9541-42f5-bf97-dfcba0dffd62
+  Container Label: rgeorge-fio_test-p2r_RandW-2M-32-32 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-2M-32-32
+Successfully created container 92d9be38-9906-4c41-98a1-bcb6b43145b0
+  Container UUID : 92d9be38-9906-4c41-98a1-bcb6b43145b0
+  Container Label: rgeorge-fio_test-p2r_RandR-4M-32-32 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-4M-32-32
+Successfully created container e80220ce-e73c-4d71-bfd0-26227a95ee61
+  Container UUID : e80220ce-e73c-4d71-bfd0-26227a95ee61
+  Container Label: rgeorge-fio_test-p2r_RandRH-4M-32-32
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-4M-32-32
+Successfully created container f3324acf-1daf-43c9-8a26-53e8ab08e9af
+  Container UUID : f3324acf-1daf-43c9-8a26-53e8ab08e9af 
+  Container Label: rgeorge-fio_test-p2r_RandBal-4M-32-32
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-4M-32-32
+Successfully created container 1e6d27eb-ebd7-4e9b-878e-1886a27b90f7
+  Container UUID : 1e6d27eb-ebd7-4e9b-878e-1886a27b90f7
+  Container Label: rgeorge-fio_test-p2r_RandWH-4M-32-32
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-4M-32-32
+Successfully created container 4fdc25b2-8871-4698-bdc8-6139e1624a27
+  Container UUID : 4fdc25b2-8871-4698-bdc8-6139e1624a27
+  Container Label: rgeorge-fio_test-p2r_RandW-4M-32-32 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-4M-32-32
+Successfully created container a2659ebe-9c1f-4535-91a6-fa0a8fd752ff
+  Container UUID : a2659ebe-9c1f-4535-91a6-fa0a8fd752ff
+  Container Label: rgeorge-fio_test-p2r_RandR-4K-32-64 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-4K-32-64
+Successfully created container 2bd2c06a-9d79-4ded-96bb-669554f2ffb6
+  Container UUID : 2bd2c06a-9d79-4ded-96bb-669554f2ffb6
+  Container Label: rgeorge-fio_test-p2r_RandRH-4K-32-64
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-4K-32-64
+Successfully created container a66f736a-9203-4a22-a8e0-fe5a6e4b6df8
+  Container UUID : a66f736a-9203-4a22-a8e0-fe5a6e4b6df8 
+  Container Label: rgeorge-fio_test-p2r_RandBal-4K-32-64
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-15:19:44.74 x4717c4s0b0n0 DAOS[119828/119828/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandBal-4K-32-64: DER_IO(-2001): I / O error
+Successfully created container ed6b6d1b-8f0a-4c8c-8d45-778592db4f09
+  Container UUID : ed6b6d1b-8f0a-4c8c-8d45-778592db4f09
+  Container Label: rgeorge-fio_test-p2r_RandWH-4K-32-64
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-15:25:42.64 x4717c4s0b0n0 DAOS[121972/121979/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandWH-4K-32-64: DER_IO(-2001): I / O error
+Successfully created container a01d6650-a9d0-4ffb-b4cd-9ec7d0e51fed
+  Container UUID : a01d6650-a9d0-4ffb-b4cd-9ec7d0e51fed
+  Container Label: rgeorge-fio_test-p2r_RandW-4K-32-64 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-4K-32-64
+Successfully created container 55173718-941a-45f9-8d40-75c729b39519
+  Container UUID : 55173718-941a-45f9-8d40-75c729b39519
+  Container Label: rgeorge-fio_test-p2r_RandR-16K-32-64
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-16K-32-64
+Successfully created container 6199d7df-5e56-4eb5-b7fb-d8fb5cffe2b6
+  Container UUID : 6199d7df-5e56-4eb5-b7fb-d8fb5cffe2b6 
+  Container Label: rgeorge-fio_test-p2r_RandRH-16K-32-64
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-16K-32-64
+Successfully created container d36fec6e-b18f-41cc-a7f7-2c9650f9131b
+  Container UUID : d36fec6e-b18f-41cc-a7f7-2c9650f9131b  
+  Container Label: rgeorge-fio_test-p2r_RandBal-16K-32-64
+  Container Type : POSIX                                 
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-15:35:31.35 x4717c4s0b0n0 DAOS[125833/125833/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandBal-16K-32-64: DER_IO(-2001): I / O error
+Successfully created container bb918eda-c98b-4c0b-8163-f588d3700d56
+  Container UUID : bb918eda-c98b-4c0b-8163-f588d3700d56 
+  Container Label: rgeorge-fio_test-p2r_RandWH-16K-32-64
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-15:39:39.48 x4717c4s0b0n0 DAOS[127033/127033/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandWH-16K-32-64: DER_IO(-2001): I / O error
+Successfully created container 5e288050-b715-4f7c-b23f-aacf0d735e68
+  Container UUID : 5e288050-b715-4f7c-b23f-aacf0d735e68
+  Container Label: rgeorge-fio_test-p2r_RandW-16K-32-64
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-16K-32-64
+Successfully created container 6d2fe6da-74d4-45cf-9b16-f195520d1caf
+  Container UUID : 6d2fe6da-74d4-45cf-9b16-f195520d1caf
+  Container Label: rgeorge-fio_test-p2r_RandR-1M-32-64 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-1M-32-64
+Successfully created container 9a7b80b6-b745-443f-9814-4ea3a7410aba
+  Container UUID : 9a7b80b6-b745-443f-9814-4ea3a7410aba
+  Container Label: rgeorge-fio_test-p2r_RandRH-1M-32-64
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-1M-32-64
+Successfully created container bb0a2646-68f4-4a44-96b0-d950c4f92c6b
+  Container UUID : bb0a2646-68f4-4a44-96b0-d950c4f92c6b 
+  Container Label: rgeorge-fio_test-p2r_RandBal-1M-32-64
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-1M-32-64
+Successfully created container 45374275-4551-4c99-9cd5-b1756f729867
+  Container UUID : 45374275-4551-4c99-9cd5-b1756f729867
+  Container Label: rgeorge-fio_test-p2r_RandWH-1M-32-64
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-1M-32-64
+Successfully created container 78dce1e2-09d4-4e43-85f2-3fc7a010da91
+  Container UUID : 78dce1e2-09d4-4e43-85f2-3fc7a010da91
+  Container Label: rgeorge-fio_test-p2r_RandW-1M-32-64 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-1M-32-64
+Successfully created container d41890c9-dea4-4301-a5ff-38e56f03ab22
+  Container UUID : d41890c9-dea4-4301-a5ff-38e56f03ab22
+  Container Label: rgeorge-fio_test-p2r_RandR-2M-32-64 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-2M-32-64
+Successfully created container d67c553e-0675-4b5e-ad63-71880212db9a
+  Container UUID : d67c553e-0675-4b5e-ad63-71880212db9a
+  Container Label: rgeorge-fio_test-p2r_RandRH-2M-32-64
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-2M-32-64
+Successfully created container 3886d2bd-38d0-45e3-9a35-e1710b57994b
+  Container UUID : 3886d2bd-38d0-45e3-9a35-e1710b57994b 
+  Container Label: rgeorge-fio_test-p2r_RandBal-2M-32-64
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-2M-32-64
+Successfully created container 2c630e13-39f8-4d9d-b161-cfbd721d510c
+  Container UUID : 2c630e13-39f8-4d9d-b161-cfbd721d510c
+  Container Label: rgeorge-fio_test-p2r_RandWH-2M-32-64
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-2M-32-64
+Successfully created container a8b045c9-9898-4507-a46f-a2b9ea75d10d
+  Container UUID : a8b045c9-9898-4507-a46f-a2b9ea75d10d
+  Container Label: rgeorge-fio_test-p2r_RandW-2M-32-64 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-2M-32-64
+Successfully created container 636d4edc-a4fe-478a-8372-3e1ee0b18d24
+  Container UUID : 636d4edc-a4fe-478a-8372-3e1ee0b18d24
+  Container Label: rgeorge-fio_test-p2r_RandR-4M-32-64 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-4M-32-64
+Successfully created container 9a5b76b9-bc9a-4eed-b6a4-9d6f0ad8637f
+  Container UUID : 9a5b76b9-bc9a-4eed-b6a4-9d6f0ad8637f
+  Container Label: rgeorge-fio_test-p2r_RandRH-4M-32-64
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-4M-32-64
+Successfully created container 7df215d1-3bd6-43eb-b622-4dccc1bf209e
+  Container UUID : 7df215d1-3bd6-43eb-b622-4dccc1bf209e 
+  Container Label: rgeorge-fio_test-p2r_RandBal-4M-32-64
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-4M-32-64
+Successfully created container 45cf4897-7393-4a66-844f-6cc936a68d0a
+  Container UUID : 45cf4897-7393-4a66-844f-6cc936a68d0a
+  Container Label: rgeorge-fio_test-p2r_RandWH-4M-32-64
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-4M-32-64
+Successfully created container 02ee557c-3601-4ceb-8849-203ed5a313e3
+  Container UUID : 02ee557c-3601-4ceb-8849-203ed5a313e3
+  Container Label: rgeorge-fio_test-p2r_RandW-4M-32-64 
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-4M-32-64
+Successfully created container 7f71db46-243c-44c8-98b6-bec172f1ab40
+  Container UUID : 7f71db46-243c-44c8-98b6-bec172f1ab40
+  Container Label: rgeorge-fio_test-p2r_RandR-4K-32-128
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-4K-32-128
+Successfully created container 43b7dbae-9f35-4f03-8976-37cb7f27796b
+  Container UUID : 43b7dbae-9f35-4f03-8976-37cb7f27796b 
+  Container Label: rgeorge-fio_test-p2r_RandRH-4K-32-128
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-16:12:14.17 x4717c4s0b0n0 DAOS[145737/145737/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandRH-4K-32-128: DER_IO(-2001): I / O error
+Successfully created container 87e75d6f-e5dd-4bd5-b36e-bebe54e169d2
+  Container UUID : 87e75d6f-e5dd-4bd5-b36e-bebe54e169d2  
+  Container Label: rgeorge-fio_test-p2r_RandBal-4K-32-128
+  Container Type : POSIX                                 
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-4K-32-128
+Successfully created container 3c18bd6b-56d8-4b1c-89ec-3c19cb085565
+  Container UUID : 3c18bd6b-56d8-4b1c-89ec-3c19cb085565 
+  Container Label: rgeorge-fio_test-p2r_RandWH-4K-32-128
+  Container Type : POSIX                                
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-16:23:35.22 x4717c4s0b0n0 DAOS[148627/148627/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandWH-4K-32-128: DER_IO(-2001): I / O error
+Successfully created container abd6b3e9-6da8-4cc5-b06e-5c07f3783f16
+  Container UUID : abd6b3e9-6da8-4cc5-b06e-5c07f3783f16
+  Container Label: rgeorge-fio_test-p2r_RandW-4K-32-128
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-4K-32-128
+Successfully created container 22093755-c6c7-4c08-8580-b780a9bb6781
+  Container UUID : 22093755-c6c7-4c08-8580-b780a9bb6781 
+  Container Label: rgeorge-fio_test-p2r_RandR-16K-32-128
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-16K-32-128
+Successfully created container 91d3df81-12e6-48e7-8878-0c1a36412ba3
+  Container UUID : 91d3df81-12e6-48e7-8878-0c1a36412ba3  
+  Container Label: rgeorge-fio_test-p2r_RandRH-16K-32-128
+  Container Type : POSIX                                 
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-16:31:02.12 x4717c4s0b0n0 DAOS[152211/152211/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandRH-16K-32-128: DER_IO(-2001): I / O error
+Successfully created container eb926c5d-9c61-47cd-b184-7adf395aced9
+  Container UUID : eb926c5d-9c61-47cd-b184-7adf395aced9   
+  Container Label: rgeorge-fio_test-p2r_RandBal-16K-32-128
+  Container Type : POSIX                                  
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/04-16:35:12.88 x4717c4s0b0n0 DAOS[152968/152968/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p2r_RandBal-16K-32-128: DER_IO(-2001): I / O error
+Successfully created container a5a8a644-040b-45ab-9a37-afe9c12d732d
+  Container UUID : a5a8a644-040b-45ab-9a37-afe9c12d732d  
+  Container Label: rgeorge-fio_test-p2r_RandWH-16K-32-128
+  Container Type : POSIX                                 
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-16K-32-128
+Successfully created container 40b1e54d-f281-4083-bec8-265af07b73cc
+  Container UUID : 40b1e54d-f281-4083-bec8-265af07b73cc 
+  Container Label: rgeorge-fio_test-p2r_RandW-16K-32-128
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-16K-32-128
+Successfully created container f3fd1fe7-0292-433e-8de5-fb231f6bd849
+  Container UUID : f3fd1fe7-0292-433e-8de5-fb231f6bd849
+  Container Label: rgeorge-fio_test-p2r_RandR-1M-32-128
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-1M-32-128
+Successfully created container 4562335b-0890-4be8-98ef-7b65268a6d51
+  Container UUID : 4562335b-0890-4be8-98ef-7b65268a6d51 
+  Container Label: rgeorge-fio_test-p2r_RandRH-1M-32-128
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-1M-32-128
+Successfully created container 66b5d30e-97de-4b9e-9ea5-ad7e59a83cae
+  Container UUID : 66b5d30e-97de-4b9e-9ea5-ad7e59a83cae  
+  Container Label: rgeorge-fio_test-p2r_RandBal-1M-32-128
+  Container Type : POSIX                                 
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-1M-32-128
+Successfully created container a16a9c14-6042-42c1-87b0-1d8a2a6b49bc
+  Container UUID : a16a9c14-6042-42c1-87b0-1d8a2a6b49bc 
+  Container Label: rgeorge-fio_test-p2r_RandWH-1M-32-128
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-1M-32-128
+Successfully created container 52d97a68-6ad1-416e-8c79-cf09c97e1499
+  Container UUID : 52d97a68-6ad1-416e-8c79-cf09c97e1499
+  Container Label: rgeorge-fio_test-p2r_RandW-1M-32-128
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-1M-32-128
+Successfully created container 8b812465-470f-44b6-b5cf-4a0411eb298e
+  Container UUID : 8b812465-470f-44b6-b5cf-4a0411eb298e
+  Container Label: rgeorge-fio_test-p2r_RandR-2M-32-128
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandR-2M-32-128
+Successfully created container 9c3c553d-36ce-4e21-bd5f-377c94c71bef
+  Container UUID : 9c3c553d-36ce-4e21-bd5f-377c94c71bef 
+  Container Label: rgeorge-fio_test-p2r_RandRH-2M-32-128
+  Container Type : POSIX                                
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandRH-2M-32-128
+Successfully created container 6cbba33f-f541-45af-b51b-220600f3dc4f
+  Container UUID : 6cbba33f-f541-45af-b51b-220600f3dc4f  
+  Container Label: rgeorge-fio_test-p2r_RandBal-2M-32-128
+  Container Type : POSIX                                 
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandBal-2M-32-128
+Successfully created container 80e95041-0760-4812-9276-34814e340b23
+  Container UUID : 80e95041-0760-4812-9276-34814e340b23 
+  Container Label: rgeorge-fio_test-p2r_RandWH-2M-32-128
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandWH-2M-32-128
+Successfully created container f7f6baba-cc7e-4f6d-9942-b19d716147af
+  Container UUID : f7f6baba-cc7e-4f6d-9942-b19d716147af
+  Container Label: rgeorge-fio_test-p2r_RandW-2M-32-128
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p2r_RandW-2M-32-128
+Successfully created container 34fe6293-deb3-403d-bf5d-0dc4fcfd8090
+  Container UUID : 34fe6293-deb3-403d-bf5d-0dc4fcfd8090
+  Container Label: rgeorge-fio_test-p2r_RandR-4M-32-128
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+=>> PBS: job killed: walltime 21543 exceeded limit 21540

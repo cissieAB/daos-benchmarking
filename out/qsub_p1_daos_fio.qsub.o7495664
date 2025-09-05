@@ -1,0 +1,72 @@
+Successfully created container 615998d2-2231-4ac3-974b-fa855b5d2501
+  Container UUID : 615998d2-2231-4ac3-974b-fa855b5d2501
+  Container Label: rgeorge-fio_test-p1_SeqR-4K-16-1    
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1---------------
+x4514c1s6b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added 'x4514c1s6b0n0.hsn.cm.aurora.alcf.anl.gov,10.112.152.49' (ECDSA) to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+grep: ./fio_results_p1_2025-08-31_23-04-45/fio_results_SeqR-4K-16-1.json: No such file or directory
+x4514c1s6b0n0: Warning: Permanently added the ECDSA host key for IP address '10.112.158.35' to the list of known hosts.
+x4514c1s6b0n0: Warning: Permanently added the ECDSA host key for IP address '10.112.152.70' to the list of known hosts.
+x4514c1s6b0n0: Warning: Permanently added the ECDSA host key for IP address '10.112.152.101' to the list of known hosts.
+x4514c1s6b0n0: kill: cannot find process "dfuse"
+pdsh@x4514c1s6b0n0: x4514c1s6b0n0: ssh exited with exit code 1
+x4514c1s6b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p1_SeqR-4K-16-1 not found in /etc/mtab
+pdsh@x4514c1s6b0n0: x4514c1s6b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p1_SeqR-4K-16-1
+Successfully created container 2a9084d6-3d20-4d3a-b788-8637020f613e
+  Container UUID : 2a9084d6-3d20-4d3a-b788-8637020f613e
+  Container Label: rgeorge-fio_test-p1_SeqRH-4K-16-1   
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+grep: ./fio_results_p1_2025-08-31_23-04-45/fio_results_SeqRH-4K-16-1.json: No such file or directory
+x4514c1s6b0n0: Warning: Permanently added the ECDSA host key for IP address '10.112.152.27' to the list of known hosts.
+x4514c1s6b0n0: kill: cannot find process "dfuse"
+pdsh@x4514c1s6b0n0: x4514c1s6b0n0: ssh exited with exit code 1
+x4514c1s6b0n0: kill: cannot find process "dfuse"
+pdsh@x4514c1s6b0n0: x4514c1s6b0n0: ssh exited with exit code 1
+x4514c1s6b0n0: Warning: Permanently added the ECDSA host key for IP address '10.112.152.71' to the list of known hosts.
+x4514c1s6b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p1_SeqRH-4K-16-1 not found in /etc/mtab
+pdsh@x4514c1s6b0n0: x4514c1s6b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p1_SeqRH-4K-16-1
+Successfully created container d15b5f7b-69d6-4458-9c46-0190035b4d47
+  Container UUID : d15b5f7b-69d6-4458-9c46-0190035b4d47
+  Container Label: rgeorge-fio_test-p1_SeqBal-4K-16-1  
+  Container Type : POSIX                               
+
+---------------
+x4514c1s6b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.152.29' to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+grep: ./fio_results_p1_2025-08-31_23-04-45/fio_results_SeqBal-4K-16-1.json: No such file or directory
+x4514c1s6b0n0: Warning: Permanently added the ECDSA host key for IP address '10.112.152.48' to the list of known hosts.
+x4514c1s6b0n0: kill: cannot find process "dfuse"
+pdsh@x4514c1s6b0n0: x4514c1s6b0n0: ssh exited with exit code 1
+x4514c1s6b0n0: kill: cannot find process "dfuse"
+pdsh@x4514c1s6b0n0: x4514c1s6b0n0: ssh exited with exit code 1
+x4514c1s6b0n0: fusermount3: entry for /tmp/e2sar/rgeorge-fio_test-p1_SeqBal-4K-16-1 not found in /etc/mtab
+pdsh@x4514c1s6b0n0: x4514c1s6b0n0: ssh exited with exit code 1
+Successfully destroyed container rgeorge-fio_test-p1_SeqBal-4K-16-1
+Successfully created container ccb26e28-96ef-4528-82b2-44ea7feae8d6
+  Container UUID : ccb26e28-96ef-4528-82b2-44ea7feae8d6
+  Container Label: rgeorge-fio_test-p1_SeqWH-4K-16-1   
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument

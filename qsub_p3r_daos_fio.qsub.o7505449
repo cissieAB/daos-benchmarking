@@ -1,0 +1,550 @@
+Successfully created container f792ef64-a892-42f9-9f78-2661d183a216
+  Container UUID : f792ef64-a892-42f9-9f78-2661d183a216
+  Container Label: rgeorge-fio_test-p3r_RandR-4K-64-1  
+  Container Type : POSIX                               
+
+---------------
+x4311c3s4b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added 'x4311c3s4b0n0.hsn.cm.aurora.alcf.anl.gov,10.112.76.87' (ECDSA) to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandR-4K-64-1
+Successfully created container 42c6f454-32d3-4221-99cb-7133708a0551
+  Container UUID : 42c6f454-32d3-4221-99cb-7133708a0551
+  Container Label: rgeorge-fio_test-p3r_RandRH-4K-64-1 
+  Container Type : POSIX                               
+
+---------------
+x4311c3s4b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.76.63' to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/05-00:51:02.76 x4311c3s4b0n0 DAOS[105746/105746/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p3r_RandRH-4K-64-1: DER_IO(-2001): I / O error
+Successfully created container a59ccf01-6216-418b-83c3-96d249dbc838
+  Container UUID : a59ccf01-6216-418b-83c3-96d249dbc838
+  Container Label: rgeorge-fio_test-p3r_RandBal-4K-64-1
+  Container Type : POSIX                               
+
+---------------
+x4311c3s4b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.76.78' to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/05-01:02:07.64 x4311c3s4b0n0 DAOS[108889/108889/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p3r_RandBal-4K-64-1: DER_IO(-2001): I / O error
+Successfully created container 5e52f9f2-8136-411d-9860-e10ae8490937
+  Container UUID : 5e52f9f2-8136-411d-9860-e10ae8490937
+  Container Label: rgeorge-fio_test-p3r_RandWH-4K-64-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandWH-4K-64-1
+Successfully created container 03169942-3063-43b4-a21c-27e19af39dfb
+  Container UUID : 03169942-3063-43b4-a21c-27e19af39dfb
+  Container Label: rgeorge-fio_test-p3r_RandW-4K-64-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandW-4K-64-1
+Successfully created container 39d83f02-9712-4b96-8484-1627f76c0d32
+  Container UUID : 39d83f02-9712-4b96-8484-1627f76c0d32
+  Container Label: rgeorge-fio_test-p3r_RandR-16K-64-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandR-16K-64-1
+Successfully created container bbc5e1bd-16b2-42aa-9a64-179192aa5dfd
+  Container UUID : bbc5e1bd-16b2-42aa-9a64-179192aa5dfd
+  Container Label: rgeorge-fio_test-p3r_RandRH-16K-64-1
+  Container Type : POSIX                               
+
+---------------
+x4311c3s4b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.76.96' to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/05-01:24:19.69 x4311c3s4b0n0 DAOS[113838/113838/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p3r_RandRH-16K-64-1: DER_IO(-2001): I / O error
+Successfully created container 06d30f20-0ba4-4ee8-a7ce-64ee60a3a182
+  Container UUID : 06d30f20-0ba4-4ee8-a7ce-64ee60a3a182 
+  Container Label: rgeorge-fio_test-p3r_RandBal-16K-64-1
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandBal-16K-64-1
+Successfully created container 2ae54811-ee9f-4991-9a32-4567af01c95b
+  Container UUID : 2ae54811-ee9f-4991-9a32-4567af01c95b
+  Container Label: rgeorge-fio_test-p3r_RandWH-16K-64-1
+  Container Type : POSIX                               
+
+---------------
+x4311c3s4b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.76.77' to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandWH-16K-64-1
+Successfully created container b507bcf4-ae83-4eb9-8920-639b139bf2f1
+  Container UUID : b507bcf4-ae83-4eb9-8920-639b139bf2f1
+  Container Label: rgeorge-fio_test-p3r_RandW-16K-64-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandW-16K-64-1
+Successfully created container 0a6eda9e-8434-4c57-ab65-a9516a2363cb
+  Container UUID : 0a6eda9e-8434-4c57-ab65-a9516a2363cb
+  Container Label: rgeorge-fio_test-p3r_RandR-1M-64-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandR-1M-64-1
+Successfully created container 29a9f3aa-006d-4039-97fe-ac4dddd4911d
+  Container UUID : 29a9f3aa-006d-4039-97fe-ac4dddd4911d
+  Container Label: rgeorge-fio_test-p3r_RandRH-1M-64-1 
+  Container Type : POSIX                               
+
+---------------
+x4311c3s4b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.76.79' to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandRH-1M-64-1
+Successfully created container 3d77588b-ed4d-4fd7-94c9-0f589e0e8a69
+  Container UUID : 3d77588b-ed4d-4fd7-94c9-0f589e0e8a69
+  Container Label: rgeorge-fio_test-p3r_RandBal-1M-64-1
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandBal-1M-64-1
+Successfully created container 81952ef3-9f36-40e1-9445-53ca8d6bd88b
+  Container UUID : 81952ef3-9f36-40e1-9445-53ca8d6bd88b
+  Container Label: rgeorge-fio_test-p3r_RandWH-1M-64-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandWH-1M-64-1
+Successfully created container 9ee4bd62-adfc-4f7d-be89-7adc9e3fe4a2
+  Container UUID : 9ee4bd62-adfc-4f7d-be89-7adc9e3fe4a2
+  Container Label: rgeorge-fio_test-p3r_RandW-1M-64-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandW-1M-64-1
+Successfully created container 96c1613f-c720-4af3-bee2-7204ac7b0410
+  Container UUID : 96c1613f-c720-4af3-bee2-7204ac7b0410
+  Container Label: rgeorge-fio_test-p3r_RandR-2M-64-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandR-2M-64-1
+Successfully created container bfdca54c-fced-4b08-96a7-b73bdc04426b
+  Container UUID : bfdca54c-fced-4b08-96a7-b73bdc04426b
+  Container Label: rgeorge-fio_test-p3r_RandRH-2M-64-1 
+  Container Type : POSIX                               
+
+---------------
+x4311c3s4b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.76.61' to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandRH-2M-64-1
+Successfully created container 7ddce362-76de-414e-bd81-e5376c30bac3
+  Container UUID : 7ddce362-76de-414e-bd81-e5376c30bac3
+  Container Label: rgeorge-fio_test-p3r_RandBal-2M-64-1
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandBal-2M-64-1
+Successfully created container f77fdd43-f993-4469-bb62-713a26a1da70
+  Container UUID : f77fdd43-f993-4469-bb62-713a26a1da70
+  Container Label: rgeorge-fio_test-p3r_RandWH-2M-64-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandWH-2M-64-1
+Successfully created container b78a06cc-1bb8-49c4-a293-8352cf92cd89
+  Container UUID : b78a06cc-1bb8-49c4-a293-8352cf92cd89
+  Container Label: rgeorge-fio_test-p3r_RandW-2M-64-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandW-2M-64-1
+Successfully created container 36618bfe-47d8-4ddd-9cbf-29c1210ebece
+  Container UUID : 36618bfe-47d8-4ddd-9cbf-29c1210ebece
+  Container Label: rgeorge-fio_test-p3r_RandR-4M-64-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandR-4M-64-1
+Successfully created container 5a6b74e9-a4f6-407d-9e43-dc08b840ce78
+  Container UUID : 5a6b74e9-a4f6-407d-9e43-dc08b840ce78
+  Container Label: rgeorge-fio_test-p3r_RandRH-4M-64-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandRH-4M-64-1
+Successfully created container d622394f-39fb-4d8e-b53d-fe347044a63f
+  Container UUID : d622394f-39fb-4d8e-b53d-fe347044a63f
+  Container Label: rgeorge-fio_test-p3r_RandBal-4M-64-1
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandBal-4M-64-1
+Successfully created container 9c626c8f-a977-4e87-bbb0-cfe3fa9336b6
+  Container UUID : 9c626c8f-a977-4e87-bbb0-cfe3fa9336b6
+  Container Label: rgeorge-fio_test-p3r_RandWH-4M-64-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandWH-4M-64-1
+Successfully created container 6820e3bf-68d1-4ce2-bfee-8097816fb322
+  Container UUID : 6820e3bf-68d1-4ce2-bfee-8097816fb322
+  Container Label: rgeorge-fio_test-p3r_RandW-4M-64-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandW-4M-64-1
+Successfully created container 64684e3c-fca4-49f2-8266-50d76ae13402
+  Container UUID : 64684e3c-fca4-49f2-8266-50d76ae13402
+  Container Label: rgeorge-fio_test-p3r_RandR-4K-64-8  
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandR-4K-64-8
+Successfully created container cabea919-4963-4b64-a12c-ba70882a6b0c
+  Container UUID : cabea919-4963-4b64-a12c-ba70882a6b0c
+  Container Label: rgeorge-fio_test-p3r_RandRH-4K-64-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandRH-4K-64-8
+Successfully created container 350e99d1-4db0-4a73-a608-409feec85955
+  Container UUID : 350e99d1-4db0-4a73-a608-409feec85955
+  Container Label: rgeorge-fio_test-p3r_RandBal-4K-64-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandBal-4K-64-8
+Successfully created container 464f134f-7ebc-4acb-8c02-b7a1d42d8467
+  Container UUID : 464f134f-7ebc-4acb-8c02-b7a1d42d8467
+  Container Label: rgeorge-fio_test-p3r_RandWH-4K-64-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandWH-4K-64-8
+Successfully created container 7da3f517-628e-4668-83a3-23912814f656
+  Container UUID : 7da3f517-628e-4668-83a3-23912814f656
+  Container Label: rgeorge-fio_test-p3r_RandW-4K-64-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandW-4K-64-8
+Successfully created container e6fac125-d993-4fc3-96f9-7953a8d17e3a
+  Container UUID : e6fac125-d993-4fc3-96f9-7953a8d17e3a
+  Container Label: rgeorge-fio_test-p3r_RandR-16K-64-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandR-16K-64-8
+Successfully created container 5ef337f3-9f4a-4550-8601-633f4c210e3c
+  Container UUID : 5ef337f3-9f4a-4550-8601-633f4c210e3c
+  Container Label: rgeorge-fio_test-p3r_RandRH-16K-64-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandRH-16K-64-8
+Successfully created container 4793ae4b-de07-4eee-a821-2d14fecf5deb
+  Container UUID : 4793ae4b-de07-4eee-a821-2d14fecf5deb 
+  Container Label: rgeorge-fio_test-p3r_RandBal-16K-64-8
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/05-02:56:28.08 x4311c3s4b0n0 DAOS[147206/147206/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p3r_RandBal-16K-64-8: DER_IO(-2001): I / O error
+Successfully created container 3fe82960-74af-4b1f-8b56-22e315e8c069
+  Container UUID : 3fe82960-74af-4b1f-8b56-22e315e8c069
+  Container Label: rgeorge-fio_test-p3r_RandWH-16K-64-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+09/05-03:02:26.92 x4311c3s4b0n0 DAOS[148937/148937/0] container ERR  src/container/cli.c:430 cont_destroy_complete() failed to destroy container: DER_IO(-2001): 'I / O error'
+ERROR: daos: failed to destroy container rgeorge-fio_test-p3r_RandWH-16K-64-8: DER_IO(-2001): I / O error
+Successfully created container 953ca500-8632-4dbc-ade9-5c6ab09a8f61
+  Container UUID : 953ca500-8632-4dbc-ade9-5c6ab09a8f61
+  Container Label: rgeorge-fio_test-p3r_RandW-16K-64-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandW-16K-64-8
+Successfully created container 22e98915-bc84-4e3d-bd20-09577f09c7bd
+  Container UUID : 22e98915-bc84-4e3d-bd20-09577f09c7bd
+  Container Label: rgeorge-fio_test-p3r_RandR-1M-64-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandR-1M-64-8
+Successfully created container 1a508ef9-e735-4877-952e-0ba8ed07b6f5
+  Container UUID : 1a508ef9-e735-4877-952e-0ba8ed07b6f5
+  Container Label: rgeorge-fio_test-p3r_RandRH-1M-64-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandRH-1M-64-8
+Successfully created container c0701816-8d7c-4cd7-aa6d-c79bd84fce42
+  Container UUID : c0701816-8d7c-4cd7-aa6d-c79bd84fce42
+  Container Label: rgeorge-fio_test-p3r_RandBal-1M-64-8
+  Container Type : POSIX                               
+
+---------------
+x4311c3s4b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.76.76' to the list of known hosts.
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandBal-1M-64-8
+Successfully created container 8a420512-78d7-4a1b-b03b-d6d171230013
+  Container UUID : 8a420512-78d7-4a1b-b03b-d6d171230013
+  Container Label: rgeorge-fio_test-p3r_RandWH-1M-64-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandWH-1M-64-8
+Successfully created container 7d61f06c-0190-4c88-bc1b-9791836afb39
+  Container UUID : 7d61f06c-0190-4c88-bc1b-9791836afb39
+  Container Label: rgeorge-fio_test-p3r_RandW-1M-64-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandW-1M-64-8
+Successfully created container f0267f2a-ace8-4d43-bcb3-db10dd77ec3a
+  Container UUID : f0267f2a-ace8-4d43-bcb3-db10dd77ec3a
+  Container Label: rgeorge-fio_test-p3r_RandR-2M-64-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandR-2M-64-8
+Successfully created container 9ca03bbd-1c55-412b-917c-92098073f012
+  Container UUID : 9ca03bbd-1c55-412b-917c-92098073f012
+  Container Label: rgeorge-fio_test-p3r_RandRH-2M-64-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandRH-2M-64-8
+Successfully created container 3bc6c155-5133-4563-ae81-13e51ae8a4dc
+  Container UUID : 3bc6c155-5133-4563-ae81-13e51ae8a4dc
+  Container Label: rgeorge-fio_test-p3r_RandBal-2M-64-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandBal-2M-64-8
+Successfully created container 08181a13-48de-4d91-8a97-768413700bdf
+  Container UUID : 08181a13-48de-4d91-8a97-768413700bdf
+  Container Label: rgeorge-fio_test-p3r_RandWH-2M-64-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3r_RandWH-2M-64-8
+Successfully created container a2f359c5-9dc9-484f-848c-d3c8bdc8501e
+  Container UUID : a2f359c5-9dc9-484f-848c-d3c8bdc8501e
+  Container Label: rgeorge-fio_test-p3r_RandW-2M-64-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.63.0: Software caused connection abort: write offset=121634816, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.29.0: Software caused connection abort: write offset=62914560, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.45.0: Software caused connection abort: write offset=4194304, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.13.0: Software caused connection abort: write offset=23068672, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.49.0: Software caused connection abort: write offset=35651584, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.0.0: Software caused connection abort: write offset=48234496, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.14.0: Software caused connection abort: write offset=62914560, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.42.0: Software caused connection abort: write offset=118489088, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.48.0: Software caused connection abort: write offset=55574528, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.6.0: Software caused connection abort: write offset=122683392, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.9.0: Transport endpoint is not connected: write offset=59768832, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.47.0: Software caused connection abort: write offset=18874368, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.30.0: Transport endpoint is not connected: write offset=95420416, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.28.0: Transport endpoint is not connected: write offset=24117248, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.22.0: Transport endpoint is not connected: write offset=7340032, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.62.0: Software caused connection abort: write offset=33554432, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.52.0: Software caused connection abort: write offset=85983232, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.19.0: Transport endpoint is not connected: write offset=120586240, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.25.0: Software caused connection abort: write offset=62914560, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.59.0: Software caused connection abort: write offset=105906176, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.15.0: Software caused connection abort: write offset=109051904, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.35.0: Transport endpoint is not connected: write offset=95420416, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.2.0: Software caused connection abort: write offset=72351744, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.20.0: Transport endpoint is not connected: write offset=99614720, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.12.0: Software caused connection abort: write offset=77594624, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.16.0: Software caused connection abort: write offset=13631488, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.55.0: Software caused connection abort: write offset=6291456, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.3.0: Software caused connection abort: write offset=77594624, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.57.0: Transport endpoint is not connected: write offset=1048576, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.21.0: Software caused connection abort: write offset=72351744, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.18.0: Software caused connection abort: write offset=109051904, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.11.0: Software caused connection abort: write offset=85983232, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.8.0: Software caused connection abort: write offset=36700160, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.41.0: Software caused connection abort: write offset=104857600, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.58.0: Transport endpoint is not connected: write offset=19922944, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.36.0: Software caused connection abort: write offset=58720256, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.38.0: Software caused connection abort: write offset=83886080, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.5.0: Transport endpoint is not connected: write offset=30408704, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.7.0: Transport endpoint is not connected: write offset=63963136, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.1.0: Transport endpoint is not connected: write offset=128974848, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.23.0: Software caused connection abort: write offset=2097152, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.51.0: Transport endpoint is not connected: write offset=34603008, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.50.0: Software caused connection abort: write offset=55574528, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.60.0: Software caused connection abort: write offset=46137344, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.10.0: Transport endpoint is not connected: write offset=91226112, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.26.0: Software caused connection abort: write offset=0, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.54.0: Software caused connection abort: write offset=87031808, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.46.0: Software caused connection abort: write offset=39845888, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.4.0: Transport endpoint is not connected: write offset=45088768, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.31.0: Transport endpoint is not connected: write offset=11534336, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.17.0: Software caused connection abort: write offset=7340032, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.34.0: Software caused connection abort: write offset=79691776, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.44.0: Software caused connection abort: write offset=16777216, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.27.0: Software caused connection abort: write offset=115343360, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.33.0: Software caused connection abort: write offset=81788928, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.39.0: Software caused connection abort: write offset=75497472, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.56.0: Software caused connection abort: write offset=25165824, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.61.0: Transport endpoint is not connected: write offset=70254592, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.40.0: Software caused connection abort: write offset=46137344, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.53.0: Software caused connection abort: write offset=39845888, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.32.0: Software caused connection abort: write offset=56623104, buflen=2097152
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.24.0: Transport endpoint is not connected: write offset=131072000, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.37.0: Transport endpoint is not connected: write offset=61865984, buflen=1048576
+fio: io_u error on file /tmp/e2sar/rgeorge-fio_test-p3r_RandW-2M-64-8/RandW-2M-64-8.43.0: Transport endpoint is not connected: write offset=122683392, buflen=1048576
