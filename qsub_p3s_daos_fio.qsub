@@ -2,8 +2,8 @@
 
 #PBS -A e2sar-daos
 #PBS -l select=1
-#PBS -l walltime=0:59:00
-#PBS -q debug
+#PBS -l walltime=5:59:00
+#PBS -q prod
 #PBS -l filesystems=home:flare:daos_user_fs
 #PBS -j oe
 
