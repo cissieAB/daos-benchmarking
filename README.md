@@ -6,8 +6,13 @@ All pictures are inside /graphs
 
 From new json runs
 ![bar block size](graphs/bs-bars.svg)
-
-
+![bar block size](graphs/bw_mean_gb-nj.svg)
+![bar block size](graphs/iops-nj.svg)
+![bar block size](graphs/iops-bs-bars.svg)
+![bar block size](graphs/mean-lat-nj.svg)
+![bar block size](graphs/mean-lat-bs-bars.svg)
+![bar block size](graphs/mean-lat-nj-99.svg)
+![bar block size](graphs/mean-lat-bs-bars-99.svg)
 
 
 For the following graphs,  `--numjobs=16 --iodepth=32`

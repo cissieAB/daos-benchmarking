@@ -1,9 +1,3 @@
-clock setaffinity failed: Invalid argument
-clock setaffinity failed: Invalid argument
-clock setaffinity failed: Invalid argument
-clock setaffinity failed: Invalid argument
-
-fio: terminating on signal 15
 {
   "fio version" : "fio-3.23",
   "timestamp" : 1757006385,
