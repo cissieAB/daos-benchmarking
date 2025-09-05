@@ -2,7 +2,7 @@
 
 #PBS -A e2sar-daos
 #PBS -l select=1
-#PBS -l walltime=02:00:00
+#PBS -l walltime=12:30:00
 #PBS -q prod
 #PBS -l filesystems=home:flare:daos_user_fs
 #PBS -j oe
@@ -10,42 +10,45 @@
 set -e  # Exit on any error
 
 # Variables
-POOL_NAME=e2sar2
-CONTAINER_BASE_NAME="${USER}-fio_test-bs"
-RESULTS_DIR="./fio_results_bs_$(date +%Y-%m-%d_%H-%M-%S)"
-IO_DEPTH=32
-DIRECT=1
-BUFFERED=0
+POOL_NAME=e2sar
+CONTAINER_BASE_NAME="${USER}-fio_test-p0"
+RESULTS_DIR="./fio_results_all_$(date +%Y-%m-%d_%H-%M-%S)"
+LOG_FILE="$RESULTS_DIR/logs.txt"
+
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
 
 # Values for --bs
 BLOCK_SIZES=("4K" "16K" "1M" "2M" "4M")
-# BLOCK_SIZES=("4K") # mini for testing
+# BLOCK_SIZES=("2M")              # mini for testing
 
 # Keys for setting --rw and --rwmixread
 RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal" "RandWH" "RandW")
-# RW_CATEGORIES=("RandW")   # mini for testing
+# RW_CATEGORIES=("SeqR" "SeqRH")  # mini for testing
 
-# Values for --numjobs (just one because it keeps stopping execution)
-# NUM_JOBS_SIZES=("8" "16" "32" "64" "128")
-NUM_JOBS_SIZES=("16")
+# Values for --numjobs
+# NUM_JOBS_SIZES=("16" "32" "64" "128")
+NUM_JOBS_SIZES=("8")            # mini for testing
 
-LOG_FILE="$RESULTS_DIR/logs.txt"
+# Values for --iodepth
+# IO_DEPTHS=("1" "8" "16" "32" "64" "128") # full
+# IO_DEPTHS=("1" "8" "16") # part 1
+IO_DEPTHS=("32" "64" "128") # part 2
+IO_DEPTHS=("32")                # mini for testing
 
 get_fio_rw_params() {
     local category="$1"
     case "$category" in
-        "SeqR") echo "--rw=read" ;;
-        "SeqRH") echo "--rw=rw --rwmixread=80" ;;
-        "SeqBal") echo "--rw=rw" ;;
-        "SeqWH") echo "--rw=rw --rwmixread=20" ;;
-        "SeqW") echo "--rw=write" ;;
-        "RandR") echo "--rw=randread" ;;
-        "RandRH") echo "--rw=randrw --rwmixread=80" ;;
-        "RandBal") echo "--rw=randrw" ;;
-        "RandWH") echo "--rw=randrw --rwmixread=20" ;;
-        "RandW") echo "--rw=randwrite" ;;
-        *) echo "ERROR: Unknown category $category"; return 1 ;;
+        "SeqR")     echo "--rw=read                     --unified_rw_reporting=0" ;;
+        "SeqRH")    echo "--rw=rw       --rwmixread=80  --unified_rw_reporting=1" ;;
+        "SeqBal")   echo "--rw=rw                       --unified_rw_reporting=1" ;;
+        "SeqWH")    echo "--rw=rw       --rwmixread=20  --unified_rw_reporting=1" ;;
+        "SeqW")     echo "--rw=write                    --unified_rw_reporting=0" ;;
+        "RandR")    echo "--rw=randread                 --unified_rw_reporting=0" ;;
+        "RandRH")   echo "--rw=randrw   --rwmixread=80  --unified_rw_reporting=1" ;;
+        "RandBal")  echo "--rw=randrw                   --unified_rw_reporting=1" ;;
+        "RandWH")   echo "--rw=randrw   --rwmixread=20  --unified_rw_reporting=1" ;;
+        "RandW")    echo "--rw=randwrite                --unified_rw_reporting=0" ;;
+        *) error "ERROR: Unknown category $category"; exit 1 ;;
     esac
 }
 
@@ -54,11 +57,11 @@ error() {
 }
 
 success() {
-    echo "[SUCCESS]${NC} $1" >> $LOG_FILE
+    echo "[SUCCESS] $1" >> $LOG_FILE
 }
 
 warning() {
-    echo "[WARNING]${NC} $1" >> $LOG_FILE
+    echo "[WARNING] $1" >> $LOG_FILE
 }
 
 # Cleanup function
@@ -67,29 +70,19 @@ cleanup() {
     local container_name="$2"
     mount_point=/tmp/"$pool_name"/"$container_name"
     
-    echo "Cleaning up container: $pool_name:$container_name"
-    
     # Remove mounting point on a compute node
-    #Aurora script sometimes fails to unmount
-    # clean-dfuse.sh $pool_name:$container_name
-
-    # Unmount if mounted
-    if mount | grep -q "$mount_point"; then
-        fusermount3 -u "$mount_point" || error "Failed to unmount $mount_point"
-        sleep 2
-    fi
+    clean-dfuse.sh $pool_name:$container_name || warning "clean-dfuse.sh failed"
 
     # Remove mount point
     if [ -d "$mount_point" ]; then
-        rmdir "$mount_point" || error "Failed to remove directory $mount_point"
+	rmdir "$mount_point" || warning "Failed to remove directory $mount_point"
     fi
 
     # Destroy container
     daos container destroy "$pool_name" "$container_name" || warning "Failed to destroy container $container_name"
     
-    { 
-        daos container list "$pool_name" 
-    } >> $LOG_FILE
+    # Output log of existing pools
+    daos container list "$pool_name" >> $LOG_FILE
 }
 
 # Create results directory.
@@ -101,57 +94,65 @@ module use /soft/modulefiles/ || { error "Failed to use modulefiles"; exit 1; }
 module load daos || { error "Failed to load DAOS module"; exit 1; }
 
 # Verify pool exists
-if ! daos pool query "$POOL_NAME" | grep -q "Ready" ; then
-    error "Pool '$POOL_NAME' not Ready"
-    exit 1
-fi
-success "Pool '$POOL_NAME' found and accessible"
+daos pool list | grep -q -- "$POOL_NAME" || { error "No pool: $POOL_NAME"; exit 1; }
 
-for nj in "${NUM_JOBS_SIZES[@]}"; do
-    # read-write category loop
-    for rw_cat in "${RW_CATEGORIES[@]}"; do
-        RW_PARAMS=$(get_fio_rw_params "$rw_cat")
-        # block size loop
+combined_json="${RESULTS_DIR}/combined.json"
+echo '{"jobs":[]}' > "$combined_json"
+
+for iod in "${IO_DEPTHS[@]}"; do
+    for nj in "${NUM_JOBS_SIZES[@]}"; do
         for bs in "${BLOCK_SIZES[@]}"; do
-            CASE_ID="${rw_cat}-${bs}-${nj}"
-            CONTAINER_NAME="${CONTAINER_BASE_NAME}_${CASE_ID}"
-            MOUNT_POINT="/tmp/$POOL_NAME/$CONTAINER_NAME"
-            
-            # Create container
-            if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --properties=rd_fac:1; then
-                error "Failed to create container $CONTAINER_NAME"
-                continue
-            fi
-            
-            # Mount container to /tmp/$POOL_NAME/$CONTAINER_NAME (system default)
-            launch-dfuse.sh $POOL_NAME:$CONTAINER_NAME
+            for rw_cat in "${RW_CATEGORIES[@]}"; do
 
-            # Build FIO command
+                RW_PARAMS=$(get_fio_rw_params "$rw_cat")
+                CASE_ID="${rw_cat}-${bs}-${nj}-${iod}"
+                CONTAINER_NAME="${CONTAINER_BASE_NAME}_${CASE_ID}"
+                MOUNT_POINT="/tmp/$POOL_NAME/$CONTAINER_NAME"
+                
+                # Create container
+                if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --properties=rd_fac:1; then
+                    error "Failed to create container $CONTAINER_NAME"
+                    continue
+                fi
+                
+                # Mount container to /tmp/$POOL_NAME/$CONTAINER_NAME (system default)
+                launch-dfuse.sh "$POOL_NAME:$CONTAINER_NAME"
 
-            fio_cmd=" taskset -c $NUMA_CPU_CORES fio "
-            fio_cmd+=" --name=${CASE_ID}-taskset-cpu-args"
-            fio_cmd+=" --ioengine=pvsync"
-            fio_cmd+=" ${RW_PARAMS} --bs=${bs}"
-            fio_cmd+=" --size=128M"
-            fio_cmd+=" --directory=${MOUNT_POINT}"
-            fio_cmd+=" --numjobs=${nj} --iodepth=${IO_DEPTH}"
-            fio_cmd+=" --direct=${DIRECT} --buffered=${BUFFERED}"
-            fio_cmd+=" --runtime=60 --time_based"
-            fio_cmd+=" --randrepeat=0 --norandommap --refill_buffers --group_reporting"
-            fio_cmd+=" --output-format=terse"
-            fio_cmd+=" --output=${RESULTS_DIR}/fio_result_${CASE_ID}.csv"
-            fio_cmd+=" --description=${CASE_ID}"
+                # Build FIO command
+                fio_cmd=" taskset -c $NUMA_CPU_CORES fio "
+                fio_cmd+=" --output=${RESULTS_DIR}/fio_${CASE_ID}.json"
+                fio_cmd+=" --output-format=json"
+                fio_cmd+=" --warnings-fatal"
+                fio_cmd+=" --name=${CASE_ID}"
+                fio_cmd+=" --numjobs=${nj}"
+                fio_cmd+=" --runtime=60 --time_based"
+                fio_cmd+=" --directory=${MOUNT_POINT}"
+                fio_cmd+=" --direct=1 --buffered=0"
+                fio_cmd+=" ${RW_PARAMS}"
+                fio_cmd+=" --randrepeat=0 --norandommap"
+                fio_cmd+=" --bs=${bs}"
+                fio_cmd+=" --refill_buffers"
+                fio_cmd+=" --size=128M"
+                fio_cmd+=" --ioengine=pvsync"
+                fio_cmd+=" --iodepth=${iod}"
+                fio_cmd+=" --group_reporting"
+                fio_cmd+=" --lat_percentiles=1"
+                # fio_cmd+=" --percentile_list=90:95:99:99.5:99.9"
 
-            ${fio_cmd}
-            success "FIO benchmark completed for ${CASE_ID}"
-            
-            cat "${RESULTS_DIR}/fio_result_${CASE_ID}.csv" >> "${RESULTS_DIR}/fio_result_combined.csv"
-            rm "${RESULTS_DIR}/fio_result_${CASE_ID}.csv"
+                ${fio_cmd} || { error "$fio_cmd failed"; exit 1; }
+                success "FIO benchmark completed for ${CASE_ID}"
 
-            # Cleanup
-            cleanup "$POOL_NAME" "$CONTAINER_NAME" "$MOUNT_POINT"
-            
-            sleep 3
+		jq -s '{ jobs: (.[0].jobs + .[1].jobs) }' "$combined_json" <(grep -v 'clock setaffinity' "${RESULTS_DIR}/fio_results_${CASE_ID}.json") > "${combined_json}.tmp" 
+                mv "${combined_json}.tmp" "$combined_json"
+                rm "${RESULTS_DIR}/fio_results_${CASE_ID}.json"
+
+                # cat "${RESULTS_DIR}/fio_result_${CASE_ID}.csv" >> "${RESULTS_DIR}/fio_result_combined.csv"
+                # rm "${RESULTS_DIR}/fio_result_${CASE_ID}.csv"
+                
+                # Cleanup
+                cleanup "$POOL_NAME" "$CONTAINER_NAME" "$MOUNT_POINT"
+                sleep 3
+            done
         done
     done
 done
