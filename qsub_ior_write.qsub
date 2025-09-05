@@ -1,0 +1,91 @@
+#!/bin/bash
+
+# Run this file with "qsub -l select=<node_number>:ncpus=208 <this-script>.qsub"
+
+#PBS -l walltime=01:00:00
+#PBS -A e2sar-daos
+#PBS -q debug
+#PBS -l filesystems=home:flare:daos_user_fs
+#PBS -j oe
+
+# Load DAOS module
+module use /soft/modulefiles/ || { error "Failed to use modulefiles"; exit 1; }
+module load daos || { error "Failed to load DAOS module"; exit 1; }
+
+# Variables
+POOL_NAME=e2sar
+NNODES=`wc -l < $PBS_NODEFILE`        # Number of nodes
+
+# Verify pool exists
+daos pool list | grep -q -- "$POOL_NAME" || { error "No pool: $POOL_NAME"; exit 1; }
+
+
+cd $PBS_O_WORKDIR
+
+## Aurora compute-node CPU binding specific settings
+CPU_BINDING1=list:4:9:14:19:20:25:56:61:66:71:74:79
+export ZE_FLAT_DEVICE_HIERARCHY=COMPOSITE
+export AFFINITY_ORDERING=compact
+
+# Add ior into path
+export PATH=$PATH:$HOME/ior/install/bin
+
+echo "Running IOR write test"
+# IOR parameters
+# -i: Repeat the test this many times
+# -o: the absolute path in the DFS container. Imagine txhe DFS root is /.
+# --dfs.destroy: destroy the DAOS container after the test
+# -b: ior block size, contiguous bytes to write per task
+# -t: ior transfer size, size of transfer in bytes
+# -s: number of segments. Not applied here.
+
+# Create container with RD factor 1 (default is 3)
+CONTAINER_NAME="${USER}-ior_n${NNODES}"
+# Check if container exists
+if daos cont query "$POOL_NAME" "$CONTAINER_NAME" >/dev/null 2>&1; then
+    echo "Container $CONTAINER_NAME already exists, destroying it..."
+    if ! daos container destroy "$POOL_NAME" "$CONTAINER_NAME"; then
+        error "Failed to destroy container $CONTAINER_NAME"
+        exit 1
+    fi
+else
+    echo "Container $CONTAINER_NAME does not exist, will create a new one."
+fi
+# Create container
+if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --properties=rd_fac:1; then
+    error "Failed to create container $CONTAINER_NAME"
+    exit 1
+fi
+echo "Get container properties:"
+daos container get-prop $POOL_NAME $CONTAINER_NAME
+
+# IOR smoke test
+LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} --cpu-bind ${CPU_BINDING1}  \
+                                            --no-vni -genvall -- \
+                                            ior -a DFS -w \
+                                            --dfs.pool $POOL_NAME --dfs.cont $CONTAINER_NAME \
+                                            -o /ior-smoke \
+                                            -b 64M -t 16M
+
+# IOR write with different transfer sizes.
+# 4K is too small, skip it.
+IOR_TX_SIZES=("16K" "1M" "2M" "16M")
+
+# Check which one is faster: multiples of 8 or 6 (compute node has 8 NICs and 6 CPU groups)
+for RANKS_PER_NODE in 8 12 24 32 48 96 108 128; do
+    NRANKS=$(( NNODES * RANKS_PER_NODE ))
+    for tx_size in "${IOR_TX_SIZES[@]}"; do
+        echo -e "\nRunning IOR write with transfer size: $tx_size, RANKS_PER_NODE: ${RANKS_PER_NODE}, total ranks: $NRANKS"
+        LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} --cpu-bind ${CPU_BINDING1}  \
+                                                    --no-vni -genvall -- \
+                                                    ior -a DFS -w \
+                                                    --dfs.pool $POOL_NAME --dfs.cont $CONTAINER_NAME \
+                                                    -o /ior-write-tx_${tx_size}-ppn_${RANKS_PER_NODE} \
+                                                    -b 128M -t ${tx_size} -i 5 \
+                                                    -O summaryFile=write_n-${NNODES}_ppn-${RANKS_PER_NODE}_tx-${tx_size}.csv -O summaryFormat=CSV
+        sleep 5
+    done
+done
+
+# Destroy container
+daos cont destroy $POOL_NAME $CONTAINER_NAME || warning "Failed to destroy container $CONTAINER_NAME"
