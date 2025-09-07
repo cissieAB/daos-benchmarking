@@ -27,3 +27,1174 @@ clock setaffinity failed: Invalid argument
 clock setaffinity failed: Invalid argument
 clock setaffinity failed: Invalid argument
 clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-16K-64-1
+Successfully created container d25a3490-9776-4cd3-b0d0-54a44fac20b7
+  Container UUID : d25a3490-9776-4cd3-b0d0-54a44fac20b7
+  Container Label: rgeorge-fio_test-p3s_SeqWH-16K-64-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-16K-64-1
+Successfully created container df87a3dc-b4c3-435b-99da-ef72a8144f96
+  Container UUID : df87a3dc-b4c3-435b-99da-ef72a8144f96
+  Container Label: rgeorge-fio_test-p3s_SeqW-16K-64-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-16K-64-1
+Successfully created container 6a56ee5e-8359-477c-8fb4-05a2e285d33d
+  Container UUID : 6a56ee5e-8359-477c-8fb4-05a2e285d33d
+  Container Label: rgeorge-fio_test-p3s_SeqR-1M-64-1   
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-1M-64-1
+Successfully created container b9fcaed5-54f2-4c78-b37d-62750f79e7b7
+  Container UUID : b9fcaed5-54f2-4c78-b37d-62750f79e7b7
+  Container Label: rgeorge-fio_test-p3s_SeqRH-1M-64-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-1M-64-1
+Successfully created container edf423b8-a7a2-44a4-b9bd-c92514cc3a89
+  Container UUID : edf423b8-a7a2-44a4-b9bd-c92514cc3a89
+  Container Label: rgeorge-fio_test-p3s_SeqBal-1M-64-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-1M-64-1
+Successfully created container fc49d849-cfe1-4f89-a1e9-410a30c1ade1
+  Container UUID : fc49d849-cfe1-4f89-a1e9-410a30c1ade1
+  Container Label: rgeorge-fio_test-p3s_SeqWH-1M-64-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-1M-64-1
+Successfully created container a6d609cc-4f99-43ef-a0b1-b6f52d4960bb
+  Container UUID : a6d609cc-4f99-43ef-a0b1-b6f52d4960bb
+  Container Label: rgeorge-fio_test-p3s_SeqW-1M-64-1   
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-1M-64-1
+Successfully created container af60ab8d-7d8d-42c8-bc84-d4b78f2a9415
+  Container UUID : af60ab8d-7d8d-42c8-bc84-d4b78f2a9415
+  Container Label: rgeorge-fio_test-p3s_SeqR-2M-64-1   
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-2M-64-1
+Successfully created container 22607e13-94ac-43a7-a46a-362511ef50a2
+  Container UUID : 22607e13-94ac-43a7-a46a-362511ef50a2
+  Container Label: rgeorge-fio_test-p3s_SeqRH-2M-64-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-2M-64-1
+Successfully created container 35d0fd4d-257d-48f5-8dfc-fcf0275c9a5d
+  Container UUID : 35d0fd4d-257d-48f5-8dfc-fcf0275c9a5d
+  Container Label: rgeorge-fio_test-p3s_SeqBal-2M-64-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-2M-64-1
+Successfully created container 4199179a-0c4f-412f-b261-ff44fadc58b7
+  Container UUID : 4199179a-0c4f-412f-b261-ff44fadc58b7
+  Container Label: rgeorge-fio_test-p3s_SeqWH-2M-64-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-2M-64-1
+Successfully created container 7656609d-25c9-43cc-90e5-668ea8c510ac
+  Container UUID : 7656609d-25c9-43cc-90e5-668ea8c510ac
+  Container Label: rgeorge-fio_test-p3s_SeqW-2M-64-1   
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-2M-64-1
+Successfully created container 61def5af-d7b8-4302-ba76-11074417fb58
+  Container UUID : 61def5af-d7b8-4302-ba76-11074417fb58
+  Container Label: rgeorge-fio_test-p3s_SeqR-4M-64-1   
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-4M-64-1
+Successfully created container 41af9b52-c3ce-431d-85e2-746a4463ab7e
+  Container UUID : 41af9b52-c3ce-431d-85e2-746a4463ab7e
+  Container Label: rgeorge-fio_test-p3s_SeqRH-4M-64-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-4M-64-1
+Successfully created container c22a0a19-ca63-47d5-a833-5dee9660fa80
+  Container UUID : c22a0a19-ca63-47d5-a833-5dee9660fa80
+  Container Label: rgeorge-fio_test-p3s_SeqBal-4M-64-1 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-4M-64-1
+Successfully created container 35354dbb-a1d8-4628-988c-e55088dbace1
+  Container UUID : 35354dbb-a1d8-4628-988c-e55088dbace1
+  Container Label: rgeorge-fio_test-p3s_SeqWH-4M-64-1  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-4M-64-1
+Successfully created container 28e5a9d4-ee39-4dc6-b9d8-66f9554110e9
+  Container UUID : 28e5a9d4-ee39-4dc6-b9d8-66f9554110e9
+  Container Label: rgeorge-fio_test-p3s_SeqW-4M-64-1   
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-4M-64-1
+Successfully created container bed4ac56-8fba-41ed-8dd4-b2e23aaa970c
+  Container UUID : bed4ac56-8fba-41ed-8dd4-b2e23aaa970c
+  Container Label: rgeorge-fio_test-p3s_SeqR-16K-64-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-16K-64-8
+Successfully created container 2ac9ce9d-974e-4977-b64f-8a24ef70dcf7
+  Container UUID : 2ac9ce9d-974e-4977-b64f-8a24ef70dcf7
+  Container Label: rgeorge-fio_test-p3s_SeqRH-16K-64-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-16K-64-8
+Successfully created container 0a58847b-f1cb-4c9b-b30b-2163578ac5e7
+  Container UUID : 0a58847b-f1cb-4c9b-b30b-2163578ac5e7
+  Container Label: rgeorge-fio_test-p3s_SeqBal-16K-64-8
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-16K-64-8
+Successfully created container 47224d33-eb9d-494e-b2c4-e973e3a7dc5e
+  Container UUID : 47224d33-eb9d-494e-b2c4-e973e3a7dc5e
+  Container Label: rgeorge-fio_test-p3s_SeqWH-16K-64-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-16K-64-8
+Successfully created container f72ef03e-ee0f-461b-a4a9-de29a1319823
+  Container UUID : f72ef03e-ee0f-461b-a4a9-de29a1319823
+  Container Label: rgeorge-fio_test-p3s_SeqW-16K-64-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-16K-64-8
+Successfully created container 93c9a79b-100f-4f31-a0d6-2cdaf482ddf9
+  Container UUID : 93c9a79b-100f-4f31-a0d6-2cdaf482ddf9
+  Container Label: rgeorge-fio_test-p3s_SeqR-1M-64-8   
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-1M-64-8
+Successfully created container a9802907-960c-44f4-bcbb-821f9e605df3
+  Container UUID : a9802907-960c-44f4-bcbb-821f9e605df3
+  Container Label: rgeorge-fio_test-p3s_SeqRH-1M-64-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-1M-64-8
+Successfully created container 3da0a959-63fd-40ca-91df-9ab57f3b1761
+  Container UUID : 3da0a959-63fd-40ca-91df-9ab57f3b1761
+  Container Label: rgeorge-fio_test-p3s_SeqBal-1M-64-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-1M-64-8
+Successfully created container 10275bdb-17dd-4cbd-ae9c-3696af378265
+  Container UUID : 10275bdb-17dd-4cbd-ae9c-3696af378265
+  Container Label: rgeorge-fio_test-p3s_SeqWH-1M-64-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-1M-64-8
+Successfully created container 8be71961-35d2-43f5-ab11-907660eb1430
+  Container UUID : 8be71961-35d2-43f5-ab11-907660eb1430
+  Container Label: rgeorge-fio_test-p3s_SeqW-1M-64-8   
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-1M-64-8
+Successfully created container 266f4953-2d7f-49d7-aff1-341ee9348fc9
+  Container UUID : 266f4953-2d7f-49d7-aff1-341ee9348fc9
+  Container Label: rgeorge-fio_test-p3s_SeqR-2M-64-8   
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-2M-64-8
+Successfully created container a6610b31-ecdc-49e3-b567-8efaacdd5524
+  Container UUID : a6610b31-ecdc-49e3-b567-8efaacdd5524
+  Container Label: rgeorge-fio_test-p3s_SeqRH-2M-64-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-2M-64-8
+Successfully created container ca3336a4-8d30-4140-9ab9-f5a5811f1a9b
+  Container UUID : ca3336a4-8d30-4140-9ab9-f5a5811f1a9b
+  Container Label: rgeorge-fio_test-p3s_SeqBal-2M-64-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-2M-64-8
+Successfully created container 14b0cc3a-8768-478b-aa1c-2a436317c337
+  Container UUID : 14b0cc3a-8768-478b-aa1c-2a436317c337
+  Container Label: rgeorge-fio_test-p3s_SeqWH-2M-64-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-2M-64-8
+Successfully created container 5cb3ca8a-4a80-46a8-b583-956ccfe0bd86
+  Container UUID : 5cb3ca8a-4a80-46a8-b583-956ccfe0bd86
+  Container Label: rgeorge-fio_test-p3s_SeqW-2M-64-8   
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-2M-64-8
+Successfully created container 962c4636-a7c8-4876-8d8e-ff616d3feca0
+  Container UUID : 962c4636-a7c8-4876-8d8e-ff616d3feca0
+  Container Label: rgeorge-fio_test-p3s_SeqR-4M-64-8   
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-4M-64-8
+Successfully created container fa3db084-1149-4b88-96e6-0e99acd370d9
+  Container UUID : fa3db084-1149-4b88-96e6-0e99acd370d9
+  Container Label: rgeorge-fio_test-p3s_SeqRH-4M-64-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-4M-64-8
+Successfully created container f09c160b-4d5d-4156-862b-054988f88cd8
+  Container UUID : f09c160b-4d5d-4156-862b-054988f88cd8
+  Container Label: rgeorge-fio_test-p3s_SeqBal-4M-64-8 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-4M-64-8
+Successfully created container 07a9b2d3-06fc-4b49-995f-e6c0bf2542a6
+  Container UUID : 07a9b2d3-06fc-4b49-995f-e6c0bf2542a6
+  Container Label: rgeorge-fio_test-p3s_SeqWH-4M-64-8  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-4M-64-8
+Successfully created container a2a2e7b5-c148-4fa6-8437-bd8cf916c4af
+  Container UUID : a2a2e7b5-c148-4fa6-8437-bd8cf916c4af
+  Container Label: rgeorge-fio_test-p3s_SeqW-4M-64-8   
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-4M-64-8
+Successfully created container 938e581f-884b-4be5-a047-438a1bc6216b
+  Container UUID : 938e581f-884b-4be5-a047-438a1bc6216b
+  Container Label: rgeorge-fio_test-p3s_SeqR-16K-64-16 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-16K-64-16
+Successfully created container 88660f69-78f5-4974-a39f-d31772b5aae9
+  Container UUID : 88660f69-78f5-4974-a39f-d31772b5aae9
+  Container Label: rgeorge-fio_test-p3s_SeqRH-16K-64-16
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-16K-64-16
+Successfully created container a99acc9a-485c-4754-90e2-018fe875a9dd
+  Container UUID : a99acc9a-485c-4754-90e2-018fe875a9dd 
+  Container Label: rgeorge-fio_test-p3s_SeqBal-16K-64-16
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-16K-64-16
+Successfully created container a731c060-2f70-4f59-ad2b-b24791bf4c86
+  Container UUID : a731c060-2f70-4f59-ad2b-b24791bf4c86
+  Container Label: rgeorge-fio_test-p3s_SeqWH-16K-64-16
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-16K-64-16
+Successfully created container 9ca706d2-5a83-41bf-a916-4b45afd25566
+  Container UUID : 9ca706d2-5a83-41bf-a916-4b45afd25566
+  Container Label: rgeorge-fio_test-p3s_SeqW-16K-64-16 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-16K-64-16
+Successfully created container 0e2c107d-311f-4ab0-9dec-b01d85f76c72
+  Container UUID : 0e2c107d-311f-4ab0-9dec-b01d85f76c72
+  Container Label: rgeorge-fio_test-p3s_SeqR-1M-64-16  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-1M-64-16
+Successfully created container 3574b78f-8941-45ce-a07c-34f65499bc5b
+  Container UUID : 3574b78f-8941-45ce-a07c-34f65499bc5b
+  Container Label: rgeorge-fio_test-p3s_SeqRH-1M-64-16 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-1M-64-16
+Successfully created container 8e679485-afeb-4e8d-8578-a538338bf2df
+  Container UUID : 8e679485-afeb-4e8d-8578-a538338bf2df
+  Container Label: rgeorge-fio_test-p3s_SeqBal-1M-64-16
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-1M-64-16
+Successfully created container 2e14e0e1-63a3-44d0-a482-936c70b9e597
+  Container UUID : 2e14e0e1-63a3-44d0-a482-936c70b9e597
+  Container Label: rgeorge-fio_test-p3s_SeqWH-1M-64-16 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-1M-64-16
+Successfully created container 344e53e3-fdcb-42af-8506-bea7651df588
+  Container UUID : 344e53e3-fdcb-42af-8506-bea7651df588
+  Container Label: rgeorge-fio_test-p3s_SeqW-1M-64-16  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-1M-64-16
+Successfully created container 1a7c5188-515b-4782-ab25-de4fe1a8b404
+  Container UUID : 1a7c5188-515b-4782-ab25-de4fe1a8b404
+  Container Label: rgeorge-fio_test-p3s_SeqR-2M-64-16  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-2M-64-16
+Successfully created container 5d93b54d-1230-4844-8833-c2f4ae23f0ed
+  Container UUID : 5d93b54d-1230-4844-8833-c2f4ae23f0ed
+  Container Label: rgeorge-fio_test-p3s_SeqRH-2M-64-16 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-2M-64-16
+Successfully created container bf036227-e18a-4137-99c0-e616603fde67
+  Container UUID : bf036227-e18a-4137-99c0-e616603fde67
+  Container Label: rgeorge-fio_test-p3s_SeqBal-2M-64-16
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-2M-64-16
+Successfully created container a604b865-fad0-4a17-8b0c-2ed3b2eed319
+  Container UUID : a604b865-fad0-4a17-8b0c-2ed3b2eed319
+  Container Label: rgeorge-fio_test-p3s_SeqWH-2M-64-16 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-2M-64-16
+Successfully created container 7b8cb315-29f4-4f35-8b55-1f7c0612e23d
+  Container UUID : 7b8cb315-29f4-4f35-8b55-1f7c0612e23d
+  Container Label: rgeorge-fio_test-p3s_SeqW-2M-64-16  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-2M-64-16
+Successfully created container 51759165-865f-426b-9116-66d9eca1fef7
+  Container UUID : 51759165-865f-426b-9116-66d9eca1fef7
+  Container Label: rgeorge-fio_test-p3s_SeqR-4M-64-16  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-4M-64-16
+Successfully created container 7e8bdc87-98de-4cde-8085-7333dd901080
+  Container UUID : 7e8bdc87-98de-4cde-8085-7333dd901080
+  Container Label: rgeorge-fio_test-p3s_SeqRH-4M-64-16 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-4M-64-16
+Successfully created container f58609ed-9167-4a56-bb69-46b2e9ce54db
+  Container UUID : f58609ed-9167-4a56-bb69-46b2e9ce54db
+  Container Label: rgeorge-fio_test-p3s_SeqBal-4M-64-16
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-4M-64-16
+Successfully created container 1b5df663-9cf5-455b-9f81-96a27a636d38
+  Container UUID : 1b5df663-9cf5-455b-9f81-96a27a636d38
+  Container Label: rgeorge-fio_test-p3s_SeqWH-4M-64-16 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-4M-64-16
+Successfully created container e42d4b15-e48e-43e7-b87c-733b7fa0cbc4
+  Container UUID : e42d4b15-e48e-43e7-b87c-733b7fa0cbc4
+  Container Label: rgeorge-fio_test-p3s_SeqW-4M-64-16  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-4M-64-16
+Successfully created container 8d68c1a4-5fa2-4fdb-aa8b-8998a77b55ba
+  Container UUID : 8d68c1a4-5fa2-4fdb-aa8b-8998a77b55ba
+  Container Label: rgeorge-fio_test-p3s_SeqR-16K-64-32 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-16K-64-32
+Successfully created container 2cc9d46f-fdcd-4310-8cbe-5e73157fc57f
+  Container UUID : 2cc9d46f-fdcd-4310-8cbe-5e73157fc57f
+  Container Label: rgeorge-fio_test-p3s_SeqRH-16K-64-32
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-16K-64-32
+Successfully created container bdb83f0b-254a-4bfb-8cd4-582c0d316bd3
+  Container UUID : bdb83f0b-254a-4bfb-8cd4-582c0d316bd3 
+  Container Label: rgeorge-fio_test-p3s_SeqBal-16K-64-32
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-16K-64-32
+Successfully created container e032a55b-2171-4263-abf3-d0a63b23f1dc
+  Container UUID : e032a55b-2171-4263-abf3-d0a63b23f1dc
+  Container Label: rgeorge-fio_test-p3s_SeqWH-16K-64-32
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-16K-64-32
+Successfully created container 69d86cc4-3bc8-40bc-a176-9bf5b598143e
+  Container UUID : 69d86cc4-3bc8-40bc-a176-9bf5b598143e
+  Container Label: rgeorge-fio_test-p3s_SeqW-16K-64-32 
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-16K-64-32
+Successfully created container f5b8e7bc-9978-4396-b730-33639ba9ebe2
+  Container UUID : f5b8e7bc-9978-4396-b730-33639ba9ebe2
+  Container Label: rgeorge-fio_test-p3s_SeqR-1M-64-32  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-1M-64-32
+Successfully created container b6317c5e-c7d4-4525-bbba-55fdc2bb10ba
+  Container UUID : b6317c5e-c7d4-4525-bbba-55fdc2bb10ba
+  Container Label: rgeorge-fio_test-p3s_SeqRH-1M-64-32 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-1M-64-32
+Successfully created container 5d69f788-c1a8-4843-9ad9-f0b314b4009e
+  Container UUID : 5d69f788-c1a8-4843-9ad9-f0b314b4009e
+  Container Label: rgeorge-fio_test-p3s_SeqBal-1M-64-32
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-1M-64-32
+Successfully created container 59c31ef4-2990-4b80-a6d9-62438962d206
+  Container UUID : 59c31ef4-2990-4b80-a6d9-62438962d206
+  Container Label: rgeorge-fio_test-p3s_SeqWH-1M-64-32 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-1M-64-32
+Successfully created container 63b4312d-eefc-408b-bd14-5c1a29cffdfc
+  Container UUID : 63b4312d-eefc-408b-bd14-5c1a29cffdfc
+  Container Label: rgeorge-fio_test-p3s_SeqW-1M-64-32  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-1M-64-32
+Successfully created container a5f10f4b-7f0d-478a-b3c8-112612f0072f
+  Container UUID : a5f10f4b-7f0d-478a-b3c8-112612f0072f
+  Container Label: rgeorge-fio_test-p3s_SeqR-2M-64-32  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-2M-64-32
+Successfully created container 77641ba9-9e9a-4f0a-9a79-012f44527697
+  Container UUID : 77641ba9-9e9a-4f0a-9a79-012f44527697
+  Container Label: rgeorge-fio_test-p3s_SeqRH-2M-64-32 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-2M-64-32
+Successfully created container e3c8a646-e2c1-4152-89cd-bf70f9a9e994
+  Container UUID : e3c8a646-e2c1-4152-89cd-bf70f9a9e994
+  Container Label: rgeorge-fio_test-p3s_SeqBal-2M-64-32
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-2M-64-32
+Successfully created container eb511652-9d46-4018-98ee-174219245ce5
+  Container UUID : eb511652-9d46-4018-98ee-174219245ce5
+  Container Label: rgeorge-fio_test-p3s_SeqWH-2M-64-32 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-2M-64-32
+Successfully created container 9581fd4f-5779-4f2f-baba-7df28c1e4992
+  Container UUID : 9581fd4f-5779-4f2f-baba-7df28c1e4992
+  Container Label: rgeorge-fio_test-p3s_SeqW-2M-64-32  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-2M-64-32
+Successfully created container 695332cc-72d1-42c2-bb56-2cefb5b0dad2
+  Container UUID : 695332cc-72d1-42c2-bb56-2cefb5b0dad2
+  Container Label: rgeorge-fio_test-p3s_SeqR-4M-64-32  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-4M-64-32
+Successfully created container f11396a7-dced-409f-bc40-811be73e5363
+  Container UUID : f11396a7-dced-409f-bc40-811be73e5363
+  Container Label: rgeorge-fio_test-p3s_SeqRH-4M-64-32 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-4M-64-32
+Successfully created container 6dba590c-8c09-4848-b9c9-d981b5168532
+  Container UUID : 6dba590c-8c09-4848-b9c9-d981b5168532
+  Container Label: rgeorge-fio_test-p3s_SeqBal-4M-64-32
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-4M-64-32
+Successfully created container 909e02de-ecd7-4a71-b60d-2c82505fb4b6
+  Container UUID : 909e02de-ecd7-4a71-b60d-2c82505fb4b6
+  Container Label: rgeorge-fio_test-p3s_SeqWH-4M-64-32 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-4M-64-32
+Successfully created container e0104527-323c-42a3-9912-c09af75ce3fa
+  Container UUID : e0104527-323c-42a3-9912-c09af75ce3fa
+  Container Label: rgeorge-fio_test-p3s_SeqW-4M-64-32  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-4M-64-32
+Successfully created container ae0d9413-c091-4e16-9cd7-3ae628f82096
+  Container UUID : ae0d9413-c091-4e16-9cd7-3ae628f82096
+  Container Label: rgeorge-fio_test-p3s_SeqR-16K-64-64 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-16K-64-64
+Successfully created container ee3ccbc9-9086-4ea5-bf02-28ddf3c211d8
+  Container UUID : ee3ccbc9-9086-4ea5-bf02-28ddf3c211d8
+  Container Label: rgeorge-fio_test-p3s_SeqRH-16K-64-64
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-16K-64-64
+Successfully created container 5fdd4a1d-d672-4349-9c5e-d92bb3d68fb6
+  Container UUID : 5fdd4a1d-d672-4349-9c5e-d92bb3d68fb6 
+  Container Label: rgeorge-fio_test-p3s_SeqBal-16K-64-64
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-16K-64-64
+Successfully created container 0290279b-7a7d-414d-bbb7-82c3829aac7b
+  Container UUID : 0290279b-7a7d-414d-bbb7-82c3829aac7b
+  Container Label: rgeorge-fio_test-p3s_SeqWH-16K-64-64
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-16K-64-64
+Successfully created container 3cbca262-4389-4ac3-87f3-a78b48b7fa0f
+  Container UUID : 3cbca262-4389-4ac3-87f3-a78b48b7fa0f
+  Container Label: rgeorge-fio_test-p3s_SeqW-16K-64-64 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-16K-64-64
+Successfully created container 3926e5ca-2964-4001-91e3-84da9da6f5d6
+  Container UUID : 3926e5ca-2964-4001-91e3-84da9da6f5d6
+  Container Label: rgeorge-fio_test-p3s_SeqR-1M-64-64  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-1M-64-64
+Successfully created container d5af928f-49e2-4839-9fac-c0c2621f857f
+  Container UUID : d5af928f-49e2-4839-9fac-c0c2621f857f
+  Container Label: rgeorge-fio_test-p3s_SeqRH-1M-64-64 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-1M-64-64
+Successfully created container 69199e42-44cd-4f6a-9e07-586e1af1161a
+  Container UUID : 69199e42-44cd-4f6a-9e07-586e1af1161a
+  Container Label: rgeorge-fio_test-p3s_SeqBal-1M-64-64
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-1M-64-64
+Successfully created container 2ad634a4-845d-40b0-be1c-3d9cdab5b6d4
+  Container UUID : 2ad634a4-845d-40b0-be1c-3d9cdab5b6d4
+  Container Label: rgeorge-fio_test-p3s_SeqWH-1M-64-64 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-1M-64-64
+Successfully created container 62f757be-9833-4c2b-b82c-4b9e84179696
+  Container UUID : 62f757be-9833-4c2b-b82c-4b9e84179696
+  Container Label: rgeorge-fio_test-p3s_SeqW-1M-64-64  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-1M-64-64
+Successfully created container dd719921-d2e4-4eb1-9321-3e8e66ad373e
+  Container UUID : dd719921-d2e4-4eb1-9321-3e8e66ad373e
+  Container Label: rgeorge-fio_test-p3s_SeqR-2M-64-64  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-2M-64-64
+Successfully created container c6cc56d7-b278-40a7-830b-5842b5b74384
+  Container UUID : c6cc56d7-b278-40a7-830b-5842b5b74384
+  Container Label: rgeorge-fio_test-p3s_SeqRH-2M-64-64 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-2M-64-64
+Successfully created container b5968a1e-1a81-4462-8036-786bc8d59fb8
+  Container UUID : b5968a1e-1a81-4462-8036-786bc8d59fb8
+  Container Label: rgeorge-fio_test-p3s_SeqBal-2M-64-64
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-2M-64-64
+Successfully created container 167490c3-a447-48f8-bf65-d3548ad76746
+  Container UUID : 167490c3-a447-48f8-bf65-d3548ad76746
+  Container Label: rgeorge-fio_test-p3s_SeqWH-2M-64-64 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-2M-64-64
+Successfully created container f5225adb-446a-4434-9d21-88ac98c00175
+  Container UUID : f5225adb-446a-4434-9d21-88ac98c00175
+  Container Label: rgeorge-fio_test-p3s_SeqW-2M-64-64  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-2M-64-64
+Successfully created container be6ca969-21df-4860-8973-8474b0ae33c9
+  Container UUID : be6ca969-21df-4860-8973-8474b0ae33c9
+  Container Label: rgeorge-fio_test-p3s_SeqR-4M-64-64  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-4M-64-64
+Successfully created container b3d7cd9e-688a-4060-88cb-97ceb75565fb
+  Container UUID : b3d7cd9e-688a-4060-88cb-97ceb75565fb
+  Container Label: rgeorge-fio_test-p3s_SeqRH-4M-64-64 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-4M-64-64
+Successfully created container 1494d383-a479-41f8-9984-0a588123c3f8
+  Container UUID : 1494d383-a479-41f8-9984-0a588123c3f8
+  Container Label: rgeorge-fio_test-p3s_SeqBal-4M-64-64
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-4M-64-64
+Successfully created container e6712ef3-0696-4d14-8121-fd0df928fea5
+  Container UUID : e6712ef3-0696-4d14-8121-fd0df928fea5
+  Container Label: rgeorge-fio_test-p3s_SeqWH-4M-64-64 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-4M-64-64
+Successfully created container 3971f1b5-64b0-49c1-8886-a9b2020d96dc
+  Container UUID : 3971f1b5-64b0-49c1-8886-a9b2020d96dc
+  Container Label: rgeorge-fio_test-p3s_SeqW-4M-64-64  
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-4M-64-64
+Successfully created container 6157c647-7925-4d88-b5e1-5c14c9348e8b
+  Container UUID : 6157c647-7925-4d88-b5e1-5c14c9348e8b
+  Container Label: rgeorge-fio_test-p3s_SeqR-16K-64-128
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-16K-64-128
+Successfully created container f3e70b11-b904-4155-80cd-1d777d5558a5
+  Container UUID : f3e70b11-b904-4155-80cd-1d777d5558a5 
+  Container Label: rgeorge-fio_test-p3s_SeqRH-16K-64-128
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-16K-64-128
+Successfully created container 6847a381-23a4-4eed-b00d-d2356736364b
+  Container UUID : 6847a381-23a4-4eed-b00d-d2356736364b  
+  Container Label: rgeorge-fio_test-p3s_SeqBal-16K-64-128
+  Container Type : POSIX                                 
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-16K-64-128
+Successfully created container 369b88b4-af06-4913-9e01-5e37b8486f1e
+  Container UUID : 369b88b4-af06-4913-9e01-5e37b8486f1e 
+  Container Label: rgeorge-fio_test-p3s_SeqWH-16K-64-128
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-16K-64-128
+Successfully created container a7753723-ccef-4887-8a40-4fc4965744de
+  Container UUID : a7753723-ccef-4887-8a40-4fc4965744de
+  Container Label: rgeorge-fio_test-p3s_SeqW-16K-64-128
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-16K-64-128
+Successfully created container 6d774f07-6a12-4733-9bbf-8d97e25b4a0c
+  Container UUID : 6d774f07-6a12-4733-9bbf-8d97e25b4a0c
+  Container Label: rgeorge-fio_test-p3s_SeqR-1M-64-128 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-1M-64-128
+Successfully created container 41464630-e73c-4dce-ac80-8714205b3083
+  Container UUID : 41464630-e73c-4dce-ac80-8714205b3083
+  Container Label: rgeorge-fio_test-p3s_SeqRH-1M-64-128
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-1M-64-128
+Successfully created container 25e559ce-c8ce-4b3a-be20-5df9f72c3e64
+  Container UUID : 25e559ce-c8ce-4b3a-be20-5df9f72c3e64 
+  Container Label: rgeorge-fio_test-p3s_SeqBal-1M-64-128
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-1M-64-128
+Successfully created container cd251201-2752-44f8-bd77-15d2589785b0
+  Container UUID : cd251201-2752-44f8-bd77-15d2589785b0
+  Container Label: rgeorge-fio_test-p3s_SeqWH-1M-64-128
+  Container Type : POSIX                               
+
+clush: 0/1           clush: 1/1clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-1M-64-128
+Successfully created container 6ae108d1-d4a9-4977-929b-7e470c46069c
+  Container UUID : 6ae108d1-d4a9-4977-929b-7e470c46069c
+  Container Label: rgeorge-fio_test-p3s_SeqW-1M-64-128 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-1M-64-128
+Successfully created container 98dd8aae-c490-4f4b-a947-1318c9391c9f
+  Container UUID : 98dd8aae-c490-4f4b-a947-1318c9391c9f
+  Container Label: rgeorge-fio_test-p3s_SeqR-2M-64-128 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-2M-64-128
+Successfully created container 5d04ee74-cda1-4fbc-bfc4-868ba4a302fc
+  Container UUID : 5d04ee74-cda1-4fbc-bfc4-868ba4a302fc
+  Container Label: rgeorge-fio_test-p3s_SeqRH-2M-64-128
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-2M-64-128
+Successfully created container 1942bd9c-e750-49ce-aeb7-e95ff7afb3d3
+  Container UUID : 1942bd9c-e750-49ce-aeb7-e95ff7afb3d3 
+  Container Label: rgeorge-fio_test-p3s_SeqBal-2M-64-128
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-2M-64-128
+Successfully created container 0e94c862-d97f-4a07-9963-da6e8eb945ef
+  Container UUID : 0e94c862-d97f-4a07-9963-da6e8eb945ef
+  Container Label: rgeorge-fio_test-p3s_SeqWH-2M-64-128
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-2M-64-128
+Successfully created container 869bac85-e70a-4308-acf4-bec51e7cbd9e
+  Container UUID : 869bac85-e70a-4308-acf4-bec51e7cbd9e
+  Container Label: rgeorge-fio_test-p3s_SeqW-2M-64-128 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-2M-64-128
+Successfully created container 4ae30c20-f299-4c72-9972-ebf99175d9a9
+  Container UUID : 4ae30c20-f299-4c72-9972-ebf99175d9a9
+  Container Label: rgeorge-fio_test-p3s_SeqR-4M-64-128 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqR-4M-64-128
+Successfully created container e3f53b5c-f411-4f89-a299-f72008cc7f44
+  Container UUID : e3f53b5c-f411-4f89-a299-f72008cc7f44
+  Container Label: rgeorge-fio_test-p3s_SeqRH-4M-64-128
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqRH-4M-64-128
+Successfully created container d0843911-446a-4a98-8538-95a4eb25fefe
+  Container UUID : d0843911-446a-4a98-8538-95a4eb25fefe 
+  Container Label: rgeorge-fio_test-p3s_SeqBal-4M-64-128
+  Container Type : POSIX                                
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqBal-4M-64-128
+Successfully created container a44ccdb0-f594-43f3-ae02-5617e3cd8da1
+  Container UUID : a44ccdb0-f594-43f3-ae02-5617e3cd8da1
+  Container Label: rgeorge-fio_test-p3s_SeqWH-4M-64-128
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqWH-4M-64-128
+Successfully created container cdd0faaf-966c-4de5-9065-ad5aa3366cd9
+  Container UUID : cdd0faaf-966c-4de5-9065-ad5aa3366cd9
+  Container Label: rgeorge-fio_test-p3s_SeqW-4M-64-128 
+  Container Type : POSIX                               
+
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+clock setaffinity failed: Invalid argument
+Successfully destroyed container rgeorge-fio_test-p3s_SeqW-4M-64-128
