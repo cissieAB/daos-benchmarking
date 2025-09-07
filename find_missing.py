@@ -1,4 +1,5 @@
 import os
+import pandas as pd
 
 BLOCK_SIZES=["4K", "16K", "1M", "2M", "4M"]
 RW_CATEGORIES=["SeqR", "SeqRH", "SeqBal", "SeqWH", "SeqW", "RandR", "RandRH", "RandBal", "RandWH", "RandW"]
@@ -22,4 +23,15 @@ for file_name in os.listdir(json_dir):
     actual.append(file_name)
 
 missing = list(set(full_list) - set(actual))
-print(missing)
+missing = pd.Series(missing)
+with open('missing.txt', 'a') as f:
+    f.write(missing.to_string())
+
+
+
+ser = pd.Series(actual)
+freq_tab = ser.value_counts()
+print(max(freq_tab))
+
+with open('freq.txt', 'a') as f:
+    f.write(freq_tab.to_string())
