@@ -87,11 +87,9 @@ df = df.copy()
 
 
 # Read-Write
-df['job options.rwmixread']
 df['rw_code'] = df['job options.rw'].str.cat(df['job options.rwmixread'], sep='-', na_rep='')
 df["rw_full"] = df["rw_code"].map(rw_map)
-unique_rw = df["rw_full"].unique()
-print(unique_rw)
+
 
 # Block Size 
 df['bs_num'] = df['job options.bs'].map(bs_map)
@@ -121,9 +119,13 @@ df['lat_ns.percentile.99.000000'] = df.apply(lambda row: get_var(row, 'lat_ns.pe
 df["job options.numjobs"] = df["job options.numjobs"].astype(int)
 df["job options.iodepth"] = df["job options.iodepth"].astype(int)
 
+df = df[df["bs_num"].isin(bs_order)]
 
-df.to_csv('fio_results.csv')
+print(df["job options.bs"].unique() )
+print(df["bs_num"].unique() )
 
+for x in df["bs_num"].unique() :
+    print(f"<{x}>")
 #### COLUMN NAMES ####
 #####   Variables:  
 # "job options.iodepth" : io depth
@@ -167,9 +169,8 @@ plt.clf()
 
 
 # BANDWIDTH vs BLOCK SIZE
-io32_nj32= df[ (df['job options.iodepth']==32) & (df['job options.numjobs']==32) ]
 ax = sns.lineplot(
-    data=io32_nj32,
+    data=df,
     x="bs_num",
     y="bw_mean",
     hue="rw_full", 
@@ -193,7 +194,7 @@ plt.clf()
 
 g = sns.catplot(data=df,
                 kind="bar",
-                x="job options.bs", 
+                x="job options.bs",
                 hue="rw_full", 
                 y="bw_mean",
                 row="job options.numjobs",
@@ -202,27 +203,27 @@ g = sns.catplot(data=df,
                 # width=5,
                 hue_order=hue_order,
                 order=bs_order,
-                height=5, aspect=1.5
-                # sharex=False
+                height=5, aspect=1.5,
+                # sharex=False #, sharey=False
                 )
 g.set_xticklabels(["4k", "16k", "1M", "2M", "4M"]) 
 g.set_ylabels("Bandwidth (GiB/s)")
-for ax in g.axes.flatten():
-    # ax.set_ylabel("Bandwidth (GiB/s)")
-    # ax.tick_params(axis='x', labelbottom=True)  
-    # ax.set_xticklabels(["4k", "16k", "1M", "2M", "4M"])   
-    ax.margins(x=0.1)
-    # for container in ax.containers:
-        # ax.bar_label(container)
-        # hue_label = container.get_label()  # This gets the hue value
-        # for bar in container:
-        #     x_pos = bar.get_x() + bar.get_width() / 2
-        #     y_pos = ax.get_ylim()[0] - (ax.get_ylim()[1] - ax.get_ylim()[0]) * 0.05  # Position below x-axis
-        #     ax.text(x_pos, y_pos, hue_label, 
-        #            ha='center', va='top', 
-        #            fontsize=8, rotation=45)
+# for ax in g.axes.flatten():
+#     # ax.set_ylabel("Bandwidth (GiB/s)")
+#     # ax.tick_params(axis='x', labelbottom=True)  
+#     # ax.set_xticklabels(["4k", "16k", "1M", "2M", "4M"])   
+#     ax.margins(x=0.1)
+#     # for container in ax.containers:
+#         # ax.bar_label(container)
+#         # hue_label = container.get_label()  # This gets the hue value
+#         # for bar in container:
+#         #     x_pos = bar.get_x() + bar.get_width() / 2
+#         #     y_pos = ax.get_ylim()[0] - (ax.get_ylim()[1] - ax.get_ylim()[0]) * 0.05  # Position below x-axis
+#         #     ax.text(x_pos, y_pos, hue_label, 
+#         #            ha='center', va='top', 
+#         #            fontsize=8, rotation=45)
 
-g.savefig((png_dir + "/bs-bars.svg"), bbox_inches="tight")
+g.savefig((png_dir + "/bs-bars2.svg"), bbox_inches="tight")
 plt.clf()
 
 
