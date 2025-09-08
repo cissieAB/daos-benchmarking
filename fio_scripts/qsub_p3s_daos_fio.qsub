@@ -18,8 +18,7 @@ LOG_FILE="$RESULTS_DIR/logs.txt"
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
 
 # Values for --bs
-# BLOCK_SIZES=("4K" "16K" "1M" "2M" "4M")
-BLOCK_SIZES=("16K" "1M" "2M" "4M")
+BLOCK_SIZES=("4K" "16K" "1M" "2M" "4M")
 # BLOCK_SIZES=("4K")              # mini for testing
 
 # Keys for setting --rw and --rwmixread
