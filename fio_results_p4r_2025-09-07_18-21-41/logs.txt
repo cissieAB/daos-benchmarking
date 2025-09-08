@@ -1,0 +1,633 @@
+[SUCCESS] FIO benchmark completed for RandR-4K-128-1 in 1057
+UUID                                 Label     
+----                                 -----     
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk 
+[SUCCESS] FIO benchmark completed for RandRH-4K-128-1 in 959
+[WARNING] Failed to destroy container rgeorge-fio_test-p4r_RandRH-4K-128-1
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1 
+[SUCCESS] FIO benchmark completed for RandBal-4K-128-1 in 1018
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1 
+[SUCCESS] FIO benchmark completed for RandWH-4K-128-1 in 994
+[WARNING] Failed to destroy container rgeorge-fio_test-p4r_RandWH-4K-128-1
+UUID                                 Label                                
+----                                 -----                                
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1 
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1 
+[SUCCESS] FIO benchmark completed for RandW-4K-128-1 in 66
+UUID                                 Label                                
+----                                 -----                                
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1 
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1 
+[SUCCESS] FIO benchmark completed for RandR-16K-128-1 in 406
+UUID                                 Label                                
+----                                 -----                                
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1 
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1 
+[SUCCESS] FIO benchmark completed for RandRH-16K-128-1 in 402
+[WARNING] Failed to destroy container rgeorge-fio_test-p4r_RandRH-16K-128-1
+UUID                                 Label                                 
+----                                 -----                                 
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1  
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                             
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1 
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1  
+[SUCCESS] FIO benchmark completed for RandBal-16K-128-1 in 430
+[WARNING] Failed to destroy container rgeorge-fio_test-p4r_RandBal-16K-128-1
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandWH-16K-128-1 in 405
+[WARNING] Failed to destroy container rgeorge-fio_test-p4r_RandWH-16K-128-1
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandW-16K-128-1 in 72
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandR-1M-128-1 in 117
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandRH-1M-128-1 in 113
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandBal-1M-128-1 in 109
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandWH-1M-128-1 in 110
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandW-1M-128-1 in 65
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandR-2M-128-1 in 111
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandRH-2M-128-1 in 109
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandBal-2M-128-1 in 110
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandWH-2M-128-1 in 109
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandW-2M-128-1 in 68
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandR-4M-128-1 in 116
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandRH-4M-128-1 in 111
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandBal-4M-128-1 in 113
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandWH-4M-128-1 in 113
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandW-4M-128-1 in 70
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandR-4K-128-8 in 1036
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandRH-4K-128-8 in 1080
+[WARNING] Failed to destroy container rgeorge-fio_test-p4r_RandRH-4K-128-8
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandBal-4K-128-8 in 929
+[WARNING] Failed to destroy container rgeorge-fio_test-p4r_RandBal-4K-128-8
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandWH-4K-128-8 in 987
+[WARNING] Failed to destroy container rgeorge-fio_test-p4r_RandWH-4K-128-8
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandW-4K-128-8 in 66
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandR-16K-128-8 in 393
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandRH-16K-128-8 in 410
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+[SUCCESS] FIO benchmark completed for RandBal-16K-128-8 in 445
+[WARNING] Failed to destroy container rgeorge-fio_test-p4r_RandBal-16K-128-8
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandWH-16K-128-8 in 435
+[WARNING] Failed to destroy container rgeorge-fio_test-p4r_RandWH-16K-128-8
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandW-16K-128-8 in 65
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandR-1M-128-8 in 112
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandRH-1M-128-8 in 115
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandBal-1M-128-8 in 111
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandWH-1M-128-8 in 113
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandW-1M-128-8 in 68
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandR-2M-128-8 in 112
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandRH-2M-128-8 in 111
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandBal-2M-128-8 in 114
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandWH-2M-128-8 in 110
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandW-2M-128-8 in 65
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandR-4M-128-8 in 111
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandRH-4M-128-8 in 114
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandBal-4M-128-8 in 106
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandWH-4M-128-8 in 109
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandW-4M-128-8 in 69
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandR-4K-128-16 in 1090
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandRH-4K-128-16 in 961
+UUID                                 Label                                  
+----                                 -----                                  
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandBal-4K-128-16 in 1031
+[WARNING] Failed to destroy container rgeorge-fio_test-p4r_RandBal-4K-128-16
+UUID                                 Label                                  
+----                                 -----                                  
+1711ebfc-39ce-488e-84b9-3ea846c5cb79 rgeorge-fio_test-p4r_RandBal-4K-128-16 
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandWH-4K-128-16 in 936
+[WARNING] Failed to destroy container rgeorge-fio_test-p4r_RandWH-4K-128-16
+UUID                                 Label                                  
+----                                 -----                                  
+5f7d3264-654d-4da3-a680-73552d19131f rgeorge-fio_test-p4r_RandWH-4K-128-16  
+1711ebfc-39ce-488e-84b9-3ea846c5cb79 rgeorge-fio_test-p4r_RandBal-4K-128-16 
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandW-4K-128-16 in 72
+UUID                                 Label                                  
+----                                 -----                                  
+5f7d3264-654d-4da3-a680-73552d19131f rgeorge-fio_test-p4r_RandWH-4K-128-16  
+1711ebfc-39ce-488e-84b9-3ea846c5cb79 rgeorge-fio_test-p4r_RandBal-4K-128-16 
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandR-16K-128-16 in 410
+UUID                                 Label                                  
+----                                 -----                                  
+5f7d3264-654d-4da3-a680-73552d19131f rgeorge-fio_test-p4r_RandWH-4K-128-16  
+1711ebfc-39ce-488e-84b9-3ea846c5cb79 rgeorge-fio_test-p4r_RandBal-4K-128-16 
+c68827ef-6719-4d29-8f9e-8137dfc83fe9 rgeorge-fio_test-p4r_RandWH-4K-128-1   
+c9a3b729-368a-4d45-9c5d-ed9e8fe0a82f rgeorge-fio_test-p4r_RandRH-4K-128-8   
+2f1d3d8c-3657-43ce-bea5-130a2d702189 rgeorge-fio_test-p4r_RandWH-4K-128-8   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+fbee55e1-58f5-4563-bd76-1a3c860bef4e rgeorge-fio_test-p4r_RandWH-16K-128-8  
+6acf6417-c73a-4a1b-8701-d7e17c5bbed4 rgeorge-fio_test-p4r_RandRH-16K-128-1  
+42e117b3-985c-46f1-8d9d-2f50a528ae9a rgeorge-fio_test-p4r_RandRH-4K-128-1   
+f365d5a4-8515-4217-812c-bc05fded8ec3 rgeorge-fio_test-p4r_RandWH-16K-128-1  
+f8bbd596-6c0b-4be5-b3e9-7fa01ffe0627 rgeorge-fio_test-p4r_RandBal-4K-128-8  
+16060e4e-d4e1-41f6-aa70-a9f892c0f1a8 rgeorge-fio_test-p4r_RandBal-16K-128-1 
+c8591b65-7bc7-4083-8ffe-82682064f623 rgeorge-fio_test-p4r_RandBal-16K-128-8 
+[SUCCESS] FIO benchmark completed for RandRH-16K-128-16 in 427
