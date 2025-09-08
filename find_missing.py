@@ -39,8 +39,12 @@ for bs in BLOCK_SIZES:
                     params.append(p)
                 # full_list.append(fname)
 
+params1 = params[:200]
+params2 = params[200:400]
+params3 = params[400:]
+
 bash_param_str = "("
-for p in params:
+for p in params1:
     bash_param_str += f"\'{p}\' "
 bash_param_str += ")"
 print(bash_param_str)
