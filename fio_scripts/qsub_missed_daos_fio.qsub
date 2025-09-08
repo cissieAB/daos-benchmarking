@@ -109,16 +109,9 @@ for case in "${CASES[@]}"; do
     
     sleep 2
 
-    # jq -s '{ jobs: (.[0].jobs + .[1].jobs) }' "$combined_json" <(grep -v 'clock setaffinity' "${RESULTS_DIR}/fio_${CASE_ID}.json") > "${combined_json}.tmp" 
-    # mv "${combined_json}.tmp" "$combined_json"
-    # rm "${RESULTS_DIR}/fio_${CASE_ID}.json"
-
-    # cat "${RESULTS_DIR}/fio_result_${CASE_ID}.csv" >> "${RESULTS_DIR}/fio_result_combined.csv"
-    # rm "${RESULTS_DIR}/fio_result_${CASE_ID}.csv"
-    
-    # Cleanup
     cleanup "$POOL_NAME" "$CONTAINER_NAME" "$MOUNT_POINT"
     ((i++))
+    success "end of loop"
 done
 
 ELAPSED_TIME=$((SECONDS - START_TIME))
