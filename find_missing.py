@@ -12,16 +12,16 @@ NUM_JOBS_SIZES=["16", "32", "64", "128"]
 IO_DEPTHS=["1", "4", "8", "16", "32", "64", "128"]
 
 rw_map = {
-        "SeqR":"--rw=read                     --unified_rw_reporting=0",
-        "SeqRH":"--rw=rw       --rwmixread=80  --unified_rw_reporting=1",
-        "SeqBal":"--rw=rw                       --unified_rw_reporting=1",
-        "SeqWH":"--rw=rw       --rwmixread=20  --unified_rw_reporting=1",
-        "SeqW":"--rw=write                    --unified_rw_reporting=0",
-        "RandR":"--rw=randread                 --unified_rw_reporting=0",
+        "SeqR":"--rw=read --unified_rw_reporting=0",
+        "SeqRH":"--rw=rw --rwmixread=80  --unified_rw_reporting=1",
+        "SeqBal":"--rw=rw --unified_rw_reporting=1",
+        "SeqWH":"--rw=rw --rwmixread=20  --unified_rw_reporting=1",
+        "SeqW":"--rw=write --unified_rw_reporting=0",
+        "RandR":"--rw=randread --unified_rw_reporting=0",
         "RandRH":"--rw=randrw   --rwmixread=80  --unified_rw_reporting=1",
-        "RandBal":"--rw=randrw                   --unified_rw_reporting=1",
+        "RandBal":"--rw=randrw --unified_rw_reporting=1",
         "RandWH":"--rw=randrw   --rwmixread=20  --unified_rw_reporting=1",
-        "RandW":"--rw=randwrite                --unified_rw_reporting=0"
+        "RandW":"--rw=randwrite --unified_rw_reporting=0"
 }
 ids=[]
 params = []
@@ -34,7 +34,7 @@ for bs in BLOCK_SIZES:
                 fname = f"fio_{CASE_ID}.json"
                 if fname not in actual:
                     rw_full = rw_map[rw_cat]
-                    p = f'{rw_cat} --bs={bs} --numjobs={nj} --iodepth={iod}'
+                    p = f'{rw_full} --bs={bs} --numjobs={nj} --iodepth={iod}'
                     ids.append(CASE_ID)
                     params.append(p)
                 # full_list.append(fname)
