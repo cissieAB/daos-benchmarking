@@ -108,7 +108,7 @@ for case in "${CASES[@]}"; do
     fio_cmd+=" --output-format=json"
     fio_cmd+=" --warnings-fatal"
     fio_cmd+=" --name=${CASE_ID}"
-    fio_cmd+=" case"
+    fio_cmd+=" ${case}"
     fio_cmd+=" --runtime=60 --time_based"
     fio_cmd+=" --directory=${MOUNT_POINT}"
     fio_cmd+=" --direct=1 --buffered=0"
