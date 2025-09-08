@@ -69,10 +69,10 @@ module load daos || { error "Failed to load DAOS module"; exit 1; }
 daos pool list | grep -q -- "$POOL_NAME" || { error "No pool: $POOL_NAME"; exit 1; }
 
 
-i=0
-for case in "${CASES[@]}"; do
+for i in "${!CASES[@]}"; do
     START_CASE=$SECONDS
     CASE_ID="${i}"
+    TEST_CASE="${CASES[i]}"
     CONTAINER_NAME="${CONTAINER_BASE_NAME}_${CASE_ID}"
     MOUNT_POINT="/tmp/$POOL_NAME/$CONTAINER_NAME"
     
@@ -91,7 +91,7 @@ for case in "${CASES[@]}"; do
     fio_cmd+=" --output-format=json"
     fio_cmd+=" --warnings-fatal"
     fio_cmd+=" --name=${CASE_ID}"
-    fio_cmd+=" ${case}"
+    fio_cmd+=" ${TEST_CASE}"
     fio_cmd+=" --runtime=60 --time_based"
     fio_cmd+=" --directory=${MOUNT_POINT}"
     fio_cmd+=" --direct=1 --buffered=0"
@@ -105,12 +105,12 @@ for case in "${CASES[@]}"; do
 
     ${fio_cmd} || { error "$fio_cmd failed"; exit 1; }
     CASE_TIME=$((SECONDS - START_CASE))
-    success "FIO benchmark completed for ${case} in ${CASE_TIME}"
+    success "FIO benchmark completed for ${TEST_CASE} in ${CASE_TIME}"
     
     sleep 2
 
     cleanup "$POOL_NAME" "$CONTAINER_NAME" "$MOUNT_POINT"
-    ((i++))
+    
     success "end of loop"
 done
 
