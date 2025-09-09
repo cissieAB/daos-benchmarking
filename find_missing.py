@@ -1,5 +1,4 @@
 import os
-import pandas as pd
 
 json_dir = "fio_results"
 actual = []
@@ -38,8 +37,6 @@ for bs in BLOCK_SIZES:
                     ids.append(CASE_ID)
                     params.append(p)
                 # full_list.append(fname)
-
-params = params[43:]
 
 bash_param_str = "("
 for p in params:
