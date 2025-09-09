@@ -1,0 +1,752 @@
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=20  --unified_rw_reporting=1 --bs=4K --numjobs=128 --iodepth=128 in 2270
+[WARNING] Failed to destroy container rgeorge-fio_test-m_RandWH-4K-128-128
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randwrite --unified_rw_reporting=0 --bs=4K --numjobs=16 --iodepth=4 in 63
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randwrite --unified_rw_reporting=0 --bs=4K --numjobs=32 --iodepth=4 in 64
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randwrite --unified_rw_reporting=0 --bs=4K --numjobs=64 --iodepth=4 in 66
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randwrite --unified_rw_reporting=0 --bs=4K --numjobs=64 --iodepth=16 in 66
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randwrite --unified_rw_reporting=0 --bs=4K --numjobs=64 --iodepth=32 in 65
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randwrite --unified_rw_reporting=0 --bs=4K --numjobs=64 --iodepth=64 in 66
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randwrite --unified_rw_reporting=0 --bs=4K --numjobs=64 --iodepth=128 in 66
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randwrite --unified_rw_reporting=0 --bs=4K --numjobs=128 --iodepth=4 in 68
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randwrite --unified_rw_reporting=0 --bs=4K --numjobs=128 --iodepth=32 in 68
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randwrite --unified_rw_reporting=0 --bs=4K --numjobs=128 --iodepth=64 in 69
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randwrite --unified_rw_reporting=0 --bs=4K --numjobs=128 --iodepth=128 in 68
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=read --unified_rw_reporting=0 --bs=16K --numjobs=16 --iodepth=4 in 158
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=read --unified_rw_reporting=0 --bs=16K --numjobs=32 --iodepth=4 in 257
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=read --unified_rw_reporting=0 --bs=16K --numjobs=64 --iodepth=4 in 263
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=read --unified_rw_reporting=0 --bs=16K --numjobs=128 --iodepth=4 in 384
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=read --unified_rw_reporting=0 --bs=16K --numjobs=128 --iodepth=32 in 298
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=read --unified_rw_reporting=0 --bs=16K --numjobs=128 --iodepth=64 in 310
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=read --unified_rw_reporting=0 --bs=16K --numjobs=128 --iodepth=128 in 312
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --rwmixread=80  --unified_rw_reporting=1 --bs=16K --numjobs=16 --iodepth=4 in 89
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --rwmixread=80  --unified_rw_reporting=1 --bs=16K --numjobs=32 --iodepth=4 in 117
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --rwmixread=80  --unified_rw_reporting=1 --bs=16K --numjobs=64 --iodepth=4 in 181
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --rwmixread=80  --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=4 in 319
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --rwmixread=80  --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=32 in 323
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --rwmixread=80  --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=64 in 321
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --rwmixread=80  --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=128 in 316
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --unified_rw_reporting=1 --bs=16K --numjobs=16 --iodepth=4 in 90
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --unified_rw_reporting=1 --bs=16K --numjobs=32 --iodepth=4 in 122
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --unified_rw_reporting=1 --bs=16K --numjobs=64 --iodepth=4 in 174
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=4 in 324
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=32 in 316
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=64 in 309
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=128 in 306
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --rwmixread=20  --unified_rw_reporting=1 --bs=16K --numjobs=16 --iodepth=4 in 91
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --rwmixread=20  --unified_rw_reporting=1 --bs=16K --numjobs=32 --iodepth=4 in 241
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --rwmixread=20  --unified_rw_reporting=1 --bs=16K --numjobs=64 --iodepth=4 in 180
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --rwmixread=20  --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=4 in 303
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --rwmixread=20  --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=32 in 322
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --rwmixread=20  --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=64 in 304
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=rw --rwmixread=20  --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=128 in 318
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=write --unified_rw_reporting=0 --bs=16K --numjobs=16 --iodepth=4 in 63
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=write --unified_rw_reporting=0 --bs=16K --numjobs=32 --iodepth=4 in 63
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=write --unified_rw_reporting=0 --bs=16K --numjobs=64 --iodepth=4 in 63
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=write --unified_rw_reporting=0 --bs=16K --numjobs=128 --iodepth=4 in 64
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=write --unified_rw_reporting=0 --bs=16K --numjobs=128 --iodepth=32 in 65
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=write --unified_rw_reporting=0 --bs=16K --numjobs=128 --iodepth=64 in 65
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=write --unified_rw_reporting=0 --bs=16K --numjobs=128 --iodepth=128 in 64
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randread --unified_rw_reporting=0 --bs=16K --numjobs=16 --iodepth=4 in 90
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randread --unified_rw_reporting=0 --bs=16K --numjobs=32 --iodepth=4 in 119
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randread --unified_rw_reporting=0 --bs=16K --numjobs=64 --iodepth=4 in 183
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randread --unified_rw_reporting=0 --bs=16K --numjobs=64 --iodepth=16 in 188
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randread --unified_rw_reporting=0 --bs=16K --numjobs=64 --iodepth=32 in 183
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randread --unified_rw_reporting=0 --bs=16K --numjobs=64 --iodepth=64 in 185
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randread --unified_rw_reporting=0 --bs=16K --numjobs=64 --iodepth=128 in 191
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randread --unified_rw_reporting=0 --bs=16K --numjobs=128 --iodepth=4 in 308
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randread --unified_rw_reporting=0 --bs=16K --numjobs=128 --iodepth=32 in 307
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randread --unified_rw_reporting=0 --bs=16K --numjobs=128 --iodepth=64 in 326
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randread --unified_rw_reporting=0 --bs=16K --numjobs=128 --iodepth=128 in 318
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=80  --unified_rw_reporting=1 --bs=16K --numjobs=16 --iodepth=4 in 89
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=80  --unified_rw_reporting=1 --bs=16K --numjobs=32 --iodepth=4 in 115
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=80  --unified_rw_reporting=1 --bs=16K --numjobs=64 --iodepth=4 in 178
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=80  --unified_rw_reporting=1 --bs=16K --numjobs=64 --iodepth=16 in 185
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=80  --unified_rw_reporting=1 --bs=16K --numjobs=64 --iodepth=32 in 174
+[WARNING] Failed to destroy container rgeorge-fio_test-m_RandRH-16K-64-32
+UUID                                 Label                                
+----                                 -----                                
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32  
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=80  --unified_rw_reporting=1 --bs=16K --numjobs=64 --iodepth=64 in 172
+[WARNING] Failed to destroy container rgeorge-fio_test-m_RandRH-16K-64-64
+UUID                                 Label                                
+----                                 -----                                
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64  
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32  
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=80  --unified_rw_reporting=1 --bs=16K --numjobs=64 --iodepth=128 in 181
+UUID                                 Label                                
+----                                 -----                                
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64  
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32  
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=80  --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=4 in 334
+UUID                                 Label                                
+----                                 -----                                
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64  
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32  
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=80  --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=32 in 300
+[WARNING] Failed to destroy container rgeorge-fio_test-m_RandRH-16K-128-32
+UUID                                 Label                                
+----                                 -----                                
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64  
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32 
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32  
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=80  --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=64 in 295
+[WARNING] Failed to destroy container rgeorge-fio_test-m_RandRH-16K-128-64
+UUID                                 Label                                
+----                                 -----                                
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64 
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64  
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                            
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128 
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32 
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32  
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=80  --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=128 in 326
+[WARNING] Failed to destroy container rgeorge-fio_test-m_RandRH-16K-128-128
+UUID                                 Label                                 
+----                                 -----                                 
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64  
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64   
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128 
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                             
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128  
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32  
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32   
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw --unified_rw_reporting=1 --bs=16K --numjobs=16 --iodepth=4 in 91
+UUID                                 Label                                 
+----                                 -----                                 
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64  
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64   
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128 
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                             
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128  
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32  
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32   
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw --unified_rw_reporting=1 --bs=16K --numjobs=32 --iodepth=4 in 123
+UUID                                 Label                                 
+----                                 -----                                 
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64  
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64   
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128 
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                             
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128  
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32  
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32   
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw --unified_rw_reporting=1 --bs=16K --numjobs=64 --iodepth=4 in 187
+UUID                                 Label                                 
+----                                 -----                                 
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64  
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64   
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128 
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                             
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128  
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32  
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32   
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw --unified_rw_reporting=1 --bs=16K --numjobs=64 --iodepth=16 in 173
+[WARNING] Failed to destroy container rgeorge-fio_test-m_RandBal-16K-64-16
+UUID                                 Label                                 
+----                                 -----                                 
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64  
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64   
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128 
+478950d3-82b2-4c6c-9080-53b96f9621cf rgeorge-fio_test-m_RandBal-16K-64-16  
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                             
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128  
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32  
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32   
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw --unified_rw_reporting=1 --bs=16K --numjobs=64 --iodepth=32 in 180
+UUID                                 Label                                 
+----                                 -----                                 
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64  
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64   
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128 
+478950d3-82b2-4c6c-9080-53b96f9621cf rgeorge-fio_test-m_RandBal-16K-64-16  
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                             
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128  
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32  
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32   
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw --unified_rw_reporting=1 --bs=16K --numjobs=64 --iodepth=64 in 169
+[WARNING] Failed to destroy container rgeorge-fio_test-m_RandBal-16K-64-64
+UUID                                 Label                                 
+----                                 -----                                 
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64  
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64   
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128 
+478950d3-82b2-4c6c-9080-53b96f9621cf rgeorge-fio_test-m_RandBal-16K-64-16  
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                             
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128  
+89b7d24c-89bc-4e16-92f9-39677a30ed39 rgeorge-fio_test-m_RandBal-16K-64-64  
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32  
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32   
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw --unified_rw_reporting=1 --bs=16K --numjobs=64 --iodepth=128 in 167
+[WARNING] Failed to destroy container rgeorge-fio_test-m_RandBal-16K-64-128
+UUID                                 Label                                 
+----                                 -----                                 
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64  
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64   
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128 
+478950d3-82b2-4c6c-9080-53b96f9621cf rgeorge-fio_test-m_RandBal-16K-64-16  
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                             
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128  
+89b7d24c-89bc-4e16-92f9-39677a30ed39 rgeorge-fio_test-m_RandBal-16K-64-64  
+97fd721b-1a57-4539-bfae-c4d1b2a99c63 rgeorge-fio_test-m_RandBal-16K-64-128 
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32  
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32   
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=4 in 327
+[WARNING] Failed to destroy container rgeorge-fio_test-m_RandBal-16K-128-4
+UUID                                 Label                                 
+----                                 -----                                 
+c24bf8d5-2485-4a56-8ada-291f96f70fc3 rgeorge-fio_test-m_RandBal-16K-128-4  
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64  
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64   
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128 
+478950d3-82b2-4c6c-9080-53b96f9621cf rgeorge-fio_test-m_RandBal-16K-64-16  
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                             
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128  
+89b7d24c-89bc-4e16-92f9-39677a30ed39 rgeorge-fio_test-m_RandBal-16K-64-64  
+97fd721b-1a57-4539-bfae-c4d1b2a99c63 rgeorge-fio_test-m_RandBal-16K-64-128 
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32  
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32   
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=16 in 322
+[WARNING] Failed to destroy container rgeorge-fio_test-m_RandBal-16K-128-16
+UUID                                 Label                                 
+----                                 -----                                 
+c24bf8d5-2485-4a56-8ada-291f96f70fc3 rgeorge-fio_test-m_RandBal-16K-128-4  
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64  
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64   
+0b5b5c99-d7f8-4d3e-ac51-31355d6c1090 rgeorge-fio_test-m_RandBal-16K-128-16 
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128 
+478950d3-82b2-4c6c-9080-53b96f9621cf rgeorge-fio_test-m_RandBal-16K-64-16  
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                             
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128  
+89b7d24c-89bc-4e16-92f9-39677a30ed39 rgeorge-fio_test-m_RandBal-16K-64-64  
+97fd721b-1a57-4539-bfae-c4d1b2a99c63 rgeorge-fio_test-m_RandBal-16K-64-128 
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32  
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32   
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=32 in 288
+UUID                                 Label                                 
+----                                 -----                                 
+c24bf8d5-2485-4a56-8ada-291f96f70fc3 rgeorge-fio_test-m_RandBal-16K-128-4  
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64  
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64   
+0b5b5c99-d7f8-4d3e-ac51-31355d6c1090 rgeorge-fio_test-m_RandBal-16K-128-16 
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128 
+478950d3-82b2-4c6c-9080-53b96f9621cf rgeorge-fio_test-m_RandBal-16K-64-16  
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                             
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128  
+89b7d24c-89bc-4e16-92f9-39677a30ed39 rgeorge-fio_test-m_RandBal-16K-64-64  
+97fd721b-1a57-4539-bfae-c4d1b2a99c63 rgeorge-fio_test-m_RandBal-16K-64-128 
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32  
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32   
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=64 in 316
+[WARNING] Failed to destroy container rgeorge-fio_test-m_RandBal-16K-128-64
+UUID                                 Label                                 
+----                                 -----                                 
+c24bf8d5-2485-4a56-8ada-291f96f70fc3 rgeorge-fio_test-m_RandBal-16K-128-4  
+8655f3c5-518c-441a-82eb-97fafd5b7e53 rgeorge-fio_test-m_RandBal-16K-128-64 
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64  
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64   
+0b5b5c99-d7f8-4d3e-ac51-31355d6c1090 rgeorge-fio_test-m_RandBal-16K-128-16 
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128 
+478950d3-82b2-4c6c-9080-53b96f9621cf rgeorge-fio_test-m_RandBal-16K-64-16  
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                             
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128  
+89b7d24c-89bc-4e16-92f9-39677a30ed39 rgeorge-fio_test-m_RandBal-16K-64-64  
+97fd721b-1a57-4539-bfae-c4d1b2a99c63 rgeorge-fio_test-m_RandBal-16K-64-128 
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32  
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32   
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw --unified_rw_reporting=1 --bs=16K --numjobs=128 --iodepth=128 in 316
+[WARNING] Failed to destroy container rgeorge-fio_test-m_RandBal-16K-128-128
+UUID                                 Label                                  
+----                                 -----                                  
+c24bf8d5-2485-4a56-8ada-291f96f70fc3 rgeorge-fio_test-m_RandBal-16K-128-4   
+8655f3c5-518c-441a-82eb-97fafd5b7e53 rgeorge-fio_test-m_RandBal-16K-128-64  
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64   
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64    
+0b5b5c99-d7f8-4d3e-ac51-31355d6c1090 rgeorge-fio_test-m_RandBal-16K-128-16  
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128  
+478950d3-82b2-4c6c-9080-53b96f9621cf rgeorge-fio_test-m_RandBal-16K-64-16   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128   
+89b7d24c-89bc-4e16-92f9-39677a30ed39 rgeorge-fio_test-m_RandBal-16K-64-64   
+6ab6e3a5-2cd5-4c41-ad4e-6702740ebce1 rgeorge-fio_test-m_RandBal-16K-128-128 
+97fd721b-1a57-4539-bfae-c4d1b2a99c63 rgeorge-fio_test-m_RandBal-16K-64-128  
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32   
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32    
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=20  --unified_rw_reporting=1 --bs=16K --numjobs=16 --iodepth=4 in 90
+UUID                                 Label                                  
+----                                 -----                                  
+c24bf8d5-2485-4a56-8ada-291f96f70fc3 rgeorge-fio_test-m_RandBal-16K-128-4   
+8655f3c5-518c-441a-82eb-97fafd5b7e53 rgeorge-fio_test-m_RandBal-16K-128-64  
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64   
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64    
+0b5b5c99-d7f8-4d3e-ac51-31355d6c1090 rgeorge-fio_test-m_RandBal-16K-128-16  
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128  
+478950d3-82b2-4c6c-9080-53b96f9621cf rgeorge-fio_test-m_RandBal-16K-64-16   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128   
+89b7d24c-89bc-4e16-92f9-39677a30ed39 rgeorge-fio_test-m_RandBal-16K-64-64   
+6ab6e3a5-2cd5-4c41-ad4e-6702740ebce1 rgeorge-fio_test-m_RandBal-16K-128-128 
+97fd721b-1a57-4539-bfae-c4d1b2a99c63 rgeorge-fio_test-m_RandBal-16K-64-128  
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32   
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32    
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=20  --unified_rw_reporting=1 --bs=16K --numjobs=32 --iodepth=4 in 115
+UUID                                 Label                                  
+----                                 -----                                  
+c24bf8d5-2485-4a56-8ada-291f96f70fc3 rgeorge-fio_test-m_RandBal-16K-128-4   
+8655f3c5-518c-441a-82eb-97fafd5b7e53 rgeorge-fio_test-m_RandBal-16K-128-64  
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64   
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64    
+0b5b5c99-d7f8-4d3e-ac51-31355d6c1090 rgeorge-fio_test-m_RandBal-16K-128-16  
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128  
+478950d3-82b2-4c6c-9080-53b96f9621cf rgeorge-fio_test-m_RandBal-16K-64-16   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128   
+89b7d24c-89bc-4e16-92f9-39677a30ed39 rgeorge-fio_test-m_RandBal-16K-64-64   
+6ab6e3a5-2cd5-4c41-ad4e-6702740ebce1 rgeorge-fio_test-m_RandBal-16K-128-128 
+97fd721b-1a57-4539-bfae-c4d1b2a99c63 rgeorge-fio_test-m_RandBal-16K-64-128  
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32   
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32    
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=20  --unified_rw_reporting=1 --bs=16K --numjobs=64 --iodepth=4 in 177
+UUID                                 Label                                  
+----                                 -----                                  
+c24bf8d5-2485-4a56-8ada-291f96f70fc3 rgeorge-fio_test-m_RandBal-16K-128-4   
+8655f3c5-518c-441a-82eb-97fafd5b7e53 rgeorge-fio_test-m_RandBal-16K-128-64  
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64   
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64    
+0b5b5c99-d7f8-4d3e-ac51-31355d6c1090 rgeorge-fio_test-m_RandBal-16K-128-16  
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128  
+478950d3-82b2-4c6c-9080-53b96f9621cf rgeorge-fio_test-m_RandBal-16K-64-16   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128   
+89b7d24c-89bc-4e16-92f9-39677a30ed39 rgeorge-fio_test-m_RandBal-16K-64-64   
+6ab6e3a5-2cd5-4c41-ad4e-6702740ebce1 rgeorge-fio_test-m_RandBal-16K-128-128 
+97fd721b-1a57-4539-bfae-c4d1b2a99c63 rgeorge-fio_test-m_RandBal-16K-64-128  
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32   
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32    
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=20  --unified_rw_reporting=1 --bs=16K --numjobs=64 --iodepth=16 in 175
+[WARNING] Failed to destroy container rgeorge-fio_test-m_RandWH-16K-64-16
+UUID                                 Label                                  
+----                                 -----                                  
+c24bf8d5-2485-4a56-8ada-291f96f70fc3 rgeorge-fio_test-m_RandBal-16K-128-4   
+8655f3c5-518c-441a-82eb-97fafd5b7e53 rgeorge-fio_test-m_RandBal-16K-128-64  
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64   
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64    
+0b5b5c99-d7f8-4d3e-ac51-31355d6c1090 rgeorge-fio_test-m_RandBal-16K-128-16  
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128  
+478950d3-82b2-4c6c-9080-53b96f9621cf rgeorge-fio_test-m_RandBal-16K-64-16   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128   
+89b7d24c-89bc-4e16-92f9-39677a30ed39 rgeorge-fio_test-m_RandBal-16K-64-64   
+6ab6e3a5-2cd5-4c41-ad4e-6702740ebce1 rgeorge-fio_test-m_RandBal-16K-128-128 
+92def8cc-4d47-454b-9255-aca500dcfad1 rgeorge-fio_test-m_RandWH-16K-64-16    
+97fd721b-1a57-4539-bfae-c4d1b2a99c63 rgeorge-fio_test-m_RandBal-16K-64-128  
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32   
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32    
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=20  --unified_rw_reporting=1 --bs=16K --numjobs=64 --iodepth=32 in 187
+[WARNING] Failed to destroy container rgeorge-fio_test-m_RandWH-16K-64-32
+UUID                                 Label                                  
+----                                 -----                                  
+c24bf8d5-2485-4a56-8ada-291f96f70fc3 rgeorge-fio_test-m_RandBal-16K-128-4   
+8655f3c5-518c-441a-82eb-97fafd5b7e53 rgeorge-fio_test-m_RandBal-16K-128-64  
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64   
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64    
+0b5b5c99-d7f8-4d3e-ac51-31355d6c1090 rgeorge-fio_test-m_RandBal-16K-128-16  
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128  
+478950d3-82b2-4c6c-9080-53b96f9621cf rgeorge-fio_test-m_RandBal-16K-64-16   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128   
+89b7d24c-89bc-4e16-92f9-39677a30ed39 rgeorge-fio_test-m_RandBal-16K-64-64   
+6ab6e3a5-2cd5-4c41-ad4e-6702740ebce1 rgeorge-fio_test-m_RandBal-16K-128-128 
+92def8cc-4d47-454b-9255-aca500dcfad1 rgeorge-fio_test-m_RandWH-16K-64-16    
+97fd721b-1a57-4539-bfae-c4d1b2a99c63 rgeorge-fio_test-m_RandBal-16K-64-128  
+3deba6e5-1f3e-4b0a-a278-930057f81180 rgeorge-fio_test-m_RandWH-16K-64-32    
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32   
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32    
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=20  --unified_rw_reporting=1 --bs=16K --numjobs=64 --iodepth=64 in 187
+[WARNING] Failed to destroy container rgeorge-fio_test-m_RandWH-16K-64-64
+UUID                                 Label                                  
+----                                 -----                                  
+c24bf8d5-2485-4a56-8ada-291f96f70fc3 rgeorge-fio_test-m_RandBal-16K-128-4   
+db585f7f-dd39-42b6-b2d4-a78b05754453 rgeorge-fio_test-m_RandWH-16K-64-64    
+8655f3c5-518c-441a-82eb-97fafd5b7e53 rgeorge-fio_test-m_RandBal-16K-128-64  
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64   
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64    
+0b5b5c99-d7f8-4d3e-ac51-31355d6c1090 rgeorge-fio_test-m_RandBal-16K-128-16  
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128  
+478950d3-82b2-4c6c-9080-53b96f9621cf rgeorge-fio_test-m_RandBal-16K-64-16   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128   
+89b7d24c-89bc-4e16-92f9-39677a30ed39 rgeorge-fio_test-m_RandBal-16K-64-64   
+6ab6e3a5-2cd5-4c41-ad4e-6702740ebce1 rgeorge-fio_test-m_RandBal-16K-128-128 
+92def8cc-4d47-454b-9255-aca500dcfad1 rgeorge-fio_test-m_RandWH-16K-64-16    
+97fd721b-1a57-4539-bfae-c4d1b2a99c63 rgeorge-fio_test-m_RandBal-16K-64-128  
+3deba6e5-1f3e-4b0a-a278-930057f81180 rgeorge-fio_test-m_RandWH-16K-64-32    
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32   
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32    
+[SUCCESS] end of loop
+[SUCCESS] FIO benchmark completed for --rw=randrw   --rwmixread=20  --unified_rw_reporting=1 --bs=16K --numjobs=64 --iodepth=128 in 172
+[WARNING] Failed to destroy container rgeorge-fio_test-m_RandWH-16K-64-128
+UUID                                 Label                                  
+----                                 -----                                  
+c24bf8d5-2485-4a56-8ada-291f96f70fc3 rgeorge-fio_test-m_RandBal-16K-128-4   
+db585f7f-dd39-42b6-b2d4-a78b05754453 rgeorge-fio_test-m_RandWH-16K-64-64    
+8655f3c5-518c-441a-82eb-97fafd5b7e53 rgeorge-fio_test-m_RandBal-16K-128-64  
+337498eb-750b-4ed2-9fed-d9facbbd6e17 rgeorge-fio_test-m_RandRH-16K-128-64   
+73e24e87-ca9b-4e3a-8a19-dac905dfb090 rgeorge-fio_test-m_RandRH-16K-64-64    
+0b5b5c99-d7f8-4d3e-ac51-31355d6c1090 rgeorge-fio_test-m_RandBal-16K-128-16  
+0e430513-c752-477d-bf4a-d02a1ed69a38 rgeorge-fio_test-m_RandWH-16K-64-128   
+5217f5a3-4fe9-4ebd-8474-9adde8a84019 rgeorge-fio_test-m_RandRH-16K-128-128  
+478950d3-82b2-4c6c-9080-53b96f9621cf rgeorge-fio_test-m_RandBal-16K-64-16   
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk                              
+3a7f5f4d-567f-45c1-9923-dce54f50f3f7 rgeorge-fio_test-m_RandWH-4K-128-128   
+89b7d24c-89bc-4e16-92f9-39677a30ed39 rgeorge-fio_test-m_RandBal-16K-64-64   
+6ab6e3a5-2cd5-4c41-ad4e-6702740ebce1 rgeorge-fio_test-m_RandBal-16K-128-128 
+92def8cc-4d47-454b-9255-aca500dcfad1 rgeorge-fio_test-m_RandWH-16K-64-16    
+97fd721b-1a57-4539-bfae-c4d1b2a99c63 rgeorge-fio_test-m_RandBal-16K-64-128  
+3deba6e5-1f3e-4b0a-a278-930057f81180 rgeorge-fio_test-m_RandWH-16K-64-32    
+591d9a56-1853-4df9-b9bb-bdea47323870 rgeorge-fio_test-m_RandRH-16K-128-32   
+9e105760-87a9-47a7-8ae5-22b0a6182b3b rgeorge-fio_test-m_RandRH-16K-64-32    
+[SUCCESS] end of loop
