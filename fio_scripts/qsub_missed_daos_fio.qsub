@@ -18,8 +18,8 @@ LOG_FILE="$RESULTS_DIR/logs.txt"
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
 
 
-CASES=('--rw=randwrite --unified_rw_reporting=0 --bs=2M --numjobs=128 --iodepth=16')
-CASE_IDS=('RandW-2M-128-16')
+CASES=('--rw=write --unified_rw_reporting=0 --bs=2M --numjobs=128 --iodepth=64' '--rw=randrw   --rwmixread=20  --unified_rw_reporting=1 --bs=2M --numjobs=128 --iodepth=32')
+CASE_IDS=(['SeqW-2M-128-64' 'RandWH-2M-128-32')
 
 START_TIME=$SECONDS
 
