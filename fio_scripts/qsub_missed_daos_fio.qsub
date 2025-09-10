@@ -2,8 +2,8 @@
 
 #PBS -A e2sar-daos
 #PBS -l select=1
-#PBS -l walltime=0:30:00
-#PBS -q debug
+#PBS -l walltime=5:59:00
+#PBS -q prod
 #PBS -l filesystems=home:flare:daos_user_fs
 #PBS -j oe
 
@@ -18,8 +18,10 @@ LOG_FILE="$RESULTS_DIR/logs.txt"
 NUMA_CPU_CORES=4,9,14,19,20,25,56,61,66,71,74,79
 
 
-CASES=('--rw=write --unified_rw_reporting=0 --bs=2M --numjobs=128 --iodepth=64' '--rw=randrw   --rwmixread=20  --unified_rw_reporting=1 --bs=2M --numjobs=128 --iodepth=32')
-CASE_IDS=('SeqW-2M-128-64' 'RandWH-2M-128-32')
+CASES=('--rw=randread --unified_rw_reporting=0 --bs=4K --numjobs=16 --iodepth=1' '--rw=randread --unified_rw_reporting=0 --bs=4K --numjobs=16 --iodepth=8' '--rw=randread --unified_rw_reporting=0 --bs=4K --numjobs=16 --iodepth=16' '--rw=randwrite --unified_rw_reporting=0 --bs=4K --numjobs=16 --iodepth=1' '--rw=randwrite --unified_rw_reporting=0 --bs=4K --numjobs=16 --iodepth=8' '--rw=randwrite --unified_rw_reporting=0 --bs=4K --numjobs=16 --iodepth=16' '--rw=randread --unified_rw_reporting=0 --bs=16K --numjobs=16 --iodepth=1' '--rw=randread --unified_rw_reporting=0 --bs=16K --numjobs=16 --iodepth=8' '--rw=randread --unified_rw_reporting=0 --bs=16K --numjobs=16 --iodepth=16' '--rw=randwrite --unified_rw_reporting=0 --bs=16K --numjobs=16 --iodepth=1' '--rw=randwrite --unified_rw_reporting=0 --bs=16K --numjobs=16 --iodepth=8' '--rw=randwrite --unified_rw_reporting=0 --bs=16K --numjobs=16 --iodepth=16' '--rw=randread --unified_rw_reporting=0 --bs=1M --numjobs=16 --iodepth=1' '--rw=randread --unified_rw_reporting=0 --bs=1M --numjobs=16 --iodepth=8' '--rw=randread --unified_rw_reporting=0 --bs=1M --numjobs=16 --iodepth=16' '--rw=randwrite --unified_rw_reporting=0 --bs=1M --numjobs=16 --iodepth=1' '--rw=randwrite --unified_rw_reporting=0 --bs=1M --numjobs=16 --iodepth=8' '--rw=randwrite --unified_rw_reporting=0 --bs=1M --numjobs=16 --iodepth=16' '--rw=randread --unified_rw_reporting=0 --bs=2M --numjobs=16 --iodepth=1' '--rw=randread --unified_rw_reporting=0 --bs=2M --numjobs=16 --iodepth=8' '--rw=randread --unified_rw_reporting=0 --bs=2M --numjobs=16 --iodepth=16' '--rw=randrw   --rwmixread=80  --unified_rw_reporting=1 --bs=2M --numjobs=16 --iodepth=1' '--rw=randrw   --rwmixread=80  --unified_rw_reporting=1 --bs=2M --numjobs=16 --iodepth=8' '--rw=randrw   --rwmixread=20  --unified_rw_reporting=1 --bs=2M --numjobs=16 --iodepth=8' '--rw=randwrite --unified_rw_reporting=0 --bs=2M --numjobs=16 --iodepth=1' '--rw=randwrite --unified_rw_reporting=0 --bs=2M --numjobs=16 --iodepth=8' '--rw=randwrite --unified_rw_reporting=0 --bs=2M --numjobs=16 --iodepth=16' '--rw=randread --unified_rw_reporting=0 --bs=4M --numjobs=16 --iodepth=1' '--rw=randread --unified_rw_reporting=0 --bs=4M --numjobs=16 --iodepth=8' '--rw=randread --unified_rw_reporting=0 --bs=4M --numjobs=16 --iodepth=16' '--rw=randrw   --rwmixread=80  --unified_rw_reporting=1 --bs=4M --numjobs=16 --iodepth=1' '--rw=randrw   --rwmixread=80  --unified_rw_reporting=1 --bs=4M --numjobs=16 --iodepth=16' '--rw=randrw --unified_rw_reporting=1 --bs=4M --numjobs=16 --iodepth=8' '--rw=randrw --unified_rw_reporting=1 --bs=4M --numjobs=16 --iodepth=16' '--rw=randrw   --rwmixread=20  --unified_rw_reporting=1 --bs=4M --numjobs=16 --iodepth=8' '--rw=randwrite --unified_rw_reporting=0 --bs=4M --numjobs=16 --iodepth=1' '--rw=randwrite --unified_rw_reporting=0 --bs=4M --numjobs=16 --iodepth=8' '--rw=randwrite --unified_rw_reporting=0 --bs=4M --numjobs=16 --iodepth=16' )
+
+CASE_IDS=('RandR-4K-16-1' 'RandR-4K-16-8' 'RandR-4K-16-16' 'RandW-4K-16-1' 'RandW-4K-16-8' 'RandW-4K-16-16' 'RandR-16K-16-1' 'RandR-16K-16-8' 'RandR-16K-16-16' 'RandW-16K-16-1' 'RandW-16K-16-8' 'RandW-16K-16-16' 'RandR-1M-16-1' 'RandR-1M-16-8' 'RandR-1M-16-16' 'RandW-1M-16-1' 'RandW-1M-16-8' 'RandW-1M-16-16' 'RandR-2M-16-1' 'RandR-2M-16-8' 'RandR-2M-16-16' 'RandRH-2M-16-1' 'RandRH-2M-16-8' 'RandWH-2M-16-8' 'RandW-2M-16-1' 'RandW-2M-16-8' 'RandW-2M-16-16' 'RandR-4M-16-1' 'RandR-4M-16-8' 'RandR-4M-16-16' 'RandRH-4M-16-1' 'RandRH-4M-16-16' 'RandBal-4M-16-8' 'RandBal-4M-16-16' 'RandWH-4M-16-8' 'RandW-4M-16-1' 'RandW-4M-16-8' 'RandW-4M-16-16' )
+
 
 START_TIME=$SECONDS
 
