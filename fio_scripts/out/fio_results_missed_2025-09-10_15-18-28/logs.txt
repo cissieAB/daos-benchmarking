@@ -1,0 +1,6 @@
+[SUCCESS] FIO benchmark completed for --rw=randwrite --unified_rw_reporting=0 --bs=2M --numjobs=128 --iodepth=16 in 65
+UUID                                 Label     
+----                                 -----     
+841eb4a0-545e-4183-81cc-71eb0ca1ebc3 fio-dfsbk 
+[SUCCESS] end of loop
+[SUCCESS] Completed script in 71 seconds
