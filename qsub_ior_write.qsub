@@ -75,14 +75,15 @@ IOR_TX_SIZES=("16K" "1M" "2M" "16M")
 for RANKS_PER_NODE in 8 12 24 32 48 96 108 128; do
     NRANKS=$(( NNODES * RANKS_PER_NODE ))
     for tx_size in "${IOR_TX_SIZES[@]}"; do
+        SAVE_DIR="ior-results-w_n-${NNODES}_ppn-${RANKS_PER_NODE}_tx-${tx_size}"
         echo -e "\nRunning IOR write with transfer size: $tx_size, RANKS_PER_NODE: ${RANKS_PER_NODE}, total ranks: $NRANKS"
         LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} --cpu-bind ${CPU_BINDING1}  \
                                                     --no-vni -genvall -- \
                                                     ior -a DFS -w \
                                                     --dfs.pool $POOL_NAME --dfs.cont $CONTAINER_NAME \
                                                     -o /ior-write-tx_${tx_size}-ppn_${RANKS_PER_NODE} \
-                                                    -b 128M -t ${tx_size} -i 5 \
-                                                    -O summaryFile=/ior-results-w_n-${NNODES}_ppn-${RANKS_PER_NODE}_tx-${tx_size}/write_n-${NNODES}_ppn-${RANKS_PER_NODE}_tx-${tx_size}.csv -O summaryFormat=CSV
+                                                    -s 1 -b 128M -t ${tx_size} -i 5 \
+                                                    -O summaryFile=/${SAVE_DIR}/write_n-${NNODES}_ppn-${RANKS_PER_NODE}_tx-${tx_size}.csv -O summaryFormat=CSV
         sleep 5
     done
 done
