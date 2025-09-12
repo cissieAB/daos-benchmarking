@@ -5,6 +5,11 @@ Notes doc: https://docs.google.com/document/d/1mf2JfuIG7SXV3KOU3kDi35w4nssFurwod
 There is a very bountiful amount of graphs - all can be found in `plot_fio.ipynb` or `plot_ior.ipynb`. 
 Saved graphs will be stored in /graphs \
 
+copy_paste_str = "## Images from plot_ior.ipynb:\n"
+for img_path in readme_images:
+    copy_paste_str += f'![{img_path}]({img_path})\n'
+print(copy_paste_str)
+
 ## Sample of images from plot_fio.ipynb:
 ![graphs/fio_bandwidth/fio_bw_vs_nj_hueIOD_allD.svg](graphs/fio_bandwidth/fio_bw_vs_nj_hueIOD_allD.svg)
 ![graphs/fio_bandwidth/fio_bw_vs_nj_hueRW_allD.svg](graphs/fio_bandwidth/fio_bw_vs_nj_hueRW_allD.svg)

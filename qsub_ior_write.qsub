@@ -60,9 +60,6 @@ echo "Get container properties:"
 daos container get-prop $POOL_NAME $CONTAINER_NAME
 
 
-RESULTS_DIR="ior-results-w_n-${NNODES}_seg-${SEG}_$(date +%Y%m%d_%H-%M-%S)"
-mkdir -p $RESULTS_DIR
-
 # IOR smoke test
 LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} --cpu-bind ${CPU_BINDING1}  \
                                             --no-vni -genvall -- \
@@ -71,10 +68,15 @@ LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE}
                                             -o /ior-smoke \
                                             -b 64M -t 16M
 
+
+SEGMENTS=1
+RESULTS_DIR="ior-results-w_n-${NNODES}_seg-${SEGMENTS}_$(date +%Y%m%d_%H-%M-%S)"
+mkdir -p $RESULTS_DIR
+
 # IOR write with different transfer sizes.
 # 4K is too small, skip it.
 IOR_TX_SIZES=("16K" "1M" "2M" "16M")
-SEGMENTS=1
+\
 # Check which one is faster: multiples of 8 or 6 (compute node has 8 NICs and 6 CPU groups)
 for RANKS_PER_NODE in 8 12 24 32 48 96 108 128; do
     NRANKS=$(( NNODES * RANKS_PER_NODE ))
