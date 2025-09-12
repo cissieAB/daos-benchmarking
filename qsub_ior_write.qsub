@@ -87,7 +87,7 @@ for RANKS_PER_NODE in 8 12 24 32 48 96 108 128; do
                                                     --dfs.pool $POOL_NAME --dfs.cont $CONTAINER_NAME \
                                                     -o /ior-write-tx_${tx_size}-ppn_${RANKS_PER_NODE} \
                                                     -s ${SEGMENTS} -b 128M -t ${tx_size} -i 5 \
-                                                    -O summaryFile=/${RESULTS_DIR}/write_n-${NNODES}_ppn-${RANKS_PER_NODE}_tx-${tx_size}.csv -O summaryFormat=CSV
+                                                    -O summaryFile=${RESULTS_DIR}/write_n-${NNODES}_ppn-${RANKS_PER_NODE}_tx-${tx_size}.csv -O summaryFormat=CSV
         sleep 5
     done
 done
