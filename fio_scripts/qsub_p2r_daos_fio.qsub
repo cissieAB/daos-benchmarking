@@ -25,7 +25,7 @@ BLOCK_SIZES=("4K" "16K" "1M" "2M" "4M")
 # RW_CATEGORIES=("SeqR" "SeqRH" "SeqBal" "SeqWH" "SeqW" "RandR" "RandRH" "RandBal" "RandWH" "RandW")
 RW_CATEGORIES=("RandR" "RandRH" "RandBal" "RandWH" "RandW") # random only
 # RW_CATEGORIES=("SeqR" "SeqRH")  # mini for testing
-
+# "RandRH" "RandBal" "RandWH", iod = 8, 16, nj = 16
 # Values for --numjobs
 # NUM_JOBS_SIZES=("16" "32" "64" "128")
 NUM_JOBS_SIZES=("32")            # p2
