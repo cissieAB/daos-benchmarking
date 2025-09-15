@@ -88,7 +88,7 @@ for RANKS_PER_NODE in 6 8 12 15 24 32 48 72 96 120; do
         echo -e "\nRunning IOR write with transfer size: $tx_size, RANKS_PER_NODE: ${RANKS_PER_NODE}, total ranks: $NRANKS"
         LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} --cpu-bind ${CPU_BINDING1}  \
                                                     --no-vni -genvall -- \
-                                                    ior -a DFS -w \
+                                                    ior -a DFS -r \
                                                     --dfs.pool $POOL_NAME --dfs.cont $CONTAINER_NAME \
                                                     -o /ior-write-tx_${tx_size}-ppn_${RANKS_PER_NODE} \
                                                     -s ${SEGMENTS} -b 128M -t ${tx_size} -i 5 \
