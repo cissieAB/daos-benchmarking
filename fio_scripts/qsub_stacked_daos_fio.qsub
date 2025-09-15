@@ -36,14 +36,14 @@ get_fio_rw_params() {
     local category="$1"
     case "$category" in
         "SeqR")     echo "--rw=read                     --unified_rw_reporting=0" ;;
-        "SeqRH")    echo "--rw=rw       --rwmixread=80  --unified_rw_reporting=1" ;;
-        "SeqBal")   echo "--rw=rw                       --unified_rw_reporting=1" ;;
-        "SeqWH")    echo "--rw=rw       --rwmixread=20  --unified_rw_reporting=1" ;;
+        "SeqRH")    echo "--rw=rw       --rwmixread=80  --unified_rw_reporting=0" ;;
+        "SeqBal")   echo "--rw=rw                       --unified_rw_reporting=0" ;;
+        "SeqWH")    echo "--rw=rw       --rwmixread=20  --unified_rw_reporting=0" ;;
         "SeqW")     echo "--rw=write                    --unified_rw_reporting=0" ;;
         "RandR")    echo "--rw=randread                 --unified_rw_reporting=0" ;;
-        "RandRH")   echo "--rw=randrw   --rwmixread=80  --unified_rw_reporting=1" ;;
-        "RandBal")  echo "--rw=randrw                   --unified_rw_reporting=1" ;;
-        "RandWH")   echo "--rw=randrw   --rwmixread=20  --unified_rw_reporting=1" ;;
+        "RandRH")   echo "--rw=randrw   --rwmixread=80  --unified_rw_reporting=0" ;;
+        "RandBal")  echo "--rw=randrw                   --unified_rw_reporting=0" ;;
+        "RandWH")   echo "--rw=randrw   --rwmixread=20  --unified_rw_reporting=0" ;;
         "RandW")    echo "--rw=randwrite                --unified_rw_reporting=0" ;;
         *) error "ERROR: Unknown category $category"; exit 1 ;;
     esac
