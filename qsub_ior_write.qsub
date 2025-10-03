@@ -2,7 +2,7 @@
 
 # Run this file with "qsub -l select=<node_number>:ncpus=208 <this-script>.qsub"
 
-#PBS -l walltime=02:00:00
+#PBS -l walltime=05:59:00
 #PBS -A e2sar-daos
 #PBS -q prod
 #PBS -l filesystems=home:flare:daos_user_fs
@@ -72,7 +72,7 @@ LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE}
 
 # IOR write with different transfer sizes.
 # 4K is too small, skip it.
-IOR_TX_SIZES=("16K" "1M" "2M" "16M")
+IOR_TX_SIZES=("16K" "1M" "2M" "8M" "16M")
 # 32 segments x 128M (-b) = 4G
 SEGMENTS=32 
 
@@ -81,7 +81,7 @@ mkdir -p $RESULTS_DIR
 
 \
 # Check which one is faster: multiples of 8 or 6 (compute node has 8 NICs and 6 CPU groups)
-for RANKS_PER_NODE in 6 8 12 15 24 32 48 72 96 120; do
+for RANKS_PER_NODE in 6 8 12 16 24 32 48 72 96 120; do
     NRANKS=$(( NNODES * RANKS_PER_NODE ))
     for tx_size in "${IOR_TX_SIZES[@]}"; do
         
