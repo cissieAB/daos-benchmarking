@@ -63,7 +63,7 @@ daos container get-prop $POOL_NAME $CONTAINER_NAME
 # IOR smoke test
 LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} --cpu-bind ${CPU_BINDING1}  \
                                             --no-vni -genvall -- \
-                                            ior -a DFS -w \
+                                            ior -a DFS -r \
                                             --dfs.pool $POOL_NAME --dfs.cont $CONTAINER_NAME \
                                             -o /ior-smoke \
                                             -b 64M -t 16M
@@ -76,7 +76,7 @@ IOR_TX_SIZES=("16K" "1M" "2M" "8M" "16M")
 # 32 segments x 128M (-b) = 4G
 SEGMENTS=32 
 
-RESULTS_DIR="ior-results-w_n-${NNODES}_seg-${SEGMENTS}_$(date +%Y%m%d_%H-%M-%S)"
+RESULTS_DIR="ior-results-r_n-${NNODES}_seg-${SEGMENTS}_$(date +%Y%m%d_%H-%M-%S)"
 mkdir -p $RESULTS_DIR
 
 \
@@ -90,9 +90,9 @@ for RANKS_PER_NODE in 6 8 12 16 24 32 48 72 96 120; do
                                                     --no-vni -genvall -- \
                                                     ior -a DFS -r \
                                                     --dfs.pool $POOL_NAME --dfs.cont $CONTAINER_NAME \
-                                                    -o /ior-write-tx_${tx_size}-ppn_${RANKS_PER_NODE} \
+                                                    -o /ior-read-tx_${tx_size}-ppn_${RANKS_PER_NODE} \
                                                     -s ${SEGMENTS} -b 128M -t ${tx_size} -i 5 \
-                                                    -O summaryFile=${RESULTS_DIR}/write_n-${NNODES}_ppn-${RANKS_PER_NODE}_tx-${tx_size}.csv -O summaryFormat=CSV
+                                                    -O summaryFile=${RESULTS_DIR}/read_n-${NNODES}_ppn-${RANKS_PER_NODE}_tx-${tx_size}.csv -O summaryFormat=CSV
         sleep 5
     done
 done
