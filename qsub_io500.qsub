@@ -45,7 +45,7 @@ if ! mount | grep "$MOUNT_POINT"; then
 fi
 
 
-RESULTS_DIR="$HOME/io500_${PBS_JOBID%.*}_"
+RESULTS_DIR="$HOME/io500_${PBS_JOBID%%.*}_"
 mkdir -p ${RESULTS_DIR}
 
 IO500_WORKDIR="${MOUNT_POINT}/io500_data"
@@ -77,94 +77,12 @@ filePerProc = TRUE
 # Use unique directory per file per process
 uniqueDir = FALSE
 # Run this phase
-run = TRUE
-
-[ior-easy-write]
-run = FALSE
-
-[ior-rnd4K]
-run = FALSE
-
-[ior-rnd4K-write]
 run = FALSE
 
 [mdtest-easy]
 # Files per proc
 n = 1000000
 run = TRUE
-
-[mdtest-easy-write]
-run = TRUE
-
-[ior-rnd1MB]
-run = FALSE
-
-[ior-rnd1MB-write]
-run = FALSE
-
-[mdworkbench]
-run = FALSE
-
-[mdworkbench-create]
-run = FALSE
-
-[find-easy]
-run = FALSE
-
-[ior-hard]
-# Number of segments
-segmentCount = 10000000
-run = TRUE
-
-[ior-hard-write]
-run = TRUE
-
-[mdtest-hard]
-# Files per proc
-n = 1000000
-run = TRUE
-
-[mdtest-hard-write]
-run = TRUE
-
-[find]
-run = FALSE
-
-[ior-rnd4K-read]
-run = FALSE
-
-[ior-rnd1MB-read]
-run = FALSE
-
-[find-hard]
-run = FALSE
-
-[mdworkbench-bench]
-run = FALSE
-
-[ior-easy-read]
-run = FALSE
-
-[mdtest-easy-stat]
-run = FALSE
-
-[ior-hard-read]
-run = FALSE
-
-[mdtest-hard-stat]
-run = FALSE
-
-[mdworkbench-delete]
-run = FALSE
-
-[mdtest-easy-delete]
-run = FALSE
-
-[mdtest-hard-read]
-run = FALSE
-
-[mdtest-hard-delete]
-run = FALSE
 
 EOF
 
@@ -175,7 +93,7 @@ NRANKS=$((NNODES * RANKS_PER_NODE))
 CPU_BINDING1=list:4:9:14:19:20:25:56:61:66:71:74:79
 
 # Run IO500
-mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} --cpu-bind ${CPU_BINDING1}\
+mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} --cpu-bind ${CPU_BINDING1} \
  ${HOME}/io500/io500.sh ${CONFIG_FILE}
 
 
