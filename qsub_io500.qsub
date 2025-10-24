@@ -1,0 +1,193 @@
+#!/bin/bash
+
+#PBS -l walltime=00:59:00
+#PBS -l select=1
+#PBS -A e2sar-daos
+#PBS -q debug
+#PBS -l filesystems=home:flare:daos_user_fs
+#PBS -j oe
+
+# Load DAOS module
+module use /soft/modulefiles/ || { error "Failed to use modulefiles"; exit 1; }
+module load daos || { error "Failed to load DAOS module"; exit 1; }
+
+# Variables
+POOL_NAME=e2sar
+NNODES=`wc -l < $PBS_NODEFILE`
+
+
+CONTAINER_NAME="${USER}-io500"
+MOUNT_POINT="/tmp/${POOL_NAME}/${CONTAINER_NAME}"
+
+# Check if container exists
+if daos cont query "$POOL_NAME" "$CONTAINER_NAME" >/dev/null 2>&1; then
+    echo "Container $CONTAINER_NAME already exists, destroying it..."
+    if ! daos container destroy "$POOL_NAME" "$CONTAINER_NAME"; then
+        error "Failed to destroy container $CONTAINER_NAME"
+        exit 1
+    fi
+else
+    echo "Container $CONTAINER_NAME does not exist, will create a new one."
+fi
+# Create container
+if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --properties=rd_fac:1; then
+    error "Failed to create container $CONTAINER_NAME"
+    exit 1
+fi
+echo "Get container properties:"
+daos container get-prop $POOL_NAME $CONTAINER_NAME
+
+launch-dfuse.sh "$POOL_NAME:$CONTAINER_NAME"
+
+if ! mount | grep "$MOUNT_POINT"; then
+  echo "ERROR: dfuse did not mount properly at $MOUNT_POINT"
+  exit 1
+fi
+
+
+RESULTS_DIR="$HOME/io500_${PBS_JOBID%.*}_"
+mkdir -p ${RESULTS_DIR}
+
+IO500_WORKDIR="${MOUNT_POINT}/io500_data"
+mkdir -p ${IO500_WORKDIR}
+
+cd $HOME/io500
+
+CONFIG_FILE="${HOME}/myconfig.ini"
+cat > "$CONFIG_FILE" << EOF
+[global]
+datadir = ${IO500_WORKDIR}
+timestamp-datadir = TRUE
+resultdir = ${RESULTS_DIR}
+timestamp-resultdir = TRUE
+api = POSIX
+# The verbosity level between 1 and 10
+verbosity = 1
+# Type of packet that will be created [timestamp|offset|incompressible|random]
+dataPacketType = timestamp
+
+[debug]
+stonewall-time = 300
+
+[ior-easy]
+transferSize = 2m
+blockSize = 9920000m
+# Create one file per process
+filePerProc = TRUE
+# Use unique directory per file per process
+uniqueDir = FALSE
+# Run this phase
+run = TRUE
+
+[ior-easy-write]
+run = FALSE
+
+[ior-rnd4K]
+run = FALSE
+
+[ior-rnd4K-write]
+run = FALSE
+
+[mdtest-easy]
+# Files per proc
+n = 1000000
+run = TRUE
+
+[mdtest-easy-write]
+run = TRUE
+
+[ior-rnd1MB]
+run = FALSE
+
+[ior-rnd1MB-write]
+run = FALSE
+
+[mdworkbench]
+run = FALSE
+
+[mdworkbench-create]
+run = FALSE
+
+[find-easy]
+run = FALSE
+
+[ior-hard]
+# Number of segments
+segmentCount = 10000000
+run = TRUE
+
+[ior-hard-write]
+run = TRUE
+
+[mdtest-hard]
+# Files per proc
+n = 1000000
+run = TRUE
+
+[mdtest-hard-write]
+run = TRUE
+
+[find]
+run = FALSE
+
+[ior-rnd4K-read]
+run = FALSE
+
+[ior-rnd1MB-read]
+run = FALSE
+
+[find-hard]
+run = FALSE
+
+[mdworkbench-bench]
+run = FALSE
+
+[ior-easy-read]
+run = FALSE
+
+[mdtest-easy-stat]
+run = FALSE
+
+[ior-hard-read]
+run = FALSE
+
+[mdtest-hard-stat]
+run = FALSE
+
+[mdworkbench-delete]
+run = FALSE
+
+[mdtest-easy-delete]
+run = FALSE
+
+[mdtest-hard-read]
+run = FALSE
+
+[mdtest-hard-delete]
+run = FALSE
+
+EOF
+
+# Number of nodes and ranks per node 
+RANKS_PER_NODE=12
+NRANKS=$((NNODES * RANKS_PER_NODE))
+
+CPU_BINDING1=list:4:9:14:19:20:25:56:61:66:71:74:79
+
+# Run IO500
+mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} --cpu-bind ${CPU_BINDING1}\
+ ${HOME}/io500/io500.sh ${CONFIG_FILE}
+
+
+
+# Cleanup
+fusermount3 -u "$MOUNT_POINT" || warning "Failed to unmount $MOUNT_POINT"
+    sleep 2
+
+# Remove mount point
+if [ -d "$MOUNT_POINT" ]; then
+    rmdir "$MOUNT_POINT" || warning "Failed to remove directory $MOUNT_POINT"
+fi
+
+# Destroy container
+daos cont destroy $POOL_NAME $CONTAINER_NAME || warning "Failed to destroy container $CONTAINER_NAME"
