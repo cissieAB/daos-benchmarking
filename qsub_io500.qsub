@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #PBS -l walltime=05:59:00
-#PBS -l select=1
+#PBS -l select=10
 #PBS -A e2sar-daos
 #PBS -q prod
 #PBS -l filesystems=home:flare:daos_user_fs
@@ -14,7 +14,6 @@ module load daos || { error "Failed to load DAOS module"; exit 1; }
 # Variables
 POOL_NAME=e2sar
 NNODES=`wc -l < $PBS_NODEFILE`
-
 
 CONTAINER_NAME="${USER}-io500"
 MOUNT_POINT="/tmp/${POOL_NAME}/${CONTAINER_NAME}"
@@ -45,6 +44,17 @@ if ! mount | grep "$MOUNT_POINT"; then
 fi
 
 
+# Number of nodes and ranks per node 
+RANKS_PER_NODE=12
+NRANKS=$((NNODES * RANKS_PER_NODE))
+
+CPU_BINDING1=list:4:9:14:19:20:25:56:61:66:71:74:79
+# skip-1 breadth scan. Bind 48 cores
+CPU_BINDING_SKIP1="list:4:6:56:58:9:11:61:63:12:14:64:66:17:19:69:71:20:22:72:74:25:27:77:79:28:30:80:82:33:35:85:87:36:38:88:90:41:43:93:95:44:46:96:98:49:51:100:102"
+export ZE_FLAT_DEVICE_HIERARCHY=COMPOSITE
+export AFFINITY_ORDERING=compact
+
+
 RESULTS_DIR="$HOME/io500_${PBS_JOBID%%.*}_${NNODES}-n"
 mkdir -p ${RESULTS_DIR}
 
@@ -52,6 +62,8 @@ IO500_WORKDIR="${MOUNT_POINT}/io500_data"
 mkdir -p ${IO500_WORKDIR}
 
 cd $HOME/io500
+export MPIR_CVAR_ERROR_CHECKING=1
+export I_MPI_DEBUG=5
 
 CONFIG_FILE="${HOME}/myconfig.ini"
 cat > "$CONFIG_FILE" << EOF
@@ -60,7 +72,8 @@ datadir = ${IO500_WORKDIR}
 timestamp-datadir = TRUE
 resultdir = ${RESULTS_DIR}
 timestamp-resultdir = TRUE
-api = POSIX
+# api = = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME}
+API = POSIX
 # The verbosity level between 1 and 10
 verbosity = 1
 # Type of packet that will be created [timestamp|offset|incompressible|random]
@@ -75,7 +88,8 @@ pause-dir =
 
 [ior-easy]
 # The API to be used
-API = 
+# API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} T --dfs.dir_oclass=S1 --dfs.oclass=SX
+API = POSIX
 # Transfer size
 transferSize = 2m
 # Block size; must be a multiple of transferSize
@@ -89,103 +103,19 @@ run = TRUE
 # The verbosity level
 verbosity = 
 
-[ior-easy-write]
-# The API to be used
-API = 
-# Run this phase
-run = TRUE
-
-[ior-rnd4K]
-# The API to be used
-API = 
-# Size of a random block, change only if explicitly allowed
-blockSize = 1073741824
-# Run this phase
-run = TRUE
-# The verbosity level
-verbosity = 
-# Prefill the file with this blocksize in bytes, e.g., 2097152
-randomPrefill = 0
-
-[ior-rnd4K-write]
-# The API to be used
-API = 
-# Run this phase
-run = TRUE
-
 [mdtest-easy]
 # The API to be used
-API = 
+# API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} --dfs.dir_oclass=SX --dfs.oclass=S1
+API = POSIX
 # Files per proc
 n = 1000000
 # Run this phase
 run = TRUE
 
-[mdtest-easy-write]
-# The API to be used
-API = 
-# Run this phase
-run = TRUE
-
-[ior-rnd1MB]
-# The API to be used
-API = 
-# Size of a random block, change only if explicitly allowed
-blockSize = 1073741824
-# Run this phase
-run = TRUE
-# The verbosity level
-verbosity = 
-# Prefill the file with this blocksize in bytes, e.g., 2097152
-randomPrefill = 0
-
-[ior-rnd1MB-write]
-# The API to be used
-API = 
-# Run this phase
-run = TRUE
-
-[mdworkbench]
-# The API to be used
-API = 
-# Waiting time of an IO operation relative to runtime (1.0 is 100%%)
-waitingTime = 0.0
-# Files to precreate per set (always 10 sets), this is normally dynamically determined
-precreatePerSet = 
-# Files to run per iteration and set (always 10 sets), this is normally dynamically determined
-filesPerProc = 
-# Run this phase
-run = TRUE
-# The verbosity level
-verbosity = 
-
-[mdworkbench-create]
-# Run this phase
-run = TRUE
-
-[timestamp]
-
-[find-easy]
-# Set to an external script to perform the find phase
-external-script = 
-# Startup arguments for external scripts, some MPI's may not support this!
-external-mpi-args = 
-# Extra arguments for the external scripts
-external-extra-args = 
-# Set the number of processes for pfind/the external script
-nproc = 
-# Run this phase
-run = TRUE
-# Pfind queue length
-pfind-queue-length = 10000
-# Pfind Steal from next
-pfind-steal-next = FALSE
-# Parallelize the readdir by using hashing. Your system must support this!
-pfind-parallelize-single-dir-access-using-hashing = FALSE
-
 [ior-hard]
 # The API to be used
-API = 
+# API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME}  --dfs.dir_oclass=S1 --dfs.oclass=SX --dfs.chunk_size=470080
+API = POSIX
 # Number of segments
 segmentCount = 10000000
 # Collective operation (for supported backends)
@@ -195,17 +125,10 @@ run = TRUE
 # The verbosity level
 verbosity = 
 
-[ior-hard-write]
-# The API to be used
-API = 
-# Collective operation (for supported backends)
-collective = 
-# Run this phase
-run = TRUE
-
 [mdtest-hard]
 # The API to be used
-API = 
+# API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} --dfs.dir_oclass=SX --dfs.oclass=S1
+API = POSIX
 # Files per proc
 n = 1000000
 # File limit per directory (MDTest -I flag) to overcome file system limitations INVALIDATES RUN; FOR DEBUGGING.
@@ -213,124 +136,17 @@ files-per-dir =
 # Run this phase
 run = TRUE
 
-[mdtest-hard-write]
-# The API to be used
-API = 
-# Run this phase
-run = TRUE
 
 [find]
-# Set to an external script to perform the find phase
-external-script = 
-# Startup arguments for external scripts, some MPI's may not support this!
-external-mpi-args = 
-# Extra arguments for the external scripts
-external-extra-args = 
 # Set the number of processes for pfind/the external script
-nproc = 
+nproc = ${NRANKS}
 # Run this phase
 run = TRUE
-# Pfind queue length
-pfind-queue-length = 10000
-# Pfind Steal from next
-pfind-steal-next = FALSE
-# Parallelize the readdir by using hashing. Your system must support this!
-pfind-parallelize-single-dir-access-using-hashing = FALSE
-
-[ior-rnd4K-read]
-# The API to be used
-API = 
-# Run this phase
-run = TRUE
-
-[ior-rnd1MB-read]
-# The API to be used
-API = 
-# Run this phase
-run = TRUE
-
-[find-hard]
-# Set to an external script to perform the find phase
-external-script = 
-# Startup arguments for external scripts, some MPI's may not support this!
-external-mpi-args = 
-# Extra arguments for the external scripts
-external-extra-args = 
-# Set the number of processes for pfind/the external script
-nproc = 
-# Run this phase
-run = TRUE
-# Pfind queue length
-pfind-queue-length = 10000
-# Pfind Steal from next
-pfind-steal-next = FALSE
-# Parallelize the readdir by using hashing. Your system must support this!
-pfind-parallelize-single-dir-access-using-hashing = FALSE
-
-[mdworkbench-bench]
-# Run this phase
-run = TRUE
-
-[ior-easy-read]
-# The API to be used
-API = 
-# Run this phase
-run = TRUE
-
-[mdtest-easy-stat]
-# The API to be used
-API = 
-# Run this phase
-run = TRUE
-
-[ior-hard-read]
-# The API to be used
-API = 
-# Collective operation (for supported backends)
-collective = 
-# Run this phase
-run = TRUE
-
-[mdtest-hard-stat]
-# The API to be used
-API = 
-# Run this phase
-run = TRUE
-
-[mdworkbench-delete]
-# Run this phase
-run = TRUE
-
-[mdtest-easy-delete]
-# The API to be used
-API = 
-# Run this phase
-run = TRUE
-
-[mdtest-hard-read]
-# The API to be used
-API = 
-# Run this phase
-run = TRUE
-
-[mdtest-hard-delete]
-# The API to be used
-API = 
-# Run this phase
-run = TRUE
-
-
 
 EOF
 
-# Number of nodes and ranks per node 
-RANKS_PER_NODE=12
-NRANKS=$((NNODES * RANKS_PER_NODE))
-
-CPU_BINDING1=list:4:9:14:19:20:25:56:61:66:71:74:79
-
 # Run IO500
-mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} --cpu-bind ${CPU_BINDING1} \
+mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} --cpu-bind ${CPU_BINDING_SKIP1} \
  ${HOME}/io500/io500.sh ${CONFIG_FILE}
 
 

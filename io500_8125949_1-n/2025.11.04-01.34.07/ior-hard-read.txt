@@ -1,0 +1,38 @@
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Tue Nov  4 02:41:04 2025
+Command line        : ./ior --dataPacketType=timestamp -C -Q 1 -g -G=761192186 -k -e -o /tmp/e2sar/rgeorge-io500/io500_data/2025.11.04-01.34.07/ior-hard/file -O stoneWallingStatusFile=/home/rgeorge/io500_8125949_1-n/2025.11.04-01.34.07/ior-hard.stonewall -t 47008 -b 47008 -s 10000000 -r -R -a POSIX -O saveRankPerformanceDetailsCSV=/home/rgeorge/io500_8125949_1-n/2025.11.04-01.34.07/ior-hard-read.csv
+Machine             : Linux x4417c1s0b0n0
+TestID              : 0
+StartTime           : Tue Nov  4 02:41:04 2025
+Path                : /tmp/e2sar/rgeorge-io500/io500_data/2025.11.04-01.34.07/ior-hard/file
+FS                  : 90.6 TiB   Used FS: 4.7%   Inodes: -0.0 Mi   Used Inodes: 0.0%
+
+Options: 
+api                 : POSIX
+apiVersion          : 
+test filename       : /tmp/e2sar/rgeorge-io500/io500_data/2025.11.04-01.34.07/ior-hard/file
+access              : single-shared-file
+type                : independent
+segments            : 10000000
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 1
+tasks               : 12
+clients per node    : 12
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 1
+xfersize            : 47008 bytes
+blocksize           : 47008 bytes
+aggregate filesize  : 5.13 TiB
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+WARNING: Expected aggregate file size       = 5640960000000
+WARNING: Stat() of aggregate file size      = 22835734272
+WARNING: Using actual aggregate bytes moved = 22835734272
+read      423.01     9446       51.42       45.91      45.91      0.057604   51.42      0.000358   51.48      0   
