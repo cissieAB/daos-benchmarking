@@ -88,7 +88,7 @@ pause-dir =
 
 [ior-easy]
 # The API to be used
-# API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} T --dfs.dir_oclass=S1 --dfs.oclass=SX
+# API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} --dfs.dir_oclass=S1 --dfs.oclass=SX
 API = POSIX
 # Transfer size
 transferSize = 2m
