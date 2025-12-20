@@ -81,7 +81,7 @@ mkdir -p $RESULTS_DIR
 
 \
 # Check which one is faster: multiples of 8 or 6 (compute node has 8 NICs and 6 CPU groups)
-for RANKS_PER_NODE in 6 8 12 16 24 32 48 72 96 120; do 
+for RANKS_PER_NODE in 6 8 12; do 
     NRANKS=$(( NNODES * RANKS_PER_NODE ))
     for tx_size in "${IOR_TX_SIZES[@]}"; do
         

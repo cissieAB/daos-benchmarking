@@ -1,0 +1,222 @@
+#!/bin/bash
+#PBS -l walltime=00:59:00
+#PBS -l select=1
+#PBS -A e2sar-daos
+#PBS -q debug
+#PBS -l filesystems=home:flare:daos_user_fs
+#PBS -j oe
+
+# Error handling function
+error() {
+    echo "ERROR: $1" >&2
+    cleanup_on_error
+    exit 1
+}
+
+warning() {
+    echo "WARNING: $1" >&2
+}
+
+cleanup_on_error() {
+    echo "Performing cleanup after error..."
+    if [ -n "$MOUNT_POINT" ] && mountpoint -q "$MOUNT_POINT" 2>/dev/null; then
+        fusermount3 -u "$MOUNT_POINT" 2>/dev/null
+    fi
+    if [ -n "$POOL_NAME" ] && [ -n "$CONTAINER_NAME" ]; then
+        daos cont destroy "$POOL_NAME" "$CONTAINER_NAME" 2>/dev/null
+    fi
+}
+
+# Trap errors
+trap cleanup_on_error ERR
+
+# Load DAOS module
+echo "Loading DAOS module..."
+module use /soft/modulefiles/ || { error "Failed to use modulefiles"; }
+module load daos || { error "Failed to load DAOS module"; }
+
+# Add mdtest to PATH
+export PATH=$PATH:$HOME/ior/install/bin
+
+# Verify mdtest is available
+which mdtest || error "mdtest not found in PATH"
+echo "Using mdtest: $(which mdtest)"
+
+# Variables
+POOL_NAME=e2sar
+NNODES=$(wc -l < "$PBS_NODEFILE")
+CONTAINER_NAME="${USER}-mdtest"
+MOUNT_POINT="/tmp/${POOL_NAME}/${CONTAINER_NAME}"
+
+
+# Check if container exists and handle it
+echo "Checking for existing container..."
+if daos cont query "$POOL_NAME" "$CONTAINER_NAME" >/dev/null 2>&1; then
+    echo "Container $CONTAINER_NAME already exists, destroying it..."
+    if ! daos container destroy "$POOL_NAME" "$CONTAINER_NAME"; then
+        error "Failed to destroy existing container $CONTAINER_NAME"
+    fi
+    echo "Old container destroyed successfully."
+fi
+
+# Create new container
+echo "Creating new POSIX container..."
+if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --properties=rd_fac:1; then
+    error "Failed to create container $CONTAINER_NAME"
+fi
+echo "Container created successfully."
+
+# Get container properties
+echo "Container properties:"
+daos container get-prop "$POOL_NAME" "$CONTAINER_NAME"
+
+# Mount container with DFuse
+echo "Mounting container with DFuse..."
+launch-dfuse.sh "$POOL_NAME:$CONTAINER_NAME" || error "Failed to launch DFuse"
+
+# Wait for mount to be ready
+sleep 3
+if ! mountpoint -q "$MOUNT_POINT"; then
+    error "Mount point $MOUNT_POINT is not mounted"
+fi
+echo "DFuse mounted successfully at $MOUNT_POINT"
+
+# Create test directory
+TEST_DIR="${MOUNT_POINT}"
+
+# Create results directory
+RESULTS_DIR="${PBS_O_WORKDIR}/mdtest_results_$(date +%Y%m%d_%H%M%S)"
+mkdir -p "${RESULTS_DIR}" || error "Failed to create results directory"
+echo "Results will be stored in: $RESULTS_DIR"
+
+# MPI configuration
+RANKS_PER_NODE=12
+NRANKS=$((NNODES * RANKS_PER_NODE))
+
+# Environment variables
+export ZE_FLAT_DEVICE_HIERARCHY=COMPOSITE
+export AFFINITY_ORDERING=compact
+export D_LOG_MASK=ERR
+export D_IL_REPORT=0
+
+# CPU binding for Aurora
+CPU_BINDING1=list:4:9:14:19:20:25:56:61:66:71:74:79
+
+# MDTest parameters (similar to mdtest-hard)
+N_FILES=1000           # Number of files per process
+FILES_PER_DIR=5          # Files per directory (hard mode)
+WRITE_BYTES=3901         # Bytes per file
+
+
+# Run MDTest with DFS API (direct DAOS access)
+echo "================================================"
+echo "Running MDTest - CREATE (Write)"
+echo "================================================"
+echo "Start time: $(date)"
+
+LD_PRELOAD=/usr/lib64/libpil4dfs.so \
+    mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} \
+    --cpu-bind ${CPU_BINDING1} \
+    --env LD_PRELOAD=/usr/lib64/libpil4dfs.so \
+    --env D_LOG_MASK=ERR \
+    mdtest -a POSIX \
+    -n ${N_FILES} \
+    -i 1 \
+    -d ${TEST_DIR}/create \
+    -w ${WRITE_BYTES} \
+    -e ${FILES_PER_DIR} \
+    -u \
+    | tee "${RESULTS_DIR}/mdtest_create.log"
+
+echo "End time: $(date)"
+
+echo "================================================"
+echo "Running MDTest - READ"
+echo "================================================"
+echo "Start time: $(date)"
+
+LD_PRELOAD=/usr/lib64/libpil4dfs.so \
+    mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} \
+    --cpu-bind ${CPU_BINDING1} \
+    --env LD_PRELOAD=/usr/lib64/libpil4dfs.so \
+    --env D_LOG_MASK=ERR \
+    mdtest -a POSIX \
+    -n ${N_FILES} \
+    -i 1 \
+    -d ${TEST_DIR}/read \
+    -E \
+    -w ${WRITE_BYTES} \
+    -e ${FILES_PER_DIR} \
+    -u \
+    | tee "${RESULTS_DIR}/mdtest_read.log"
+
+echo "End time: $(date)"
+
+echo "================================================"
+echo "Running MDTest - DELETE"
+echo "================================================"
+echo "Start time: $(date)"
+
+LD_PRELOAD=/usr/lib64/libpil4dfs.so \
+    mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} \
+    --cpu-bind ${CPU_BINDING1} \
+    --env LD_PRELOAD=/usr/lib64/libpil4dfs.so \
+    --env D_LOG_MASK=ERR \
+    mdtest -a POSIX \
+    -n ${N_FILES} \
+    -i 1 \
+    -d ${TEST_DIR}/delete \
+    -r \
+    -e ${FILES_PER_DIR} \
+    -u \
+    | tee "${RESULTS_DIR}/mdtest_delete.log"
+
+echo "End time: $(date)"
+
+echo "================================================"
+echo "MDTest Benchmarks Completed"
+echo "================================================"
+
+# Display summary
+echo "================================================"
+echo "Results Summary"
+echo "================================================"
+echo "Results directory: $RESULTS_DIR"
+echo ""
+echo "CREATE performance:"
+grep "File creation" "${RESULTS_DIR}/mdtest_create.log" | tail -1
+echo ""
+echo ""
+echo "READ performance:"
+grep "File read" "${RESULTS_DIR}/mdtest_read.log" | tail -1
+echo ""
+echo "DELETE performance:"
+grep "File removal" "${RESULTS_DIR}/mdtest_delete.log" | tail -1
+echo "================================================"
+
+# Cleanup
+echo "================================================"
+echo "Cleanup"
+echo "================================================"
+
+# Unmount DFuse
+echo "Unmounting DFuse..."
+if mountpoint -q "$MOUNT_POINT"; then
+    fusermount3 -u "$MOUNT_POINT" || warning "Failed to unmount $MOUNT_POINT"
+    sleep 2
+fi
+
+# Remove mount point directory
+if [ -d "$MOUNT_POINT" ]; then
+    rmdir "$MOUNT_POINT" 2>/dev/null || warning "Failed to remove directory $MOUNT_POINT"
+fi
+
+# Destroy container
+echo "Destroying container..."
+daos cont destroy "$POOL_NAME" "$CONTAINER_NAME" || warning "Failed to destroy container $CONTAINER_NAME"
+
+echo "================================================"
+echo "Cleanup completed"
+echo "================================================"
+
+exit 0

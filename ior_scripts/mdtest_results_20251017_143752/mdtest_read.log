@@ -1,0 +1,9 @@
+-- started at 10/17/2025 14:38:16 --
+
+mdtest-4.0.0 was launched with 12 total task(s) on 1 node(s)
+Command line used: /home/rgeorge/ior/install/bin/mdtest '-a' 'POSIX' '-n' '1000' '-i' '1' '-d' '/tmp/e2sar/rgeorge-mdtest/read' '-E' '-w' '3901' '-e' '5' '-u'
+Path                : /tmp/e2sar/rgeorge-mdtest/read
+FS                  : 90.9 TiB   Used FS: 0.5%   Inodes: -0.0 Mi   Used Inodes: 0.0%
+Nodemap: 111111111111
+12 tasks, 12000 files/directories
+ERROR: open64("/tmp/e2sar/rgeorge-mdtest/read/test-dir.0-0/mdtest_tree.0.0/file.mdtest.0.0", 2) failed: No such file or directory, (aiori-POSIX.c:641)

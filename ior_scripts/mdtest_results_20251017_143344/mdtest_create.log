@@ -1,0 +1,24 @@
+-- started at 10/17/2025 14:33:45 --
+
+mdtest-4.0.0 was launched with 12 total task(s) on 1 node(s)
+Command line used: /home/rgeorge/ior/install/bin/mdtest '-a' 'POSIX' '--dfs.pool=e2sar' '--dfs.cont=rgeorge-mdtest' '--dfs.dir_oclass=RP_2G1' '--dfs.oclass=S1' '-n' '1000' '-i' '1' '-d' '/tmp/e2sar/rgeorge-mdtest/create' '-w' '3901' '-e' '5' '-u'
+Path                : /tmp/e2sar/rgeorge-mdtest/create
+FS                  : 90.9 TiB   Used FS: 0.5%   Inodes: -0.0 Mi   Used Inodes: 0.0%
+Nodemap: 111111111111
+12 tasks, 12000 files/directories
+
+SUMMARY rate: (of 1 iterations)
+   Operation                     Max            Min           Mean        Std Dev
+   ---------                     ---            ---           ----        -------
+   Directory creation          91206.132      91206.132      91206.132          0.000
+   Directory stat             112052.041     112052.041     112052.041          0.000
+   Directory rename            35299.424      35299.424      35299.424          0.000
+   Directory removal           21416.328      21416.328      21416.328          0.000
+   File creation                3545.547       3545.547       3545.547          0.000
+   File stat                    2980.248       2980.248       2980.248          0.000
+   File read                    3896.229       3896.229       3896.229          0.000
+   File removal                 1460.465       1460.465       1460.465          0.000
+   Tree creation                   2.899          2.899          2.899          0.000
+   Tree removal                   44.358         44.358         44.358          0.000
+-- finished at 10/17/2025 14:34:06 --
+

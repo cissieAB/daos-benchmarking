@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#PBS -l walltime=05:59:00
-#PBS -l select=10
+#PBS -l walltime=0:59:00
+#PBS -l select=4
 #PBS -A e2sar-daos
 #PBS -q prod
 #PBS -l filesystems=home:flare:daos_user_fs
@@ -29,7 +29,7 @@ else
     echo "Container $CONTAINER_NAME does not exist, will create a new one."
 fi
 # Create container
-if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --properties=rd_fac:1; then
+if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --properties=rd_fac:3; then
     error "Failed to create container $CONTAINER_NAME"
     exit 1
 fi
@@ -72,8 +72,8 @@ datadir = ${IO500_WORKDIR}
 timestamp-datadir = TRUE
 resultdir = ${RESULTS_DIR}
 timestamp-resultdir = TRUE
-# api = = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME}
-API = POSIX
+API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME}
+# API = POSIX
 # The verbosity level between 1 and 10
 verbosity = 1
 # Type of packet that will be created [timestamp|offset|incompressible|random]
@@ -88,8 +88,8 @@ pause-dir =
 
 [ior-easy]
 # The API to be used
-# API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} --dfs.dir_oclass=S1 --dfs.oclass=SX
-API = POSIX
+API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} --dfs.dir_oclass=S1 --dfs.oclass=SX
+# API = POSIX
 # Transfer size
 transferSize = 2m
 # Block size; must be a multiple of transferSize
@@ -105,8 +105,8 @@ verbosity =
 
 [mdtest-easy]
 # The API to be used
-# API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} --dfs.dir_oclass=SX --dfs.oclass=S1
-API = POSIX
+API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} --dfs.dir_oclass=SX --dfs.oclass=S1
+# API = POSIX
 # Files per proc
 n = 1000000
 # Run this phase
@@ -114,8 +114,8 @@ run = TRUE
 
 [ior-hard]
 # The API to be used
-# API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME}  --dfs.dir_oclass=S1 --dfs.oclass=SX --dfs.chunk_size=470080
-API = POSIX
+API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME}  --dfs.dir_oclass=S1 --dfs.oclass=SX --dfs.chunk_size=470080
+# API = POSIX
 # Number of segments
 segmentCount = 10000000
 # Collective operation (for supported backends)
@@ -127,8 +127,8 @@ verbosity =
 
 [mdtest-hard]
 # The API to be used
-# API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} --dfs.dir_oclass=SX --dfs.oclass=S1
-API = POSIX
+API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} --dfs.dir_oclass=SX --dfs.oclass=S1
+# API = POSIX
 # Files per proc
 n = 1000000
 # File limit per directory (MDTest -I flag) to overcome file system limitations INVALIDATES RUN; FOR DEBUGGING.
