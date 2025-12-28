@@ -14,6 +14,8 @@ module load daos || { error "Failed to load DAOS module"; exit 1; }
 # Variables
 POOL_NAME=e2sar
 NNODES=`wc -l < $PBS_NODEFILE`
+LOCAL_HOSTFILE="${HOME}/local.hostfile"
+cat $PBS_NODEFILE > "$LOCAL_HOSTFILE"
 
 CONTAINER_NAME="${USER}-io500"
 MOUNT_POINT="/tmp/${POOL_NAME}/${CONTAINER_NAME}"
@@ -29,7 +31,7 @@ else
     echo "Container $CONTAINER_NAME does not exist, will create a new one."
 fi
 # Create container
-if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --properties=rd_fac:3; then
+if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --properties=rd_fac:1; then
     error "Failed to create container $CONTAINER_NAME"
     exit 1
 fi
@@ -62,8 +64,10 @@ IO500_WORKDIR="${MOUNT_POINT}/io500_data"
 mkdir -p ${IO500_WORKDIR}
 
 cd $HOME/io500
-export MPIR_CVAR_ERROR_CHECKING=1
-export I_MPI_DEBUG=5
+export FI_UNIVERSE_SIZE=16383
+export FI_OFI_RXM_USE_SRX=1
+export LD_LIBRARY_PATH="/usr/lib64/:$LD_LIBRARY_PATH"
+export I_MPI_OFI_LIBRARY_INTERNAL=0
 
 CONFIG_FILE="${HOME}/myconfig.ini"
 cat > "$CONFIG_FILE" << EOF
@@ -88,7 +92,7 @@ pause-dir =
 
 [ior-easy]
 # The API to be used
-API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} --dfs.dir_oclass=S1 --dfs.oclass=SX
+API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} --dfs.dir_oclass=RP_2GX --dfs.oclass=RP_2GX
 # API = POSIX
 # Transfer size
 transferSize = 2m
@@ -105,7 +109,7 @@ verbosity =
 
 [mdtest-easy]
 # The API to be used
-API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} --dfs.dir_oclass=SX --dfs.oclass=S1
+API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} --dfs.dir_oclass=RP_2GX --dfs.oclass=RP_2G1
 # API = POSIX
 # Files per proc
 n = 1000000
@@ -114,7 +118,7 @@ run = TRUE
 
 [ior-hard]
 # The API to be used
-API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME}  --dfs.dir_oclass=S1 --dfs.oclass=SX --dfs.chunk_size=470080
+API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} --dfs.dir_oclass=RP_2G1 --dfs.oclass=RP_2GX --dfs.chunk_size=470080
 # API = POSIX
 # Number of segments
 segmentCount = 10000000
@@ -127,7 +131,7 @@ verbosity =
 
 [mdtest-hard]
 # The API to be used
-API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} --dfs.dir_oclass=SX --dfs.oclass=S1
+API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} --dfs.dir_oclass=RP_2GX --dfs.oclass=RP_2G1
 # API = POSIX
 # Files per proc
 n = 1000000
@@ -146,7 +150,8 @@ run = TRUE
 EOF
 
 # Run IO500
-mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} --cpu-bind ${CPU_BINDING_SKIP1} \
+mpiexec --hostfile ${LOCAL_HOSTFILE} \
+ -np ${NRANKS} -ppn ${RANKS_PER_NODE} --cpu-bind ${CPU_BINDING_SKIP1} \
  ${HOME}/io500/io500.sh ${CONFIG_FILE}
 
 
