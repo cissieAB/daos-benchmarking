@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#PBS -l walltime=0:59:00
+#PBS -l walltime=5:59:00
 #PBS -l select=4
 #PBS -A e2sar-daos
 #PBS -q prod
@@ -150,8 +150,9 @@ run = TRUE
 EOF
 
 # Run IO500
-mpiexec --hostfile ${LOCAL_HOSTFILE} \
+mpiexec --env LD_PRELOAD=/usr/lib64/libpil4dfs.so --hostfile ${LOCAL_HOSTFILE} \
  -np ${NRANKS} -ppn ${RANKS_PER_NODE} --cpu-bind ${CPU_BINDING_SKIP1} \
+ --no-vni -genvall -- \
  ${HOME}/io500/io500.sh ${CONFIG_FILE}
 
 
