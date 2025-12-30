@@ -74,9 +74,10 @@ CONFIG_FILE="${HOME}/myconfig.ini"
 cat > "$CONFIG_FILE" << EOF
 [global]
 datadir = ${IO500_WORKDIR}
-timestamp-datadir = TRUE
+timestamp-datadir = FALSE
+# No timestamps in case the date changes while the job is running
 resultdir = ${RESULTS_DIR}
-timestamp-resultdir = TRUE
+timestamp-resultdir = FALSE
 API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME}
 # API = POSIX
 # The verbosity level between 1 and 10
