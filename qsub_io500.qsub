@@ -13,12 +13,13 @@ module load daos || { error "Failed to load DAOS module"; exit 1; }
 
 # Variables
 POOL_NAME=e2sar
-export DAOS_POOL=e2sar
+export DAOS_POOL=${POOL_NAME}
 NNODES=`wc -l < $PBS_NODEFILE`
 LOCAL_HOSTFILE="${HOME}/local.hostfile"
 cat $PBS_NODEFILE > "$LOCAL_HOSTFILE"
 
 CONTAINER_NAME="${USER}-io500"
+export DAOS_CONT=${CONTAINER_NAME}
 MOUNT_POINT="/tmp/${POOL_NAME}/${CONTAINER_NAME}"
 
 # Check if container exists
