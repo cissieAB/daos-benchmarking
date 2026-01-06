@@ -1,0 +1,6 @@
+IO500 version io500-isc24_v3-13 (standard) #poxis API as backend
+[RESULT]       ior-easy-write       84.059483 GiB/s : time 321.318 seconds
+[RESULT]    mdtest-easy-write        4.443411 kIOPS : time 333.475 seconds
+[      ]            timestamp        0.000000 kIOPS : time 0.003 seconds
+[RESULT]       ior-hard-write        0.651610 GiB/s : time 350.072 seconds
+[RESULT]    mdtest-hard-write        1.320341 kIOPS : time 305.050 seconds

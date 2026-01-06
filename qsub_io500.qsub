@@ -8,25 +8,28 @@
 #PBS -j oe
 
 # Load DAOS module
-module use /soft/modulefiles/ || { error "Failed to use modulefiles"; exit 1; }
-module load daos || { error "Failed to load DAOS module"; exit 1; }
+module use /soft/modulefiles/ || { echo "Failed to use modulefiles"; exit 1; }
+module load daos || { echo "Failed to load DAOS module"; exit 1; }
 
 # Variables
 POOL_NAME=e2sar
 export DAOS_POOL=${POOL_NAME}
+
+CONTAINER_NAME="${USER}-io500"
+export DAOS_CONT=${CONTAINER_NAME}
+
+MOUNT_POINT="/tmp/${POOL_NAME}/${CONTAINER_NAME}"
+
 NNODES=`wc -l < $PBS_NODEFILE`
 LOCAL_HOSTFILE="${HOME}/local.hostfile"
 cat $PBS_NODEFILE > "$LOCAL_HOSTFILE"
 
-CONTAINER_NAME="${USER}-io500"
-export DAOS_CONT=${CONTAINER_NAME}
-MOUNT_POINT="/tmp/${POOL_NAME}/${CONTAINER_NAME}"
 
 # Check if container exists
 if daos cont query "$POOL_NAME" "$CONTAINER_NAME" >/dev/null 2>&1; then
     echo "Container $CONTAINER_NAME already exists, destroying it..."
     if ! daos container destroy "$POOL_NAME" "$CONTAINER_NAME"; then
-        error "Failed to destroy container $CONTAINER_NAME"
+        echo "Failed to destroy container $CONTAINER_NAME"
         exit 1
     fi
 else
@@ -34,7 +37,7 @@ else
 fi
 # Create container
 if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --properties=rd_fac:1; then
-    error "Failed to create container $CONTAINER_NAME"
+    echo "Failed to create container $CONTAINER_NAME"
     exit 1
 fi
 echo "Get container properties:"
@@ -52,20 +55,20 @@ fi
 RANKS_PER_NODE=12
 NRANKS=$((NNODES * RANKS_PER_NODE))
 
+# CPU Binding
 CPU_BINDING1=list:4:9:14:19:20:25:56:61:66:71:74:79
 # skip-1 breadth scan. Bind 48 cores
 CPU_BINDING_SKIP1="list:4:6:56:58:9:11:61:63:12:14:64:66:17:19:69:71:20:22:72:74:25:27:77:79:28:30:80:82:33:35:85:87:36:38:88:90:41:43:93:95:44:46:96:98:49:51:100:102"
 export ZE_FLAT_DEVICE_HIERARCHY=COMPOSITE
 export AFFINITY_ORDERING=compact
 
-
+# Set up directories
 RESULTS_DIR="$HOME/io500_${PBS_JOBID%%.*}_${NNODES}-n"
 mkdir -p ${RESULTS_DIR}
-
 IO500_WORKDIR="${MOUNT_POINT}/io500_data"
 mkdir -p ${IO500_WORKDIR}
-
 cd $HOME/io500
+
 export FI_UNIVERSE_SIZE=16383
 export FI_OFI_RXM_USE_SRX=1
 export LD_LIBRARY_PATH="/usr/lib64/:$LD_LIBRARY_PATH"
@@ -95,7 +98,7 @@ pause-dir =
 
 [ior-easy]
 # The API to be used
-API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} --dfs.dir_oclass=RP_2GX --dfs.oclass=RP_2GX
+API = DFS --dfs.pool=${POOL_NAME} --dfs.cont=${CONTAINER_NAME} --dfs.dir_oclass=RP_2GX --dfs.oclass=EC_16P1GX
 # API = POSIX
 # Transfer size
 transferSize = 2m
@@ -161,13 +164,13 @@ mpiexec --env LD_PRELOAD=/usr/lib64/libpil4dfs.so --hostfile ${LOCAL_HOSTFILE} \
 
 
 # Cleanup
-fusermount3 -u "$MOUNT_POINT" || warning "Failed to unmount $MOUNT_POINT"
+fusermount3 -u "$MOUNT_POINT" || echo "Failed to unmount $MOUNT_POINT"
     sleep 2
 
 # Remove mount point
 if [ -d "$MOUNT_POINT" ]; then
-    rmdir "$MOUNT_POINT" || warning "Failed to remove directory $MOUNT_POINT"
+    rmdir "$MOUNT_POINT" || echo "Failed to remove directory $MOUNT_POINT"
 fi
 
 # Destroy container
-daos cont destroy $POOL_NAME $CONTAINER_NAME || warning "Failed to destroy container $CONTAINER_NAME"
+daos cont destroy $POOL_NAME $CONTAINER_NAME || echo "Failed to destroy container $CONTAINER_NAME"

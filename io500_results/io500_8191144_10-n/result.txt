@@ -1,0 +1,50 @@
+[run]
+procs           = 120
+version         = io500-isc24_v3-13
+config-hash     = 307B32F3
+result-dir      = /home/rgeorge/io500_8191144_10-n/2025.12.05-03.10.04
+mode            = standard
+; START 2025-12-05 03:10:05
+
+
+[ior-easy-write]
+t_start         = 2025-12-05 03:10:05
+exe             = ./ior --dataPacketType=timestamp -C -Q 1 -g -G 778228279 -k -e -o /tmp/e2sar/rgeorge-io500/io500_data/2025.12.05-03.10.04/ior-easy/ior_file_easy -O stoneWallingStatusFile=/home/rgeorge/io500_8191144_10-n/2025.12.05-03.10.04/ior-easy.stonewall -t 2m -b 9920000m -F -w -D 300 -O stoneWallingWearOut=1 -a POSIX -O saveRankPerformanceDetailsCSV=/home/rgeorge/io500_8191144_10-n/2025.12.05-03.10.04/ior-easy-write.csv
+throughput-stonewall = 85.94
+score           = 84.059483
+t_delta         = 321.3176
+t_end           = 2025-12-05 03:15:27
+
+[mdtest-easy-write]
+t_start         = 2025-12-05 03:15:27
+exe             = ./mdtest --dataPacketType=timestamp -n 1000000 -u -L -F -P -G 1664406073 -N 1 -d /tmp/e2sar/rgeorge-io500/io500_data/2025.12.05-03.10.04/mdtest-easy -x /home/rgeorge/io500_8191144_10-n/2025.12.05-03.10.04/mdtest-easy.stonewall -C -Y -W 300 --saveRankPerformanceDetails=/home/rgeorge/io500_8191144_10-n/2025.12.05-03.10.04/mdtest-easy-write.csv -a POSIX
+rate-stonewall  = 4.791525
+score           = 4.443411
+t_delta         = 333.4748
+t_end           = 2025-12-05 03:21:00
+
+[timestamp]
+t_start         = 2025-12-05 03:21:00
+t_delta         = 0.0026
+t_end           = 2025-12-05 03:21:00
+
+[ior-hard-write]
+t_start         = 2025-12-05 03:21:00
+exe             = ./ior --dataPacketType=timestamp -C -Q 1 -g -G=778238967 -k -e -o /tmp/e2sar/rgeorge-io500/io500_data/2025.12.05-03.10.04/ior-hard/file -O stoneWallingStatusFile=/home/rgeorge/io500_8191144_10-n/2025.12.05-03.10.04/ior-hard.stonewall -t 47008 -b 47008 -s 10000000 -w -D 300 -a POSIX -O saveRankPerformanceDetailsCSV=/home/rgeorge/io500_8191144_10-n/2025.12.05-03.10.04/ior-hard-write.csv -O stoneWallingWearOut=1
+throughput-stonewall = 0.67
+score           = 0.651610
+t_delta         = 350.0718
+t_end           = 2025-12-05 03:26:50
+
+[mdtest-hard-write]
+t_start         = 2025-12-05 03:26:50
+exe             = ./mdtest --dataPacketType=timestamp -n 1000000 -t -w 3901 -e 3901 -P -G=1664416761 -N 1 -F -d /tmp/e2sar/rgeorge-io500/io500_data/2025.12.05-03.10.04/mdtest-hard -x /home/rgeorge/io500_8191144_10-n/2025.12.05-03.10.04/mdtest-hard.stonewall -C -Y -W 300 --saveRankPerformanceDetails=/home/rgeorge/io500_8191144_10-n/2025.12.05-03.10.04/mdtest-hard-write.csv -a POSIX
+rate-stonewall  = 1.325710
+score           = 1.320341
+t_delta         = 305.0502
+t_end           = 2025-12-05 03:31:55
+
+[find]
+t_start         = 2025-12-05 03:31:55
+exe             = ./pfind /tmp/e2sar/rgeorge-io500/io500_data/2025.12.05-03.10.04 -newer /home/rgeorge/io500_8191144_10-n/2025.12.05-03.10.04/timestampfile -size 3901c -name *01* -C -q 10000
+nproc           = 120
