@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#PBS -l walltime=5:59:00
+#PBS -l walltime=4:00:00
 #PBS -l select=8
 #PBS -A e2sar-daos
 #PBS -q prod
@@ -12,6 +12,8 @@ module use /soft/modulefiles/ || { echo "Failed to use modulefiles"; exit 1; }
 module load daos || { echo "Failed to load DAOS module"; exit 1; }
 
 # Variables
+START_TIME=$SECONDS
+
 POOL_NAME=e2sar
 export DAOS_POOL=${POOL_NAME}
 
@@ -24,6 +26,7 @@ NNODES=`wc -l < $PBS_NODEFILE`
 LOCAL_HOSTFILE="${HOME}/local.hostfile"
 cat $PBS_NODEFILE > "$LOCAL_HOSTFILE"
 
+daos pool query "$POOL_NAME"
 
 # Check if container exists
 if daos cont query "$POOL_NAME" "$CONTAINER_NAME" >/dev/null 2>&1; then
@@ -174,3 +177,6 @@ fi
 
 # Destroy container
 daos cont destroy $POOL_NAME $CONTAINER_NAME || echo "Failed to destroy container $CONTAINER_NAME"
+
+ELAPSED_TIME=$((SECONDS - START_TIME))
+echo "Completed script in $ELAPSED_TIME seconds"
