@@ -1,0 +1,15 @@
+IO500 version io500-isc24_v3-13 (standard)
+[RESULT]       ior-easy-write        6.925464 GiB/s : time 304.183 seconds
+[RESULT]    mdtest-easy-write       12.732086 kIOPS : time 304.059 seconds
+[      ]            timestamp        0.000000 kIOPS : time 0.003 seconds
+[RESULT]       ior-hard-write        0.287276 GiB/s : time 324.860 seconds
+[RESULT]    mdtest-hard-write        5.353951 kIOPS : time 305.265 seconds
+[RESULT]                 find       22.120803 kIOPS : time 248.017 seconds
+[RESULT]        ior-easy-read       10.020168 GiB/s : time 210.273 seconds
+[RESULT]     mdtest-easy-stat       22.680476 kIOPS : time 170.369 seconds
+[RESULT]        ior-hard-read        0.579509 GiB/s : time 161.713 seconds
+[RESULT]     mdtest-hard-stat       22.476783 kIOPS : time 72.854 seconds
+[RESULT]   mdtest-easy-delete        7.168110 kIOPS : time 540.108 seconds
+[RESULT]     mdtest-hard-read       15.393077 kIOPS : time 105.946 seconds
+[RESULT]   mdtest-hard-delete        7.170328 kIOPS : time 234.538 seconds
+[SCORE ] Bandwidth 1.843618 GiB/s : IOPS 12.531521 kiops : TOTAL 4.806593
