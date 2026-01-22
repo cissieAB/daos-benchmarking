@@ -1,0 +1,42 @@
+IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
+Began               : Wed Jan 21 17:14:59 2026
+Command line        : ./ior --dataPacketType=timestamp -C -Q 1 -g -G=1769176074 -k -e -o /tmp/e2sar/rgeorge-io500/io500_data/ior-hard/file -O stoneWallingStatusFile=/home/rgeorge/io500_8274013_2-n/ior-hard.stonewall -t 47008 -b 47008 -s 10000000 -w -D 300 -a DFS --dfs.pool=e2sar --dfs.cont=rgeorge-io500 --dfs.dir_oclass=RP_2G1 --dfs.oclass=RP_2GX --dfs.chunk_size=470080 -O saveRankPerformanceDetailsCSV=/home/rgeorge/io500_8274013_2-n/ior-hard-write.csv -O stoneWallingWearOut=1
+Machine             : Linux x4702c6s4b0n0
+TestID              : 0
+StartTime           : Wed Jan 21 17:14:59 2026
+Path                : /tmp/e2sar/rgeorge-io500/io500_data/ior-hard/file
+FS                  : 88.4 TiB   Used FS: 3.5%   Inodes: -0.0 Mi   Used Inodes: 0.0%
+
+Options: 
+api                 : DFS
+apiVersion          : DAOS
+test filename       : /tmp/e2sar/rgeorge-io500/io500_data/ior-hard/file
+access              : single-shared-file
+type                : independent
+segments            : 10000000
+ordering in a file  : sequential
+ordering inter file : constant task offset
+task offset         : 1
+nodes               : 2
+tasks               : 24
+clients per node    : 12
+memoryBuffer        : CPU
+dataAccess          : CPU
+GPUDirect           : 0
+repetitions         : 1
+xfersize            : 47008 bytes
+blocksize           : 47008 bytes
+aggregate filesize  : 10.26 TiB
+stonewallingTime    : 300
+stoneWallingWearOut : 1
+
+Results: 
+
+access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
+------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
+stonewalling pairs accessed min: 83279 max: 91707 -- min data: 3.6 GiB mean data: 3.9 GiB time: 300.0s
+WARNING: Expected aggregate file size       = 11281920000000
+WARNING: Stat() of aggregate file size      = 103463103744
+WARNING: Using actual aggregate bytes moved = 103463103744
+WARNING: Maybe caused by deadlineForStonewalling
+write     300.05     6693       308.19      45.91      45.91      0.009639   328.83     0.000155   328.84     0   
