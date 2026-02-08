@@ -1,11 +1,11 @@
 IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
-Began               : Tue Jan  6 20:02:19 2026
-Command line        : ./ior --dataPacketType=timestamp -C -Q 1 -g -G 1768366525 -k -e -o /tmp/e2sar/rgeorge-io500/io500_data/ior-easy/ior_file_easy -O stoneWallingStatusFile=/home/rgeorge/io500_8244538_8-n/ior-easy.stonewall -t 2m -b 9920000m -F -w -D 300 -O stoneWallingWearOut=1 -a DFS --dfs.pool=e2sar --dfs.cont=rgeorge-io500 --dfs.dir_oclass=RP_2GX --dfs.oclass=EC_16P1GX -O saveRankPerformanceDetailsCSV=/home/rgeorge/io500_8244538_8-n/ior-easy-write.csv
-Machine             : Linux x4615c2s0b0n0
+Began               : Tue Jan 20 19:28:36 2026
+Command line        : ./ior --dataPacketType=timestamp -C -Q 1 -g -G 1768912196 -k -e -o /tmp/e2sar/rgeorge-io500/io500_data/ior-easy/ior_file_easy -O stoneWallingStatusFile=/home/rgeorge/io500_8263601_8-n/ior-easy.stonewall -t 2m -b 9920000m -F -w -D 300 -O stoneWallingWearOut=1 -a DFS --dfs.pool=e2sar --dfs.cont=rgeorge-io500 --dfs.dir_oclass=RP_2GX --dfs.oclass=EC_16P1GX -O saveRankPerformanceDetailsCSV=/home/rgeorge/io500_8263601_8-n/ior-easy-write.csv
+Machine             : Linux x4611c2s2b0n0
 TestID              : 0
-StartTime           : Tue Jan  6 20:02:19 2026
+StartTime           : Tue Jan 20 19:28:36 2026
 Path                : /tmp/e2sar/rgeorge-io500/io500_data/ior-easy/ior_file_easy.00000000
-FS                  : 88.8 TiB   Used FS: 1.0%   Inodes: -0.0 Mi   Used Inodes: 0.0%
+FS                  : 88.4 TiB   Used FS: 1.0%   Inodes: -0.0 Mi   Used Inodes: 0.0%
 
 Options: 
 api                 : DFS
@@ -34,9 +34,9 @@ Results:
 
 access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
 ------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
-stonewalling pairs accessed min: 264670 max: 345161 -- min data: 516.9 GiB mean data: 633.4 GiB time: 300.0s
+stonewalling pairs accessed min: 22159 max: 24969 -- min data: 43.3 GiB mean data: 45.4 GiB time: 300.0s
 WARNING: Expected aggregate file size       = 998579896320000
-WARNING: Stat() of aggregate file size      = 69490087821312
-WARNING: Using actual aggregate bytes moved = 69490087821312
+WARNING: Stat() of aggregate file size      = 5026923675648
+WARNING: Using actual aggregate bytes moved = 5026923675648
 WARNING: Maybe caused by deadlineForStonewalling
-write     94426      47214      0.000078    10158080000 2048.00    0.014274   701.82     0.000152   701.83     0   
+write     14842      7421       0.000063    10158080000 2048.00    0.016960   322.99     0.000186   323.01     0   

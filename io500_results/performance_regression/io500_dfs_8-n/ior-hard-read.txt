@@ -1,11 +1,11 @@
 IOR-4.1.0+dev: MPI Coordinated Test of Parallel I/O
-Began               : Tue Jan  6 20:37:55 2026
-Command line        : ./ior --dataPacketType=timestamp -C -Q 1 -g -G=1768377213 -k -e -o /tmp/e2sar/rgeorge-io500/io500_data/ior-hard/file -O stoneWallingStatusFile=/home/rgeorge/io500_8244538_8-n/ior-hard.stonewall -t 47008 -b 47008 -s 10000000 -r -R -a DFS --dfs.pool=e2sar --dfs.cont=rgeorge-io500 --dfs.dir_oclass=RP_2G1 --dfs.oclass=RP_2GX --dfs.chunk_size=470080 -O saveRankPerformanceDetailsCSV=/home/rgeorge/io500_8244538_8-n/ior-hard-read.csv
-Machine             : Linux x4615c2s0b0n0
+Began               : Tue Jan 20 20:06:34 2026
+Command line        : ./ior --dataPacketType=timestamp -C -Q 1 -g -G=1768922884 -k -e -o /tmp/e2sar/rgeorge-io500/io500_data/ior-hard/file -O stoneWallingStatusFile=/home/rgeorge/io500_8263601_8-n/ior-hard.stonewall -t 47008 -b 47008 -s 10000000 -r -R -a DFS --dfs.pool=e2sar --dfs.cont=rgeorge-io500 --dfs.dir_oclass=RP_2G1 --dfs.oclass=RP_2GX --dfs.chunk_size=470080 -O saveRankPerformanceDetailsCSV=/home/rgeorge/io500_8263601_8-n/ior-hard-read.csv
+Machine             : Linux x4611c2s2b0n0
 TestID              : 0
-StartTime           : Tue Jan  6 20:37:55 2026
+StartTime           : Tue Jan 20 20:06:34 2026
 Path                : /tmp/e2sar/rgeorge-io500/io500_data/ior-hard/file
-FS                  : 88.8 TiB   Used FS: 79.9%   Inodes: -0.0 Mi   Used Inodes: 0.0%
+FS                  : 88.4 TiB   Used FS: 7.2%   Inodes: -0.0 Mi   Used Inodes: 0.0%
 
 Options: 
 api                 : DFS
@@ -33,6 +33,6 @@ Results:
 access    bw(MiB/s)  IOPS       Latency(s)  block(KiB) xfer(KiB)  open(s)    wr/rd(s)   close(s)   total(s)   iter
 ------    ---------  ----       ----------  ---------- ---------  --------   --------   --------   --------   ----
 WARNING: Expected aggregate file size       = 45127680000000
-WARNING: Stat() of aggregate file size      = 1328820639744
-WARNING: Using actual aggregate bytes moved = 1328820639744
-read      15616      348368     81.14       45.91      45.91      0.006888   81.14      0.000076   81.15      0   
+WARNING: Stat() of aggregate file size      = 260355124224
+WARNING: Using actual aggregate bytes moved = 260355124224
+read      1060.46    23656      234.13      45.91      45.91      0.007885   234.13     0.000201   234.14     0   

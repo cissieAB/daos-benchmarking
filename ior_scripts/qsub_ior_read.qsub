@@ -15,6 +15,7 @@ module load daos || { error "Failed to load DAOS module"; exit 1; }
 # Variables
 POOL_NAME=e2sar
 NNODES=`wc -l < $PBS_NODEFILE`        # Number of nodes
+START_TIME=$SECONDS
 
 # Verify pool exists
 daos pool list | grep -q -- "$POOL_NAME" || { error "No pool: $POOL_NAME"; exit 1; }
@@ -24,6 +25,8 @@ cd $PBS_O_WORKDIR
 
 ## Aurora compute-node CPU binding specific settings
 CPU_BINDING1=list:4:9:14:19:20:25:56:61:66:71:74:79
+# skip-1 breadth scan. Bind 48 cores
+CPU_BINDING_SKIP1="list:4:6:56:58:9:11:61:63:12:14:64:66:17:19:69:71:20:22:72:74:25:27:77:79:28:30:80:82:33:35:85:87:36:38:88:90:41:43:93:95:44:46:96:98:49:51:100:102"
 export ZE_FLAT_DEVICE_HIERARCHY=COMPOSITE
 export AFFINITY_ORDERING=compact
 
@@ -61,7 +64,7 @@ daos container get-prop $POOL_NAME $CONTAINER_NAME
 
 
 # IOR smoke test
-LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} --cpu-bind ${CPU_BINDING1}  \
+LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} --cpu-bind ${CPU_BINDING_SKIP1}  \
                                             --no-vni -genvall -- \
                                             ior -a DFS -r \
                                             --dfs.pool $POOL_NAME --dfs.cont $CONTAINER_NAME \
@@ -69,24 +72,23 @@ LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE}
                                             -b 64M -t 16M
 
 
-
 # IOR write with different transfer sizes.
 # 4K is too small, skip it.
-IOR_TX_SIZES=("16K" "1M" "2M" "8M" "16M")
+IOR_TX_SIZES=("16K" "1M" "2M" "16M")
 # 32 segments x 128M (-b) = 4G
 SEGMENTS=32 
 
-RESULTS_DIR="ior-results-r_n-${NNODES}_seg-${SEGMENTS}_$(date +%Y%m%d_%H-%M-%S)"
+RESULTS_DIR="ior-results-r_n-${NNODES}_seg-${SEGMENTS}_${PBS_JOBID%%.*}"
 mkdir -p $RESULTS_DIR
 
-\
+
 # Check which one is faster: multiples of 8 or 6 (compute node has 8 NICs and 6 CPU groups)
-for RANKS_PER_NODE in 6 8 12; do 
+for RANKS_PER_NODE in 6 8 16 32 48; do 
     NRANKS=$(( NNODES * RANKS_PER_NODE ))
     for tx_size in "${IOR_TX_SIZES[@]}"; do
         
         echo -e "\nRunning IOR write with transfer size: $tx_size, RANKS_PER_NODE: ${RANKS_PER_NODE}, total ranks: $NRANKS"
-        LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} --cpu-bind ${CPU_BINDING1}  \
+        LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE} --cpu-bind ${CPU_BINDING_SKIP1}  \
                                                     --no-vni -genvall -- \
                                                     ior -a DFS -r \
                                                     --dfs.pool $POOL_NAME --dfs.cont $CONTAINER_NAME \
@@ -97,5 +99,17 @@ for RANKS_PER_NODE in 6 8 12; do
     done
 done
 
+# Cleanup
+fusermount3 -u "$MOUNT_POINT" || echo "Failed to unmount $MOUNT_POINT"
+    sleep 2
+
+# Remove mount point
+if [ -d "$MOUNT_POINT" ]; then
+    rmdir "$MOUNT_POINT" || echo "Failed to remove directory $MOUNT_POINT"
+fi
+
 # Destroy container
 daos cont destroy $POOL_NAME $CONTAINER_NAME || warning "Failed to destroy container $CONTAINER_NAME"
+
+ELAPSED_TIME=$((SECONDS - START_TIME))
+echo "Completed script in $ELAPSED_TIME seconds"
