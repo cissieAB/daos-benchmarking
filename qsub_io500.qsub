@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #PBS -l walltime=2:00:00
-#PBS -l select=2
+#PBS -l select=12
 #PBS -A e2sar-daos
 #PBS -q prod
 #PBS -l filesystems=home:flare:daos_user_fs
@@ -10,6 +10,17 @@
 # Load DAOS module
 module use /soft/modulefiles/ || { echo "Failed to use modulefiles"; exit 1; }
 module load daos || { echo "Failed to load DAOS module"; exit 1; }
+
+# Environment Variables
+export FI_UNIVERSE_SIZE=16383
+export FI_OFI_RXM_USE_SRX=1
+export LD_LIBRARY_PATH="/usr/lib64/:$LD_LIBRARY_PATH"
+export I_MPI_OFI_LIBRARY_INTERNAL=0
+export DAOS_IOV_FRAG_SIZE=65536
+
+export ZE_FLAT_DEVICE_HIERARCHY=COMPOSITE
+export AFFINITY_ORDERING=compact
+
 
 # Variables
 START_TIME=$SECONDS
@@ -62,8 +73,6 @@ NRANKS=$((NNODES * RANKS_PER_NODE))
 CPU_BINDING1=list:4:9:14:19:20:25:56:61:66:71:74:79
 # skip-1 breadth scan. Bind 48 cores
 CPU_BINDING_SKIP1="list:4:6:56:58:9:11:61:63:12:14:64:66:17:19:69:71:20:22:72:74:25:27:77:79:28:30:80:82:33:35:85:87:36:38:88:90:41:43:93:95:44:46:96:98:49:51:100:102"
-export ZE_FLAT_DEVICE_HIERARCHY=COMPOSITE
-export AFFINITY_ORDERING=compact
 
 # Set up directories
 RESULTS_DIR="$HOME/io500_${PBS_JOBID%%.*}_${NNODES}-n"
@@ -72,10 +81,6 @@ IO500_WORKDIR="${MOUNT_POINT}/io500_data"
 mkdir -p ${IO500_WORKDIR}
 cd $HOME/io500
 
-export FI_UNIVERSE_SIZE=16383
-export FI_OFI_RXM_USE_SRX=1
-export LD_LIBRARY_PATH="/usr/lib64/:$LD_LIBRARY_PATH"
-export I_MPI_OFI_LIBRARY_INTERNAL=0
 
 CONFIG_FILE="${HOME}/myconfig.ini"
 cat > "$CONFIG_FILE" << EOF
