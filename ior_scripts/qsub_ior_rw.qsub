@@ -99,14 +99,6 @@ for RANKS_PER_NODE in 6 8 16 32 48; do
     done
 done
 
-# Cleanup
-fusermount3 -u "$MOUNT_POINT" || echo "Failed to unmount $MOUNT_POINT"
-    sleep 2
-
-# Remove mount point
-if [ -d "$MOUNT_POINT" ]; then
-    rmdir "$MOUNT_POINT" || echo "Failed to remove directory $MOUNT_POINT"
-fi
 
 # Destroy container
 daos cont destroy $POOL_NAME $CONTAINER_NAME || warning "Failed to destroy container $CONTAINER_NAME"
