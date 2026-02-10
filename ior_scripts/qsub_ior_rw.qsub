@@ -2,7 +2,7 @@
 
 # Run this file with "qsub -l select=<node_number>:ncpus=208 <this-script>.qsub"
 
-#PBS -l walltime=05:59:00
+#PBS -l walltime=02:59:00
 #PBS -A e2sar-daos
 #PBS -q prod
 #PBS -l filesystems=home:flare:daos_user_fs
@@ -72,7 +72,7 @@ LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec -np ${NRANKS} -ppn ${RANKS_PER_NODE}
                                             -b 64M -t 16M
 
 
-# IOR write with different transfer sizes.
+# different transfer sizes.
 # 4K is too small, skip it.
 IOR_TX_SIZES=("16K" "1M" "2M" "16M")
 # 32 segments x 128M (-b) = 4G
