@@ -1,0 +1,974 @@
+Pool 451a32a5-f5f3-4759-9935-5f26c0a2cee0, ntarget=4064, disabled=128, leader=228, version=299, state=Degraded
+Pool health info:
+- Rebuild done, 0 objs, 0 recs
+Pool space info:
+- Target(VOS) count:3936
+- Storage tier 0 (SCM):
+  Total size: 2.9 TB
+  Free: 2.6 TB, min:654 MB, max:655 MB, mean:655 MB
+- Storage tier 1 (NVMe):
+  Total size: 94 TB
+  Free: 94 TB, min:24 GB, max:24 GB, mean:24 GB
+Container rgeorge-io500 does not exist, will create a new one.
+Successfully created container 50675db4-f89c-4c71-b10e-64bd8a7cb8c9
+  Container UUID : 50675db4-f89c-4c71-b10e-64bd8a7cb8c9
+  Container Label: rgeorge-io500                       
+  Container Type : POSIX                               
+
+Get container properties:
+Properties for container rgeorge-io500
+Name                                             Value                               
+----                                             -----                               
+Highest Allocated OID (alloc_oid)                0                                   
+Checksum (cksum)                                 off                                 
+Checksum Chunk Size (cksum_size)                 32 KiB                              
+Compression (compression)                        off                                 
+Deduplication (dedup)                            off                                 
+Dedupe Threshold (dedup_threshold)               4.0 KiB                             
+EC Cell Size (ec_cell_sz)                        64 KiB                              
+Performance domain affinity level of EC (ec_pda) 1                                   
+Encryption (encryption)                          off                                 
+Global Version (global_version)                  3                                   
+Group (group)                                    users@                              
+Label (label)                                    rgeorge-io500                       
+Layout Type (layout_type)                        POSIX (1)                           
+Layout Version (layout_version)                  1                                   
+Max Snapshot (max_snapshot)                      0                                   
+Object Version (obj_version)                     2                                   
+Owner (owner)                                    rgeorge@                            
+Performance domain level (perf_domain)           root (255)                          
+Redundancy Factor (rd_fac)                       rd_fac1                             
+Redundancy Level (rd_lvl)                        node (2)                            
+Performance domain affinity level of RP (rp_pda) 4294967295                          
+Server Checksumming (srv_cksum)                  off                                 
+Health (status)                                  HEALTHY                             
+Access Control List (acl)                        A::OWNER@:rwdtTaAo, A:G:GROUP@:rwtT 
+clush:  0/16clush: 15/16             clush: 16/16---------------
+x4217c1s0b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added 'x4217c1s0b0n0.hsn.cm.aurora.alcf.anl.gov,10.112.41.7' (ECDSA) to the list of known hosts.
+---------------
+x4217c1s1b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added 'x4217c1s1b0n0.hsn.cm.aurora.alcf.anl.gov,10.112.40.247' (ECDSA) to the list of known hosts.
+---------------
+x4217c1s2b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added 'x4217c1s2b0n0.hsn.cm.aurora.alcf.anl.gov,10.112.40.254' (ECDSA) to the list of known hosts.
+---------------
+x4217c1s3b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added 'x4217c1s3b0n0.hsn.cm.aurora.alcf.anl.gov,10.112.40.251' (ECDSA) to the list of known hosts.
+---------------
+x4217c3s2b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added 'x4217c3s2b0n0.hsn.cm.aurora.alcf.anl.gov,10.112.40.162' (ECDSA) to the list of known hosts.
+---------------
+x4217c3s3b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added 'x4217c3s3b0n0.hsn.cm.aurora.alcf.anl.gov,10.112.40.161' (ECDSA) to the list of known hosts.
+---------------
+x4217c3s4b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added 'x4217c3s4b0n0.hsn.cm.aurora.alcf.anl.gov,10.112.40.140' (ECDSA) to the list of known hosts.
+---------------
+x4217c3s5b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added 'x4217c3s5b0n0.hsn.cm.aurora.alcf.anl.gov,10.112.40.100' (ECDSA) to the list of known hosts.
+---------------
+x4217c3s6b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added 'x4217c3s6b0n0.hsn.cm.aurora.alcf.anl.gov,10.112.40.141' (ECDSA) to the list of known hosts.
+---------------
+x4217c3s7b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added 'x4217c3s7b0n0.hsn.cm.aurora.alcf.anl.gov,10.112.40.147' (ECDSA) to the list of known hosts.
+---------------
+x4217c4s0b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.168.120' to the list of known hosts.
+---------------
+x4217c4s1b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.168.119' to the list of known hosts.
+---------------
+x4217c4s2b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.168.127' to the list of known hosts.
+---------------
+x4217c4s3b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.168.138' to the list of known hosts.
+---------------
+x4217c4s4b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.168.73' to the list of known hosts.
+---------------
+x4217c4s5b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.40.157' to the list of known hosts.
+dfuse on /tmp/e2sar/rgeorge-io500 type fuse.daos (rw,nosuid,nodev,noatime,user_id=40816,group_id=100,default_permissions)
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+IO500 version io500-isc24_v3-13 (standard)
+[RESULT]       ior-easy-write      126.535409 GiB/s : time 557.005 seconds
+[RESULT]    mdtest-easy-write      169.921400 kIOPS : time 321.548 seconds
+[      ]            timestamp        0.000000 kIOPS : time 0.003 seconds
+[RESULT]       ior-hard-write        5.908326 GiB/s : time 331.049 seconds
+[RESULT]    mdtest-hard-write       61.638427 kIOPS : time 328.047 seconds
+[RESULT]                 find     1187.897004 kIOPS : time 62.880 seconds
+[RESULT]        ior-easy-read      438.629349 GiB/s : time 160.698 seconds
+[RESULT]     mdtest-easy-stat     2477.574858 kIOPS : time 23.000 seconds
+[RESULT]        ior-hard-read       31.599184 GiB/s : time 61.917 seconds
+[RESULT]     mdtest-hard-stat     2466.210080 kIOPS : time 9.196 seconds
+[RESULT]   mdtest-easy-delete      586.250236 kIOPS : time 94.486 seconds
+[RESULT]     mdtest-hard-read     1823.287893 kIOPS : time 12.080 seconds
+[RESULT]   mdtest-hard-delete      588.124864 kIOPS : time 51.716 seconds
+[SCORE ] Bandwidth 56.736497 GiB/s : IOPS 683.782348 kiops : TOTAL 196.965518
+
+The result files are stored in the directory: /home/rgeorge/io500_8308906_16-n
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Created result tarball /home/rgeorge/io500_8308906_16-n/io500-x4217c1s0b0n0-io500.tgz
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: file changed as we read it
+tar: io500/myconfig.ini: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/io500.sh: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/io500.sh: File shrank by 4119 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/io500.sh: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/io500.sh: File shrank by 4119 bytes; padding with zeros
+tar: io500/io500.sh: file changed as we read it
+tar: io500/io500.sh: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/io500.sh: File shrank by 4119 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/io500.sh: File shrank by 4119 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/io500.sh: File shrank by 4119 bytes; padding with zeros
+tar: io500/io500.sh: File shrank by 4119 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+tar: io500/io500.sh: File shrank by 4119 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+tar: io500/myconfig.ini: file changed as we read it
+tar: io500/myconfig.ini: file changed as we read it
+tar: io500/io500.sh: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/io500.sh: File shrank by 4119 bytes; padding with zeros
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: file changed as we read it
+tar: io500/myconfig.ini: file changed as we read it
+tar: io500/myconfig.ini: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/io500.sh: File shrank by 4119 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+tar: io500/io500.sh: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/io500.sh: file changed as we read it
+tar: io500/io500.sh: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/io500.sh: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/io500.sh: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: file changed as we read it
+tar: io500/myconfig.ini: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/io500.sh: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: file changed as we read it
+tar: io500/myconfig.ini: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: file changed as we read it
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+tar: io500/myconfig.ini: File shrank by 2246 bytes; padding with zeros
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8308906_16-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8308906_16-n/io500/myconfig.ini'
+Created result tarball /home/rgeorge/io500_8308906_16-n/io500-x4217c1s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8308906_16-n/io500-x4217c1s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8308906_16-n/io500-x4217c1s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8308906_16-n/io500-x4217c1s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8308906_16-n/io500-x4217c1s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8308906_16-n/io500-x4217c1s0b0n0-io500.tgz
+x4217c1s1b0n0.hsn.cm.aurora.alcf.anl.gov: rank 23 exited with code 1
+x4217c1s1b0n0.hsn.cm.aurora.alcf.anl.gov: rank 12 died from signal 15
+02/11-01:04:47.27 x4217c1s0b0n0 DAOS[127345/127348/0] container ERR  src/container/cli.c:444 cont_destroy_complete() failed to destroy container: DER_BUSY(-1012): 'Device or resource busy'
+ERROR: daos: failed to destroy container rgeorge-io500: DER_BUSY(-1012): Device or resource busy
+Failed to destroy container rgeorge-io500
+Completed script in 2045 seconds
