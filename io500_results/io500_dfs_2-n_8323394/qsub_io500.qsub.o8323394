@@ -1,0 +1,198 @@
+Pool 451a32a5-f5f3-4759-9935-5f26c0a2cee0, ntarget=4064, disabled=160, leader=31, version=365, state=Degraded
+Pool health info:
+- Rebuild done, 0 objs, 0 recs
+Pool space info:
+- Target(VOS) count:3904
+- Storage tier 0 (SCM):
+  Total size: 2.9 TB
+  Free: 2.6 TB, min:654 MB, max:655 MB, mean:655 MB
+- Storage tier 1 (NVMe):
+  Total size: 93 TB
+  Free: 93 TB, min:24 GB, max:24 GB, mean:24 GB
+Container rgeorge-io500 does not exist, will create a new one.
+Successfully created container cf429056-2772-4ef3-893f-da30dde50723
+  Container UUID : cf429056-2772-4ef3-893f-da30dde50723
+  Container Label: rgeorge-io500                       
+  Container Type : POSIX                               
+
+Get container properties:
+Properties for container rgeorge-io500
+Name                                             Value                               
+----                                             -----                               
+Highest Allocated OID (alloc_oid)                0                                   
+Checksum (cksum)                                 off                                 
+Checksum Chunk Size (cksum_size)                 32 KiB                              
+Compression (compression)                        off                                 
+Deduplication (dedup)                            off                                 
+Dedupe Threshold (dedup_threshold)               4.0 KiB                             
+EC Cell Size (ec_cell_sz)                        64 KiB                              
+Performance domain affinity level of EC (ec_pda) 1                                   
+Encryption (encryption)                          off                                 
+Global Version (global_version)                  3                                   
+Group (group)                                    users@                              
+Label (label)                                    rgeorge-io500                       
+Layout Type (layout_type)                        POSIX (1)                           
+Layout Version (layout_version)                  1                                   
+Max Snapshot (max_snapshot)                      0                                   
+Object Version (obj_version)                     2                                   
+Owner (owner)                                    rgeorge@                            
+Performance domain level (perf_domain)           root (255)                          
+Redundancy Factor (rd_fac)                       rd_fac1                             
+Redundancy Level (rd_lvl)                        node (2)                            
+Performance domain affinity level of RP (rp_pda) 4294967295                          
+Server Checksumming (srv_cksum)                  off                                 
+Health (status)                                  HEALTHY                             
+Access Control List (acl)                        A::OWNER@:rwdtTaAo, A:G:GROUP@:rwtT 
+clush: 0/2           clush: 2/2---------------
+x4716c4s0b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added 'x4716c4s0b0n0.hsn.cm.aurora.alcf.anl.gov,10.112.228.221' (ECDSA) to the list of known hosts.
+---------------
+x4716c4s1b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added 'x4716c4s1b0n0.hsn.cm.aurora.alcf.anl.gov,10.112.228.217' (ECDSA) to the list of known hosts.
+dfuse on /tmp/e2sar/rgeorge-io500 type fuse.daos (rw,nosuid,nodev,noatime,user_id=40816,group_id=100,default_permissions)
+02/14-18:57:04.75 x4716c4s1b0n0 DAOS[28215/28215/0] external ERR  # [749205.352102] mercury->rpc [error] /home/daos/pre/build/external/release/mercury/src/mercury_core.c:4479 hg_core_send_input_cb() NA callback returned error (NA_HOSTUNREACH)
+IO500 version io500-isc24_v3-13 (standard)
+[RESULT]       ior-easy-write       43.782549 GiB/s : time 437.868 seconds
+ERROR INVALID (src/main.c:437) Runtime of phase (149.668981) is below stonewall time. This shouldn't happen!
+ERROR INVALID (src/main.c:443) Runtime is smaller than expected minimum runtime
+[RESULT]    mdtest-easy-write      161.478461 kIOPS : time 149.669 seconds [INVALID]
+[      ]            timestamp        0.000000 kIOPS : time 0.002 seconds
+[RESULT]       ior-hard-write        2.715381 GiB/s : time 334.236 seconds
+[RESULT]    mdtest-hard-write       64.099866 kIOPS : time 301.971 seconds
+[RESULT]                 find      210.841408 kIOPS : time 205.398 seconds
+[RESULT]        ior-easy-read       56.415982 GiB/s : time 339.841 seconds
+[RESULT]     mdtest-easy-stat      248.096890 kIOPS : time 97.758 seconds
+[RESULT]        ior-hard-read        4.026825 GiB/s : time 225.391 seconds
+[RESULT]     mdtest-hard-stat      201.055320 kIOPS : time 96.962 seconds
+[RESULT]   mdtest-easy-delete       68.555383 kIOPS : time 352.769 seconds
+[RESULT]     mdtest-hard-read      202.090536 kIOPS : time 96.491 seconds
+[RESULT]   mdtest-hard-delete       69.820293 kIOPS : time 286.644 seconds
+[SCORE ] Bandwidth 12.819591 GiB/s : IOPS 134.215976 kiops : TOTAL 41.480043 [INVALID]
+
+The result files are stored in the directory: /home/rgeorge/io500_8323394_2-n
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8323394_2-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8323394_2-n/io500/myconfig.ini'
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+Created result tarball /home/rgeorge/io500_8323394_2-n/io500-x4716c4s0b0n0-io500.tgz
+02/14-19:45:53.37 x4716c4s0b0n0 DAOS[41607/41607/0] container ERR  src/container/cli.c:444 cont_destroy_complete() failed to destroy container: DER_BUSY(-1012): 'Device or resource busy'
+ERROR: daos: failed to destroy container rgeorge-io500: DER_BUSY(-1012): Device or resource busy
+Failed to destroy container rgeorge-io500
+Completed script in 2936 seconds

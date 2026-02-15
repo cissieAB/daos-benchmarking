@@ -1,0 +1,111 @@
+Pool 451a32a5-f5f3-4759-9935-5f26c0a2cee0, ntarget=4064, disabled=160, leader=31, version=365, state=Degraded
+Pool health info:
+- Rebuild done, 0 objs, 0 recs
+Pool space info:
+- Target(VOS) count:3904
+- Storage tier 0 (SCM):
+  Total size: 2.9 TB
+  Free: 2.6 TB, min:654 MB, max:655 MB, mean:655 MB
+- Storage tier 1 (NVMe):
+  Total size: 93 TB
+  Free: 93 TB, min:24 GB, max:24 GB, mean:24 GB
+Container rgeorge-io500 does not exist, will create a new one.
+Successfully created container 7da881c4-d1ac-4021-8947-8938f2a64a64
+  Container UUID : 7da881c4-d1ac-4021-8947-8938f2a64a64
+  Container Label: rgeorge-io500                       
+  Container Type : POSIX                               
+
+Get container properties:
+Properties for container rgeorge-io500
+Name                                             Value                               
+----                                             -----                               
+Highest Allocated OID (alloc_oid)                0                                   
+Checksum (cksum)                                 off                                 
+Checksum Chunk Size (cksum_size)                 32 KiB                              
+Compression (compression)                        off                                 
+Deduplication (dedup)                            off                                 
+Dedupe Threshold (dedup_threshold)               4.0 KiB                             
+EC Cell Size (ec_cell_sz)                        64 KiB                              
+Performance domain affinity level of EC (ec_pda) 1                                   
+Encryption (encryption)                          off                                 
+Global Version (global_version)                  3                                   
+Group (group)                                    users@                              
+Label (label)                                    rgeorge-io500                       
+Layout Type (layout_type)                        POSIX (1)                           
+Layout Version (layout_version)                  1                                   
+Max Snapshot (max_snapshot)                      0                                   
+Object Version (obj_version)                     2                                   
+Owner (owner)                                    rgeorge@                            
+Performance domain level (perf_domain)           root (255)                          
+Redundancy Factor (rd_fac)                       rd_fac1                             
+Redundancy Level (rd_lvl)                        node (2)                            
+Performance domain affinity level of RP (rp_pda) 4294967295                          
+Server Checksumming (srv_cksum)                  off                                 
+Health (status)                                  HEALTHY                             
+Access Control List (acl)                        A::OWNER@:rwdtTaAo, A:G:GROUP@:rwtT 
+clush: 0/1           clush: 1/1---------------
+x4313c5s4b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added 'x4313c5s4b0n0.hsn.cm.aurora.alcf.anl.gov,10.112.160.208' (ECDSA) to the list of known hosts.
+dfuse on /tmp/e2sar/rgeorge-io500 type fuse.daos (rw,nosuid,nodev,noatime,user_id=40816,group_id=100,default_permissions)
+IO500 version io500-isc24_v3-13 (standard)
+[RESULT]       ior-easy-write       25.772988 GiB/s : time 314.785 seconds
+ERROR INVALID (src/main.c:437) Runtime of phase (175.825340) is below stonewall time. This shouldn't happen!
+ERROR INVALID (src/main.c:443) Runtime is smaller than expected minimum runtime
+[RESULT]    mdtest-easy-write       68.688508 kIOPS : time 175.825 seconds [INVALID]
+[      ]            timestamp        0.000000 kIOPS : time 0.003 seconds
+[RESULT]       ior-hard-write        1.617422 GiB/s : time 323.269 seconds
+[RESULT]    mdtest-hard-write       28.432556 kIOPS : time 302.997 seconds
+[RESULT]                 find      103.281757 kIOPS : time 199.063 seconds
+[RESULT]        ior-easy-read       27.698650 GiB/s : time 291.781 seconds
+[RESULT]     mdtest-easy-stat      111.248269 kIOPS : time 111.073 seconds
+[RESULT]        ior-hard-read        1.971494 GiB/s : time 265.203 seconds
+[RESULT]     mdtest-hard-stat      106.771855 kIOPS : time 82.229 seconds
+[RESULT]   mdtest-easy-delete       31.281323 kIOPS : time 386.338 seconds
+[RESULT]     mdtest-hard-read       89.094365 kIOPS : time 99.183 seconds
+[RESULT]   mdtest-hard-delete       31.683223 kIOPS : time 277.681 seconds
+[SCORE ] Bandwidth 6.907336 GiB/s : IOPS 61.756090 kiops : TOTAL 20.653572 [INVALID]
+
+The result files are stored in the directory: /home/rgeorge/io500_8326336_1-n
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+Warning: please create a 'system-information.txt' description by
+copying the information from https://vi4io.org/io500-info-creator/
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8326336_1-n/io500/io500.sh'
+cp: cannot create regular file '/home/rgeorge/io500_8326336_1-n/io500/io500.sh': File exists
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8326336_1-n/io500/io500.sh'
+cp: cannot create regular file '/home/rgeorge/io500_8326336_1-n/io500/io500.sh': File exists
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8326336_1-n/io500/io500.sh'
+cp: cannot create regular file '/home/rgeorge/io500_8326336_1-n/io500/io500.sh': File exists
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8326336_1-n/io500/myconfig.ini'
+cp: cannot create regular file '/home/rgeorge/io500_8326336_1-n/io500/myconfig.ini': File exists
+'/home/rgeorge/io500/io500.sh' -> '/home/rgeorge/io500_8326336_1-n/io500/io500.sh'
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8326336_1-n/io500/myconfig.ini'
+cp: cannot create regular file '/home/rgeorge/io500_8326336_1-n/io500/myconfig.ini''/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8326336_1-n/io500/myconfig.ini'
+cp: cannot create regular file '/home/rgeorge/io500_8326336_1-n/io500/myconfig.ini': File exists
+: File exists
+'/home/rgeorge/myconfig.ini' -> '/home/rgeorge/io500_8326336_1-n/io500/myconfig.ini'
+x4313c5s4b0n0.hsn.cm.aurora.alcf.anl.gov: rank 0 exited with code 1
+x4313c5s4b0n0.hsn.cm.aurora.alcf.anl.gov: rank 5 died from signal 15
+Successfully destroyed container rgeorge-io500
+Completed script in 2841 seconds

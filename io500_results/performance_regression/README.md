@@ -1,0 +1,1 @@
+These results happened during a deployment of DAOS which had performance regression. They have about an order of magnitude less bandwidth. This was resolved in the Feb 2 maintenance window. No need to include these in analysis - moving to archive folder on my local machine.
