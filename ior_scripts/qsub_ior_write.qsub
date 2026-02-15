@@ -9,8 +9,8 @@
 #PBS -j oe
 
 # Load DAOS module
-module use /soft/modulefiles/ || { error "Failed to use modulefiles"; exit 1; }
-module load daos || { error "Failed to load DAOS module"; exit 1; }
+module use /soft/modulefiles/ || { echo "Failed to use modulefiles"; exit 1; }
+module load daos || { echo "Failed to load DAOS module"; exit 1; }
 
 # Variables
 POOL_NAME=e2sar
@@ -18,7 +18,7 @@ NNODES=`wc -l < $PBS_NODEFILE` # Number of nodes
 START_TIME=$SECONDS
 
 # Verify pool exists
-daos pool list | grep -q -- "$POOL_NAME" || { error "No pool: $POOL_NAME"; exit 1; }
+daos pool list | grep -q -- "$POOL_NAME" || { echo "No pool: $POOL_NAME"; exit 1; }
 
 
 cd $PBS_O_WORKDIR
@@ -48,7 +48,7 @@ CONTAINER_NAME="${USER}-ior_n${NNODES}"
 if daos cont query "$POOL_NAME" "$CONTAINER_NAME" >/dev/null 2>&1; then
     echo "Container $CONTAINER_NAME already exists, destroying it..."
     if ! daos container destroy "$POOL_NAME" "$CONTAINER_NAME"; then
-        error "Failed to destroy container $CONTAINER_NAME"
+        echo "Failed to destroy container $CONTAINER_NAME"
         exit 1
     fi
 else
@@ -56,7 +56,7 @@ else
 fi
 # Create container
 if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --properties=rd_fac:1; then
-    error "Failed to create container $CONTAINER_NAME"
+    echo "Failed to create container $CONTAINER_NAME"
     exit 1
 fi
 echo "Get container properties:"
@@ -101,7 +101,7 @@ done
 
 
 # Destroy container
-daos cont destroy $POOL_NAME $CONTAINER_NAME || warning "Failed to destroy container $CONTAINER_NAME"
+daos cont destroy $POOL_NAME $CONTAINER_NAME || echo "Failed to destroy container $CONTAINER_NAME"
 
 ELAPSED_TIME=$((SECONDS - START_TIME))
 echo "Completed script in $ELAPSED_TIME seconds"
