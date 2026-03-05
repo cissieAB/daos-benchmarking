@@ -1,0 +1,147 @@
+Loading DAOS module...
+Pool 451a32a5-f5f3-4759-9935-5f26c0a2cee0, ntarget=4064, disabled=160, leader=72, version=365, state=Degraded
+Pool health info:
+- Rebuild done, 0 objs, 0 recs
+Pool space info:
+- Target(VOS) count:3904
+- Storage tier 0 (SCM):
+  Total size: 2.9 TB
+  Free: 2.6 TB, min:654 MB, max:655 MB, mean:655 MB
+- Storage tier 1 (NVMe):
+  Total size: 93 TB
+  Free: 93 TB, min:24 GB, max:24 GB, mean:24 GB
+Results will be stored in: /home/rgeorge/daos-benchmarking/mdtest_scripts/mdtest_results_n-1_8369966
+Start of mdtest cases
+Make container
+No containers.
+Container rgeorge-mdtest does not exist, will create a new one.
+Successfully created container de381c93-cb20-4b05-bc45-d72a8844d1bc
+  Container UUID : de381c93-cb20-4b05-bc45-d72a8844d1bc
+  Container Label: rgeorge-mdtest                      
+  Container Type : POSIX                               
+
+Container created successfully.
+Container properties:
+Properties for container rgeorge-mdtest
+Name                                             Value                               
+----                                             -----                               
+Highest Allocated OID (alloc_oid)                0                                   
+Checksum (cksum)                                 off                                 
+Checksum Chunk Size (cksum_size)                 32 KiB                              
+Compression (compression)                        off                                 
+Deduplication (dedup)                            off                                 
+Dedupe Threshold (dedup_threshold)               4.0 KiB                             
+EC Cell Size (ec_cell_sz)                        64 KiB                              
+Performance domain affinity level of EC (ec_pda) 1                                   
+Encryption (encryption)                          off                                 
+Global Version (global_version)                  3                                   
+Group (group)                                    users@                              
+Label (label)                                    rgeorge-mdtest                      
+Layout Type (layout_type)                        POSIX (1)                           
+Layout Version (layout_version)                  1                                   
+Max Snapshot (max_snapshot)                      0                                   
+Object Version (obj_version)                     2                                   
+Owner (owner)                                    rgeorge@                            
+Performance domain level (perf_domain)           root (255)                          
+Redundancy Factor (rd_fac)                       rd_fac1                             
+Redundancy Level (rd_lvl)                        node (2)                            
+Performance domain affinity level of RP (rp_pda) 4294967295                          
+Server Checksumming (srv_cksum)                  off                                 
+Health (status)                                  HEALTHY                             
+Access Control List (acl)                        A::OWNER@:rwdtTaAo, A:G:GROUP@:rwtT 
+-- started at 03/05/2026 15:16:17 --
+
+mdtest-4.0.0 was launched with 48 total task(s) on 1 node(s)
+Command line used: /home/rgeorge/ior/install/bin/mdtest '-a' 'DFS' '-d' '/mdtest' '-i' '2' '-n' '10000' '-u' '-F' '-w' '1024' '-e' '1024' '--dfs.pool' 'e2sar' '--dfs.cont' 'rgeorge-mdtest'
+Path                : /mdtest
+FS                  : 87.4 TiB   Used FS: 0.5%   Inodes: -0.0 Mi   Used Inodes: 0.0%
+Nodemap: 111111111111111111111111111111111111111111111111
+48 tasks, 480000 files
+
+SUMMARY rate: (of 2 iterations)
+   Operation                     Max            Min           Mean        Std Dev
+   ---------                     ---            ---           ----        -------
+   File creation               13487.265      13427.422      13457.344         42.315
+   File stat                    9351.559       8901.928       9126.744        317.937
+   File read                   14661.468      14575.306      14618.387         60.925
+   File removal                 1739.408       1702.522       1720.965         26.083
+   Tree creation                 482.159         72.818        277.489        289.448
+   Tree removal                  117.953         79.352         98.653         27.295
+-- finished at 03/05/2026 15:29:38 --
+
+Remove container
+UUID                                 Label          
+----                                 -----          
+de381c93-cb20-4b05-bc45-d72a8844d1bc rgeorge-mdtest 
+Successfully destroyed container rgeorge-mdtest
+Run took 815 seconds
+Make container
+No containers.
+Container rgeorge-mdtest does not exist, will create a new one.
+Successfully created container 76b71509-faf0-4381-95c2-eee8890a8667
+  Container UUID : 76b71509-faf0-4381-95c2-eee8890a8667
+  Container Label: rgeorge-mdtest                      
+  Container Type : POSIX                               
+
+Container created successfully.
+Container properties:
+Properties for container rgeorge-mdtest
+Name                                             Value                               
+----                                             -----                               
+Highest Allocated OID (alloc_oid)                0                                   
+Checksum (cksum)                                 off                                 
+Checksum Chunk Size (cksum_size)                 32 KiB                              
+Compression (compression)                        off                                 
+Deduplication (dedup)                            off                                 
+Dedupe Threshold (dedup_threshold)               4.0 KiB                             
+EC Cell Size (ec_cell_sz)                        64 KiB                              
+Performance domain affinity level of EC (ec_pda) 1                                   
+Encryption (encryption)                          off                                 
+Global Version (global_version)                  3                                   
+Group (group)                                    users@                              
+Label (label)                                    rgeorge-mdtest                      
+Layout Type (layout_type)                        POSIX (1)                           
+Layout Version (layout_version)                  1                                   
+Max Snapshot (max_snapshot)                      0                                   
+Object Version (obj_version)                     2                                   
+Owner (owner)                                    rgeorge@                            
+Performance domain level (perf_domain)           root (255)                          
+Redundancy Factor (rd_fac)                       rd_fac1                             
+Redundancy Level (rd_lvl)                        node (2)                            
+Performance domain affinity level of RP (rp_pda) 4294967295                          
+Server Checksumming (srv_cksum)                  off                                 
+Health (status)                                  HEALTHY                             
+Access Control List (acl)                        A::OWNER@:rwdtTaAo, A:G:GROUP@:rwtT 
+---------------
+x4514c1s4b0n0.hsn.cm.aurora.alcf.anl.gov
+---------------
+Warning: Permanently added the ECDSA host key for IP address '10.112.158.55' to the list of known hosts.
+-- started at 03/05/2026 15:29:51 --
+
+mdtest-4.0.0 was launched with 48 total task(s) on 1 node(s)
+Command line used: /home/rgeorge/ior/install/bin/mdtest '-a' 'DFS' '-d' '/mdtest' '-i' '2' '-n' '10000' '-F' '-w' '1024' '-e' '1024' '--dfs.pool' 'e2sar' '--dfs.cont' 'rgeorge-mdtest'
+Path                : /mdtest
+FS                  : 87.4 TiB   Used FS: 0.5%   Inodes: -0.0 Mi   Used Inodes: 0.0%
+Nodemap: 111111111111111111111111111111111111111111111111
+48 tasks, 480000 files
+
+SUMMARY rate: (of 2 iterations)
+   Operation                     Max            Min           Mean        Std Dev
+   ---------                     ---            ---           ----        -------
+   File creation               11484.875      11447.094      11465.985         26.716
+   File stat                    9367.576       8490.700       8929.138        620.045
+   File read                   14718.932      14627.114      14673.023         64.925
+   File removal                 1670.233       1655.183       1662.708         10.642
+   Tree creation                1748.355        172.740        960.548       1114.128
+   Tree removal                    2.229          1.998          2.113          0.163
+-- finished at 03/05/2026 15:43:48 --
+
+Remove container
+UUID                                 Label          
+----                                 -----          
+76b71509-faf0-4381-95c2-eee8890a8667 rgeorge-mdtest 
+Successfully destroyed container rgeorge-mdtest
+Run took 850 seconds
+End of mdtest cases
+No containers.
+Completed script in 1665 seconds
