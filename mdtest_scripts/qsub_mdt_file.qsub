@@ -1,8 +1,8 @@
 #!/bin/bash
-#PBS -l walltime=00:59:00
+#PBS -l walltime=04:00:00
 #PBS -l select=1
 #PBS -A e2sar-daos
-#PBS -q debug
+#PBS -q capacity
 #PBS -l filesystems=home:flare:daos_user_fs
 #PBS -j oe
 
@@ -98,8 +98,12 @@ CPU_BINDING_SKIP1="list:4:6:56:58:9:11:61:63:12:14:64:66:17:19:69:71:20:22:72:74
 CPU_BINDING_ALL="list:1:53:2:54:3:55:4:56:5:57:6:58:7:59:8:60:9:61:10:62:11:63:12:64:13:65:14:66:15:67:16:68:17:69:18:70:19:71:20:72:21:73:22:74:23:75:24:76:25:77:26:78:27:79:28:80:29:81:30:82:31:83:32:84:33:85:34:86:35:87:36:88:37:89:38:90:39:91:40:92:41:93:42:94:43:95:44:96:45:97:46:98:47:99:48:100:49:101:50:102:51:103"
 
 # CPU binding test cases (bind noskip used for many process test, skip1 used for 48)
-CPU_BINDS=("$CPU_BINDING_SKIP1" "$CPU_BINDING_ALL")
-NUM_PROCS=( 48 102 )
+#CPU_BINDS=("$CPU_BINDING_SKIP1" "$CPU_BINDING_ALL")
+#NUM_PROCS=( 48 102 )
+CPU_BINDS=("$CPU_BINDING_SKIP1")
+NUM_PROCS=( 48 )
+
+
 
 # Run MDTest with DFS API
 # -a : api
@@ -110,6 +114,7 @@ NUM_PROCS=( 48 102 )
 # -n : [0] number of iterms per process (dirs and files)
 # -u : [off] unique working dir for each task
 # -w : [0] bytes to write per file after creation
+# -e : [0] bytes to read per file after creation
 # -z : [0] tree depth
 
 # Parameter cases:
@@ -125,6 +130,8 @@ for ((cpu_np=0; cpu_np<${#CPU_BINDS[@]}; cpu_np++)); do
     # file number sensitivity
     for unique in "-u" ""; do
         for nfiles in "${NUM_FILES[@]}"; do
+	    START_RUN=$SECONDS
+
 	    make_container	
             LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec \
                 -np "${NUM_PROCS[$cpu_np]}" -ppn "${NUM_PROCS[$cpu_np]}" \
@@ -136,42 +143,13 @@ for ((cpu_np=0; cpu_np<${#CPU_BINDS[@]}; cpu_np++)); do
             # cleanup
             sleep 3 
 	    remove_container
+
+
+	    RUN_TIME=$((SECONDS - START_RUN))
+	    echo "Run took $RUN_TIME seconds"
         done
     done
 
-    # depth sensitivity
-    for unique in "-u" ""; do
-        for depth in "${DEPTHS[@]}"; do 
-	    make_container
-            LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec \
-                -np "${NUM_PROCS[$cpu_np]}" -ppn "${NUM_PROCS[$cpu_np]}" \
-                --cpu-bind "${CPU_BINDS[$cpu_np]}" --no-vni -genvall -- \
-                mdtest -a DFS -d ${TEST_DIR} -i ${ITERATIONS} \
-                -b 4 -I 10 -z ${depth} ${unique} \
-                --dfs.pool ${POOL_NAME} --dfs.cont ${CONTAINER_NAME}
-
-            # cleanup
-            sleep 3 
-	    remove_container
-        done
-    done
-
-    # branching sensitivity
-    for unique in "-u" ""; do
-        for branching in "${BRANCHING_FACTORS[@]}"; do
-	    make_container	
-            LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec \
-                -np "${NUM_PROCS[$cpu_np]}" -ppn "${NUM_PROCS[$cpu_np]}" \
-                --cpu-bind "${CPU_BINDS[$cpu_np]}" --no-vni -genvall -- \
-                mdtest -a DFS -d ${TEST_DIR} -i ${ITERATIONS} \
-                 -z 4 -I 10 -b ${branching} ${unique} \
-                --dfs.pool ${POOL_NAME} --dfs.cont ${CONTAINER_NAME}
-
-            # cleanup
-            sleep 3 
-	    remove_container
-        done
-    done
 
 done
 echo "End of mdtest cases"

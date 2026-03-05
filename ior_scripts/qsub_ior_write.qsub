@@ -20,7 +20,6 @@ START_TIME=$SECONDS
 # Verify pool exists
 daos pool list | grep -q -- "$POOL_NAME" || { echo "No pool: $POOL_NAME"; exit 1; }
 
-
 cd $PBS_O_WORKDIR
 
 ## Aurora compute-node CPU binding specific settings
