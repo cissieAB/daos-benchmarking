@@ -1,5 +1,5 @@
 #!/bin/bash
-#PBS -l walltime=04:00:00
+#PBS -l walltime=03:00:00
 #PBS -l select=1
 #PBS -A e2sar-daos
 #PBS -q capacity
@@ -37,7 +37,7 @@ TEST_DIR="/mdtest"
 make_container() {
 	echo "Make container"
 	daos container list "$POOL_NAME"
-
+	daos pool query "$POOL_NAME"
 
 	# Check if container exists
 	if daos cont query "$POOL_NAME" "$CONTAINER_NAME" >/dev/null 2>&1; then
@@ -52,7 +52,7 @@ make_container() {
 	fi
 
 	# Create new container
-	if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --properties=rd_fac:1; then
+	if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --dir-oclass S4 --file-oclass SX --properties=rd_fac:0; then
     		echo "Failed to create container $CONTAINER_NAME"
     		exit 1
 	fi
@@ -118,8 +118,8 @@ NUM_PROCS=( 48 )
 # -z : [0] tree depth
 
 # Parameter cases:
-# NUM_FILES=( 100000 1000000 10000000 100000000 1000000000 ) 
-NUM_FILES=( 10000 ) 
+# too large: NUM_FILES=( 10000 100000 1000000 10000000 ) 
+NUM_FILES=(1000 10000 100000)
 DEPTHS=( 4 5 6 7 8 )
 BRANCHING_FACTORS=( 4 5 6 7 8 )
 ITERATIONS=2
