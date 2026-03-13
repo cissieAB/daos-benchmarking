@@ -1,0 +1,91 @@
+Loading DAOS module...
+Pool 451a32a5-f5f3-4759-9935-5f26c0a2cee0, ntarget=4064, disabled=160, leader=228, version=365, state=Degraded
+Pool health info:
+- Rebuild done, 0 objs, 0 recs
+Pool space info:
+- Target(VOS) count:3904
+- Storage tier 0 (SCM):
+  Total size: 2.9 TB
+  Free: 2.6 TB, min:0 B, max:655 MB, mean:654 MB
+- Storage tier 1 (NVMe):
+  Total size: 93 TB
+  Free: 93 TB, min:24 GB, max:24 GB, mean:24 GB
+Results will be stored in: /home/rgeorge/daos-benchmarking/mdtest_scripts/mdtest_results_n-1_8382126
+Start of mdtest cases
+Make container
+No containers.
+Pool 451a32a5-f5f3-4759-9935-5f26c0a2cee0, ntarget=4064, disabled=160, leader=228, version=365, state=Degraded
+Pool health info:
+- Rebuild done, 0 objs, 0 recs
+Pool space info:
+- Target(VOS) count:3904
+- Storage tier 0 (SCM):
+  Total size: 2.9 TB
+  Free: 2.6 TB, min:0 B, max:655 MB, mean:654 MB
+- Storage tier 1 (NVMe):
+  Total size: 93 TB
+  Free: 93 TB, min:24 GB, max:24 GB, mean:24 GB
+Container rgeorge-mdtest does not exist, will create a new one.
+Successfully created container dc9e725e-e437-4f8e-8464-656f6713c7d2
+  Container UUID : dc9e725e-e437-4f8e-8464-656f6713c7d2
+  Container Label: rgeorge-mdtest                      
+  Container Type : POSIX                               
+
+Container created successfully.
+Container properties:
+Properties for container rgeorge-mdtest
+Name                                             Value                               
+----                                             -----                               
+Highest Allocated OID (alloc_oid)                0                                   
+Checksum (cksum)                                 off                                 
+Checksum Chunk Size (cksum_size)                 32 KiB                              
+Compression (compression)                        off                                 
+Deduplication (dedup)                            off                                 
+Dedupe Threshold (dedup_threshold)               4.0 KiB                             
+EC Cell Size (ec_cell_sz)                        64 KiB                              
+Performance domain affinity level of EC (ec_pda) 1                                   
+Encryption (encryption)                          off                                 
+Global Version (global_version)                  3                                   
+Group (group)                                    users@                              
+Label (label)                                    rgeorge-mdtest                      
+Layout Type (layout_type)                        POSIX (1)                           
+Layout Version (layout_version)                  1                                   
+Max Snapshot (max_snapshot)                      0                                   
+Object Version (obj_version)                     2                                   
+Owner (owner)                                    rgeorge@                            
+Performance domain level (perf_domain)           root (255)                          
+Redundancy Factor (rd_fac)                       rd_fac0                             
+Redundancy Level (rd_lvl)                        node (2)                            
+Performance domain affinity level of RP (rp_pda) 4294967295                          
+Server Checksumming (srv_cksum)                  off                                 
+Health (status)                                  HEALTHY                             
+Access Control List (acl)                        A::OWNER@:rwdtTaAo, A:G:GROUP@:rwtT 
+[2026-03-13T15:08:09] Creating destination directories for `/tmp/rgeorge_handles.dQOKc`
+[2026-03-13T15:08:09] Broadcasting contents of `/tmp/rgeorge_handles.dQOKc` to `/tmp/rgeorge_handles.dQOKc`
+[2026-03-13T15:08:09] Progress: 100.0% 613.303284 MB/s 0.0 secs remaining
+[2026-03-13T15:08:09] Bcast complete: size=142660, time=0.000263 secs, speed=517.949856 MB/sec
+-- started at 03/13/2026 15:08:13 --
+
+mdtest-4.0.0 was launched with 48 total task(s) on 1 node(s)
+Command line used: /home/rgeorge/ior/install/bin/mdtest '-a' 'DFS' '-d' '/mdtest' '-i' '2' '-n' '1000' '-F' '-w' '1024' '-e' '1024' '--dfs.pool' 'e2sar' '--dfs.cont' 'rgeorge-mdtest'
+Path                : /mdtest
+FS                  : 87.4 TiB   Used FS: 0.5%   Inodes: -0.0 Mi   Used Inodes: 0.0%
+Nodemap: 111111111111111111111111111111111111111111111111
+48 tasks, 48000 files
+03/13-15:08:14.46 x4219c2s3b0n0 DAOS[178913/178913/0] object ERR  src/object/cli_shard.c:858 dc_rw_cb() 451a32a5/dc9e725e 937046968432162060.32.2323.2 rpc 0x6a908e0 opc 0 to rank 81 tag 6: DER_NOSPACE(-1007): 'No space on storage target'
+03/13-15:08:14.46 x4219c2s3b0n0 DAOS[178913/178913/0] dfs  ERR  src/client/dfs/io.c:242 dfs_write() daos_array_write() failed, DER_NOSPACE(-1007): 'No space on storage target'
+ERROR: dfs_write(0x6a7c000, 1024) failed (28): No space left on device
+, (aiori-DFS.c:767)
+Abort(-1) on node 2 (rank 2 in comm 0): application called MPI_Abort(MPI_COMM_WORLD, -1) - process 2
+Rank 2 aborted with code -1: application called MPI_Abort(MPI_COMM_WORLD, -1) - process 2
+x4219c2s3b0n0.hsn.cm.aurora.alcf.anl.gov: rank 2 invalid status -1
+x4219c2s3b0n0.hsn.cm.aurora.alcf.anl.gov: rank 12 died from signal 15
+Remove container
+UUID                                 Label          
+----                                 -----          
+dc9e725e-e437-4f8e-8464-656f6713c7d2 rgeorge-mdtest 
+Successfully destroyed container rgeorge-mdtest
+Run took 16 seconds
+End of mdtest cases
+No containers.
+Completed script in 17 seconds

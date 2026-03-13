@@ -1,8 +1,8 @@
 #!/bin/bash
-#PBS -l walltime=03:00:00
+#PBS -l walltime=00:59:00
 #PBS -l select=1
 #PBS -A e2sar-daos
-#PBS -q capacity
+#PBS -q debug
 #PBS -l filesystems=home:flare:daos_user_fs
 #PBS -j oe
 
@@ -52,7 +52,7 @@ make_container() {
 	fi
 
 	# Create new container
-	if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --dir-oclass S4 --file-oclass SX --properties=rd_fac:0; then
+	if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --dir-oclass S1 --file-oclass SX --properties=rd_fac:0; then
     		echo "Failed to create container $CONTAINER_NAME"
     		exit 1
 	fi
@@ -119,16 +119,17 @@ NUM_PROCS=( 48 )
 
 # Parameter cases:
 # too large: NUM_FILES=( 10000 100000 1000000 10000000 ) 
-NUM_FILES=(1000 10000 100000)
-DEPTHS=( 4 5 6 7 8 )
-BRANCHING_FACTORS=( 4 5 6 7 8 )
+#NUM_FILES=(1000 10000 100000)
+NUM_FILES=1000
+#DEPTHS=( 4 5 6 7 8 )
+#BRANCHING_FACTORS=( 4 5 6 7 8 )
 ITERATIONS=2
 
 echo "Start of mdtest cases"
 for ((cpu_np=0; cpu_np<${#CPU_BINDS[@]}; cpu_np++)); do 
 
     # file number sensitivity
-    for unique in "-u" ""; do
+#    for unique in "-u" ""; do
         for nfiles in "${NUM_FILES[@]}"; do
 	    START_RUN=$SECONDS
 
@@ -148,7 +149,7 @@ for ((cpu_np=0; cpu_np<${#CPU_BINDS[@]}; cpu_np++)); do
 	    RUN_TIME=$((SECONDS - START_RUN))
 	    echo "Run took $RUN_TIME seconds"
         done
-    done
+#    done
 
 
 done
