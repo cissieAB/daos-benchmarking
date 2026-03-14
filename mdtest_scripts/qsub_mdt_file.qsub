@@ -119,8 +119,8 @@ NUM_PROCS=( 48 )
 
 # Parameter cases:
 # too large: NUM_FILES=( 10000 100000 1000000 10000000 ) 
-#NUM_FILES=(1000 10000 100000)
-NUM_FILES=1000
+NUM_FILES=(1000 10000 100000)
+# NUM_FILES=1000
 #DEPTHS=( 4 5 6 7 8 )
 #BRANCHING_FACTORS=( 4 5 6 7 8 )
 ITERATIONS=2
@@ -129,7 +129,7 @@ echo "Start of mdtest cases"
 for ((cpu_np=0; cpu_np<${#CPU_BINDS[@]}; cpu_np++)); do 
 
     # file number sensitivity
-#    for unique in "-u" ""; do
+    for unique in "-u" ""; do
         for nfiles in "${NUM_FILES[@]}"; do
 	    START_RUN=$SECONDS
 
@@ -149,7 +149,7 @@ for ((cpu_np=0; cpu_np<${#CPU_BINDS[@]}; cpu_np++)); do
 	    RUN_TIME=$((SECONDS - START_RUN))
 	    echo "Run took $RUN_TIME seconds"
         done
-#    done
+    done
 
 
 done
