@@ -94,10 +94,10 @@ export AFFINITY_ORDERING=compact
 CPU_BINDING1=list:4:9:14:19:20:25:56:61:66:71:74:79
 # skip-1 breadth scan. Bind 48 cores
 CPU_BINDING_SKIP1="list:4:6:56:58:9:11:61:63:12:14:64:66:17:19:69:71:20:22:72:74:25:27:77:79:28:30:80:82:33:35:85:87:36:38:88:90:41:43:93:95:44:46:96:98:49:51:100:102"
-# bind all available cores
+# bind all available cores for stress test
 CPU_BINDING_ALL="list:1:53:2:54:3:55:4:56:5:57:6:58:7:59:8:60:9:61:10:62:11:63:12:64:13:65:14:66:15:67:16:68:17:69:18:70:19:71:20:72:21:73:22:74:23:75:24:76:25:77:26:78:27:79:28:80:29:81:30:82:31:83:32:84:33:85:34:86:35:87:36:88:37:89:38:90:39:91:40:92:41:93:42:94:43:95:44:96:45:97:46:98:47:99:48:100:49:101:50:102:51:103"
 
-# CPU binding test cases (bind noskip used for many process test, skip1 used for 48)
+# CPU binding test cases, limit to 48 because 102 creates to many files
 #CPU_BINDS=("$CPU_BINDING_SKIP1" "$CPU_BINDING_ALL")
 #NUM_PROCS=( 48 102 )
 CPU_BINDS=("$CPU_BINDING_SKIP1")
@@ -120,9 +120,7 @@ NUM_PROCS=( 48 )
 # Parameter cases:
 # too large: NUM_FILES=( 10000 100000 1000000 10000000 ) 
 NUM_FILES=(1000 10000 100000)
-# NUM_FILES=1000
-#DEPTHS=( 4 5 6 7 8 )
-#BRANCHING_FACTORS=( 4 5 6 7 8 )
+# debugging: NUM_FILES=1000
 ITERATIONS=2
 
 echo "Start of mdtest cases"
