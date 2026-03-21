@@ -1,0 +1,31 @@
+Loading DAOS module...
+Pool 7242f61a-8b04-4e9c-b53f-649d4fd33c1c, ntarget=4032, disabled=16, leader=7, version=34, state=Degraded
+Pool health info:
+- Rebuild done, 0 objs, 0 recs
+Pool space info:
+- Target(VOS) count:4016
+- Storage tier 0 (SCM):
+  Total size: 3.0 TB
+  Free: 2.6 TB, min:0 B, max:661 MB, mean:654 MB
+- Storage tier 1 (NVMe):
+  Total size: 97 TB
+  Free: 96 TB, min:24 GB, max:24 GB, mean:24 GB
+Results will be stored in: /home/rgeorge/daos-benchmarking/mdtest_scripts/mdtest_results_n-1_8394697
+Start of mdtest cases
+Make container
+No containers.
+Pool 7242f61a-8b04-4e9c-b53f-649d4fd33c1c, ntarget=4032, disabled=16, leader=7, version=34, state=Degraded
+Pool health info:
+- Rebuild done, 0 objs, 0 recs
+Pool space info:
+- Target(VOS) count:4016
+- Storage tier 0 (SCM):
+  Total size: 3.0 TB
+  Free: 2.6 TB, min:0 B, max:661 MB, mean:654 MB
+- Storage tier 1 (NVMe):
+  Total size: 97 TB
+  Free: 96 TB, min:24 GB, max:24 GB, mean:24 GB
+Container rgeorge-mdtest does not exist, will create a new one.
+03/21-20:46:58.95 x4311c0s1b0n0 DAOS[124933/124933/0] dfs  ERR  src/client/dfs/cont.c:287 dfs_cont_create() daos_cont_open() failed DER_NOMEM(-1009): 'Out of memory'
+ERROR: daos: failed to create container: DER_NOMEM(-1009): Out of memory
+Failed to create container rgeorge-mdtest

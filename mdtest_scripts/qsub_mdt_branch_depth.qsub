@@ -1,0 +1,169 @@
+#!/bin/bash
+#PBS -l walltime=00:30:00
+#PBS -l select=1
+#PBS -A e2sar-daos
+#PBS -q debug
+#PBS -l filesystems=home:flare:daos_user_fs
+#PBS -j oe
+
+
+# Load DAOS module
+echo "Loading DAOS module..."
+module use /soft/modulefiles/ || { echo "Failed to use modulefiles"; }
+module load daos || { echo "Failed to load DAOS module"; }
+
+# Variables
+POOL_NAME=e2sar2
+NNODES=`wc -l < $PBS_NODEFILE`
+CONTAINER_NAME="${USER}-mdtest-smoke"
+MOUNT_POINT="/tmp/${POOL_NAME}/${CONTAINER_NAME}"
+
+# Add ior/mdtest to PATH
+export PATH=$PATH:$HOME/ior/install/bin
+
+# Verify pool exists
+daos pool list | grep -q -- "$POOL_NAME" || { echo "No pool: $POOL_NAME"; exit 1; }
+
+daos pool query "$POOL_NAME"
+
+# Create results directory
+RESULTS_DIR="${PBS_O_WORKDIR}/mdtest_results_n-${NNODES}_${PBS_JOBID%%.*}"
+mkdir -p "${RESULTS_DIR}" || { echo "Failed to create results directory"; exit 1; }
+echo "Results will be stored in: $RESULTS_DIR"
+
+TEST_DIR="/mdtest"
+
+
+make_container() {
+	echo "Make container"
+	daos container list "$POOL_NAME"
+
+
+	# Check if container exists
+	if daos cont query "$POOL_NAME" "$CONTAINER_NAME" >/dev/null 2>&1; then
+    	echo "Container $CONTAINER_NAME already exists, destroying it..."
+    	if ! daos container destroy "$POOL_NAME" "$CONTAINER_NAME"; then
+        	echo "Failed to destroy existing container $CONTAINER_NAME"
+        	exit 1
+    	fi
+    		echo "Old container destroyed successfully."
+	else
+    		echo "Container $CONTAINER_NAME does not exist, will create a new one."
+	fi
+
+	# Create new container
+	if ! daos container create --type=POSIX "$POOL_NAME" "$CONTAINER_NAME" --properties=rd_fac:1; then
+    		echo "Failed to create container $CONTAINER_NAME"
+    		exit 1
+	fi
+	echo "Container created successfully."
+
+	echo "Container properties:"
+	daos container get-prop "$POOL_NAME" "$CONTAINER_NAME"
+
+	# Mount container to /tmp/$POOL_NAME/$CONTAINER_NAME (system default)
+	launch-dfuse.sh "$POOL_NAME:$CONTAINER_NAME" || { echo "Failed to mount container"; exit 1; }
+	MOUNT_POINT="/tmp/$POOL_NAME/$CONTAINER_NAME"
+
+	# Create test directory
+	mkdir -p "${MOUNT_POINT}${TEST_DIR}" || { echo "Failed to create test directory"; exit 1; }
+}
+
+remove_container() {
+	echo "Remove container"
+	daos container list "$POOL_NAME"
+
+	# Remove mounting point on a compute node
+	# clean-dfuse.sh $pool_name:$container_name || echo "clean-dfuse.sh failed"
+	fusermount3 -u "$MOUNT_POINT" || echo "Failed to unmount $MOUNT_POINT"
+	sleep 2
+
+	# Destroy container
+	daos container destroy "$POOL_NAME" "$CONTAINER_NAME" || echo "Failed to destroy container $CONTAINER_NAME"
+}
+
+
+
+START_TIME=$SECONDS
+
+
+# CPU bindings
+export ZE_FLAT_DEVICE_HIERARCHY=COMPOSITE
+export AFFINITY_ORDERING=compact
+# reccomended binding from docs
+CPU_BINDING1=list:4:9:14:19:20:25:56:61:66:71:74:79
+# skip-1 breadth scan. Bind 48 cores
+CPU_BINDING_SKIP1="list:4:6:56:58:9:11:61:63:12:14:64:66:17:19:69:71:20:22:72:74:25:27:77:79:28:30:80:82:33:35:85:87:36:38:88:90:41:43:93:95:44:46:96:98:49:51:100:102"
+# bind all available cores
+CPU_BINDING_ALL="list:1:53:2:54:3:55:4:56:5:57:6:58:7:59:8:60:9:61:10:62:11:63:12:64:13:65:14:66:15:67:16:68:17:69:18:70:19:71:20:72:21:73:22:74:23:75:24:76:25:77:26:78:27:79:28:80:29:81:30:82:31:83:32:84:33:85:34:86:35:87:36:88:37:89:38:90:39:91:40:92:41:93:42:94:43:95:44:96:45:97:46:98:47:99:48:100:49:101:50:102:51:103"
+
+# CPU binding test cases (bind noskip used for many process test, skip1 used for 48)
+CPU_BINDS=( "$CPU_BINDING_SKIP1" )
+NUM_PROCS=( 48 )
+
+# Run MDTest with DFS API
+# -a : api
+# -b : [1] branching factor
+# -d : [workind dir] directory for tests
+# -F : [off] files only (no dirs)
+# -i : [1] iterations
+# -n : [0] number of iterms per process (dirs and files)
+# -u : [off] unique working dir for each task
+# -w : [0] bytes to write per file after creation
+# -z : [0] tree depth
+
+# Parameter cases:
+# NUM_FILES=( 100000 1000000 10000000 100000000 1000000000 ) 
+NUM_FILES=( 10000 ) 
+# DEPTHS=( 4 5 6 7 8 )
+DEPTHS=( 4 )
+BRANCHING_FACTORS=( 4 )
+# BRANCHING_FACTORS=( 4 5 6 7 8 )
+ITERATIONS=2
+
+echo "Start of mdtest cases"
+for ((cpu_np=0; cpu_np<${#CPU_BINDS[@]}; cpu_np++)); do 
+
+
+    # depth sensitivity
+    for unique in "-u" ""; do
+        for depth in "${DEPTHS[@]}"; do 
+	    make_container
+            LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec \
+                -np "${NUM_PROCS[$cpu_np]}" -ppn "${NUM_PROCS[$cpu_np]}" \
+                --cpu-bind "${CPU_BINDS[$cpu_np]}" --no-vni -genvall -- \
+                mdtest -a DFS -d ${TEST_DIR} -i ${ITERATIONS} \
+                -b 4 -I 10 -z ${depth} ${unique} \
+                --dfs.pool ${POOL_NAME} --dfs.cont ${CONTAINER_NAME}
+
+            # cleanup
+            sleep 3 
+	    remove_container
+        done
+    done
+
+    # branching sensitivity
+    for unique in "-u" ""; do
+        for branching in "${BRANCHING_FACTORS[@]}"; do
+	    make_container	
+            LD_PRELOAD=/usr/lib64/libpil4dfs.so mpiexec \
+                -np "${NUM_PROCS[$cpu_np]}" -ppn "${NUM_PROCS[$cpu_np]}" \
+                --cpu-bind "${CPU_BINDS[$cpu_np]}" --no-vni -genvall -- \
+                mdtest -a DFS -d ${TEST_DIR} -i ${ITERATIONS} \
+                 -z 4 -I 10 -b ${branching} ${unique} \
+                --dfs.pool ${POOL_NAME} --dfs.cont ${CONTAINER_NAME}
+
+            # cleanup
+            sleep 3 
+	    remove_container
+        done
+    done
+
+done
+echo "End of mdtest cases"
+
+# Output log of existing pools
+daos container list "$POOL_NAME"
+
+ELAPSED_TIME=$((SECONDS - START_TIME))
+echo "Completed script in $ELAPSED_TIME seconds"

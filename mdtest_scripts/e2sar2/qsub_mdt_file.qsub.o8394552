@@ -1,0 +1,33 @@
+Loading DAOS module...
+Pool 7242f61a-8b04-4e9c-b53f-649d4fd33c1c, ntarget=4032, disabled=16, leader=7, version=34, state=Degraded
+Pool health info:
+- Rebuild done, 0 objs, 0 recs
+Pool space info:
+- Target(VOS) count:4016
+- Storage tier 0 (SCM):
+  Total size: 3.0 TB
+  Free: 2.1 TB, min:0 B, max:539 MB, mean:533 MB
+- Storage tier 1 (NVMe):
+  Total size: 97 TB
+  Free: 96 TB, min:24 GB, max:24 GB, mean:24 GB
+Results will be stored in: /home/rgeorge/daos-benchmarking/mdtest_scripts/mdtest_results_n-1_8394552
+Start of mdtest cases
+Make container
+UUID                                 Label          
+----                                 -----          
+ad60a288-3b18-4b98-92dc-46eb0e40e15b rgeorge-mdtest 
+Pool 7242f61a-8b04-4e9c-b53f-649d4fd33c1c, ntarget=4032, disabled=16, leader=7, version=34, state=Degraded
+Pool health info:
+- Rebuild done, 0 objs, 0 recs
+Pool space info:
+- Target(VOS) count:4016
+- Storage tier 0 (SCM):
+  Total size: 3.0 TB
+  Free: 2.1 TB, min:0 B, max:539 MB, mean:533 MB
+- Storage tier 1 (NVMe):
+  Total size: 97 TB
+  Free: 96 TB, min:24 GB, max:24 GB, mean:24 GB
+Container rgeorge-mdtest does not exist, will create a new one.
+03/21-20:25:18.82 x4311c3s5b0n0 DAOS[120643/120643/0] dfs  ERR  src/client/dfs/cont.c:280 dfs_cont_create() daos_cont_create() failed DER_EXIST(-1004): 'Entity already exists'
+ERROR: daos: failed to create container: DER_EXIST(-1004): Entity already exists
+Failed to create container rgeorge-mdtest

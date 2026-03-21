@@ -1,0 +1,371 @@
+Loading DAOS module...
+Pool 7242f61a-8b04-4e9c-b53f-649d4fd33c1c, ntarget=4032, disabled=0, leader=7, version=1, state=Ready
+Pool health info:
+- Rebuild idle, 0 objs, 0 recs
+Pool space info:
+- Target(VOS) count:4032
+- Storage tier 0 (SCM):
+  Total size: 3.0 TB
+  Free: 2.7 TB, min:661 MB, max:661 MB, mean:661 MB
+- Storage tier 1 (NVMe):
+  Total size: 97 TB
+  Free: 97 TB, min:24 GB, max:24 GB, mean:24 GB
+Results will be stored in: /home/rgeorge/daos-benchmarking/mdtest_scripts/mdtest_results_n-1_8394431
+Start of mdtest cases
+Make container
+No containers.
+Pool 7242f61a-8b04-4e9c-b53f-649d4fd33c1c, ntarget=4032, disabled=0, leader=7, version=1, state=Ready
+Pool health info:
+- Rebuild idle, 0 objs, 0 recs
+Pool space info:
+- Target(VOS) count:4032
+- Storage tier 0 (SCM):
+  Total size: 3.0 TB
+  Free: 2.7 TB, min:661 MB, max:661 MB, mean:661 MB
+- Storage tier 1 (NVMe):
+  Total size: 97 TB
+  Free: 97 TB, min:24 GB, max:24 GB, mean:24 GB
+Container rgeorge-mdtest does not exist, will create a new one.
+Successfully created container b42c1411-ad77-47f1-99c3-3a84e5da991f
+  Container UUID : b42c1411-ad77-47f1-99c3-3a84e5da991f
+  Container Label: rgeorge-mdtest                      
+  Container Type : POSIX                               
+
+Container created successfully.
+Container properties:
+Properties for container rgeorge-mdtest
+Name                                             Value                               
+----                                             -----                               
+Highest Allocated OID (alloc_oid)                0                                   
+Checksum (cksum)                                 off                                 
+Checksum Chunk Size (cksum_size)                 32 KiB                              
+Compression (compression)                        off                                 
+Deduplication (dedup)                            off                                 
+Dedupe Threshold (dedup_threshold)               4.0 KiB                             
+EC Cell Size (ec_cell_sz)                        64 KiB                              
+Performance domain affinity level of EC (ec_pda) 1                                   
+Encryption (encryption)                          off                                 
+Global Version (global_version)                  3                                   
+Group (group)                                    users@                              
+Label (label)                                    rgeorge-mdtest                      
+Layout Type (layout_type)                        POSIX (1)                           
+Layout Version (layout_version)                  1                                   
+Max Snapshot (max_snapshot)                      0                                   
+Object Version (obj_version)                     2                                   
+Owner (owner)                                    rgeorge@                            
+Performance domain level (perf_domain)           root (255)                          
+Redundancy Factor (rd_fac)                       rd_fac0                             
+Redundancy Level (rd_lvl)                        node (2)                            
+Performance domain affinity level of RP (rp_pda) 4294967295                          
+Server Checksumming (srv_cksum)                  off                                 
+Health (status)                                  HEALTHY                             
+Access Control List (acl)                        A::OWNER@:rwdtTaAo, A:G:GROUP@:rwtT 
+[2026-03-21T16:53:51] Creating destination directories for `/tmp/rgeorge_handles.3QcL7`
+[2026-03-21T16:53:51] Broadcasting contents of `/tmp/rgeorge_handles.3QcL7` to `/tmp/rgeorge_handles.3QcL7`
+[2026-03-21T16:53:51] Progress: 100.0% 637.816926 MB/s 0.0 secs remaining
+[2026-03-21T16:53:51] Bcast complete: size=141572, time=0.000239 secs, speed=564.590095 MB/sec
+Can't find executable mdtest
+Remove container
+UUID                                 Label          
+----                                 -----          
+b42c1411-ad77-47f1-99c3-3a84e5da991f rgeorge-mdtest 
+Successfully destroyed container rgeorge-mdtest
+Run took 11 seconds
+Make container
+No containers.
+Pool 7242f61a-8b04-4e9c-b53f-649d4fd33c1c, ntarget=4032, disabled=0, leader=7, version=1, state=Ready
+Pool health info:
+- Rebuild idle, 0 objs, 0 recs
+Pool space info:
+- Target(VOS) count:4032
+- Storage tier 0 (SCM):
+  Total size: 3.0 TB
+  Free: 2.7 TB, min:661 MB, max:661 MB, mean:661 MB
+- Storage tier 1 (NVMe):
+  Total size: 97 TB
+  Free: 97 TB, min:24 GB, max:24 GB, mean:24 GB
+Container rgeorge-mdtest does not exist, will create a new one.
+Successfully created container 47850d2b-c18b-4713-8ad3-7acbb800b802
+  Container UUID : 47850d2b-c18b-4713-8ad3-7acbb800b802
+  Container Label: rgeorge-mdtest                      
+  Container Type : POSIX                               
+
+Container created successfully.
+Container properties:
+Properties for container rgeorge-mdtest
+Name                                             Value                               
+----                                             -----                               
+Highest Allocated OID (alloc_oid)                0                                   
+Checksum (cksum)                                 off                                 
+Checksum Chunk Size (cksum_size)                 32 KiB                              
+Compression (compression)                        off                                 
+Deduplication (dedup)                            off                                 
+Dedupe Threshold (dedup_threshold)               4.0 KiB                             
+EC Cell Size (ec_cell_sz)                        64 KiB                              
+Performance domain affinity level of EC (ec_pda) 1                                   
+Encryption (encryption)                          off                                 
+Global Version (global_version)                  3                                   
+Group (group)                                    users@                              
+Label (label)                                    rgeorge-mdtest                      
+Layout Type (layout_type)                        POSIX (1)                           
+Layout Version (layout_version)                  1                                   
+Max Snapshot (max_snapshot)                      0                                   
+Object Version (obj_version)                     2                                   
+Owner (owner)                                    rgeorge@                            
+Performance domain level (perf_domain)           root (255)                          
+Redundancy Factor (rd_fac)                       rd_fac0                             
+Redundancy Level (rd_lvl)                        node (2)                            
+Performance domain affinity level of RP (rp_pda) 4294967295                          
+Server Checksumming (srv_cksum)                  off                                 
+Health (status)                                  HEALTHY                             
+Access Control List (acl)                        A::OWNER@:rwdtTaAo, A:G:GROUP@:rwtT 
+[2026-03-21T16:54:01] Creating destination directories for `/tmp/rgeorge_handles.vvkT7`
+[2026-03-21T16:54:01] Broadcasting contents of `/tmp/rgeorge_handles.vvkT7` to `/tmp/rgeorge_handles.vvkT7`
+[2026-03-21T16:54:01] Progress: 100.0% 571.515638 MB/s 0.0 secs remaining
+[2026-03-21T16:54:01] Bcast complete: size=141572, time=0.000264 secs, speed=511.266669 MB/sec
+Can't find executable mdtest
+Remove container
+UUID                                 Label          
+----                                 -----          
+47850d2b-c18b-4713-8ad3-7acbb800b802 rgeorge-mdtest 
+Successfully destroyed container rgeorge-mdtest
+Run took 10 seconds
+Make container
+No containers.
+Pool 7242f61a-8b04-4e9c-b53f-649d4fd33c1c, ntarget=4032, disabled=0, leader=7, version=1, state=Ready
+Pool health info:
+- Rebuild idle, 0 objs, 0 recs
+Pool space info:
+- Target(VOS) count:4032
+- Storage tier 0 (SCM):
+  Total size: 3.0 TB
+  Free: 2.7 TB, min:661 MB, max:661 MB, mean:661 MB
+- Storage tier 1 (NVMe):
+  Total size: 97 TB
+  Free: 97 TB, min:24 GB, max:24 GB, mean:24 GB
+Container rgeorge-mdtest does not exist, will create a new one.
+Successfully created container 18f8eb5e-4c6e-4340-a2f2-26c3815c9c41
+  Container UUID : 18f8eb5e-4c6e-4340-a2f2-26c3815c9c41
+  Container Label: rgeorge-mdtest                      
+  Container Type : POSIX                               
+
+Container created successfully.
+Container properties:
+Properties for container rgeorge-mdtest
+Name                                             Value                               
+----                                             -----                               
+Highest Allocated OID (alloc_oid)                0                                   
+Checksum (cksum)                                 off                                 
+Checksum Chunk Size (cksum_size)                 32 KiB                              
+Compression (compression)                        off                                 
+Deduplication (dedup)                            off                                 
+Dedupe Threshold (dedup_threshold)               4.0 KiB                             
+EC Cell Size (ec_cell_sz)                        64 KiB                              
+Performance domain affinity level of EC (ec_pda) 1                                   
+Encryption (encryption)                          off                                 
+Global Version (global_version)                  3                                   
+Group (group)                                    users@                              
+Label (label)                                    rgeorge-mdtest                      
+Layout Type (layout_type)                        POSIX (1)                           
+Layout Version (layout_version)                  1                                   
+Max Snapshot (max_snapshot)                      0                                   
+Object Version (obj_version)                     2                                   
+Owner (owner)                                    rgeorge@                            
+Performance domain level (perf_domain)           root (255)                          
+Redundancy Factor (rd_fac)                       rd_fac0                             
+Redundancy Level (rd_lvl)                        node (2)                            
+Performance domain affinity level of RP (rp_pda) 4294967295                          
+Server Checksumming (srv_cksum)                  off                                 
+Health (status)                                  HEALTHY                             
+Access Control List (acl)                        A::OWNER@:rwdtTaAo, A:G:GROUP@:rwtT 
+[2026-03-21T16:54:12] Creating destination directories for `/tmp/rgeorge_handles.wfugD`
+[2026-03-21T16:54:12] Broadcasting contents of `/tmp/rgeorge_handles.wfugD` to `/tmp/rgeorge_handles.wfugD`
+[2026-03-21T16:54:12] Progress: 100.0% 591.213058 MB/s 0.0 secs remaining
+[2026-03-21T16:54:12] Bcast complete: size=141572, time=0.000263 secs, speed=513.530286 MB/sec
+Can't find executable mdtest
+Remove container
+UUID                                 Label          
+----                                 -----          
+18f8eb5e-4c6e-4340-a2f2-26c3815c9c41 rgeorge-mdtest 
+Successfully destroyed container rgeorge-mdtest
+Run took 11 seconds
+Make container
+No containers.
+Pool 7242f61a-8b04-4e9c-b53f-649d4fd33c1c, ntarget=4032, disabled=0, leader=7, version=1, state=Ready
+Pool health info:
+- Rebuild idle, 0 objs, 0 recs
+Pool space info:
+- Target(VOS) count:4032
+- Storage tier 0 (SCM):
+  Total size: 3.0 TB
+  Free: 2.7 TB, min:661 MB, max:661 MB, mean:661 MB
+- Storage tier 1 (NVMe):
+  Total size: 97 TB
+  Free: 97 TB, min:24 GB, max:24 GB, mean:24 GB
+Container rgeorge-mdtest does not exist, will create a new one.
+Successfully created container 45c0c6bd-269f-47d1-8134-cec5536ef20d
+  Container UUID : 45c0c6bd-269f-47d1-8134-cec5536ef20d
+  Container Label: rgeorge-mdtest                      
+  Container Type : POSIX                               
+
+Container created successfully.
+Container properties:
+Properties for container rgeorge-mdtest
+Name                                             Value                               
+----                                             -----                               
+Highest Allocated OID (alloc_oid)                0                                   
+Checksum (cksum)                                 off                                 
+Checksum Chunk Size (cksum_size)                 32 KiB                              
+Compression (compression)                        off                                 
+Deduplication (dedup)                            off                                 
+Dedupe Threshold (dedup_threshold)               4.0 KiB                             
+EC Cell Size (ec_cell_sz)                        64 KiB                              
+Performance domain affinity level of EC (ec_pda) 1                                   
+Encryption (encryption)                          off                                 
+Global Version (global_version)                  3                                   
+Group (group)                                    users@                              
+Label (label)                                    rgeorge-mdtest                      
+Layout Type (layout_type)                        POSIX (1)                           
+Layout Version (layout_version)                  1                                   
+Max Snapshot (max_snapshot)                      0                                   
+Object Version (obj_version)                     2                                   
+Owner (owner)                                    rgeorge@                            
+Performance domain level (perf_domain)           root (255)                          
+Redundancy Factor (rd_fac)                       rd_fac0                             
+Redundancy Level (rd_lvl)                        node (2)                            
+Performance domain affinity level of RP (rp_pda) 4294967295                          
+Server Checksumming (srv_cksum)                  off                                 
+Health (status)                                  HEALTHY                             
+Access Control List (acl)                        A::OWNER@:rwdtTaAo, A:G:GROUP@:rwtT 
+[2026-03-21T16:54:23] Creating destination directories for `/tmp/rgeorge_handles.mZFFY`
+[2026-03-21T16:54:23] Broadcasting contents of `/tmp/rgeorge_handles.mZFFY` to `/tmp/rgeorge_handles.mZFFY`
+[2026-03-21T16:54:23] Progress: 100.0% 568.775002 MB/s 0.0 secs remaining
+[2026-03-21T16:54:23] Bcast complete: size=141572, time=0.000266 secs, speed=507.146719 MB/sec
+Can't find executable mdtest
+Remove container
+UUID                                 Label          
+----                                 -----          
+45c0c6bd-269f-47d1-8134-cec5536ef20d rgeorge-mdtest 
+Successfully destroyed container rgeorge-mdtest
+Run took 11 seconds
+Make container
+No containers.
+Pool 7242f61a-8b04-4e9c-b53f-649d4fd33c1c, ntarget=4032, disabled=0, leader=7, version=1, state=Ready
+Pool health info:
+- Rebuild idle, 0 objs, 0 recs
+Pool space info:
+- Target(VOS) count:4032
+- Storage tier 0 (SCM):
+  Total size: 3.0 TB
+  Free: 2.7 TB, min:661 MB, max:661 MB, mean:661 MB
+- Storage tier 1 (NVMe):
+  Total size: 97 TB
+  Free: 97 TB, min:24 GB, max:24 GB, mean:24 GB
+Container rgeorge-mdtest does not exist, will create a new one.
+Successfully created container eeca0145-4b40-4993-bea6-4217444d0fde
+  Container UUID : eeca0145-4b40-4993-bea6-4217444d0fde
+  Container Label: rgeorge-mdtest                      
+  Container Type : POSIX                               
+
+Container created successfully.
+Container properties:
+Properties for container rgeorge-mdtest
+Name                                             Value                               
+----                                             -----                               
+Highest Allocated OID (alloc_oid)                0                                   
+Checksum (cksum)                                 off                                 
+Checksum Chunk Size (cksum_size)                 32 KiB                              
+Compression (compression)                        off                                 
+Deduplication (dedup)                            off                                 
+Dedupe Threshold (dedup_threshold)               4.0 KiB                             
+EC Cell Size (ec_cell_sz)                        64 KiB                              
+Performance domain affinity level of EC (ec_pda) 1                                   
+Encryption (encryption)                          off                                 
+Global Version (global_version)                  3                                   
+Group (group)                                    users@                              
+Label (label)                                    rgeorge-mdtest                      
+Layout Type (layout_type)                        POSIX (1)                           
+Layout Version (layout_version)                  1                                   
+Max Snapshot (max_snapshot)                      0                                   
+Object Version (obj_version)                     2                                   
+Owner (owner)                                    rgeorge@                            
+Performance domain level (perf_domain)           root (255)                          
+Redundancy Factor (rd_fac)                       rd_fac0                             
+Redundancy Level (rd_lvl)                        node (2)                            
+Performance domain affinity level of RP (rp_pda) 4294967295                          
+Server Checksumming (srv_cksum)                  off                                 
+Health (status)                                  HEALTHY                             
+Access Control List (acl)                        A::OWNER@:rwdtTaAo, A:G:GROUP@:rwtT 
+[2026-03-21T16:54:33] Creating destination directories for `/tmp/rgeorge_handles.bi3Cg`
+[2026-03-21T16:54:33] Broadcasting contents of `/tmp/rgeorge_handles.bi3Cg` to `/tmp/rgeorge_handles.bi3Cg`
+[2026-03-21T16:54:33] Progress: 100.0% 608.379994 MB/s 0.0 secs remaining
+[2026-03-21T16:54:33] Bcast complete: size=141572, time=0.000250 secs, speed=541.067088 MB/sec
+Can't find executable mdtest
+Remove container
+UUID                                 Label          
+----                                 -----          
+eeca0145-4b40-4993-bea6-4217444d0fde rgeorge-mdtest 
+Successfully destroyed container rgeorge-mdtest
+Run took 10 seconds
+Make container
+No containers.
+Pool 7242f61a-8b04-4e9c-b53f-649d4fd33c1c, ntarget=4032, disabled=0, leader=7, version=1, state=Ready
+Pool health info:
+- Rebuild idle, 0 objs, 0 recs
+Pool space info:
+- Target(VOS) count:4032
+- Storage tier 0 (SCM):
+  Total size: 3.0 TB
+  Free: 2.7 TB, min:661 MB, max:661 MB, mean:661 MB
+- Storage tier 1 (NVMe):
+  Total size: 97 TB
+  Free: 97 TB, min:24 GB, max:24 GB, mean:24 GB
+Container rgeorge-mdtest does not exist, will create a new one.
+Successfully created container c8d44864-dbb7-4b3f-9754-ee02c87dee7e
+  Container UUID : c8d44864-dbb7-4b3f-9754-ee02c87dee7e
+  Container Label: rgeorge-mdtest                      
+  Container Type : POSIX                               
+
+Container created successfully.
+Container properties:
+Properties for container rgeorge-mdtest
+Name                                             Value                               
+----                                             -----                               
+Highest Allocated OID (alloc_oid)                0                                   
+Checksum (cksum)                                 off                                 
+Checksum Chunk Size (cksum_size)                 32 KiB                              
+Compression (compression)                        off                                 
+Deduplication (dedup)                            off                                 
+Dedupe Threshold (dedup_threshold)               4.0 KiB                             
+EC Cell Size (ec_cell_sz)                        64 KiB                              
+Performance domain affinity level of EC (ec_pda) 1                                   
+Encryption (encryption)                          off                                 
+Global Version (global_version)                  3                                   
+Group (group)                                    users@                              
+Label (label)                                    rgeorge-mdtest                      
+Layout Type (layout_type)                        POSIX (1)                           
+Layout Version (layout_version)                  1                                   
+Max Snapshot (max_snapshot)                      0                                   
+Object Version (obj_version)                     2                                   
+Owner (owner)                                    rgeorge@                            
+Performance domain level (perf_domain)           root (255)                          
+Redundancy Factor (rd_fac)                       rd_fac0                             
+Redundancy Level (rd_lvl)                        node (2)                            
+Performance domain affinity level of RP (rp_pda) 4294967295                          
+Server Checksumming (srv_cksum)                  off                                 
+Health (status)                                  HEALTHY                             
+Access Control List (acl)                        A::OWNER@:rwdtTaAo, A:G:GROUP@:rwtT 
+[2026-03-21T16:54:44] Creating destination directories for `/tmp/rgeorge_handles.KiDHq`
+[2026-03-21T16:54:44] Broadcasting contents of `/tmp/rgeorge_handles.KiDHq` to `/tmp/rgeorge_handles.KiDHq`
+[2026-03-21T16:54:44] Progress: 100.0% 603.720121 MB/s 0.0 secs remaining
+[2026-03-21T16:54:44] Bcast complete: size=141572, time=0.000251 secs, speed=537.098481 MB/sec
+Can't find executable mdtest
+Remove container
+UUID                                 Label          
+----                                 -----          
+c8d44864-dbb7-4b3f-9754-ee02c87dee7e rgeorge-mdtest 
+Successfully destroyed container rgeorge-mdtest
+Run took 11 seconds
+End of mdtest cases
+No containers.
+Completed script in 65 seconds
