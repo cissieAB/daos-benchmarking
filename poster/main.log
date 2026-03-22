@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.3.20)  22 MAR 2026 13:44
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.3.20)  22 MAR 2026 13:53
  system commands enabled.
  file:line:error style messages enabled.
 **/home/gummyhz/Documents/daos-benchmarking/poster/main.tex
@@ -1276,14 +1276,14 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of LuaTeX's memory you used:
  44368 strings out of 476076
  305230,1648299 words of node,token memory allocated
- 64576 words of node memory still in use:
-   417 hlist, 39 vlist, 42 rule, 368 disc, 66 local_par, 24 math, 1546 glue, 884 kern, 236 penalty, 37 margin_kern, 4738 glyph, 972 attribute, 84 glue_spec, 972 attribute_list, 9 write, 1 save_pos, 178 pdf_literal, 2 pdf_start_link, 2 pdf_end_link, 3 pdf_dest, 2 pdf_action, 284 pdf_colorstack, 9 pdf_setmatrix, 9 pdf_save, 9 pdf_restore nodes
-   avail lists: 1:2,2:502,3:1371,4:1087,5:2682,6:201,7:19110,8:68,9:1623,10:28,11:1104
+ 65964 words of node memory still in use:
+   418 hlist, 39 vlist, 42 rule, 378 disc, 66 local_par, 24 math, 1568 glue, 913 kern, 236 penalty, 38 margin_kern, 4876 glyph, 972 attribute, 84 glue_spec, 972 attribute_list, 9 write, 1 save_pos, 178 pdf_literal, 2 pdf_start_link, 2 pdf_end_link, 3 pdf_dest, 2 pdf_action, 284 pdf_colorstack, 9 pdf_setmatrix, 9 pdf_save, 9 pdf_restore nodes
+   avail lists: 2:502,3:1371,4:1090,5:2769,6:201,7:19590,8:68,9:1626,10:28,11:1134
  65433 multiletter control sequences out of 65536+600000
  117 fonts using 17263591 bytes
  101i,20n,113p,773b,1322s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf>{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/fonts/TTF/Lato-Light.ttf></usr/local/share/fonts/Aleo/Aleo-VariableFont_wght.ttf></usr/local/share/fonts/Aleo/Aleo-Bold.ttf></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb>
-Output written on main.pdf (1 page, 1117094 bytes).
+Output written on main.pdf (1 page, 1117421 bytes).
 
 PDF statistics: 985 PDF objects out of 1000 (max. 8388607)
  640 compressed objects within 7 object streams
