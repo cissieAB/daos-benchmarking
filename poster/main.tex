@@ -180,7 +180,7 @@
     
   \end{block}
 
-  \begin{block}{fio Benchmarks}
+  \begin{block}{fio Bandwidth}
 
     
     
@@ -193,17 +193,21 @@
     \begin{figure} 
       \centering
         \includesvg[width=\colwidth]{diagrams/bw_stacked_combined.svg} 
-
-      \caption{For one client node with 16 jobs with 16 I/O units kept in flight, the proportions of overall bandwidth spent reading and writing across different workloads. Read is reading only, 4:1 is 4 reads per write, 1:1 is an equal amount of reading and writing, 1:4 is 1 read per 4 writes, and write is writing only. The yellow line indicates the expected ratio of bandwidth proportions. Buffered I/O will use an intermediate buffer between applications (fio) and system calls to preadv*/pwritev*, while unbuffered I/O will go straight to system calls.}
+      % Read is reading only, 4:1 is 4 reads per write, 1:1 is an equal amount of reading and writing, 1:4 is 1 read per 4 writes, and write is writing only.
+      \caption{For one client node with 16 jobs with 16 I/O units kept in flight, the proportions of overall bandwidth spent reading and writing across different workloads. The yellow line indicates the expected ratio of bandwidth proportions. Buffered I/O will use an intermediate buffer between applications (fio) and system calls to preadv*/pwritev*, while unbuffered I/O will go straight to system calls.}
     \end{figure}
 
     We did not observe a large difference in performance between random and sequential access patterns. 
     Additionally, for a dfuse access, changing the number of fio jobs (additional threads cloning the original thread) or I/O depth (number of I/O units to keep in flight) has little effect on performance.
 
-   
+  \end{block}
 
-    
- 
+  \begin{block}{IOR Latency}
+    \begin{figure} 
+      \centering
+        \includesvg[width=\colwidth]{diagrams/ior_latency.svg} 
+      \caption{ For a transfer size of 1 MiB, the ior latency vs number of tasks. For <8 nodes, the write latency stays relatively constant as the number of tasks increases, but larger numbers of nodes accrue more latency as the number of tasks increases. Read latency ellicited a <10 ms increase in latency as more tasks were used, but all test cases stayed under 20 ms latency (10 ms difference from 1 task) except the largest number of nodes used (32). }
+    \end{figure}
   \end{block}
 
 
@@ -213,7 +217,7 @@
 
 \begin{column}{\colwidth}
 
-  \begin{block}{IOR Benchmarks}
+  \begin{block}{IOR Bandwidth}
 
     \begin{figure}
       \centering

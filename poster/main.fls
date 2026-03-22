@@ -452,6 +452,10 @@ INPUT ./svg-inkscape/bw_stacked_combined_svg-tex.pdf
 INPUT ./svg-inkscape/bw_stacked_combined_svg-tex.pdf_tex
 INPUT ./svg-inkscape/bw_stacked_combined_svg-tex.pdf
 INPUT ./svg-inkscape/bw_stacked_combined_svg-tex.pdf
+INPUT ./svg-inkscape/ior_latency_svg-tex.pdf
+INPUT ./svg-inkscape/ior_latency_svg-tex.pdf_tex
+INPUT ./svg-inkscape/ior_latency_svg-tex.pdf
+INPUT ./svg-inkscape/ior_latency_svg-tex.pdf
 INPUT ./svg-inkscape/ior_bw-vs-tasks_hue-nodes-2M_svg-tex.pdf
 INPUT ./svg-inkscape/ior_bw-vs-tasks_hue-nodes-2M_svg-tex.pdf_tex
 INPUT ./svg-inkscape/ior_bw-vs-tasks_hue-nodes-2M_svg-tex.pdf
