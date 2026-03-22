@@ -1,15 +1,18 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{2}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Shannon(1948)]{shannon1948communication}
-Claude~E. Shannon.
-\newblock A mathematical theory of communication.
-\newblock \emph{The Bell System Technical Journal}, 27\penalty0 (3):\penalty0
-  379--423, 1948.
-\newblock \doi{10.1002/j.1538-7305.1948.tb01338.x}.
+\bibitem[Lab(2025)]{argonne_daos}
+Argonne~National Lab.
+\newblock Daos - alcf user guides, 2025.
+\newblock URL \url{https://docs.alcf.anl.gov/aurora/data-management/daos/daos-overview/}.
+
+\bibitem[Project(2016)]{daos_guide}
+DAOS Project.
+\newblock Welcome to daos version 2.6! - daos v2.6, 2016.
+\newblock URL \url{https://docs.daos.io/latest/}.
 
 \end{thebibliography}
