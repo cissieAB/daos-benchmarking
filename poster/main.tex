@@ -81,7 +81,7 @@
 % ====================
 
 \begin{document}
-\addtobeamertemplate{headline}{}
+\addtobeamertemplate{headline}{}  
 {
     \begin{tikzpicture}[remember picture,overlay]
       \node [anchor=north west, inner sep=3cm] at ([xshift=0.0cm,yshift=1.0cm]current page.north west)
@@ -140,7 +140,7 @@
       \caption{Diagram of DAOS storage system architecture on Aurora from Argonne National Lab}
     \end{figure}
 
-    Our pool had 127 nodes (4064 targets, 32 targets per node) with 3 TB Tier 0 (SCM) storage and 97 TB Tier 1 (NVMe) storage.
+    Our pool had 127 nodes (4064 targets, 32 targets per node) with 3 TB Tier 0 (SCM) storage and 97 TB Tier 1 (NVMe) storage. Aurora compute nodes use two Intel Xeon CPU Max Series, with 52 cores each. For ior and mdtest we bind to 48 cores per node.
   \end{block}
 
   

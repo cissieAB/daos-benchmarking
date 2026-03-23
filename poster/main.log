@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.3.20)  22 MAR 2026 14:32
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.3.20)  23 MAR 2026 08:47
  system commands enabled.
  file:line:error style messages enabled.
 **/home/gummyhz/Documents/daos-benchmarking/poster/main.tex
@@ -1252,7 +1252,7 @@ Underfull \hbox (badness 1418) in paragraph at lines 9--12
  []
 
 ))
-Overfull \vbox (1.17015pt too high) detected at line 275
+Overfull \vbox (46.49486pt too high) detected at line 275
  []
 
 File: logos/All Primary Logos/Stacked/PNG/WM_Logo_Stacked_White_Gold.png Graphic file (type png)
@@ -1287,14 +1287,14 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of LuaTeX's memory you used:
  44390 strings out of 476076
  305233,1648299 words of node,token memory allocated
- 70405 words of node memory still in use:
-   456 hlist, 42 vlist, 47 rule, 399 disc, 72 local_par, 24 math, 1690 glue, 976 kern, 258 penalty, 43 margin_kern, 5160 glyph, 1059 attribute, 84 glue_spec, 1059 attribute_list, 9 write, 1 save_pos, 186 pdf_literal, 2 pdf_start_link, 2 pdf_end_link, 3 pdf_dest, 2 pdf_action, 318 pdf_colorstack, 10 pdf_setmatrix, 10 pdf_save, 10 pdf_restore nodes
-   avail lists: 1:2,2:502,3:1470,4:1207,5:2958,6:219,7:20808,8:68,9:1764,10:27,11:1197
+ 71471 words of node memory still in use:
+   457 hlist, 42 vlist, 47 rule, 403 disc, 72 local_par, 24 math, 1716 glue, 996 kern, 259 penalty, 43 margin_kern, 5264 glyph, 1059 attribute, 84 glue_spec, 1059 attribute_list, 9 write, 1 save_pos, 186 pdf_literal, 2 pdf_start_link, 2 pdf_end_link, 3 pdf_dest, 2 pdf_action, 318 pdf_colorstack, 10 pdf_setmatrix, 10 pdf_save, 10 pdf_restore nodes
+   avail lists: 2:502,3:1473,4:1207,5:3018,6:219,7:21198,8:68,9:1767,10:27,11:1209
  65446 multiletter control sequences out of 65536+600000
  117 fonts using 17263591 bytes
  101i,20n,113p,773b,1322s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf>{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/fonts/TTF/Lato-Light.ttf></usr/local/share/fonts/Aleo/Aleo-VariableFont_wght.ttf></usr/local/share/fonts/Aleo/Aleo-Bold.ttf></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb>
-Output written on main.pdf (1 page, 1187581 bytes).
+Output written on main.pdf (1 page, 1187733 bytes).
 
 PDF statistics: 1213 PDF objects out of 1440 (max. 8388607)
  790 compressed objects within 8 object streams
