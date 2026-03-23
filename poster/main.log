@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.3.20)  23 MAR 2026 08:47
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026/Arch Linux)  (format=lualatex 2026.3.20)  23 MAR 2026 11:42
  system commands enabled.
  file:line:error style messages enabled.
 **/home/gummyhz/Documents/daos-benchmarking/poster/main.tex
@@ -1172,11 +1172,11 @@ Package luatex.def Info: logos/JLab_Logo_RGB_Red_White_Horizontal.png  used on i
 \openout4 = main.vrb
 File: logos/All Primary Logos/Stacked/PNG/WM_Logo_Stacked_White_Gold.png Graphic file (type png)
 <use logos/All Primary Logos/Stacked/PNG/WM_Logo_Stacked_White_Gold.png>
-Package luatex.def Info: logos/All Primary Logos/Stacked/PNG/WM_Logo_Stacked_White_Gold.png  used on input line 275.
+Package luatex.def Info: logos/All Primary Logos/Stacked/PNG/WM_Logo_Stacked_White_Gold.png  used on input line 283.
 (luatex.def)             Requested size: 360.80891pt x 142.26378pt.
 File: logos/JLab_Logo_RGB_Red_White_Horizontal.png Graphic file (type png)
 <use logos/JLab_Logo_RGB_Red_White_Horizontal.png>
-Package luatex.def Info: logos/JLab_Logo_RGB_Red_White_Horizontal.png  used on input line 275.
+Package luatex.def Info: logos/JLab_Logo_RGB_Red_White_Horizontal.png  used on input line 283.
 (luatex.def)             Requested size: 581.2483pt x 227.62204pt.
  (./main.vrb
 <diagrams/DAOS_Pool_Cont_Obj.png, id=19, 532.99126pt x 288.3272pt>
@@ -1184,59 +1184,62 @@ File: diagrams/DAOS_Pool_Cont_Obj.png Graphic file (type png)
 <use diagrams/DAOS_Pool_Cont_Obj.png>
 Package luatex.def Info: diagrams/DAOS_Pool_Cont_Obj.png  used on input line 24.
 (luatex.def)             Requested size: 520.34927pt x 281.51602pt.
-<diagrams/posix.png, id=20, 255.8358pt x 155.6214pt>
+<diagrams/posix.png, id=21, 255.8358pt x 155.6214pt>
 File: diagrams/posix.png Graphic file (type png)
 <use diagrams/posix.png>
-Package luatex.def Info: diagrams/posix.png  used on input line 34.
+Package luatex.def Info: diagrams/posix.png  used on input line 35.
 (luatex.def)             Requested size: 520.34927pt x 316.5492pt.
-<diagrams/aurora-storage-architecture.png, id=21, 736.97556pt x 528.19556pt>
+<diagrams/aurora-storage-architecture.png, id=23, 736.97556pt x 528.19556pt>
 File: diagrams/aurora-storage-architecture.png Graphic file (type png)
 <use diagrams/aurora-storage-architecture.png>
-Package luatex.def Info: diagrams/aurora-storage-architecture.png  used on input line 45.
+Package luatex.def Info: diagrams/aurora-storage-architecture.png  used on input line 47.
 (luatex.def)             Requested size: 736.97375pt x 528.19427pt.
-Package svg Info: Last page of `./svg-inkscape/fio_bw_vs_bs_hueRW_nj-16_iod-16_svg-tex.pdf' is 1 on input line 95.
+Package svg Info: Last page of `./svg-inkscape/fio_bw_vs_bs_hueRW_nj-16_iod-16_svg-tex.pdf' is 1 on input line 98.
  (./svg-inkscape/fio_bw_vs_bs_hueRW_nj-16_iod-16_svg-tex.pdf_tex
-<./svg-inkscape/fio_bw_vs_bs_hueRW_nj-16_iod-16_svg-tex.pdf, id=23, page=1, 1136.19978pt x 629.42715pt>
+<./svg-inkscape/fio_bw_vs_bs_hueRW_nj-16_iod-16_svg-tex.pdf, id=26, page=1, 1136.19978pt x 502.95465pt>
 File: ./svg-inkscape/fio_bw_vs_bs_hueRW_nj-16_iod-16_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/fio_bw_vs_bs_hueRW_nj-16_iod-16_svg-tex.pdf, page 1>
 Package luatex.def Info: ./svg-inkscape/fio_bw_vs_bs_hueRW_nj-16_iod-16_svg-tex.pdf , page1 used on input line 56.
-(luatex.def)             Requested size: 1040.69856pt x 576.55408pt.
+(luatex.def)             Requested size: 1040.69856pt x 460.70552pt.
 )
-Package svg Info: Last page of `./svg-inkscape/bw_stacked_combined_svg-tex.pdf' is 1 on input line 101.
+Package svg Info: Last page of `./svg-inkscape/bw_stacked_combined_svg-tex.pdf' is 1 on input line 105.
  (./svg-inkscape/bw_stacked_combined_svg-tex.pdf_tex
-<./svg-inkscape/bw_stacked_combined_svg-tex.pdf, id=25, page=1, 1056.14888pt x 356.41524pt>
+<./svg-inkscape/bw_stacked_combined_svg-tex.pdf, id=28, page=1, 1056.14888pt x 356.41524pt>
 File: ./svg-inkscape/bw_stacked_combined_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/bw_stacked_combined_svg-tex.pdf, page 1>
 Package luatex.def Info: ./svg-inkscape/bw_stacked_combined_svg-tex.pdf , page1 used on input line 56.
 (luatex.def)             Requested size: 1040.69856pt x 351.20433pt.
 )
-Package svg Info: Last page of `./svg-inkscape/ior_latency_svg-tex.pdf' is 1 on input line 114.
- (./svg-inkscape/ior_latency_svg-tex.pdf_tex
-<./svg-inkscape/ior_latency_svg-tex.pdf, id=27, page=1, 1066.96284pt x 398.56702pt>
+
+LaTeX Warning: Reference `fig:ior_bw-vs-tasks_hue-nodes-16M' on page 1 undefined on input line 112.
+
+Package svg Info: Last page of `./svg-inkscape/ior_latency_svg-tex.pdf' is 1 on input line 119.
+(./svg-inkscape/ior_latency_svg-tex.pdf_tex
+<./svg-inkscape/ior_latency_svg-tex.pdf, id=33, page=1, 1066.96284pt x 398.56702pt>
 File: ./svg-inkscape/ior_latency_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ior_latency_svg-tex.pdf, page 1>
 Package luatex.def Info: ./svg-inkscape/ior_latency_svg-tex.pdf , page1 used on input line 56.
 (luatex.def)             Requested size: 1040.69856pt x 388.78676pt.
 )
-Package svg Info: Last page of `./svg-inkscape/ior_bw-vs-tasks_hue-nodes-2M_svg-tex.pdf' is 1 on input line 130.
+Package svg Info: Last page of `./svg-inkscape/ior_bw-vs-tasks_hue-nodes-2M_svg-tex.pdf' is 1 on input line 136.
  (./svg-inkscape/ior_bw-vs-tasks_hue-nodes-2M_svg-tex.pdf_tex
-<./svg-inkscape/ior_bw-vs-tasks_hue-nodes-2M_svg-tex.pdf, id=29, page=1, 1066.92021pt x 398.56702pt>
+<./svg-inkscape/ior_bw-vs-tasks_hue-nodes-2M_svg-tex.pdf, id=35, page=1, 1066.92021pt x 398.56702pt>
 File: ./svg-inkscape/ior_bw-vs-tasks_hue-nodes-2M_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ior_bw-vs-tasks_hue-nodes-2M_svg-tex.pdf, page 1>
 Package luatex.def Info: ./svg-inkscape/ior_bw-vs-tasks_hue-nodes-2M_svg-tex.pdf , page1 used on input line 56.
 (luatex.def)             Requested size: 1040.69856pt x 388.78676pt.
 )
-Package svg Info: Last page of `./svg-inkscape/ior_bw-vs-tasks_hue-nodes_16M_svg-tex.pdf' is 1 on input line 135.
+Package svg Info: Last page of `./svg-inkscape/ior_bw-vs-tasks_hue-nodes_16M_svg-tex.pdf' is 1 on input line 142.
  (./svg-inkscape/ior_bw-vs-tasks_hue-nodes_16M_svg-tex.pdf_tex
-<./svg-inkscape/ior_bw-vs-tasks_hue-nodes_16M_svg-tex.pdf, id=31, page=1, 1066.92021pt x 398.56702pt>
+<./svg-inkscape/ior_bw-vs-tasks_hue-nodes_16M_svg-tex.pdf, id=37, page=1, 1066.92021pt x 398.56702pt>
 File: ./svg-inkscape/ior_bw-vs-tasks_hue-nodes_16M_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ior_bw-vs-tasks_hue-nodes_16M_svg-tex.pdf, page 1>
 Package luatex.def Info: ./svg-inkscape/ior_bw-vs-tasks_hue-nodes_16M_svg-tex.pdf , page1 used on input line 56.
 (luatex.def)             Requested size: 1040.69856pt x 388.78676pt.
 )
-Package svg Info: Last page of `./svg-inkscape/ior_bw-vs-tx_8ppn_svg-tex.pdf' is 1 on input line 150.
+Package svg Info: Last page of `./svg-inkscape/ior_bw-vs-tx_8ppn_svg-tex.pdf' is 1 on input line 158.
  (./svg-inkscape/ior_bw-vs-tx_8ppn_svg-tex.pdf_tex
-<./svg-inkscape/ior_bw-vs-tx_8ppn_svg-tex.pdf, id=33, page=1, 617.8194pt x 358.01488pt>
+<./svg-inkscape/ior_bw-vs-tx_8ppn_svg-tex.pdf, id=39, page=1, 617.8194pt x 358.01488pt>
 File: ./svg-inkscape/ior_bw-vs-tx_8ppn_svg-tex.pdf Graphic file (type pdf)
 <use ./svg-inkscape/ior_bw-vs-tx_8ppn_svg-tex.pdf, page 1>
 Package luatex.def Info: ./svg-inkscape/ior_bw-vs-tx_8ppn_svg-tex.pdf , page1 used on input line 56.
@@ -1252,18 +1255,15 @@ Underfull \hbox (badness 1418) in paragraph at lines 9--12
  []
 
 ))
-Overfull \vbox (46.49486pt too high) detected at line 275
- []
-
 File: logos/All Primary Logos/Stacked/PNG/WM_Logo_Stacked_White_Gold.png Graphic file (type png)
 <use logos/All Primary Logos/Stacked/PNG/WM_Logo_Stacked_White_Gold.png>
-Package luatex.def Info: logos/All Primary Logos/Stacked/PNG/WM_Logo_Stacked_White_Gold.png  used on input line 275.
+Package luatex.def Info: logos/All Primary Logos/Stacked/PNG/WM_Logo_Stacked_White_Gold.png  used on input line 283.
 (luatex.def)             Requested size: 360.80891pt x 142.26378pt.
 File: logos/JLab_Logo_RGB_Red_White_Horizontal.png Graphic file (type png)
 <use logos/JLab_Logo_RGB_Red_White_Horizontal.png>
-Package luatex.def Info: logos/JLab_Logo_RGB_Red_White_Horizontal.png  used on input line 275.
+Package luatex.def Info: logos/JLab_Logo_RGB_Red_White_Horizontal.png  used on input line 283.
 (luatex.def)             Requested size: 581.2483pt x 227.62204pt.
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 <./logos/All Primary Logos/Stacked/PNG/WM_Logo_Stacked_White_Gold.png><./logos/JLab_Logo_RGB_Red_White_Horizontal.png><./diagrams/DAOS_Pool_Cont_Obj.png><./diagrams/posix.png><./diagrams/aurora-storage-architecture.png><./svg-inkscape/fio_bw_vs_bs_hueRW_nj-16_iod-16_svg-tex.pdf><./svg-inkscape/bw_stacked_combined_svg-tex.pdf><./svg-inkscape/ior_latency_svg-tex.pdf><./svg-inkscape/ior_bw-vs-tasks_hue-nodes-2M_svg-tex.pdf><./svg-inkscape/ior_bw-vs-tasks_hue-nodes_16M_svg-tex.pdf><./svg-inkscape/ior_bw-vs-tx_8ppn_svg-tex.pdf>]
 \tf@nav=\write7
@@ -1280,24 +1280,30 @@ Package luatex.def Info: logos/JLab_Logo_RGB_Red_White_Horizontal.png  used on i
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: AEA4B6A8AE45636C75679C2F0DFA4493;93.
 )
 
 Here is how much of LuaTeX's memory you used:
- 44390 strings out of 476076
- 305233,1648299 words of node,token memory allocated
- 71471 words of node memory still in use:
-   457 hlist, 42 vlist, 47 rule, 403 disc, 72 local_par, 24 math, 1716 glue, 996 kern, 259 penalty, 43 margin_kern, 5264 glyph, 1059 attribute, 84 glue_spec, 1059 attribute_list, 9 write, 1 save_pos, 186 pdf_literal, 2 pdf_start_link, 2 pdf_end_link, 3 pdf_dest, 2 pdf_action, 318 pdf_colorstack, 10 pdf_setmatrix, 10 pdf_save, 10 pdf_restore nodes
-   avail lists: 2:502,3:1473,4:1207,5:3018,6:219,7:21198,8:68,9:1767,10:27,11:1209
- 65446 multiletter control sequences out of 65536+600000
- 117 fonts using 17263591 bytes
+ 44410 strings out of 476076
+ 305230,1648299 words of node,token memory allocated
+ 73025 words of node memory still in use:
+   464 hlist, 49 vlist, 47 rule, 409 disc, 72 local_par, 24 math, 1738 glue, 1004 kern, 270 penalty, 45 margin_kern, 5365 glyph, 1107 attribute, 84 glue_spec, 1107 attribute_list, 25 write, 1 save_pos, 186 pdf_literal, 8 pdf_start_link, 8 pdf_end_link, 11 pdf_dest, 8 pdf_action, 318 pdf_colorstack, 10 pdf_setmatrix, 10 pdf_save, 10 pdf_restore nodes
+   avail lists: 1:1,2:502,3:1572,4:1213,5:3042,6:219,7:21567,8:68,9:1854,10:27,11:1228
+ 65457 multiletter control sequences out of 65536+600000
+ 118 fonts using 17748879 bytes
  101i,20n,113p,773b,1322s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf>{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/fonts/TTF/Lato-Light.ttf></usr/local/share/fonts/Aleo/Aleo-VariableFont_wght.ttf></usr/local/share/fonts/Aleo/Aleo-Bold.ttf></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb>
-Output written on main.pdf (1 page, 1187733 bytes).
 
-PDF statistics: 1213 PDF objects out of 1440 (max. 8388607)
- 790 compressed objects within 8 object streams
- 6 named destinations out of 1000 (max. 1048576)
+warning  (pdf backend): unreferenced destination with name 'fig:ior_bw-vs-tasks_hue-nodes-16M'
+</usr/share/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/fonts/TTF/Lato-Regular.ttf>{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/fonts/TTF/Lato-Light.ttf></usr/local/share/fonts/Aleo/Aleo-VariableFont_wght.ttf></usr/local/share/fonts/Aleo/Aleo-Bold.ttf></usr/share/texmf-dist/fonts/type1/public/lm/lmmi12.pfb>
+Output written on main.pdf (1 page, 1198630 bytes).
+
+PDF statistics: 1236 PDF objects out of 1440 (max. 8388607)
+ 809 compressed objects within 9 object streams
+ 15 named destinations out of 1000 (max. 1048576)
  24 words of extra memory for PDF output out of 10000 (max. 100000000)
 
