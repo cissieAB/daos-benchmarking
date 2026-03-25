@@ -438,12 +438,10 @@ OUTPUT main.vrb
 INPUT ./logos/All Primary Logos/Stacked/PNG/WM_Logo_Stacked_White_Gold.png
 INPUT ./logos/JLab_Logo_RGB_Red_White_Horizontal.png
 INPUT ./main.vrb
-INPUT ./diagrams/DAOS_Pool_Cont_Obj.png
-INPUT ./diagrams/DAOS_Pool_Cont_Obj.png
-INPUT ./diagrams/posix.png
-INPUT ./diagrams/posix.png
-INPUT ./diagrams/aurora-storage-architecture.png
-INPUT ./diagrams/aurora-storage-architecture.png
+INPUT ./diagrams/data_heirarchy.pdf
+INPUT ./diagrams/data_heirarchy.pdf
+INPUT ./diagrams/daos_arch.pdf
+INPUT ./diagrams/daos_arch.pdf
 INPUT ./svg-inkscape/fio_bw_vs_bs_hueRW_nj-16_iod-16_svg-tex.pdf
 INPUT ./svg-inkscape/fio_bw_vs_bs_hueRW_nj-16_iod-16_svg-tex.pdf_tex
 INPUT ./svg-inkscape/fio_bw_vs_bs_hueRW_nj-16_iod-16_svg-tex.pdf
