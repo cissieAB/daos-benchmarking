@@ -5,13 +5,19 @@
 
   \begin{block}{DAOS Storage System}
 
-    Distributed Asynchronous Object Storage (DAOS) is a high performance storage system using key-array-value store allowing end-to-end user space operation, asynchronous I/O operation, and non-blocking I/O.
+    Distributed Asynchronous Object Storage (DAOS) is a high performance storage
+    system using key-array-value store allowing end-to-end user space operation,
+    asynchronous I/O operation, and non-blocking I/O.
 
-    DAOS is provisioned in pools (storage allocations), wherein containers (logical collections of objects)
-    may be created. Objects (key-value stores). Keys have a distribution key (dkey, determining the storage target)
+    DAOS is provisioned in pools (storage allocations), wherein containers
+    (logical collections of objects) may be created. Objects (key-value stores).
+    Keys have a distribution key (dkey, determining the storage target)
     and attribute key (akey), with values being either single atomic values or arrays.
 
-    DAOS accessed via the native DAOS library libdaos, libpil4dfs interception library (read/write/metadata), libioil interception library (read/write), and mounting a container via DFUSE.
+    DAOS can be accessed via the native DAOS library libdaos,
+    libpil4dfs interception library (read/write/metadata),
+    libioil interception library (read/write),
+    and mounting a container via DFUSE.
 
 
     % DAOS is provisioned to users in pools, which are persistent
