@@ -103,28 +103,35 @@
 
   \begin{block}{DAOS Storage System}
 
-    Distributed Asynchronous Object Storage (DAOS) is a high performance storage system using key-value-array store allowing end-to-end user space operation, asynchronous I/O operation, and non-blocking I/O.
+    Distributed Asynchronous Object Storage (DAOS) is a high performance storage system using key-array-value store allowing end-to-end user space operation, asynchronous I/O operation, and non-blocking I/O.
     
-    DAOS is provisioned to users in pools, which are persistent 
-    storage allocations spanning a set of DAOS storage 
-    engines, with a certain amount of tier 0 (Storage Class Memory (SCM)) 
-    and tier 1 (NVMe) storage. Any value or array value extent above a certain size (default=4 KiB) gets written to Tier 1, otherwise it gets written to Tier 0.
+    DAOS is provisioned in pools (storage allocations), wherein containers (logical collections of objects)
+    may be created. Objects (key-value stores). Keys have a distribution key (dkey, determining the storage target) 
+    and attribute key (akey), with values being either single atomic values or arrays.
 
-    Users may create containers in their pool to store data. 
-    DAOS containers are logical collections of objects, 
-    which can be presented in a variety of formats, such as 
-    POSIX, HDF5, SQL Database, or PyDAOS. 
-    Containers' redundancy factor (number of replicates) may be set to some number $n$ to provide tolerance for $n$ engine failures. 
-    Containers may also be erasure coded and can use different object classes to manipulate sharding, redundancy, and erasure coding of data.
+    DAOS accessed via the native DAOS library libdaos, libpil4dfs interception library (read/write/metadata), libioil interception library (read/write), and mounting a container via DFUSE.
+
+
+    % DAOS is provisioned to users in pools, which are persistent 
+    % storage allocations spanning a set of DAOS storage 
+    % engines, with a certain amount of tier 0 (Storage Class Memory (SCM)) 
+    % and tier 1 (NVMe) storage. Any value or array value extent above a certain size (default=4 KiB) gets written to Tier 1, otherwise it gets written to Tier 0.
+
+    % Users may create containers in their pool to store data. 
+    % DAOS containers are logical collections of objects, 
+    % which can be presented in a variety of formats, such as 
+    % POSIX, HDF5, SQL Database, or PyDAOS. 
+    % Containers' redundancy factor (number of replicates) may be set to some number $n$ to provide tolerance for $n$ engine failures. 
+    % Containers may also be erasure coded and can use different object classes to manipulate sharding, redundancy, and erasure coding of data.
     
     \begin{figure}
       \centering
         \includegraphics[width=\colwidth]{diagrams/data_heirarchy.pdf}
-      \caption{DAOS pool data heirarchy \cite{daos_guide}}
+      \caption{DAOS pool data hierarchy (adapted from \cite{daos_guide})}
       \label{fig:DAOS_Pool_Cont_Obj}
     \end{figure} 
     
-    DAOS accessed via the native DAOS library libdaos, mounting a container via DAOS FUSE, and the interception library libpil4dfs. 
+     
     % The native DAOS libary will provide the best performance, while the interception library provides the same perfromance for I/O operations without code changes.
     % Metadata operations via dfuse are slower than using the DFS API as the DFS API bypasses the kernel entirely.
 
@@ -147,33 +154,13 @@
     %   \label{fig:aurora-storage-architecture}
     % \end{figure}
     \begin{itemize}
-      \item Argonne National Lab's Aurora supercomputer has 230 PB of DAOS storage with 1024 DAOS server nodes.
-      \item Our pool had 127 DAOS server nodes (4064 targets, 32 targets per node) with 3 TB Tier 0 (SCM) storage and 97 TB Tier 1 (NVMe) storage. 
+      \item Argonne National Lab's Aurora supercomputer has 10,624 compute nodes with 230 PB of DAOS storage on 1024 DAOS server nodes.
+      \item Nodes have 8 HPE Slingshot-11 NICs, using dragonfly topology
       \item Aurora compute nodes use two Intel Xeon CPU Max Series, with 52 cores each. For ior and mdtest we bind to 48 cores per node.
+      \item Our pool had 127 DAOS server nodes (4064 targets, 32 targets per node) with 3 TB Tier 0 (SCM) storage and 97 TB Tier 1 (NVMe) storage. 
     \end{itemize}
   \end{block}
  
-  
-
-% \begin{lstlisting}
-% Pool 916ac7e2-bec3-4228-a065-b12ea9f4910e, ntarget=4064, disabled=0, 
-% leader=140, version=1, state=Ready
-% Pool health info:
-% - Rebuild idle, 0 objs, 0 recs
-% Pool space info:
-% - Target(VOS) count:4064
-% - Storage tier 0 (SCM):
-%   Total size: 3.0 TB
-%   Free: 2.7 TB, min:653 MB, max:655 MB, mean:654 MB
-% - Storage tier 1 (NVMe):
-%   Total size: 97 TB
-%   Free: 97 TB, min:24 GB, max:24 GB, mean:24 GB
-
-% \end{lstlisting}
-
-
-
-
 \end{column}
 
 \separatorcolumn
