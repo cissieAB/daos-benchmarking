@@ -129,7 +129,7 @@
     
     DAOS is provisioned in pools (storage allocations) wherein containers, 
     which are logical collections of objects (key-value stores), may be created. 
-    Keys have a distribution key (dkey, determining the storage target) 
+    Objects' keys have a distribution key (dkey, determining the storage target) 
     and attribute key (akey), with values of either single atomic values or arrays.
 
     DAOS can be accessed via the native libdaos library, 
@@ -160,7 +160,7 @@
     % \end{figure}
     \begin{itemize}
       \item Argonne National Lab's Aurora supercomputer has 10,624 compute nodes with 230 PB of DAOS storage on 1024 DAOS server nodes.
-      \item Aurora compute nodes have 8 HPE Slingshot-11 NICs, using dragonfly topology and use two Intel Xeon CPU Max Series, with 52 cores each. For ior we bind to 48 cores per node.
+      \item Aurora compute nodes have 8 HPE Slingshot-11 NICs, using dragonfly topology and use two Intel Xeon CPU Max Series, with 52 cores each. For IOR and IO500 we bind to 48 cores per node.
       \item Our pool had 127 DAOS server nodes (4064 targets, 32 targets per node) with 3 TB Tier 0 (SCM) storage and 97 TB Tier 1 (NVMe) storage. 
     \end{itemize}
   \end{block}
@@ -179,9 +179,9 @@
 
 
   \begin{block}{Benchmarking}
-    We evaluated this storage system using the fio, ior, mdtest, and IO500 I/O benchmarks. 
+    We evaluated this storage system using the fio, IOR, mdtest, and IO500 I/O benchmarks. 
     We aim to characterize the I/O and metadata performance bottlenecks under a 
-    variety of access patterns and client configurations on a pdocutions scale system.
+    variety of access patterns and client configurations on a production scale system.
     % observing effects of client-side scaling, 
     % I/O size and data transferred size, 
     % processes per node, and access type (read/write, random/sequential) 
@@ -292,7 +292,7 @@
     \begin{figure} 
       \centering 
       \includesvg[width=\colwidth]{diagrams/ior_latency.svg} 
-      \caption{For a transfer size of 1 MiB, the ior latency vs number of tasks, using DFS API.}
+      \caption{For a transfer size of 1 MiB, the IOR latency vs number of tasks, using DFS API.}
       % For <8 nodes, the write latency stays relatively constant as the number of 
       % tasks increases, but larger numbers of nodes accrue more latency as the 
       % number of tasks increases. Read latency ellicited a <10 ms increase in 
@@ -315,13 +315,13 @@
     \begin{figure}
       \centering
         \includesvg[width=\colwidth]{diagrams/ior_bw-vs-tasks_hue-nodes-2M.svg} 
-      \caption{For a transfer size of 2 MiB, the ior bandwidth vs number of tasks, using the DFS API}
+      \caption{For a transfer size of 2 MiB, the IOR bandwidth vs number of tasks, using the DFS API}
       \label{fig:ior_bw-vs-tasks_hue-nodes_2M}
     \end{figure}
     \begin{figure}
       \centering
         \includesvg[width=\colwidth]{diagrams/ior_bw-vs-tasks_hue-nodes_16M.svg} 
-      \caption{For a transfer size of 16 MiB, the ior bandwidth vs number of tasks, using the DFS API.}
+      \caption{For a transfer size of 16 MiB, the IOR bandwidth vs number of tasks, using the DFS API.}
       \label{fig:ior_bw-vs-tasks_hue-nodes_16M}
     \end{figure}
     \normalsize{
@@ -343,7 +343,7 @@
     \begin{figure}
       \centering
         \includesvg[width=\dimexpr 3\colwidth/4\relax]{diagrams/ior_bw-vs-tx_8ppn.svg} 
-      \caption{For 8 tasks per node, the ior bandwidth vs number of tasks, using the DFS API.}
+      \caption{For 8 tasks per node, the IOR bandwidth vs number of tasks, using the DFS API.}
     \end{figure}
     \normalsize{
     \begin{itemize}
