@@ -18,3 +18,14 @@ Notes doc: https://docs.google.com/document/d/1mf2JfuIG7SXV3KOU3kDi35w4nssFurwod
 ## mdtest
 `mdtest_scripts`: the scripts used to run non-io500 mdtest tests \
 `mdtest_results`: the our non-io500 mdtest tests
+
+## poster sync
+The `poster/` subdirectory can be synced to the separate poster repository at `git@github.com:cissieAB/daos-poster-2026.git`.
+
+Local setup in this clone:
+- Git remote: `poster-2026`
+- Helper script: `scripts/sync_poster.sh`
+
+Examples:
+- Push the current `poster/` history to the poster repo: `scripts/sync_poster.sh push`
+- Pull the poster repo back into this repo's `poster/` folder: `scripts/sync_poster.sh pull`
