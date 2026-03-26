@@ -315,19 +315,19 @@
     \begin{figure}
       \centering
         \includesvg[width=\colwidth]{diagrams/ior_bw-vs-tasks_hue-nodes-2M.svg} 
-      \caption{For a transfer size of 2 MiB, the IOR bandwidth vs number of tasks, using the DFS API}
+      \caption{For a transfer size (I/O unit size) of 2 MiB, the IOR bandwidth vs number of tasks, using the DFS API}
       \label{fig:ior_bw-vs-tasks_hue-nodes_2M}
     \end{figure}
     \begin{figure}
       \centering
         \includesvg[width=\colwidth]{diagrams/ior_bw-vs-tasks_hue-nodes_16M.svg} 
-      \caption{For a transfer size of 16 MiB, the IOR bandwidth vs number of tasks, using the DFS API.}
+      \caption{For a transfer size (I/O unit size) of 16 MiB, the IOR bandwidth vs number of tasks, using the DFS API.}
       \label{fig:ior_bw-vs-tasks_hue-nodes_16M}
     \end{figure}
     \normalsize{
     \begin{itemize}
       \item \textbf{Read and write bandwidth increased with as tasks increased, saturating around 32 tasks}
-      \item \textbf{When a sufficiently large transfer size and number of tasks is used, read bandwith falls}
+      \item \textbf{At high task counts, sufficiently large transfer sizes reduce read bandwidth}
     \end{itemize}
     }
     % With a large transfer size, we see that reading with more than 
