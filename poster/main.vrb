@@ -9,16 +9,6 @@
     system using key-array-value store allowing end-to-end user space operation,
     asynchronous I/O operation, and non-blocking I/O.
 
-    DAOS is provisioned in pools (storage allocations), wherein containers
-    (logical collections of objects) may be created. Objects (key-value stores).
-    Keys have a distribution key (dkey, determining the storage target)
-    and attribute key (akey), with values being either single atomic values or arrays.
-
-    DAOS can be accessed via the native DAOS library libdaos,
-    libpil4dfs interception library (read/write/metadata),
-    libioil interception library (read/write),
-    and mounting a container via DFUSE.
-
 
     % DAOS is provisioned to users in pools, which are persistent
     % storage allocations spanning a set of DAOS storage
@@ -34,11 +24,20 @@
 
     \begin{figure}
       \centering
-        \includegraphics[width=\colwidth]{diagrams/data_heirarchy.pdf}
+        \includegraphics[width=\dimexpr 3\colwidth/4\relax]{diagrams/data_heirarchy.pdf}
       \caption{DAOS pool data hierarchy (adapted from \cite{daos_guide})}
       \label{fig:DAOS_Pool_Cont_Obj}
     \end{figure}
 
+    DAOS is provisioned in pools (storage allocations), wherein containers
+    (logical collections of objects) may be created. Objects (key-value stores).
+    Keys have a distribution key (dkey, determining the storage target)
+    and attribute key (akey), with values of either single atomic values or arrays.
+
+    DAOS can be accessed via the native libdaos library,
+    libpil4dfs interception library (intercepts I/O and metadata),
+    libioil interception library (intercepts I/O only),
+    and mounting a container via DFuse.
 
     % The native DAOS libary will provide the best performance, while the interception library provides the same perfromance for I/O operations without code changes.
     % Metadata operations via dfuse are slower than using the DFS API as the DFS API bypasses the kernel entirely.
@@ -63,10 +62,15 @@
     % \end{figure}
     \begin{itemize}
       \item Argonne National Lab's Aurora supercomputer has 10,624 compute nodes with 230 PB of DAOS storage on 1024 DAOS server nodes.
-      \item Nodes have 8 HPE Slingshot-11 NICs, using dragonfly topology
-      \item Aurora compute nodes use two Intel Xeon CPU Max Series, with 52 cores each. For ior and mdtest we bind to 48 cores per node.
+      \item Aurora compute nodes have 8 HPE Slingshot-11 NICs, using dragonfly topology and use two Intel Xeon CPU Max Series, with 52 cores each. For ior we bind to 48 cores per node.
       \item Our pool had 127 DAOS server nodes (4064 targets, 32 targets per node) with 3 TB Tier 0 (SCM) storage and 97 TB Tier 1 (NVMe) storage.
     \end{itemize}
+  \end{block}
+
+  \begin{block}{Acknowledgments}
+  This research used resources of the Argonne Leadership Computing Facility,
+  which is a U.S. Department of Energy Office of Science User Facility
+  operated under contract DE-AC02-06CH11357. This work was supported by NSF OAC-2348350.
   \end{block}
 
 \end{column}
@@ -77,11 +81,13 @@
 
 
   \begin{block}{Benchmarking}
-    We evaluated this storage system using the fio, ior, and mdtest I/O benchmarks.
-    In particular we are interested on the effects of client-side scaling,
-    amount of data transferred at a time (block size for fio, transfer size for ior),
-    number of processes per node, and access type (read/write, random/sequential)
-    on latency, IOPS, and bandwidth.
+    We evaluated this storage system using the fio, ior, mdtest, and IO500 I/O benchmarks.
+    We aim to characterize the I/O and metadata performance bottlenecks under a
+    variety of access patterns and client configurations on a pdocutions scale system.
+    % observing effects of client-side scaling,
+    % I/O size and data transferred size,
+    % processes per node, and access type (read/write, random/sequential)
+    % on latency, IOPS, and bandwidth.
 
   \end{block}
 
@@ -92,38 +98,93 @@
     \begin{figure}
       \centering
         \includesvg[width=\colwidth]{diagrams/fio_bw_vs_bs_hueRW_nj-16_iod-16.svg}
-      \caption{For one client node with 16 jobs with 16 I/O units kept in flight,
-      the bandwidth vs block size for fio using the pvsync I/O engine.
-      Block size in fio is the size of an I/O unit. This desmonstrates the
-      performance achieved by POSIX container access via dfuse mount points.
-      pvsync I/O engine uses vectorized system calls and allows read/write
-      from non-contiguous buffers.
-      }
+      \caption{Single client bandwidth vs block size (I/O unit size) for fio using pvsync I/O engine.}
       \label{fig:fio_bw_vs_bs_hueRW_nj-16_iod-16}
     \end{figure}
+    \normalsize{
+    \begin{itemize}
+      \item \textbf{fio bandwidth increased with I/O unit size, saturating at I/O size of 1-2 MiB}
+      \item Workloads with more writing, relative to reading, achieved higher throughput via DFuse
+      \item Random vs sequential access had little effect on throughput
+      % \item Unbuffered I/O has generally higher throughput than buffered I/O
+      % \item Increasing the number of fio jobs %(additional threads cloning the original thread)
+      % increases latency, but has little effect on IOPS or bandwidth % omitting because I believe this must have been all single core binding due to the strange core affinity issues
+      % \item The number of I/O units kept in flight has little effect on latency, bandwidth, or IOPS
+    \end{itemize}
+    }
+    % This desmonstrates the
+      % performance achieved by POSIX container access via dfuse mount points.
+      % pvsync I/O engine uses vectorized system calls and allows read/write
+      % from non-contiguous buffers.
+    % \begin{figure}
+    %   \centering
+    %     \includesvg[width=\colwidth]{diagrams/bw_stacked_combined.svg}
+    %   % Read is reading only, 4:1 is 4 reads per write, 1:1 is an equal amount of reading and writing, 1:4 is 1 read per 4 writes, and write is writing only.
+    %   \caption{
+    %   For one client node with 16 jobs, 16 I/O units kept in flight, and a block size of 1 MiB,
+    %   the proportions of overall bandwidth spent reading and writing for buffered and unbuffered workloads.
+    %   The yellow line indicates the expected ratio of reading vs writing.
+    %   }
+    %   \label{fig:bw_stacked_combined}
+    % \end{figure}
+    % \textcolor{wmgreen}{\large{\textbf{Read and write proportions of throughput are approximately proportional to the amount of reading or writing done.}}}
 
-    \begin{figure}
+
+    % across different workloads is reflect approximately the amount of reading and writing done.
+
+    % Buffered I/O will use an intermediate buffer between applications
+    %   (fio) and system calls to preadv*/pwritev*, while unbuffered I/O will
+    %   go straight to system calls.
+
+
+  \end{block}
+
+  \begin{block}{IO500}
+    \renewcommand{\arraystretch}{1.4}
+    \setlength{\tabcolsep}{6pt}
+    \begin{minipage}[t]{0.48\colwidth}
       \centering
-        \includesvg[width=\colwidth]{diagrams/bw_stacked_combined.svg}
-      % Read is reading only, 4:1 is 4 reads per write, 1:1 is an equal amount of reading and writing, 1:4 is 1 read per 4 writes, and write is writing only.
-      \caption{ For one client node with 16 jobs with 16 I/O units kept in flight,
-      the proportions of overall bandwidth spent reading and writing across
-      different workloads. The yellow line indicates the expected ratio of bandwidth
-      proportions. Buffered I/O will use an intermediate buffer between applications
-      (fio) and system calls to preadv*/pwritev*, while unbuffered I/O will
-      go straight to system calls.
+      {\small
+      \begin{tabular}{|c|r|r|}
+        \hline
+        Test & \multicolumn{1}{c|}{DFS API} & \multicolumn{1}{c|}{POSIX API} \\
+        \hline \hline
+        ior-easy-write & 92.212784 GiB/s & 81.309150 GiB/s \\
+        ior-easy-read & 212.561309 GiB/s & 10.761970 GiB/s \\
+        ior-hard-write & 3.796917 GiB/s & 0.665114 GiB/s \\
+        ior-hard-read & 15.250130 GiB/s & 3.159159 GiB/s \\
+        \hline
+        Bandwidth Score & 32.639612 GiB/s & 6.548241 GiB/s \\
+        \hline
+      \end{tabular}
+      \captionof{table}{8 node IO500 bandwidth}
       }
-      \label{fig:bw_stacked_combined}
-    \end{figure}
-
-    We did not observe a large difference in performance between
-    random and sequential access patterns.
-    Additionally, for dfuse access, changing the number of fio jobs
-    (additional threads cloning the original thread) or I/O depth
-    (number of I/O units to keep in flight) has little effect on performance,
-    while the number of jobs using the native DFS API increases latency
-    (Fig.~\ref{fig:ior_latency}) and bandwidth
-    (Fig.~\ref{fig:ior_bw-vs-tasks_hue-nodes_2M},\ref{fig:ior_bw-vs-tasks_hue-nodes_16M}).
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.48\colwidth}
+      \centering
+      {\small
+      \begin{tabular}{|c|r|r|}
+        \hline
+        Test & \multicolumn{1}{c|}{DFS API} & \multicolumn{1}{c|}{POSIX API} \\
+        \hline \hline
+        find & 775.564385 kIOPS & 1.547148 kIOPS \\
+        mdtest-easy-write & 219.381407 kIOPS & 3.927349 kIOPS \\
+        mdtest-hard-write & 60.646540 kIOPS & 1.094255 kIOPS \\
+        mdtest-hard-read & 807.330148 kIOPS & 3.857754 kIOPS \\
+        mdtest-easy-stat & 1112.188044 kIOPS & 4.030321 kIOPS \\
+        mdtest-hard-stat & 1098.314003 kIOPS & 3.849002 kIOPS \\
+        mdtest-easy-delete & 301.045835 kIOPS & 3.389223 kIOPS \\
+        mdtest-hard-delete & 302.557388 kIOPS & 0.386403 kIOPS \\
+        \hline
+        IOPS Score & 417.712528 kiops  & 2.185819 kiops \\
+        \hline
+      \end{tabular}
+      \captionof{table}{8 node IO500 IOPS}
+      }
+    \end{minipage}
+    \par\medskip
+    {{\normalsize{\textbf{DFS achieved higher bandwidths and IOPS than POSIX on a DFuse mount, especially regarding metadata and reading operations}}}}
 
   \end{block}
 
@@ -131,15 +192,15 @@
     \begin{figure}
       \centering
       \includesvg[width=\colwidth]{diagrams/ior_latency.svg}
-      \caption{ For a transfer size of 1 MiB, the ior latency vs number of tasks.
-      For <8 nodes, the write latency stays relatively constant as the number of
-      tasks increases, but larger numbers of nodes accrue more latency as the
-      number of tasks increases. Read latency ellicited a <10 ms increase in
-      latency as more tasks were used, but all test cases stayed under 20 ms latency
-      (10 ms difference from 1 task) except the largest number of nodes used (32).
-      }
+      \caption{For a transfer size of 1 MiB, the ior latency vs number of tasks, using DFS API.}
+      % For <8 nodes, the write latency stays relatively constant as the number of
+      % tasks increases, but larger numbers of nodes accrue more latency as the
+      % number of tasks increases. Read latency ellicited a <10 ms increase in
+      % latency as more tasks were used, but all test cases stayed under 20 ms latency
+      % (10 ms difference from 1 task) except the largest number of nodes used (32).
     \label{fig:ior_latency}
     \end{figure}
+    {{\normalsize{\textbf{DFS I/O latency increased with more tasks and nodes, with greater effects on writing than reading}}}}
   \end{block}
 
 
@@ -163,37 +224,42 @@
       \caption{For a transfer size of 16 MiB, the ior bandwidth vs number of tasks, using the DFS API.}
       \label{fig:ior_bw-vs-tasks_hue-nodes_16M}
     \end{figure}
-    With a large transfer size, we see that reading with more than
-    8 or 16 tasks per node decreases bandwidth dramatically,
-    although smaller numbers of tasks provide higher bandwidth
-    than the same number of tasks run with a smaller transfer size.
-    A small transfer size, such as 16 KiB provided relatively lower bandwidths
-    than either 1-2 MiB or 16 MiB, due to having to make many small I/O operations.
-    Reading has similar throughput to writing using the native DFS API,
-    until the number of nodes used become larger, when it surpassed write bandwidth.
+    \normalsize{
+    \begin{itemize}
+      \item \textbf{Read and write bandwidth increased with as tasks increased, saturating around 32 tasks}
+      \item \textbf{When a sufficiently large transfer size and number of tasks is used, read bandwith falls}
+    \end{itemize}
+    }
+    % With a large transfer size, we see that reading with more than
+    % 8 or 16 tasks per node decreases bandwidth dramatically,
+    % although smaller numbers of tasks provide higher bandwidth
+    % than the same number of tasks run with a smaller transfer size.
+    % A small transfer size, such as 16 KiB provided relatively lower bandwidths
+    % than either 1-2 MiB or 16 MiB, due to having to make many small I/O operations.
+    % Reading has similar throughput to writing using the native DFS API,
+    % until the number of nodes used become larger, when it surpassed write bandwidth.
 
 
     \begin{figure}
       \centering
         \includesvg[width=\dimexpr 3\colwidth/4\relax]{diagrams/ior_bw-vs-tx_8ppn.svg}
-      \caption{For a transfer size of 1 MiB, the ior bandwidth vs number of tasks, using the DFS API.}
+      \caption{For 8 tasks per node, the ior bandwidth vs number of tasks, using the DFS API.}
     \end{figure}
+    \normalsize{
+    \begin{itemize}
+      \item \textbf{For a single client, reading is slightly more performant than writing across transfer sizes}
+      \item Sufficiently small transfer sizes (16 KiB) provide low throughput, both for a single client (Figure 7) and all numbers of nodes and tasks per node tested
+    \end{itemize}
+    }
+    % As with the pvsync I/O engine,
+    % the DFS API begins to saturate at transfer sizes above 1-2 MiB.
+    % The same transfer sizes, however, provide 2-3x higher bandwidth
+    % for single-client workloads. Unlike the non-native API,
+    % we see read bandwidths are on a similar scale to write bandwidth
+    % and are higher overall, instead of being dramatically lower
+    % than write bandwidths.
 
-    As with the pvsync I/O engine,
-    the DFS API begins to saturate at transfer sizes above 1-2 MiB.
-    The same transfer sizes, however, provide 2-3x higher bandwidth
-    for single-client workloads. Unlike the non-native API,
-    we see read bandwidths are on a similar scale to write bandwidth
-    and are higher overall, instead of being dramatically lower
-    than write bandwidths.
 
-
-  \end{block}
-
-  \begin{block}{Acknowledgments}
-  This research used resources of the Argonne Leadership Computing Facility,
-  which is a U.S. Department of Energy Office of Science User Facility
-  operated under contract DE-AC02-06CH11357. This work was supported by NSF OAC-2348350.
   \end{block}
 
 

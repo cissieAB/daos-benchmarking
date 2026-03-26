@@ -351,6 +351,9 @@ INPUT ./main.w18
 INPUT /usr/share/texmf-dist/tex/latex/transparent/transparent.sty
 INPUT /usr/share/texmf-dist/tex/latex/transparent/transparent-nometadata.sty
 INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/caption-beamer.sto
 INPUT /usr/share/texmf-dist/tex/latex/listings/listings.sty
 INPUT /usr/share/texmf-dist/tex/latex/listings/lstpatch.sty
 INPUT /usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
@@ -446,10 +449,12 @@ INPUT ./svg-inkscape/fio_bw_vs_bs_hueRW_nj-16_iod-16_svg-tex.pdf
 INPUT ./svg-inkscape/fio_bw_vs_bs_hueRW_nj-16_iod-16_svg-tex.pdf_tex
 INPUT ./svg-inkscape/fio_bw_vs_bs_hueRW_nj-16_iod-16_svg-tex.pdf
 INPUT ./svg-inkscape/fio_bw_vs_bs_hueRW_nj-16_iod-16_svg-tex.pdf
-INPUT ./svg-inkscape/bw_stacked_combined_svg-tex.pdf
-INPUT ./svg-inkscape/bw_stacked_combined_svg-tex.pdf_tex
-INPUT ./svg-inkscape/bw_stacked_combined_svg-tex.pdf
-INPUT ./svg-inkscape/bw_stacked_combined_svg-tex.pdf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/rm-lmr12.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmmi12.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/lm/lmsy10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT ./svg-inkscape/ior_latency_svg-tex.pdf
 INPUT ./svg-inkscape/ior_latency_svg-tex.pdf_tex
 INPUT ./svg-inkscape/ior_latency_svg-tex.pdf
